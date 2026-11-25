@@ -1,0 +1,151 @@
+{
+  "observed_date": "2026-11-25",
+  "shuttle_id": "ttgf26e",
+  "shuttle_repository": "TinyTapeout/tinytapeout-gf-26e",
+  "shuttle_commit": "1c5f849a3b6b6c9b71a867ad6ebda867863dd97a",
+  "submission_end_date": "2026-12-07",
+  "submission_cutoff_time_timezone": null,
+  "pdk": "gf180mcuD",
+  "pdk_family": "gf180mcu",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "vdpwr_v": 3.3,
+  "uses_vapwr": false,
+  "standard_cell_library": "gf180mcu_fd_sc_mcu7t5v0",
+  "standard_cell_pvt": [
+    "tt_025C_3v30",
+    "ss_125C_3v00",
+    "ff_n40C_3v60"
+  ],
+  "sta_corners": [
+    "nom_tt_025C_3v30",
+    "nom_ss_125C_3v00",
+    "nom_ff_n40C_3v60",
+    "min_tt_025C_3v30",
+    "min_ss_125C_3v00",
+    "min_ff_n40C_3v60",
+    "max_tt_025C_3v30",
+    "max_ss_125C_3v00",
+    "max_ff_n40C_3v60"
+  ],
+  "template_repository": "TinyTapeout/ttgf-analog-template",
+  "template_commit": "5e6eca697b0b84e9a3cd4704a4785fed91ac8a70",
+  "tt_tools_commit": "0922544e6c7f6126047c3fba720b0437fa32a1b8",
+  "tt_mux_commit": "aab1e278ef8e10eaa78b30369438c86107d02a8b",
+  "generic_artifact_action_commit": "df73a1e7b52e940423ff55f9354b2b8140d38cb7",
+  "gf26e_action_tag_exists": false,
+  "generic_action_precheck_pdk_revision": "e8daeda73ca8f5814dbc0b11d1d05802251a3750",
+  "precheck_strategy": "Unmodified pinned TT precheck code/decks; explicit GF26e PDK installation in project workflow, replacing only the generic composite action orchestration.",
+  "chip_integration_librelane_commit": "deeae1ff720ae22ef01c12aa1bda7bfb01cc307e",
+  "chip_integration_librelane_version": "3.1.0.dev3",
+  "generic_project_action_librelane_version": "3.0.14",
+  "ciel_version": "2.5.0",
+  "ciel_components": [
+    "gf180mcu_fd_pr",
+    "gf180mcu_fd_sc_mcu7t5v0",
+    "gf180mcu_fd_io"
+  ],
+  "official_clock_defaults_ns": {
+    "setup_uncertainty": 0.25,
+    "hold_uncertainty": 0.25,
+    "clock_transition": 0.15
+  },
+  "frame": {
+    "tiles": "2x2",
+    "width_um": 711.2,
+    "height_um": 325.36,
+    "def_units_per_um": 2000,
+    "signal_pins_in_template": 51,
+    "analog_pins_requested": 4,
+    "analog_pins_max_user": 6,
+    "path": "physical/tt_analog_2x2.def",
+    "sha256": "fd309cb25df7de3a4cef0b57f9858274663291ce6d449fd48ef1b57d129ed3ba",
+    "git_blob": "eecf8cf7c4a3ebf1ff512df3b122f4d2ef7f6413",
+    "source_path": "tech/gf180mcuD/def/analog/tt_analog_2x2.def"
+  },
+  "project_top_metal_layer": "Metal4",
+  "power_grid_guidance": {
+    "vertical_layer": "Metal4",
+    "horizontal_layer": "Metal3",
+    "multilayer": false,
+    "rings": false,
+    "official_magic_example_stripe_width_um": 2,
+    "minimum_stripe_width_um": 0.8,
+    "official_magic_example_stripe_y_um": [
+      5,
+      320.36
+    ]
+  },
+  "analog_switch": {
+    "repository": "TinyTapeout/tt-multiplexer",
+    "commit": "aab1e278ef8e10eaa78b30369438c86107d02a8b",
+    "path": "asw/gf180mcuD/tt_asw_5v0/gds/tt_asw_5v0.gds",
+    "git_blob": "9cad137a7a27e36dc9f89b829c19bbb7de921993",
+    "sha256": "d3691b3e58f9d49cba32c09cf5749f336a20832c77fcb3d373edcdb35cf4f4ef",
+    "bytes": 296394,
+    "same_blob_as_prior_mux_commit": "885086c91ebbe5e636559f540c23a492a7d1284a"
+  },
+  "sources": {
+    "shuttle_config": "https://github.com/TinyTapeout/tinytapeout-gf-26e/blob/1c5f849a3b6b6c9b71a867ad6ebda867863dd97a/config.yaml",
+    "shuttle_build": "https://github.com/TinyTapeout/tinytapeout-gf-26e/blob/1c5f849a3b6b6c9b71a867ad6ebda867863dd97a/.github/workflows/gds.yaml",
+    "shuttle_submodules": "https://github.com/TinyTapeout/tinytapeout-gf-26e/tree/1c5f849a3b6b6c9b71a867ad6ebda867863dd97a",
+    "tt_technology": "https://github.com/TinyTapeout/tt-support-tools/blob/0922544e6c7f6126047c3fba720b0437fa32a1b8/tech.py",
+    "analog_frame": "https://github.com/TinyTapeout/tt-support-tools/blob/0922544e6c7f6126047c3fba720b0437fa32a1b8/tech/gf180mcuD/def/analog/tt_analog_2x2.def",
+    "power_stripe_example": "https://github.com/TinyTapeout/tt-support-tools/blob/0922544e6c7f6126047c3fba720b0437fa32a1b8/tech/gf180mcuD/def/analog/magic_init_project.tcl",
+    "mux_supply_config": "https://github.com/TinyTapeout/tt-multiplexer/blob/aab1e278ef8e10eaa78b30369438c86107d02a8b/cfg/gf180mcuD.yaml",
+    "mux_toolchain_lock": "https://github.com/TinyTapeout/tt-multiplexer/blob/aab1e278ef8e10eaa78b30369438c86107d02a8b/flake.lock",
+    "timing_defaults": "https://github.com/librelane/librelane/blob/deeae1ff720ae22ef01c12aa1bda7bfb01cc307e/librelane/config/pdk_compat.py#L319-L330",
+    "generic_precheck": "https://github.com/TinyTapeout/tt-gds-action/blob/df73a1e7b52e940423ff55f9354b2b8140d38cb7/precheck/action.yml",
+    "template": "https://github.com/TinyTapeout/ttgf-analog-template/tree/5e6eca697b0b84e9a3cd4704a4785fed91ac8a70",
+    "ciel_component_installation": "https://github.com/fossi-foundation/ciel/blob/64348a98fa8d07a20ad1f3c1183cf30d7d310055/ciel/manage.py#L145-L188"
+  },
+  "shared_analog_switch_power": {
+    "vdpwr_v": 3.3,
+    "vapwr_source": "Independent external analog-supply pads 25 and 63 in pinned chip wrapper",
+    "vapwr_numeric_voltage_confirmed": false,
+    "project_uses_vapwr_false_does_not_disconnect_switch_supply": true,
+    "simulation_supply_cases_v": [
+      3.3,
+      5.0
+    ],
+    "simulation_supply_cases_are_assumptions": true,
+    "sources": {
+      "asw_connections": "https://github.com/TinyTapeout/tt-multiplexer/blob/aab1e278ef8e10eaa78b30369438c86107d02a8b/rtl/tt_user_module.v.mak#L83-L90",
+      "external_pad_connections": "https://github.com/TinyTapeout/tt-multiplexer/blob/aab1e278ef8e10eaa78b30369438c86107d02a8b/ol2/tt_top/odb_power.py#L49-L56",
+      "wrapper_pad_configuration": "https://github.com/TinyTapeout/tt-multiplexer/blob/aab1e278ef8e10eaa78b30369438c86107d02a8b/ol2/tt_top/tt_gf_wrapper.v#L64-L113"
+    }
+  },
+  "ciel_source_commit": "64348a98fa8d07a20ad1f3c1183cf30d7d310055",
+  "ciel_common_component_implicit": true,
+  "design": {
+    "top_module": "tt_um_dvirdc_gf180_diff8",
+    "tiles": "2x2",
+    "clock_hz": 1600000,
+    "default_line_rate_bps": 100000,
+    "serial_format": "8N1",
+    "spi_mode": 0,
+    "target_byte_count_bits": 32,
+    "counter_bits": 32,
+    "counter_count": 7,
+    "counter_semantics": "Saturating with sticky overflow; coherent snapshot; overflow disqualifies PASS",
+    "patterns": [
+      "PRBS8",
+      "alternating 55/AA",
+      "walking ones",
+      "walking zeros",
+      "fixed byte"
+    ],
+    "normal_receive_buffer_bytes": 1,
+    "flow_control": false,
+    "loopback": "External TX+ to RX+ and TX- to RX- on the same project through shuttle analog access switches",
+    "physical_signoff_status": "IN_PROGRESS"
+  },
+  "reproduction": {
+    "local_setup": "tools/README.md",
+    "rtl_workflow": ".github/workflows/rtl.yaml",
+    "artifact_precheck_workflow": ".github/workflows/gds.yaml",
+    "docs_workflow": ".github/workflows/docs.yaml",
+    "root_layout_source": "Committed custom GDS/LEF/powered-netlist views bound by PROVENANCE.json",
+    "github_runs_full_place_route": false,
+    "github_pages": false
+  }
+}

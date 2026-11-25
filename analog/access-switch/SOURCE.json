@@ -1,0 +1,9 @@
+{
+  "repository": "TinyTapeout/tt-multiplexer",
+  "commit": "aab1e278ef8e10eaa78b30369438c86107d02a8b",
+  "path": "asw/gf180mcuD/tt_asw_5v0/gds/tt_asw_5v0.gds",
+  "git_blob": "9cad137a7a27e36dc9f89b829c19bbb7de921993",
+  "sha256": "d3691b3e58f9d49cba32c09cf5749f336a20832c77fcb3d373edcdb35cf4f4ef",
+  "bytes": 296394,
+  "same_blob_as_prior_mux_commit": "885086c91ebbe5e636559f540c23a492a7d1284a"
+}

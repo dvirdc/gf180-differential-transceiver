@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "macro_um": [
+    160,
+    110
+  ],
+  "devices": 29,
+  "parasitic_resistors": 179,
+  "parasitic_capacitors": 276,
+  "macro_drc_errors": 0,
+  "macro_lvs": "Circuits match uniquely; full transistor/resistor reference, no macro blackbox.",
+  "lvs_netgen_version": "1.5.287",
+  "magic_version": "8.3.706",
+  "ngspice_version": "46",
+  "gds_sha256": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
+  "lef_sha256": "03c3b3bac9152c743679b09abd3dd87b9f7da135e39f3b8dca7f456a42d0cb1a",
+  "pex_sha256": "a4cae848db8cdbb1ae44e970a92402b9100e9584a859316a98bd2d800ad97275",
+  "loaded_cases_passed": 60,
+  "checked_bit_decisions": 7200,
+  "matrices": [
+    {
+      "switch_VAPWR_V": 5.0,
+      "cases": 30,
+      "passed": true,
+      "checked_bit_decisions": 3600,
+      "minimum_differential_swing_V": 0.09860373999999994,
+      "maximum_differential_swing_V": 0.27102731999999996,
+      "maximum_transient_core_current_A": 0.00336550849
+    },
+    {
+      "switch_VAPWR_V": 3.3,
+      "cases": 30,
+      "passed": true,
+      "checked_bit_decisions": 3600,
+      "minimum_differential_swing_V": 0.09860377999999992,
+      "maximum_differential_swing_V": 0.27103085000000005,
+      "maximum_transient_core_current_A": 0.00338042952
+    }
+  ],
+  "resistor_calibration": "6/6 pass, unmodified pinned PDK model",
+  "limitations": [
+    "Macro-only extracted-RC transient; integrated digital activity and full-chip interconnect not simulated.",
+    "Switch topology is freshly transistor-extracted from the exact pinned mux GDS; no switch RC or independent switch LVS claimed.",
+    "3.3V and5.0V switch VAPWR are separate tested assumptions, not proof of all voltages between them; actual carrier VAPWR must be confirmed.",
+    "Paired supply/temperature points; no mismatch, package inductance, digital noise or post-fill qualification.",
+    "Standalone Magic DRC plus LVS; final integrated DRC/LVS/STA/precheck are separate gates."
+  ]
+}

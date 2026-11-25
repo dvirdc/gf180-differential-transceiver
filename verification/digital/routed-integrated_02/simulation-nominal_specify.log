@@ -1,0 +1,4 @@
+PASS 1 SPI identity and reset
+FAIL good loopback PASS without FAIL time=38491875000 status=0a
+FATAL: /Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver/sim/tb.sv:22: 
+       Time: 38491875000  Scope: tb.check

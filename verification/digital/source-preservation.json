@@ -1,0 +1,7 @@
+{
+  "rtl/diff8_digital.v": true,
+  "rtl/diff8_uart_tx.v": true,
+  "rtl/diff8_uart_rx.v": true,
+  "sim/tb.sv_top_name_only": true,
+  "sim/phy_behavioral.v_macro_name_only": true
+}

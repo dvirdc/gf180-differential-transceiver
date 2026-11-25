@@ -1,0 +1,61 @@
+{
+  "scope": "Controlled synthesis diagnostic; not physical signoff or whole-core formal equivalence.",
+  "tool": "Yosys0.66, official LibreLane3.1.0.dev3 runtime",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "source_sha256": {
+    "rtl/diff8_digital.v": "3c68ad1452199b820d4a9e9732ead0e4162d7204bb80581a686308aff3042d96",
+    "rtl/diff8_uart_rx.v": "2519e9f6a533ec89008bae1749444dfa8936602187b313cba5368de7389c88ce",
+    "rtl/diff8_uart_tx.v": "35154e34211bfba75af66cd5e097cdfc8fc19ded4716b19e8b261ad911ca10ba",
+    "rtl/gf180_diff_phy_blackbox.v": "91c0f17a177e2d8f5fd1ab733152eaccf391f52212eda9e69a41b2610345a9fd",
+    "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505"
+  },
+  "resolved_config_differences": {
+    "SYNTH_ARITH_TREE": [
+      true,
+      false
+    ],
+    "RSZ_DONT_TOUCH_RX": [
+      "$^",
+      "^ua\\[[0-7]\\]$"
+    ]
+  },
+  "physical_only_difference": "RSZ_DONT_TOUCH_RX is a later OpenROAD resizing constraint, unused during synthesis.",
+  "experiments": {
+    "simple-core": {
+      "passed": true,
+      "tests": 44,
+      "netlist_sha256": "7d945a507b3d649f9d691d50f292f53a46fc433b4c492c750f7d6040846febef",
+      "mapping_script_sha256": "a7c46d7c2c8d46c4dbc839008e10d30c0571afd1209f048bfae6aa157a869549",
+      "simulation_log_sha256": "2976121b9ce1b2108ac88a4047752b6120cd3ca00c35d597a8e75a730dd96af8"
+    },
+    "simple-wrapper": {
+      "passed": true,
+      "tests": 44,
+      "netlist_sha256": "b47a3b0aa19987c07b4bac0915e34e26d88d28c3e5fadc309b613145c6df9f2a",
+      "mapping_script_sha256": "bcfb3bbe933afdc7d777f0ddcfa361c0317f5dc9e5c23f14a67d0d67ab25ed25",
+      "simulation_log_sha256": "2976121b9ce1b2108ac88a4047752b6120cd3ca00c35d597a8e75a730dd96af8"
+    },
+    "simple-wrapper-area0": {
+      "passed": true,
+      "tests": 44,
+      "netlist_sha256": "74bf5d7d0f7bd604fbe7a43bef96faa393e70a7a3341b602b417fdfcd0ec950d",
+      "mapping_script_sha256": "c715c76df21a64d1062455d78bcd5e4d6424ce8facfc94d4a341f933c54a1618",
+      "simulation_log_sha256": "2976121b9ce1b2108ac88a4047752b6120cd3ca00c35d597a8e75a730dd96af8"
+    },
+    "arith-tree-enabled": {
+      "passed": false,
+      "tests": 0,
+      "netlist_sha256": "63c917c87b47b0972ba9f87547ee4f29b1c932d30878288f1695c6393181738b",
+      "simulation_log_sha256": "4340d1c7eb246b0d0d885621d5c7962b439f677c042c75df0bb832b559283939",
+      "config_sha256": "78747e550c7327d1ac9d34150fe1e1f84ced363d611f4fa6fce89a38e92dac06"
+    },
+    "arith-tree-disabled": {
+      "passed": true,
+      "tests": 44,
+      "netlist_sha256": "0c65d2f4a84ba015e038e43bae266c0238e78a3d25588c430c32735d2a1dd746",
+      "simulation_log_sha256": "1bf98a587def76c3fa4c8b81ad161f0b7681c61033f74cc4ed4d783194aa4b1c",
+      "config_sha256": "cbee0ddfeca2de1038d41ea653a4c26669fdec317140b8d32cf983658da6ae5d"
+    }
+  },
+  "finding": "The enabled arithmetic-tree optimization produces one-bit MSB mismatches; disabling this optional synthesis optimization restores all44 external-pin tests without RTL or test changes. A minimal arithmetic-pass bug reproducer was not established."
+}

@@ -1,0 +1,6 @@
+PASS 1 SPI identity and reset
+LAST_BAD expected=a8 actual=28 xor=80
+DIAGNOSTIC checked=300 bits=2400 errbytes=156 errbits=156 frames=0 timeouts=0 overflow=0 uo=52 ua=z5
+FAIL good loopback PASS without FAIL time=43936250000 status=0a
+FATAL: /Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver/build/digital-diagnostic/tb_diagnostic.sv:22: 
+       Time: 43936250000  Scope: tb.check

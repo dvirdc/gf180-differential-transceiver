@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "status": "FINAL_FILLED_CANDIDATE_CHECKS_PASS",
+  "run": "integrated_03",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "source_gds_sha256": "5ad48fab7e7005fd26d53060ae748b8ee9af1a6e7df08a30362865636d642d14",
+  "source_lef_sha256": "22b0d149ed8fea4209500007e2feac24da04510bb8f11ffeca5e1918272f1311",
+  "source_pnl_sha256": "12409c4673d3950f959bfc422eebad97c8542a4b7a5611c53f2686901497514d",
+  "final_gds_sha256": "ef5d4ed7785eb07fe06170f5a5ac547399fe8a5d7ae989c8da756b5128fa67d6",
+  "raw_flow_passed": false,
+  "raw_klayout_drc_categories": {
+    "DCF.1a": 2
+  },
+  "raw_klayout_drc_count": 2,
+  "fill_report": "build/candidate-03/gds/tt_um_dvirdc_gf180_diff8-comp-fill/summary.json",
+  "final_precheck_report": "build/candidate-03/precheck/summary.json",
+  "final_lvs_report": "build/candidate-03/verification/summary.json",
+  "routed_report": "build/rtl/integrated_03/summary.json",
+  "sta_scope": "Nine extracted min/nom/max RC corners before additive Dummy COMP fill; no post-fill RC/SDF claim.",
+  "clock_period_ns": 625,
+  "clock_uncertainty_ns": 0.25,
+  "clock_transition_ns": 0.15,
+  "timing_derating": {
+    "early": 0.95,
+    "late": 1.05
+  },
+  "synthesis_arith_tree": false,
+  "stdcell_area_um2": 111863,
+  "stdcell_count": 4970,
+  "macro_area_um2": 17600,
+  "core_area_um2": 221553,
+  "digital_utilization": 0.548475,
+  "combined_core_occupancy": 0.584344,
+  "worst_setup_slack_ns": 477.44585103537736,
+  "worst_hold_slack_ns": 0.19024682367959228,
+  "precheck_tests": 12,
+  "routed_tests_each_mode": 44,
+  "notes": [
+    "Raw DCF.1a failures retained unchanged; final filled GDS separately passes all official checks and independent full transistor LVS.",
+    "Only additive layer22/4 Dummy COMP fill was allowed; all other mask geometry, labels and tile extent unchanged.",
+    "Analog macro is blackboxed in digital STA and separately qualified in SPICE; no analog timing/noise claim from STA.",
+    "Nominal specify regression is partial simulator-path sanity, not SDF; unsupported ifnone paths are disclosed.",
+    "Shuttle/package/board, full post-fill integration and silicon qualification remain."
+  ]
+}

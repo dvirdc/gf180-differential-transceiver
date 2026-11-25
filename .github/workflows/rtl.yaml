@@ -1,0 +1,34 @@
+name: rtl
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  functional:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install Icarus Verilog
+        run: sudo apt-get update && sudo apt-get install -y iverilog
+      - name: Run all external-pin RTL tests
+        run: python3 scripts/test_rtl.py
+      - name: Upload functional results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: rtl_results
+          path: |
+            build/rtl/summary.json
+            build/rtl/simulation.log

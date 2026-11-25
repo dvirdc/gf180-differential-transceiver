@@ -1,0 +1,75 @@
+{
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "technology_sha256": {
+    "libs.tech/magic/gf180mcuD.tech": "3393fd8c487b80926d0a0235694a3523df8a8d88614c773b814a02d8f2070a25",
+    "libs.tech/magic/gf180mcuD-GDS.tech": "e62d657d57fd328e1f7a7de55b9caba90b84e98a8c981a2ade87302725702b2f",
+    "libs.tech/netgen/gf180mcuD_setup.tcl": "eb6217e33acb2c81680351745bc184a2ee37b31a25d37f4dce423f61ba466fe4"
+  },
+  "cells": {
+    "nfet_03v3_w4_l0p28": {
+      "type": "nfet_03v3",
+      "w_um": 4,
+      "l_um": 0.28,
+      "mag_sha256": "d3b19b2012dbdd561358eba128b5089b0a10b79b627483d1deef3634e58fde2f",
+      "gds_sha256": "cec56b4642f0072b7cec2b76ce3d5663df923791f98ffe1af5e1fc52ba0939f2"
+    },
+    "pfet_03v3_w10_l0p28": {
+      "type": "pfet_03v3",
+      "w_um": 10,
+      "l_um": 0.28,
+      "mag_sha256": "e532e6c3d54f49495d99269508860f356dd383297e2dd174e4414e5a5ca74785",
+      "gds_sha256": "5b637c5bf4adf3241e19720a9746ac12cae1666c51105084fcca01256e26e9ce"
+    },
+    "nfet_03v3_w12_l0p28": {
+      "type": "nfet_03v3",
+      "w_um": 12,
+      "l_um": 0.28,
+      "mag_sha256": "97c25a78992d1a3cfdc559cc1d379eff7cda183f2d8eaaa6c5030050a9f67fd5",
+      "gds_sha256": "b9a2029e0286feec13407104518112e230c1e44defcb58c5e1976a205a157c8a"
+    },
+    "pfet_03v3_w24_l0p28": {
+      "type": "pfet_03v3",
+      "w_um": 24,
+      "l_um": 0.28,
+      "mag_sha256": "7df3bdf6d48bc89cf352eb2e39db4b9c2e7522c32a4a3c608e71b2fb956125f2",
+      "gds_sha256": "3444a1a422c005187d76e34d35801a4edec909c8788573d2a3ddf861134937be"
+    },
+    "nfet_03v3_w24_l1": {
+      "type": "nfet_03v3",
+      "w_um": 24,
+      "l_um": 1,
+      "mag_sha256": "2071a25f3562187ae066236fec5983669aefcec5c581f499913619f2f35dba6d",
+      "gds_sha256": "9f670413ef2050cd25ed60a843fde30014ec714810a4548dd78b0d5db2968b0b"
+    },
+    "pfet_03v3_w12_l1": {
+      "type": "pfet_03v3",
+      "w_um": 12,
+      "l_um": 1,
+      "mag_sha256": "7ce540b4d757f33227b2b20839e0c5699ec8fcfb979b99cfe14977fa1458573c",
+      "gds_sha256": "c8589415a03b4a835cdd91e82af70af1bbdd9583a6b791a8ce86cd22d2a2eeab"
+    },
+    "ppolyf_u_1k_w1_l32": {
+      "type": "ppolyf_u_1k",
+      "w_um": 1,
+      "l_um": 32,
+      "mag_sha256": "ad3130babbae55bb286964da6af26540a7f237188553bea969a94d64e3d63b78",
+      "gds_sha256": "bba2415a5705ea10f50ddfeb9ea913da923ef90aa5261eb76acd880e1f607628"
+    },
+    "ppolyf_u_1k_w1_l20": {
+      "type": "ppolyf_u_1k",
+      "w_um": 1,
+      "l_um": 20,
+      "mag_sha256": "d42286aa2248d92623d46c55ff691e38edf5f4030d28dc31754ca28e9c6b47f7",
+      "gds_sha256": "9965ae53f75dc2857d3823918b408b53b4b39223fc672630314304530012daaa"
+    },
+    "ppolyf_u_1k_w1_l1": {
+      "type": "ppolyf_u_1k",
+      "w_um": 1,
+      "l_um": 1,
+      "mag_sha256": "11c7ee9b15dfe199a718ec09cc560232b88522239f1c3a1c6049a24514ddbde2",
+      "gds_sha256": "d4afbee3b381eb562b05b494acda3600825a7b8171e66855a18fe616a66e915f"
+    }
+  },
+  "drc_errors": 0,
+  "scope": "Primitive cells freshly generated under the GF26e pinned PDK; not a connected macro qualification."
+}

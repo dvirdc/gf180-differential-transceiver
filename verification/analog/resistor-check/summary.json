@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "model_adaptation": "none; unmodified native GF26e PDK ngspice model",
+  "model_sha256": {
+    "smbb000149.ngspice": "8a8d44d5f13d4a097e86fab598e97e82bb726af1cc01eb6d500739766dfd9363",
+    "design.ngspice": "7e222f050318388f37543a64fbd0be55cc15e4b93f57501a09f7c159c4c9e561",
+    "sm141064.ngspice": "69a7ab877344a6d477fdd11440457f64e7ad88a624504a737a161da463de8bc8",
+    "sm141064_mim.ngspice": "9b85cd009968d9aeb6b61046b24a63f39d6a463c4e4aee3949c8fd183c06666f"
+  },
+  "ngspice_version": "******\n** ngspice-46 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2025, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n******\n",
+  "conditions": {
+    "resistor_corner": "typical",
+    "temperature_C": 25,
+    "statistics": "disabled"
+  },
+  "expected_equation_ohm": "(1000*(L-2*3.85e-11)+2*85.45*1e-6)/(1e-6-2*0.0148e-6)",
+  "results": [
+    {
+      "length_um": 1,
+      "width_um": 1,
+      "voltage_V": 0.1,
+      "resistance_ohm": 1206.536,
+      "expected_ohm": 1206.5364798021435,
+      "relative_error": 3.976689900708763e-07,
+      "passed": true,
+      "deck_sha256": "dc99fa3d296a6ff3579944ffbf999d62f8652f9d62eab9a4a524d89af3379bdc",
+      "log_sha256": "dbd65f6f5c9c2b7f40fad3b82d53fa9d3f33fdd90b3b9d6b146f44ed817fdc28"
+    },
+    {
+      "length_um": 1,
+      "width_um": 1,
+      "voltage_V": 1.0,
+      "resistance_ohm": 1206.536,
+      "expected_ohm": 1206.5364798021435,
+      "relative_error": 3.976689900708763e-07,
+      "passed": true,
+      "deck_sha256": "0b159e696b2fe87d9a1a71c77b1b8e440cb0c84e4fd74abd3fbddb80525783c1",
+      "log_sha256": "062cbd54e114843ae107e8fd21fef30e47c053fb62187669dac8147ba7552e3d"
+    },
+    {
+      "length_um": 20,
+      "width_um": 1,
+      "voltage_V": 0.1,
+      "resistance_ohm": 20786.09,
+      "expected_ohm": 20786.091302555647,
+      "relative_error": 6.266477081684485e-08,
+      "passed": true,
+      "deck_sha256": "51291702d657d60c8682f36883d1e6a9ad36ddc704a8e6995d5ee0674286e7be",
+      "log_sha256": "b7a20549418ab953759c8e391614fec8d53c4d07685ef30cb4241b1ba54f2419"
+    },
+    {
+      "length_um": 20,
+      "width_um": 1,
+      "voltage_V": 1.0,
+      "resistance_ohm": 20786.09,
+      "expected_ohm": 20786.091302555647,
+      "relative_error": 6.266477081684485e-08,
+      "passed": true,
+      "deck_sha256": "e835728692818882c1e2e953979cb395a91496940490f4aed911e4569ac2b27b",
+      "log_sha256": "ef2065de2619d14bc0629867e77fd40e1956134114e12ce0bf7ad401b57e576a"
+    },
+    {
+      "length_um": 32,
+      "width_um": 1,
+      "voltage_V": 0.1,
+      "resistance_ohm": 33152.13,
+      "expected_ohm": 33152.125927452595,
+      "relative_error": 1.2284423056563298e-07,
+      "passed": true,
+      "deck_sha256": "3dfb9476532da47245ce906e8e26ff9220f4546c2ee1620fad6dea3f8c868f1b",
+      "log_sha256": "27627d8afdc82c9c3e76803cc9e2f1d38267ef268a797df13da3669aa8db3b82"
+    },
+    {
+      "length_um": 32,
+      "width_um": 1,
+      "voltage_V": 1.0,
+      "resistance_ohm": 33152.13,
+      "expected_ohm": 33152.125927452595,
+      "relative_error": 1.2284423056563298e-07,
+      "passed": true,
+      "deck_sha256": "76518b9113d31b570cc2bab5fb7463b0114c205a5ef73fe60ae47fb00aa389d0",
+      "log_sha256": "cec6c5f0705fcb2b23ea1bbb0b417ebf64139aa132dc6162b87096833bbb9963"
+    }
+  ]
+}

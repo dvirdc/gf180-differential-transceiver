@@ -1,0 +1,943 @@
+{
+  "nets": [
+    "an",
+    "ap",
+    "boost",
+    "boostb",
+    "cm",
+    "din",
+    "dinb",
+    "dout",
+    "dp",
+    "n1",
+    "pre",
+    "q",
+    "qb",
+    "rxn",
+    "rxp",
+    "tail",
+    "txn",
+    "txp",
+    "VDPWR",
+    "VGND"
+  ],
+  "lower_tracks": {
+    "an": 8,
+    "ap": 9,
+    "boost": 10,
+    "boostb": 11,
+    "cm": 12,
+    "din": 13,
+    "dinb": 14,
+    "dout": 15,
+    "dp": 16,
+    "n1": 17,
+    "pre": 18,
+    "q": 19,
+    "qb": 20,
+    "rxn": 21,
+    "rxp": 22,
+    "tail": 23,
+    "txn": 24,
+    "txp": 25,
+    "VDPWR": 26,
+    "VGND": 27
+  },
+  "upper_tracks": {
+    "an": 78,
+    "ap": 79,
+    "boost": 80,
+    "boostb": 81,
+    "cm": 82,
+    "din": 83,
+    "dinb": 84,
+    "dout": 85,
+    "dp": 86,
+    "n1": 87,
+    "pre": 88,
+    "q": 89,
+    "qb": 90,
+    "rxn": 91,
+    "rxp": 92,
+    "tail": 93,
+    "txn": 94,
+    "txp": 95,
+    "VDPWR": 96,
+    "VGND": 97
+  },
+  "access": [
+    {
+      "instance": "xi0_xn",
+      "pin": "D",
+      "net": "dinb",
+      "x": 11.46,
+      "y": 53.0,
+      "track_y": 14
+    },
+    {
+      "instance": "xi0_xn",
+      "pin": "G",
+      "net": "din",
+      "x": 12.0,
+      "y": 55.6,
+      "track_y": 83
+    },
+    {
+      "instance": "xi0_xn",
+      "pin": "S",
+      "net": "VGND",
+      "x": 12.54,
+      "y": 53.0,
+      "track_y": 27
+    },
+    {
+      "instance": "xi0_xn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 13.379999999999999,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xi0_xp",
+      "pin": "D",
+      "net": "dinb",
+      "x": 16.46,
+      "y": 53.0,
+      "track_y": 14
+    },
+    {
+      "instance": "xi0_xp",
+      "pin": "G",
+      "net": "din",
+      "x": 17.0,
+      "y": 58.6,
+      "track_y": 83
+    },
+    {
+      "instance": "xi0_xp",
+      "pin": "S",
+      "net": "VDPWR",
+      "x": 17.54,
+      "y": 53.0,
+      "track_y": 26
+    },
+    {
+      "instance": "xi0_xp",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 18.38,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xi1_xn",
+      "pin": "D",
+      "net": "dp",
+      "x": 21.46,
+      "y": 53.0,
+      "track_y": 16
+    },
+    {
+      "instance": "xi1_xn",
+      "pin": "G",
+      "net": "dinb",
+      "x": 22.0,
+      "y": 55.6,
+      "track_y": 84
+    },
+    {
+      "instance": "xi1_xn",
+      "pin": "S",
+      "net": "VGND",
+      "x": 22.54,
+      "y": 53.0,
+      "track_y": 27
+    },
+    {
+      "instance": "xi1_xn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 23.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xi1_xp",
+      "pin": "D",
+      "net": "dp",
+      "x": 26.46,
+      "y": 53.0,
+      "track_y": 16
+    },
+    {
+      "instance": "xi1_xp",
+      "pin": "G",
+      "net": "dinb",
+      "x": 27.0,
+      "y": 58.6,
+      "track_y": 84
+    },
+    {
+      "instance": "xi1_xp",
+      "pin": "S",
+      "net": "VDPWR",
+      "x": 27.54,
+      "y": 53.0,
+      "track_y": 26
+    },
+    {
+      "instance": "xi1_xp",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 28.38,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xib_xn",
+      "pin": "D",
+      "net": "boostb",
+      "x": 31.46,
+      "y": 53.0,
+      "track_y": 11
+    },
+    {
+      "instance": "xib_xn",
+      "pin": "G",
+      "net": "boost",
+      "x": 32.0,
+      "y": 55.6,
+      "track_y": 80
+    },
+    {
+      "instance": "xib_xn",
+      "pin": "S",
+      "net": "VGND",
+      "x": 32.54,
+      "y": 53.0,
+      "track_y": 27
+    },
+    {
+      "instance": "xib_xn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 33.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xib_xp",
+      "pin": "D",
+      "net": "boostb",
+      "x": 36.46,
+      "y": 53.0,
+      "track_y": 11
+    },
+    {
+      "instance": "xib_xp",
+      "pin": "G",
+      "net": "boost",
+      "x": 37.0,
+      "y": 58.6,
+      "track_y": 80
+    },
+    {
+      "instance": "xib_xp",
+      "pin": "S",
+      "net": "VDPWR",
+      "x": 37.54,
+      "y": 53.0,
+      "track_y": 26
+    },
+    {
+      "instance": "xib_xp",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 38.38,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xis_xn",
+      "pin": "D",
+      "net": "q",
+      "x": 41.46,
+      "y": 53.0,
+      "track_y": 19
+    },
+    {
+      "instance": "xis_xn",
+      "pin": "G",
+      "net": "pre",
+      "x": 42.0,
+      "y": 55.6,
+      "track_y": 88
+    },
+    {
+      "instance": "xis_xn",
+      "pin": "S",
+      "net": "VGND",
+      "x": 42.54,
+      "y": 53.0,
+      "track_y": 27
+    },
+    {
+      "instance": "xis_xn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 43.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xis_xp",
+      "pin": "D",
+      "net": "q",
+      "x": 46.46,
+      "y": 53.0,
+      "track_y": 19
+    },
+    {
+      "instance": "xis_xp",
+      "pin": "G",
+      "net": "pre",
+      "x": 47.0,
+      "y": 58.6,
+      "track_y": 88
+    },
+    {
+      "instance": "xis_xp",
+      "pin": "S",
+      "net": "VDPWR",
+      "x": 47.54,
+      "y": 53.0,
+      "track_y": 26
+    },
+    {
+      "instance": "xis_xp",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 48.38,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xbuf_xn",
+      "pin": "D",
+      "net": "qb",
+      "x": 51.46,
+      "y": 53.0,
+      "track_y": 20
+    },
+    {
+      "instance": "xbuf_xn",
+      "pin": "G",
+      "net": "q",
+      "x": 52.0,
+      "y": 55.6,
+      "track_y": 89
+    },
+    {
+      "instance": "xbuf_xn",
+      "pin": "S",
+      "net": "VGND",
+      "x": 52.54,
+      "y": 53.0,
+      "track_y": 27
+    },
+    {
+      "instance": "xbuf_xn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 53.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xbuf_xp",
+      "pin": "D",
+      "net": "qb",
+      "x": 56.46,
+      "y": 53.0,
+      "track_y": 20
+    },
+    {
+      "instance": "xbuf_xp",
+      "pin": "G",
+      "net": "q",
+      "x": 57.0,
+      "y": 58.6,
+      "track_y": 89
+    },
+    {
+      "instance": "xbuf_xp",
+      "pin": "S",
+      "net": "VDPWR",
+      "x": 57.54,
+      "y": 53.0,
+      "track_y": 26
+    },
+    {
+      "instance": "xbuf_xp",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 58.38,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xout_xn",
+      "pin": "D",
+      "net": "dout",
+      "x": 61.46,
+      "y": 53.0,
+      "track_y": 15
+    },
+    {
+      "instance": "xout_xn",
+      "pin": "G",
+      "net": "qb",
+      "x": 62.0,
+      "y": 55.6,
+      "track_y": 90
+    },
+    {
+      "instance": "xout_xn",
+      "pin": "S",
+      "net": "VGND",
+      "x": 62.54,
+      "y": 53.0,
+      "track_y": 27
+    },
+    {
+      "instance": "xout_xn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 63.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xout_xp",
+      "pin": "D",
+      "net": "dout",
+      "x": 66.46,
+      "y": 53.0,
+      "track_y": 15
+    },
+    {
+      "instance": "xout_xp",
+      "pin": "G",
+      "net": "qb",
+      "x": 67.0,
+      "y": 58.6,
+      "track_y": 90
+    },
+    {
+      "instance": "xout_xp",
+      "pin": "S",
+      "net": "VDPWR",
+      "x": 67.54,
+      "y": 53.0,
+      "track_y": 26
+    },
+    {
+      "instance": "xout_xp",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 68.38,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xtp_xn",
+      "pin": "D",
+      "net": "dp",
+      "x": 71.46,
+      "y": 53.0,
+      "track_y": 16
+    },
+    {
+      "instance": "xtp_xn",
+      "pin": "G",
+      "net": "boost",
+      "x": 72.0,
+      "y": 59.6,
+      "track_y": 80
+    },
+    {
+      "instance": "xtp_xn",
+      "pin": "S",
+      "net": "ap",
+      "x": 72.54,
+      "y": 53.0,
+      "track_y": 9
+    },
+    {
+      "instance": "xtp_xn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 73.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xtp_xp",
+      "pin": "D",
+      "net": "dp",
+      "x": 76.46,
+      "y": 53.0,
+      "track_y": 16
+    },
+    {
+      "instance": "xtp_xp",
+      "pin": "G",
+      "net": "boostb",
+      "x": 77.0,
+      "y": 65.6,
+      "track_y": 81
+    },
+    {
+      "instance": "xtp_xp",
+      "pin": "S",
+      "net": "ap",
+      "x": 77.54,
+      "y": 53.0,
+      "track_y": 9
+    },
+    {
+      "instance": "xtp_xp",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 78.38,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xtn_xn",
+      "pin": "D",
+      "net": "dinb",
+      "x": 81.46,
+      "y": 53.0,
+      "track_y": 14
+    },
+    {
+      "instance": "xtn_xn",
+      "pin": "G",
+      "net": "boost",
+      "x": 82.0,
+      "y": 59.6,
+      "track_y": 80
+    },
+    {
+      "instance": "xtn_xn",
+      "pin": "S",
+      "net": "an",
+      "x": 82.54,
+      "y": 53.0,
+      "track_y": 8
+    },
+    {
+      "instance": "xtn_xn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 83.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xtn_xp",
+      "pin": "D",
+      "net": "dinb",
+      "x": 86.46,
+      "y": 53.0,
+      "track_y": 14
+    },
+    {
+      "instance": "xtn_xp",
+      "pin": "G",
+      "net": "boostb",
+      "x": 87.0,
+      "y": 65.6,
+      "track_y": 81
+    },
+    {
+      "instance": "xtn_xp",
+      "pin": "S",
+      "net": "an",
+      "x": 87.54,
+      "y": 53.0,
+      "track_y": 8
+    },
+    {
+      "instance": "xtn_xp",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 88.38,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xn1",
+      "pin": "D",
+      "net": "n1",
+      "x": 91.24,
+      "y": 53.0,
+      "track_y": 17
+    },
+    {
+      "instance": "xn1",
+      "pin": "G",
+      "net": "rxn",
+      "x": 92.0,
+      "y": 65.16,
+      "track_y": 91
+    },
+    {
+      "instance": "xn1",
+      "pin": "S",
+      "net": "tail",
+      "x": 92.76,
+      "y": 53.0,
+      "track_y": 23
+    },
+    {
+      "instance": "xn1",
+      "pin": "B",
+      "net": "VGND",
+      "x": 93.45,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xn2",
+      "pin": "D",
+      "net": "pre",
+      "x": 96.24,
+      "y": 53.0,
+      "track_y": 18
+    },
+    {
+      "instance": "xn2",
+      "pin": "G",
+      "net": "rxp",
+      "x": 97.0,
+      "y": 65.16,
+      "track_y": 92
+    },
+    {
+      "instance": "xn2",
+      "pin": "S",
+      "net": "tail",
+      "x": 97.76,
+      "y": 53.0,
+      "track_y": 23
+    },
+    {
+      "instance": "xn2",
+      "pin": "B",
+      "net": "VGND",
+      "x": 98.45,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xp1",
+      "pin": "D",
+      "net": "n1",
+      "x": 101.24,
+      "y": 53.0,
+      "track_y": 17
+    },
+    {
+      "instance": "xp1",
+      "pin": "G",
+      "net": "n1",
+      "x": 102.0,
+      "y": 59.16,
+      "track_y": 87
+    },
+    {
+      "instance": "xp1",
+      "pin": "S",
+      "net": "VDPWR",
+      "x": 102.76,
+      "y": 53.0,
+      "track_y": 26
+    },
+    {
+      "instance": "xp1",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 103.45,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xp2",
+      "pin": "D",
+      "net": "pre",
+      "x": 106.24,
+      "y": 53.0,
+      "track_y": 18
+    },
+    {
+      "instance": "xp2",
+      "pin": "G",
+      "net": "n1",
+      "x": 107.0,
+      "y": 59.16,
+      "track_y": 87
+    },
+    {
+      "instance": "xp2",
+      "pin": "S",
+      "net": "VDPWR",
+      "x": 107.76,
+      "y": 53.0,
+      "track_y": 26
+    },
+    {
+      "instance": "xp2",
+      "pin": "B",
+      "net": "VDPWR",
+      "x": 108.45,
+      "y": 54.0,
+      "track_y": 96
+    },
+    {
+      "instance": "xrp",
+      "pin": "P",
+      "net": "dp",
+      "x": 111.5,
+      "y": 69.43,
+      "track_y": 16
+    },
+    {
+      "instance": "xrp",
+      "pin": "N",
+      "net": "txp",
+      "x": 112.5,
+      "y": 36.57,
+      "track_y": 25
+    },
+    {
+      "instance": "xrp",
+      "pin": "B",
+      "net": "VGND",
+      "x": 113.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xrn",
+      "pin": "P",
+      "net": "dinb",
+      "x": 116.5,
+      "y": 69.43,
+      "track_y": 14
+    },
+    {
+      "instance": "xrn",
+      "pin": "N",
+      "net": "txn",
+      "x": 117.5,
+      "y": 36.57,
+      "track_y": 24
+    },
+    {
+      "instance": "xrn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 118.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xrbp",
+      "pin": "P",
+      "net": "txp",
+      "x": 121.5,
+      "y": 53.93,
+      "track_y": 25
+    },
+    {
+      "instance": "xrbp",
+      "pin": "N",
+      "net": "cm",
+      "x": 122.5,
+      "y": 52.07,
+      "track_y": 12
+    },
+    {
+      "instance": "xrbp",
+      "pin": "B",
+      "net": "VGND",
+      "x": 123.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xrbn",
+      "pin": "P",
+      "net": "txn",
+      "x": 126.5,
+      "y": 53.93,
+      "track_y": 24
+    },
+    {
+      "instance": "xrbn",
+      "pin": "N",
+      "net": "cm",
+      "x": 127.5,
+      "y": 52.07,
+      "track_y": 12
+    },
+    {
+      "instance": "xrbn",
+      "pin": "B",
+      "net": "VGND",
+      "x": 128.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xrc1",
+      "pin": "P",
+      "net": "VDPWR",
+      "x": 131.5,
+      "y": 63.43,
+      "track_y": 26
+    },
+    {
+      "instance": "xrc1",
+      "pin": "N",
+      "net": "cm",
+      "x": 132.5,
+      "y": 42.57,
+      "track_y": 12
+    },
+    {
+      "instance": "xrc1",
+      "pin": "B",
+      "net": "VGND",
+      "x": 133.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xrc2",
+      "pin": "P",
+      "net": "cm",
+      "x": 136.5,
+      "y": 63.43,
+      "track_y": 12
+    },
+    {
+      "instance": "xrc2",
+      "pin": "N",
+      "net": "VGND",
+      "x": 137.5,
+      "y": 42.57,
+      "track_y": 27
+    },
+    {
+      "instance": "xrc2",
+      "pin": "B",
+      "net": "VGND",
+      "x": 138.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xrp2",
+      "pin": "P",
+      "net": "ap",
+      "x": 141.5,
+      "y": 69.43,
+      "track_y": 9
+    },
+    {
+      "instance": "xrp2",
+      "pin": "N",
+      "net": "txp",
+      "x": 142.5,
+      "y": 36.57,
+      "track_y": 25
+    },
+    {
+      "instance": "xrp2",
+      "pin": "B",
+      "net": "VGND",
+      "x": 143.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xrn2",
+      "pin": "P",
+      "net": "an",
+      "x": 146.5,
+      "y": 69.43,
+      "track_y": 8
+    },
+    {
+      "instance": "xrn2",
+      "pin": "N",
+      "net": "txn",
+      "x": 147.5,
+      "y": 36.57,
+      "track_y": 24
+    },
+    {
+      "instance": "xrn2",
+      "pin": "B",
+      "net": "VGND",
+      "x": 148.38,
+      "y": 54.0,
+      "track_y": 97
+    },
+    {
+      "instance": "xrt",
+      "pin": "P",
+      "net": "tail",
+      "x": 151.5,
+      "y": 63.43,
+      "track_y": 23
+    },
+    {
+      "instance": "xrt",
+      "pin": "N",
+      "net": "VGND",
+      "x": 152.5,
+      "y": 42.57,
+      "track_y": 27
+    },
+    {
+      "instance": "xrt",
+      "pin": "B",
+      "net": "VGND",
+      "x": 153.38,
+      "y": 54.0,
+      "track_y": 97
+    }
+  ],
+  "ports": [
+    "din",
+    "boost",
+    "rxp",
+    "rxn",
+    "txp",
+    "txn",
+    "dout",
+    "VDPWR",
+    "VGND"
+  ],
+  "bbox_um": [
+    0,
+    0,
+    160,
+    110
+  ]
+}

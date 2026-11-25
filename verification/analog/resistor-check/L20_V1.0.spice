@@ -1,0 +1,14 @@
+GF26e unmodified PDK poly resistance calibration L20_V1.0
+.include "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice"
+.lib "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" res_typical
+.param sw_stat_global=0 sw_stat_mismatch=0
+.temp 25
+v1 a 0 1.0
+xr a 0 0 ppolyf_u_1k r_length=20u r_width=1u
+.control
+op
+let resistance=1.0/-i(v1)
+print resistance
+quit
+.endc
+.end

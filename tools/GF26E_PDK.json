@@ -1,0 +1,12 @@
+{
+  "pdk": "gf180mcuD",
+  "revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "components_sha256": {
+    "common.tar.zst": "256586ecaea68886ce57942d83a86f82e6e1bc081badf6c9c9b70755f3456a41",
+    "gf180mcu_fd_pr.tar.zst": "6b26fbf4aed755bddefcdb3610f5f957cc0a8a019e72c3abc9c611f9947d1f62",
+    "gf180mcu_fd_sc_mcu7t5v0.tar.zst": "20cd9a6da909de24558082b0e06f4833cd0203a42b48f0033aa39d6ccfb47542",
+    "gf180mcu_fd_io.tar.zst": "f998d9e631e32d8d3201a279f3adbb827c62c1ee1ba7819c1a23890e4970eaa5"
+  },
+  "release_url": "https://github.com/fossi-foundation/ciel-releases/releases/tag/gf180mcu-1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "installed": "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/ciel/gf180mcu/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/gf180mcuD"
+}

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "gds_sha256": "ef5d4ed7785eb07fe06170f5a5ac547399fe8a5d7ae989c8da756b5128fa67d6",
+  "gds_path": "build/candidate-03/gds/tt_um_dvirdc_gf180_diff8.gds",
+  "input_sha256": {
+    "gds/tt_um_dvirdc_gf180_diff8.gds": "ef5d4ed7785eb07fe06170f5a5ac547399fe8a5d7ae989c8da756b5128fa67d6",
+    "gds/tt_um_dvirdc_gf180_diff8.v": "57a8930e21b6c4fa13f41b45292dd47489d9202e4cc0afa3e203954f647a0be2",
+    "lef/tt_um_dvirdc_gf180_diff8.lef": "a70f7f0a76e2e4b3af907a2e1d9a7125420c2367f39907a8c39119930c29e81f",
+    "info.yaml": "7a8ac8603d25b15b7e2bef4b68d528a1011efe71b2372b23ee9db9a99d5d2419",
+    "src/project.v": "0d143b96779efd8ee733ece4b660ce6fdabb8bc26b2822385aeb60af5bba76d4"
+  },
+  "tt_tools_commit": "0922544e6c7f6126047c3fba720b0437fa32a1b8",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "returncode": 0,
+  "report_sha256": {
+    "results.xml": "2962dabe560fc39de6342094ff99c884c3576103ce6c08b7ca8825944f7622a3",
+    "drc_zero_area.xml": "dbd41444d5fe984736fa10c47e6db749fbc0aa078bc6be6089b8b7a40561d2c2",
+    "drc_gf180mcuD.xml": "b2c7335128e9a4a1fba4fb789e73d544f73418dc9d5a7e2a1536007b32d23c6c",
+    "results.md": "3e2d5f7aec5f0274d2a6b0b5eaf236b2c737dd1b224d829d2c9ceafd210e9aeb",
+    ".gitignore": "63f79afcf267e958af43a6a791100dafba4de2cdee1fd15351364f29216b4dbc",
+    "drc_antenna.xml": "92dcb5ce158a6035709c2b2f01a494a732f02ac921697c3fd71f25465a231d7f",
+    "drc_pin_label_purposes_overlapping_drawing.xml": "67150470e2c6c989e66e5d06cc4d983576a15654f12e81d57b60f69ba8479f33"
+  }
+}

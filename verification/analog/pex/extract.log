@@ -1,0 +1,80 @@
+
+Magic 8.3 revision 706 - Compiled on Tue Nov 24 19:10:32 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "/work/build/physical/phy/pex/extract.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: gf180_diff_phy
+Reading "nfet_03v3_w4_l0p28".
+Moving label "D" from ndiff to ndiffc in cell nfet_03v3_w4_l0p28.
+Moving label "S" from ndiff to ndiffc in cell nfet_03v3_w4_l0p28.
+Moving label "B" from ndiff to psubdiffcont in cell nfet_03v3_w4_l0p28.
+Reading "pfet_03v3_w10_l0p28".
+Moving label "D" from ndiff to pdiffc in cell pfet_03v3_w10_l0p28.
+Moving label "S" from ndiff to pdiffc in cell pfet_03v3_w10_l0p28.
+Moving label "B" from ndiff to nsubdiffcont in cell pfet_03v3_w10_l0p28.
+Reading "nfet_03v3_w12_l0p28".
+Moving label "D" from ndiff to ndiffc in cell nfet_03v3_w12_l0p28.
+Moving label "S" from ndiff to ndiffc in cell nfet_03v3_w12_l0p28.
+Moving label "B" from ndiff to psubdiffcont in cell nfet_03v3_w12_l0p28.
+Reading "pfet_03v3_w24_l0p28".
+Moving label "D" from ndiff to pdiffc in cell pfet_03v3_w24_l0p28.
+Moving label "S" from ndiff to pdiffc in cell pfet_03v3_w24_l0p28.
+Moving label "B" from ndiff to nsubdiffcont in cell pfet_03v3_w24_l0p28.
+Reading "nfet_03v3_w24_l1".
+Moving label "D" from ndiff to ndiffc in cell nfet_03v3_w24_l1.
+Moving label "S" from ndiff to ndiffc in cell nfet_03v3_w24_l1.
+Moving label "B" from ndiff to psubdiffcont in cell nfet_03v3_w24_l1.
+Reading "pfet_03v3_w12_l1".
+Moving label "D" from ndiff to pdiffc in cell pfet_03v3_w12_l1.
+Moving label "S" from ndiff to pdiffc in cell pfet_03v3_w12_l1.
+Moving label "B" from ndiff to nsubdiffcont in cell pfet_03v3_w12_l1.
+Reading "ppolyf_u_1k_w1_l32".
+Moving label "B" from ndiff to psubdiffcont in cell ppolyf_u_1k_w1_l32.
+Reading "ppolyf_u_1k_w1_l1".
+Moving label "B" from ndiff to psubdiffcont in cell ppolyf_u_1k_w1_l1.
+Reading "ppolyf_u_1k_w1_l20".
+Moving label "B" from ndiff to psubdiffcont in cell ppolyf_u_1k_w1_l20.
+Reading "gf180_diff_phy".
+Extracting phy_pex into phy_pex.ext:
+Processing phy_pex
+exttosim finished.
+Extracting VDPWR
+Extracting VGND
+Extracting boost
+Extracting din
+Extracting dout
+Extracting rxn
+Extracting rxp
+Extracting txn
+Extracting txp
+Extracting xbuf_xp.G
+Extracting xout_xp.G
+Extracting xp2.D
+Extracting xp2.G
+Extracting xrn.P
+Extracting xrn2.P
+Extracting xrp.P
+Extracting xrp2.P
+Extracting xrt.P
+Extracting xtn_xp.G
+Total Nets: 29
+Nets extracted: 19 (0.655172)
+Nets output: 19 (0.655172)
+exttospice finished.
+Note:  This option has been deprecated and is unused.

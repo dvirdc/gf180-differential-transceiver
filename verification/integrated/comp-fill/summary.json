@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "scope": "Official GF26e COMP-only dummy fill at integrated wrapper level; full final DRC/LVS required separately.",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "source": "build/candidate-03-unfilled/gds/tt_um_dvirdc_gf180_diff8.gds",
+  "output": "build/candidate-03/gds/tt_um_dvirdc_gf180_diff8.gds",
+  "source_gds_sha256": "b052a872d9aa129ff35dd66917213fa691225bf0bb9128cbcd3c44feb49f4b97",
+  "gds_sha256": "ef5d4ed7785eb07fe06170f5a5ac547399fe8a5d7ae989c8da756b5128fa67d6",
+  "official_fill_driver_sha256": "50c408c946eecbbfbbcf80a5256fb7798784f24b3d74e6f6894dcc9e6888544f",
+  "official_comp_algorithm_sha256": "d0c6a7842bd594c8dbdf6cace44eb0a7e7d173684811e853358cad2d64da4024",
+  "generated_driver_sha256": "b8f9b738a62a033373d0aa87775dd7fd882a3cfa838b9b72e4752fc11db1b88d",
+  "driver_changes": [
+    "Convert the runtime threads argument to a Ruby integer.",
+    "Require the exact pinned fill_comp.rb by absolute path.",
+    "Omit the Poly2 and metal fill algorithm invocations; COMP algorithm and exclusions unchanged."
+  ],
+  "allowed_changes": "Additions only on22/4 (Dummy COMP), with no removals. All other layer regions, labels and tile extent exactly unchanged.",
+  "dummy_comp_added_area_um2": 4675.0,
+  "dummy_comp_added_regions": 203,
+  "xor_layers": [
+    {
+      "layer": 0,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 21,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 21,
+      "datatype": 10,
+      "unchanged": true
+    },
+    {
+      "layer": 22,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 22,
+      "datatype": 4,
+      "unchanged": false
+    },
+    {
+      "layer": 30,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 30,
+      "datatype": 10,
+      "unchanged": true
+    },
+    {
+      "layer": 31,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 32,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 33,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 34,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 34,
+      "datatype": 10,
+      "unchanged": true
+    },
+    {
+      "layer": 35,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 36,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 38,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 40,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 42,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 42,
+      "datatype": 10,
+      "unchanged": true
+    },
+    {
+      "layer": 46,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 46,
+      "datatype": 10,
+      "unchanged": true
+    },
+    {
+      "layer": 49,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 55,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 62,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 63,
+      "datatype": 63,
+      "unchanged": true
+    },
+    {
+      "layer": 110,
+      "datatype": 5,
+      "unchanged": true
+    },
+    {
+      "layer": 112,
+      "datatype": 1,
+      "unchanged": true
+    },
+    {
+      "layer": 204,
+      "datatype": 0,
+      "unchanged": true
+    },
+    {
+      "layer": 204,
+      "datatype": 10,
+      "unchanged": true
+    }
+  ],
+  "limitations": [
+    "Dummy COMP is physical fill; this stage does not claim complete post-fill parasitic or noise qualification.",
+    "The official driver uses a26\u00b5m scribe exclusion from the integrated tile bbox."
+  ]
+}

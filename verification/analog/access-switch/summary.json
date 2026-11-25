@@ -1,0 +1,6 @@
+{
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "source_gds_sha256": "d3691b3e58f9d49cba32c09cf5749f336a20832c77fcb3d373edcdb35cf4f4ef",
+  "extracted_spice_sha256": "ce18f4b7949ffd6e8fd0c17a78173c2069a5fb780ce247f8088cc54abb184d2d",
+  "scope": "Exact pinned GF26e multiplexer switch GDS transistor extraction; no switch parasitic RC or independent switch LVS claimed."
+}

@@ -1,0 +1,13 @@
+read_verilog -lib /work/rtl/gf180_diff_phy_blackbox.v
+read_verilog /work/rtl/tt_um_dvirdc_gf180_diff8.v
+read_verilog "/work/rtl/diff8_uart_tx.v" "/work/rtl/diff8_uart_rx.v" "/work/rtl/diff8_digital.v"
+hierarchy -check -top tt_um_dvirdc_gf180_diff8
+synth -top tt_um_dvirdc_gf180_diff8 -flatten -noabc
+dfflibmap -liberty "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+abc -liberty "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+read_liberty -lib "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+clean
+check -assert
+stat -liberty "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+tee -o "/work/build/modern-top-map/gf180-mapped-stat.json" stat -json -liberty "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+write_verilog -noattr "/work/build/modern-top-map/gf180_mapped.v"

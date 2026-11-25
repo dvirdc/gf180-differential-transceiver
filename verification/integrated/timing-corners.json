@@ -1,0 +1,47 @@
+[
+  {
+    "corner": "max_ff_n40C_3v60",
+    "hold_slack_ns": 0.19141044846461147,
+    "setup_slack_ns": 511.8847783867105
+  },
+  {
+    "corner": "max_ss_125C_3v00",
+    "hold_slack_ns": 1.381276021546765,
+    "setup_slack_ns": 477.44585103537736
+  },
+  {
+    "corner": "max_tt_025C_3v30",
+    "hold_slack_ns": 0.5406752976147191,
+    "setup_slack_ns": 501.6766095653044
+  },
+  {
+    "corner": "min_ff_n40C_3v60",
+    "hold_slack_ns": 0.19024682367959228,
+    "setup_slack_ns": 512.5513811785439
+  },
+  {
+    "corner": "min_ss_125C_3v00",
+    "hold_slack_ns": 1.3765435847481553,
+    "setup_slack_ns": 479.76779107467263
+  },
+  {
+    "corner": "min_tt_025C_3v30",
+    "hold_slack_ns": 0.5382430209435808,
+    "setup_slack_ns": 502.8454808203971
+  },
+  {
+    "corner": "nom_ff_n40C_3v60",
+    "hold_slack_ns": 0.1907738465642871,
+    "setup_slack_ns": 512.2509068579477
+  },
+  {
+    "corner": "nom_ss_125C_3v00",
+    "hold_slack_ns": 1.3786974174768427,
+    "setup_slack_ns": 478.7087413079249
+  },
+  {
+    "corner": "nom_tt_025C_3v30",
+    "hold_slack_ns": 0.5393129429026715,
+    "setup_slack_ns": 502.31984971132533
+  }
+]

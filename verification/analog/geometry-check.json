@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "gds_sha256": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
+  "lef_sha256": "03c3b3bac9152c743679b09abd3dd87b9f7da135e39f3b8dca7f456a42d0cb1a",
+  "pin_windows_checked": 9,
+  "macro_declared_um": [
+    160,
+    110
+  ],
+  "m4_obstruction_covers_all_m4": true,
+  "scope": "Exact GDS drawing containment for all M3 LEF pin windows and the M4 obstruction; GDS labels present."
+}

@@ -1,0 +1,2806 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)
+
+1. Executing Liberty frontend: /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+Imported 229 cell types from liberty file.
+
+2. Executing Liberty frontend: /pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib
+Imported 14 cell types from liberty file.
+
+3. Executing Verilog-2005 frontend: /work/rtl/gf180_diff_phy_blackbox.v
+Parsing SystemVerilog input from `/work/rtl/gf180_diff_phy_blackbox.v' to AST representation.
+Generating RTLIL representation for module `\gf180_diff_phy'.
+Successfully finished Verilog frontend.
+[INFO] Using SDC file '/work/physical/runs/diag_no_arith_tree/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+4. Executing Verilog-2005 frontend: /work/rtl/diff8_uart_tx.v
+Parsing SystemVerilog input from `/work/rtl/diff8_uart_tx.v' to AST representation.
+Storing AST representation for module `$abstract\diff8_uart_tx'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /work/rtl/diff8_uart_rx.v
+Parsing SystemVerilog input from `/work/rtl/diff8_uart_rx.v' to AST representation.
+Storing AST representation for module `$abstract\diff8_uart_rx'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /work/rtl/diff8_digital.v
+Parsing SystemVerilog input from `/work/rtl/diff8_digital.v' to AST representation.
+Storing AST representation for module `$abstract\diff8_digital'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /work/rtl/tt_um_dvirdc_gf180_diff8.v
+Parsing SystemVerilog input from `/work/rtl/tt_um_dvirdc_gf180_diff8.v' to AST representation.
+Storing AST representation for module `$abstract\tt_um_dvirdc_gf180_diff8'.
+Successfully finished Verilog frontend.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+9. Executing AST frontend in derive mode using pre-parsed AST for module `\tt_um_dvirdc_gf180_diff8'.
+Generating RTLIL representation for module `\tt_um_dvirdc_gf180_diff8'.
+
+9.1. Analyzing design hierarchy..
+Top module:  \tt_um_dvirdc_gf180_diff8
+
+9.2. Executing AST frontend in derive mode using pre-parsed AST for module `\diff8_digital'.
+Generating RTLIL representation for module `\diff8_digital'.
+
+9.3. Analyzing design hierarchy..
+Top module:  \tt_um_dvirdc_gf180_diff8
+Used module:     \diff8_digital
+
+9.4. Executing AST frontend in derive mode using pre-parsed AST for module `\diff8_uart_rx'.
+Generating RTLIL representation for module `\diff8_uart_rx'.
+
+9.5. Executing AST frontend in derive mode using pre-parsed AST for module `\diff8_uart_tx'.
+Generating RTLIL representation for module `\diff8_uart_tx'.
+
+9.6. Analyzing design hierarchy..
+Top module:  \tt_um_dvirdc_gf180_diff8
+Used module:     \diff8_digital
+Used module:         \diff8_uart_rx
+Used module:         \diff8_uart_tx
+
+9.7. Analyzing design hierarchy..
+Top module:  \tt_um_dvirdc_gf180_diff8
+Used module:     \diff8_digital
+Used module:         \diff8_uart_rx
+Used module:         \diff8_uart_tx
+Removing unused module `$abstract\tt_um_dvirdc_gf180_diff8'.
+Removing unused module `$abstract\diff8_digital'.
+Removing unused module `$abstract\diff8_uart_rx'.
+Removing unused module `$abstract\diff8_uart_tx'.
+Removed 4 unused modules.
+Renaming module tt_um_dvirdc_gf180_diff8 to tt_um_dvirdc_gf180_diff8.
+
+10. Executing ATTRMAP pass (move or copy attributes).
+
+11. Executing HIERARCHY pass (managing design hierarchy).
+
+11.1. Analyzing design hierarchy..
+Top module:  \tt_um_dvirdc_gf180_diff8
+Used module:     \diff8_digital
+Used module:         \diff8_uart_rx
+Used module:         \diff8_uart_tx
+
+11.2. Analyzing design hierarchy..
+Top module:  \tt_um_dvirdc_gf180_diff8
+Used module:     \diff8_digital
+Used module:         \diff8_uart_rx
+Used module:         \diff8_uart_tx
+Removed 0 unused modules.
+
+12. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+13. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 8 switch rules as full_case in process $proc$/work/rtl/diff8_uart_rx.v:15$334 in module diff8_uart_rx.
+Marked 1 switch rules as full_case in process $proc$/work/rtl/diff8_uart_rx.v:11$331 in module diff8_uart_rx.
+Marked 1 switch rules as full_case in process $proc$/work/rtl/diff8_digital.v:49$301 in module diff8_digital.
+Marked 26 switch rules as full_case in process $proc$/work/rtl/diff8_digital.v:108$63 in module diff8_digital.
+Marked 2 switch rules as full_case in process $proc$/work/rtl/diff8_digital.v:101$58 in module diff8_digital.
+Marked 5 switch rules as full_case in process $proc$/work/rtl/diff8_digital.v:83$35 in module diff8_digital.
+Marked 4 switch rules as full_case in process $proc$/work/rtl/diff8_uart_tx.v:8$374 in module diff8_uart_tx.
+Removed a total of 0 dead cases.
+
+14. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 13 redundant assignments.
+Promoted 39 assignments to connections.
+
+15. Executing PROC_INIT pass (extract init attributes).
+
+16. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset_n in `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+Found async reset \reset_n in `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$331'.
+Found async reset \reset_n in `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+Found async reset \reset_n in `\diff8_digital.$proc$/work/rtl/diff8_digital.v:101$58'.
+Found async reset \reset_n in `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+Found async reset \reset_n in `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$374'.
+
+17. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~57 debug messages>
+
+18. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+     1/19: $6$lookahead\shift$333[7:0]$361
+     2/19: $6$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$327[2:0]$360
+     3/19: $5$lookahead\shift$333[7:0]$356
+     4/19: $5$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$327[2:0]$355
+     5/19: $4$lookahead\shift$333[7:0]$352
+     6/19: $4$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$327[2:0]$351
+     7/19: $3$lookahead\shift$333[7:0]$344
+     8/19: $3$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$327[2:0]$343
+     9/19: $2$lookahead\shift$333[7:0]$341
+    10/19: $2$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$327[2:0]$340
+    11/19: $1$lookahead\shift$333[7:0]$339
+    12/19: $1$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$327[2:0]$338
+    13/19: $0\frame_error[0:0]
+    14/19: $0\valid[0:0]
+    15/19: $0\ones[1:0]
+    16/19: $0\bit_index[3:0]
+    17/19: $0\phase[3:0]
+    18/19: $0\busy[0:0]
+    19/19: $0\data[7:0]
+Creating decoders for process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$331'.
+     1/2: $0\rx_sync[0:0]
+     2/2: $0\rx_meta[0:0]
+Creating decoders for process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:50$313'.
+Creating decoders for process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:49$301'.
+     1/1: $1\pattern_byte$func$/work/rtl/diff8_digital.v:49$15.$result[7:0]$308
+Creating decoders for process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+     1/154: $0\baud_div[15:0] [15:8]
+     2/154: $0\baud_div[15:0] [7:0]
+     3/154: $0\target_count[31:0] [23:16]
+     4/154: $0\target_count[31:0] [15:8]
+     5/154: $0\target_count[31:0] [7:0]
+     6/154: $7\inc32$func$/work/rtl/diff8_digital.v:147$14.x[31:0]$263
+     7/154: $6\inc32$func$/work/rtl/diff8_digital.v:147$14.x[31:0]$260
+     8/154: $6\inc32$func$/work/rtl/diff8_digital.v:147$14.$result[31:0]$259
+     9/154: $6\addsmall$func$/work/rtl/diff8_digital.v:140$13.$result[31:0]$243
+    10/154: $6\addsmall$func$/work/rtl/diff8_digital.v:140$13.n[3:0]$245
+    11/154: $6\addsmall$func$/work/rtl/diff8_digital.v:140$13.x[31:0]$244
+    12/154: $6\inc32$func$/work/rtl/diff8_digital.v:140$12.$result[31:0]$241
+    13/154: $6\inc32$func$/work/rtl/diff8_digital.v:140$12.x[31:0]$242
+    14/154: $5\addsmall$func$/work/rtl/diff8_digital.v:140$13.n[3:0]$228
+    15/154: $5\addsmall$func$/work/rtl/diff8_digital.v:140$13.x[31:0]$227
+    16/154: $5\addsmall$func$/work/rtl/diff8_digital.v:140$13.$result[31:0]$226
+    17/154: $5\inc32$func$/work/rtl/diff8_digital.v:140$12.x[31:0]$225
+    18/154: $5\inc32$func$/work/rtl/diff8_digital.v:140$12.$result[31:0]$224
+    19/154: $5\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.$result[7:0]$222
+    20/154: $5\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.x[7:0]$223
+    21/154: $5\inc32$func$/work/rtl/diff8_digital.v:136$10.$result[31:0]$220
+    22/154: $5\inc32$func$/work/rtl/diff8_digital.v:136$10.x[31:0]$221
+    23/154: $5\inc32$func$/work/rtl/diff8_digital.v:147$14.x[31:0]$230
+    24/154: $5\inc32$func$/work/rtl/diff8_digital.v:147$14.$result[31:0]$229
+    25/154: $6\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.$result[7:0]$211
+    26/154: $5\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.$result[7:0]$209
+    27/154: $5\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.x[7:0]$210
+    28/154: $5\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.$result[7:0]$204
+    29/154: $5\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.fixed_byte[7:0]$208
+    30/154: $5\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.seq[7:0]$207
+    31/154: $5\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.index[2:0]$206
+    32/154: $5\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.mode[2:0]$205
+    33/154: $4\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.x[7:0]$189
+    34/154: $4\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.$result[7:0]$188
+    35/154: $4\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.fixed_byte[7:0]$187
+    36/154: $4\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.seq[7:0]$186
+    37/154: $4\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.index[2:0]$185
+    38/154: $4\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.mode[2:0]$184
+    39/154: $4\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.$result[7:0]$183
+    40/154: $4\inc32$func$/work/rtl/diff8_digital.v:147$14.x[31:0]$200
+    41/154: $4\inc32$func$/work/rtl/diff8_digital.v:147$14.$result[31:0]$199
+    42/154: $4\addsmall$func$/work/rtl/diff8_digital.v:140$13.n[3:0]$198
+    43/154: $4\addsmall$func$/work/rtl/diff8_digital.v:140$13.x[31:0]$197
+    44/154: $4\addsmall$func$/work/rtl/diff8_digital.v:140$13.$result[31:0]$196
+    45/154: $4\inc32$func$/work/rtl/diff8_digital.v:140$12.x[31:0]$195
+    46/154: $4\inc32$func$/work/rtl/diff8_digital.v:140$12.$result[31:0]$194
+    47/154: $4\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.x[7:0]$193
+    48/154: $4\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.$result[7:0]$192
+    49/154: $4\inc32$func$/work/rtl/diff8_digital.v:136$10.x[31:0]$191
+    50/154: $4\inc32$func$/work/rtl/diff8_digital.v:136$10.$result[31:0]$190
+    51/154: $3\inc32$func$/work/rtl/diff8_digital.v:129$7.$result[31:0]$159
+    52/154: $3\inc32$func$/work/rtl/diff8_digital.v:129$7.x[31:0]$160
+    53/154: $3\inc32$func$/work/rtl/diff8_digital.v:147$14.x[31:0]$178
+    54/154: $3\inc32$func$/work/rtl/diff8_digital.v:147$14.$result[31:0]$177
+    55/154: $3\addsmall$func$/work/rtl/diff8_digital.v:140$13.n[3:0]$176
+    56/154: $3\addsmall$func$/work/rtl/diff8_digital.v:140$13.x[31:0]$175
+    57/154: $3\addsmall$func$/work/rtl/diff8_digital.v:140$13.$result[31:0]$174
+    58/154: $3\inc32$func$/work/rtl/diff8_digital.v:140$12.x[31:0]$173
+    59/154: $3\inc32$func$/work/rtl/diff8_digital.v:140$12.$result[31:0]$172
+    60/154: $3\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.x[7:0]$171
+    61/154: $3\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.$result[7:0]$170
+    62/154: $3\inc32$func$/work/rtl/diff8_digital.v:136$10.x[31:0]$169
+    63/154: $3\inc32$func$/work/rtl/diff8_digital.v:136$10.$result[31:0]$168
+    64/154: $3\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.x[7:0]$167
+    65/154: $3\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.$result[7:0]$166
+    66/154: $3\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.fixed_byte[7:0]$165
+    67/154: $3\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.seq[7:0]$164
+    68/154: $3\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.index[2:0]$163
+    69/154: $3\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.mode[2:0]$162
+    70/154: $3\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.$result[7:0]$161
+    71/154: $2\inc32$func$/work/rtl/diff8_digital.v:147$14.x[31:0]$156
+    72/154: $2\inc32$func$/work/rtl/diff8_digital.v:147$14.$result[31:0]$155
+    73/154: $2\addsmall$func$/work/rtl/diff8_digital.v:140$13.n[3:0]$154
+    74/154: $2\addsmall$func$/work/rtl/diff8_digital.v:140$13.x[31:0]$153
+    75/154: $2\addsmall$func$/work/rtl/diff8_digital.v:140$13.$result[31:0]$152
+    76/154: $2\inc32$func$/work/rtl/diff8_digital.v:140$12.x[31:0]$151
+    77/154: $2\inc32$func$/work/rtl/diff8_digital.v:140$12.$result[31:0]$150
+    78/154: $2\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.x[7:0]$149
+    79/154: $2\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.$result[7:0]$148
+    80/154: $2\inc32$func$/work/rtl/diff8_digital.v:136$10.x[31:0]$147
+    81/154: $2\inc32$func$/work/rtl/diff8_digital.v:136$10.$result[31:0]$146
+    82/154: $2\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.x[7:0]$145
+    83/154: $2\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.$result[7:0]$144
+    84/154: $2\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.fixed_byte[7:0]$143
+    85/154: $2\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.seq[7:0]$142
+    86/154: $2\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.index[2:0]$141
+    87/154: $2\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.mode[2:0]$140
+    88/154: $2\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.$result[7:0]$139
+    89/154: $2\inc32$func$/work/rtl/diff8_digital.v:129$7.x[31:0]$138
+    90/154: $2\inc32$func$/work/rtl/diff8_digital.v:129$7.$result[31:0]$137
+    91/154: $3\inc32$func$/work/rtl/diff8_digital.v:126$6.$result[31:0]$129
+    92/154: $3\inc32$func$/work/rtl/diff8_digital.v:126$6.x[31:0]$130
+    93/154: $2\inc32$func$/work/rtl/diff8_digital.v:126$6.x[31:0]$124
+    94/154: $2\inc32$func$/work/rtl/diff8_digital.v:126$6.$result[31:0]$123
+    95/154: $2\inc32$func$/work/rtl/diff8_digital.v:120$5.$result[31:0]$115
+    96/154: $2\inc32$func$/work/rtl/diff8_digital.v:120$5.x[31:0]$116
+    97/154: $1\inc32$func$/work/rtl/diff8_digital.v:147$14.x[31:0]$112
+    98/154: $1\inc32$func$/work/rtl/diff8_digital.v:147$14.$result[31:0]$111
+    99/154: $1\addsmall$func$/work/rtl/diff8_digital.v:140$13.n[3:0]$110
+   100/154: $1\addsmall$func$/work/rtl/diff8_digital.v:140$13.x[31:0]$109
+   101/154: $1\addsmall$func$/work/rtl/diff8_digital.v:140$13.$result[31:0]$108
+   102/154: $1\inc32$func$/work/rtl/diff8_digital.v:140$12.x[31:0]$107
+   103/154: $1\inc32$func$/work/rtl/diff8_digital.v:140$12.$result[31:0]$106
+   104/154: $1\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.x[7:0]$105
+   105/154: $1\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.$result[7:0]$104
+   106/154: $1\inc32$func$/work/rtl/diff8_digital.v:136$10.x[31:0]$103
+   107/154: $1\inc32$func$/work/rtl/diff8_digital.v:136$10.$result[31:0]$102
+   108/154: $1\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.x[7:0]$101
+   109/154: $1\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.$result[7:0]$100
+   110/154: $1\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.fixed_byte[7:0]$99
+   111/154: $1\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.seq[7:0]$98
+   112/154: $1\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.index[2:0]$97
+   113/154: $1\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.mode[2:0]$96
+   114/154: $1\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.$result[7:0]$95
+   115/154: $1\inc32$func$/work/rtl/diff8_digital.v:129$7.x[31:0]$94
+   116/154: $1\inc32$func$/work/rtl/diff8_digital.v:129$7.$result[31:0]$93
+   117/154: $1\inc32$func$/work/rtl/diff8_digital.v:126$6.x[31:0]$92
+   118/154: $1\inc32$func$/work/rtl/diff8_digital.v:126$6.$result[31:0]$91
+   119/154: $1\inc32$func$/work/rtl/diff8_digital.v:120$5.x[31:0]$90
+   120/154: $1\inc32$func$/work/rtl/diff8_digital.v:120$5.$result[31:0]$89
+   121/154: $0\tx_start[0:0]
+   122/154: $0\tx_data[7:0]
+   123/154: $0\sent_bytes[2:0]
+   124/154: $0\rx_sequence[7:0]
+   125/154: $0\tx_sequence[7:0]
+   126/154: $0\gap_ticks[5:0]
+   127/154: $0\wait_ticks[9:0]
+   128/154: $0\bist_state[1:0]
+   129/154: $0\bad_actual[7:0]
+   130/154: $0\bad_expected[7:0]
+   131/154: $0\snap_overruns[31:0]
+   132/154: $0\snap_timeouts[31:0]
+   133/154: $0\snap_framing[31:0]
+   134/154: $0\snap_error_bits[31:0]
+   135/154: $0\snap_error_bytes[31:0]
+   136/154: $0\snap_bytes[31:0]
+   137/154: $0\overruns[31:0]
+   138/154: $0\timeouts[31:0]
+   139/154: $0\framing_errors[31:0]
+   140/154: $0\error_bits[31:0]
+   141/154: $0\error_bytes[31:0]
+   142/154: $0\checked_bytes[31:0]
+   143/154: $0\rx_ready[0:0]
+   144/154: $0\overflow[0:0]
+   145/154: $0\command_error[0:0]
+   146/154: $0\fail[0:0]
+   147/154: $0\done[0:0]
+   148/154: $0\running[0:0]
+   149/154: $7\inc32$func$/work/rtl/diff8_digital.v:147$14.$result[31:0]$262
+   150/154: $0\rx_register[7:0]
+   151/154: $0\tx_register[7:0]
+   152/154: $0\pattern[2:0]
+   153/154: $0\target_count[31:0] [31:24]
+   154/154: $0\boost[0:0]
+Creating decoders for process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:101$58'.
+     1/2: $0\div_count[15:0]
+     2/2: $0\heartbeat[19:0]
+Creating decoders for process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+     1/22: $5\read_register$func$/work/rtl/diff8_digital.v:94$4.$result[7:0]$51
+     2/22: $4\read_register$func$/work/rtl/diff8_digital.v:94$4.$result[7:0]$49
+     3/22: $4\read_register$func$/work/rtl/diff8_digital.v:94$4.address[6:0]$50
+     4/22: $3\read_register$func$/work/rtl/diff8_digital.v:94$4.address[6:0]$46
+     5/22: $3\read_register$func$/work/rtl/diff8_digital.v:94$4.$result[7:0]$45
+     6/22: $2\read_register$func$/work/rtl/diff8_digital.v:94$4.address[6:0]$42
+     7/22: $2\read_register$func$/work/rtl/diff8_digital.v:94$4.$result[7:0]$41
+     8/22: $1\read_register$func$/work/rtl/diff8_digital.v:94$4.address[6:0]$40
+     9/22: $1\read_register$func$/work/rtl/diff8_digital.v:94$4.$result[7:0]$39
+    10/22: $0\bus_rd[0:0]
+    11/22: $0\bus_wr[0:0]
+    12/22: $0\sck_old[0:0]
+    13/22: $0\mosi_pipe[1:0]
+    14/22: $0\sck_pipe[1:0]
+    15/22: $0\cs_pipe[1:0]
+    16/22: $0\bus_data[7:0]
+    17/22: $0\bus_address[6:0]
+    18/22: $0\spi_write[0:0]
+    19/22: $0\spi_address[6:0]
+    20/22: $0\spi_reply[7:0]
+    21/22: $0\spi_shift[6:0]
+    22/22: $0\spi_count[4:0]
+Creating decoders for process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$374'.
+     1/4: $0\frame[9:0]
+     2/4: $0\bit_index[3:0]
+     3/4: $0\phase[3:0]
+     4/4: $0\busy[0:0]
+
+19. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\diff8_digital.\popcount$func$/work/rtl/diff8_digital.v:50$3.$result' from process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:50$313'.
+No latch inferred for signal `\diff8_digital.\pattern_byte$func$/work/rtl/diff8_digital.v:49$2.$result' from process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:49$301'.
+
+20. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\diff8_uart_rx.\data' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2615' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\busy' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2620' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\valid' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2625' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\frame_error' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2630' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\phase' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2635' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\bit_index' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2640' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\ones' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2645' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\shift' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2650' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$327' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2655' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.$lookahead\shift$333' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+  created $adff cell `$procdff$2660' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\rx_meta' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$331'.
+  created $adff cell `$procdff$2665' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\rx_sync' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$331'.
+  created $adff cell `$procdff$2670' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\boost' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2675' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\baud_div' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2680' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2685' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\tx_register' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2690' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\rx_register' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2695' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\target_count' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2700' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\running' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2705' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\done' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2710' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\fail' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2715' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\command_error' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2720' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\overflow' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2725' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\rx_ready' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2730' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\checked_bytes' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2735' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\error_bytes' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2740' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\error_bits' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2745' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\framing_errors' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2750' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\timeouts' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2755' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\overruns' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2760' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\snap_bytes' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2765' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\snap_error_bytes' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2770' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\snap_error_bits' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2775' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\snap_framing' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2780' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\snap_timeouts' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2785' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\snap_overruns' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2790' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bad_expected' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2795' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bad_actual' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2800' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bist_state' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2805' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\wait_ticks' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2810' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\gap_ticks' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2815' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\tx_sequence' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2820' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\rx_sequence' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2825' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\sent_bytes' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2830' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\tx_start' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2835' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\tx_data' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2840' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:120$5.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2845' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:120$5.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2850' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:126$6.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2855' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:126$6.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2860' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:129$7.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2865' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:129$7.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2870' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2875' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.mode' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2880' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.index' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2885' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.seq' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2890' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/rtl/diff8_digital.v:132$8.fixed_byte' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2895' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2900' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\lfsr_next$func$/work/rtl/diff8_digital.v:133$9.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2905' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:136$10.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2910' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:136$10.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2915' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2920' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\lfsr_next$func$/work/rtl/diff8_digital.v:138$11.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2925' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:140$12.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2930' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:140$12.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2935' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\addsmall$func$/work/rtl/diff8_digital.v:140$13.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2940' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\addsmall$func$/work/rtl/diff8_digital.v:140$13.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2945' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\addsmall$func$/work/rtl/diff8_digital.v:140$13.n' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2950' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:147$14.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2955' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/rtl/diff8_digital.v:147$14.x' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+  created $adff cell `$procdff$2960' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\div_count' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:101$58'.
+  created $adff cell `$procdff$2965' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\heartbeat' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:101$58'.
+  created $adff cell `$procdff$2970' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\cs_pipe' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$2975' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\sck_pipe' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$2980' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\mosi_pipe' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$2985' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\sck_old' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$2990' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_count' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$2995' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_shift' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3000' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_reply' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3005' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_address' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3010' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_write' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3015' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bus_wr' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3020' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bus_rd' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3025' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bus_address' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3030' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bus_data' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3035' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\read_register$func$/work/rtl/diff8_digital.v:94$4.$result' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3040' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\read_register$func$/work/rtl/diff8_digital.v:94$4.address' using process `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+  created $adff cell `$procdff$3045' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_tx.\busy' using process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$374'.
+  created $adff cell `$procdff$3050' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_tx.\phase' using process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$374'.
+  created $adff cell `$procdff$3055' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_tx.\bit_index' using process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$374'.
+  created $adff cell `$procdff$3060' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_tx.\frame' using process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$374'.
+  created $adff cell `$procdff$3065' with positive edge clock and positive level reset.
+
+21. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+22. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 10 empty switches in `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+Removing empty process `diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$334'.
+Removing empty process `diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$331'.
+Removing empty process `diff8_digital.$proc$/work/rtl/diff8_digital.v:50$313'.
+Found and cleaned up 1 empty switch in `\diff8_digital.$proc$/work/rtl/diff8_digital.v:49$301'.
+Removing empty process `diff8_digital.$proc$/work/rtl/diff8_digital.v:49$301'.
+Found and cleaned up 35 empty switches in `\diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+Removing empty process `diff8_digital.$proc$/work/rtl/diff8_digital.v:108$63'.
+Found and cleaned up 1 empty switch in `\diff8_digital.$proc$/work/rtl/diff8_digital.v:101$58'.
+Removing empty process `diff8_digital.$proc$/work/rtl/diff8_digital.v:101$58'.
+Found and cleaned up 6 empty switches in `\diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+Removing empty process `diff8_digital.$proc$/work/rtl/diff8_digital.v:83$35'.
+Found and cleaned up 4 empty switches in `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$374'.
+Removing empty process `diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$374'.
+Cleaned up 57 empty switches.
+
+23. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_dvirdc_gf180_diff8...
+Checking module diff8_uart_rx...
+Checking module diff8_digital...
+Checking module diff8_uart_tx...
+Found and reported 0 problems.
+
+24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+Optimizing module diff8_uart_rx.
+<suppressed ~44 debug messages>
+Optimizing module diff8_digital.
+<suppressed ~161 debug messages>
+Optimizing module diff8_uart_tx.
+<suppressed ~8 debug messages>
+
+25. Executing FLATTEN pass (flatten design).
+Deleting now unused module diff8_uart_rx.
+Deleting now unused module diff8_digital.
+Deleting now unused module diff8_uart_tx.
+<suppressed ~3 debug messages>
+
+26. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+27. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 440 unused cells and 1362 unused wires.
+<suppressed ~457 debug messages>
+
+28. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 800 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 683 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 679 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 678 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+<suppressed ~366 debug messages>
+Removed a total of 122 cells.
+
+30. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $flatten\core.$procmux$2272: \core.running -> 1'0
+      Replacing known input bits on port A of cell $flatten\core.\rx.$procmux$558: \core.rx.busy -> 1'1
+      Replacing known input bits on port B of cell $flatten\core.\rx.$procmux$553: \core.rx.busy -> 1'1
+      Replacing known input bits on port A of cell $flatten\core.\rx.$procmux$550: \core.rx.busy -> 1'1
+      Replacing known input bits on port B of cell $flatten\core.\rx.$procmux$561: \core.rx.busy -> 1'0
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\core.$procmux$959.
+    dead port 1/2 on $mux $flatten\core.$procmux$957.
+    dead port 2/2 on $mux $flatten\core.$procmux$954.
+    dead port 2/2 on $mux $flatten\core.$procmux$2457.
+    dead port 2/2 on $mux $flatten\core.$procmux$2459.
+    dead port 1/2 on $mux $flatten\core.$procmux$2462.
+    dead port 2/2 on $mux $flatten\core.$procmux$952.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$459.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$444.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$442.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$423.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$421.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$418.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$396.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$394.
+    dead port 2/2 on $mux $flatten\core.\rx.$procmux$391.
+    dead port 1/2 on $mux $flatten\core.\rx.$procmux$389.
+Removed 17 multiplexer ports.
+<suppressed ~1911 debug messages>
+
+31. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+    New ctrl vector for $pmux cell $flatten\core.$procmux$2098: { $flatten\core.$procmux$2099_CMP $flatten\core.$procmux$2103_CMP $auto$opt_reduce.cc:135:opt_pmux$3070 $flatten\core.$procmux$2111_CMP $flatten\core.$procmux$2116_CMP }
+    New ctrl vector for $pmux cell $flatten\core.$procmux$2122: { $auto$opt_reduce.cc:135:opt_pmux$3072 $flatten\core.$procmux$1472_CMP $flatten\core.$procmux$1838_CMP $flatten\core.$procmux$1528_CMP }
+    New ctrl vector for $pmux cell $flatten\core.$procmux$2152: { $auto$opt_reduce.cc:135:opt_pmux$3074 $flatten\core.$procmux$1540_CMP }
+    New ctrl vector for $pmux cell $flatten\core.$procmux$2177: { $flatten\core.$procmux$2099_CMP $flatten\core.$procmux$2103_CMP $auto$opt_reduce.cc:135:opt_pmux$3076 $flatten\core.$procmux$2111_CMP $flatten\core.$procmux$2116_CMP }
+    New ctrl vector for $pmux cell $flatten\core.$procmux$2226: { $auto$opt_reduce.cc:135:opt_pmux$3078 $flatten\core.$procmux$1540_CMP }
+    New ctrl vector for $pmux cell $flatten\core.$procmux$2278: { $auto$opt_reduce.cc:135:opt_pmux$3080 $flatten\core.$procmux$1540_CMP }
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 6 changes.
+
+32. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 667 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 660 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+<suppressed ~21 debug messages>
+Removed a total of 7 cells.
+
+33. Executing OPT_DFF pass (perform DFF optimizations).
+
+34. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 0 unused cells and 146 unused wires.
+<suppressed ~1 debug messages>
+
+35. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+<suppressed ~1 debug messages>
+
+36. Rerunning OPT passes. (Maybe there is more to do…)
+
+37. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1674 debug messages>
+
+38. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+    New ctrl vector for $pmux cell $flatten\core.$procmux$2253: { $flatten\core.$procmux$1704_CMP $auto$opt_reduce.cc:135:opt_pmux$3082 $flatten\core.$procmux$1528_CMP }
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 1 changes.
+
+39. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 660 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+40. Executing OPT_DFF pass (perform DFF optimizations).
+
+41. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+42. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+43. Rerunning OPT passes. (Maybe there is more to do…)
+
+44. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1656 debug messages>
+
+45. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+46. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 660 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+47. Executing OPT_DFF pass (perform DFF optimizations).
+
+48. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+49. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+50. Executing FSM pass (extract and optimize FSM).
+
+50.1. Executing FSM_DETECT pass (finding FSMs in design).
+Found FSM state register tt_um_dvirdc_gf180_diff8.core.bist_state.
+
+50.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+Extracting FSM `\core.bist_state' from module `\tt_um_dvirdc_gf180_diff8'.
+  found $adff cell for state register: $flatten\core.$procdff$2805
+  root of input selection tree: $flatten\core.$0\bist_state[1:0]
+  found reset state: 2'00 (from async reset)
+  found ctrl input: \core.bus_wr
+  found ctrl input: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y
+  found ctrl input: \core.rx.frame_error
+  found ctrl input: \core.running
+  found ctrl input: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y
+  found ctrl input: $flatten\core.$procmux$1598_CMP
+  found ctrl input: $flatten\core.$procmux$1540_CMP
+  found ctrl input: $flatten\core.$procmux$1458_CMP
+  found ctrl input: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:150$270_Y
+  found ctrl input: $flatten\core.$eq$/work/rtl/diff8_digital.v:150$271_Y
+  found state code: 2'01
+  found ctrl input: \core.rx.valid
+  found ctrl input: \core.tick16
+  found ctrl input: $flatten\core.$eq$/work/rtl/diff8_digital.v:147$261_Y
+  found ctrl input: $flatten\core.$eq$/work/rtl/diff8_digital.v:144$258_Y
+  found state code: 2'11
+  found ctrl input: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y
+  found state code: 2'10
+  found ctrl input: $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y
+  found ctrl input: $flatten\core.$procmux$1704_CMP
+  found ctrl input: $flatten\core.$procmux$1528_CMP
+  found ctrl input: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y
+  found ctrl output: $flatten\core.$procmux$1598_CMP
+  found ctrl output: $flatten\core.$procmux$1540_CMP
+  found ctrl output: $flatten\core.$procmux$1458_CMP
+  found ctrl output: $flatten\core.$ne$/work/rtl/diff8_digital.v:129$157_Y
+  ctrl inputs: { \core.tick16 \core.running \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:144$258_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:147$261_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:150$270_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:150$271_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y $flatten\core.$procmux$1528_CMP $flatten\core.$procmux$1704_CMP \core.rx.frame_error \core.rx.valid }
+  ctrl outputs: { $flatten\core.$0\bist_state[1:0] $flatten\core.$ne$/work/rtl/diff8_digital.v:129$157_Y $flatten\core.$procmux$1458_CMP $flatten\core.$procmux$1540_CMP $flatten\core.$procmux$1598_CMP }
+  transition:       2'00 16'--00----------0- ->       2'00 6'001000
+  transition:       2'00 16'-000----------1- ->       2'00 6'001000
+  transition:       2'00 16'-100----------1- ->       2'00 6'001000
+  transition:       2'00 16'--010---------0- ->       2'00 6'001000
+  transition:       2'00 16'-0010---------1- ->       2'00 6'001000
+  transition:       2'00 16'-1010---------1- ->       2'00 6'001000
+  transition:       2'00 16'--011---------0- ->       2'00 6'001000
+  transition:       2'00 16'-0011---------1- ->       2'00 6'001000
+  transition:       2'00 16'-1011---------1- ->       2'00 6'001000
+  transition:       2'00 16'--10------0---0- ->       2'00 6'001000
+  transition:       2'00 16'-010------0---1- ->       2'00 6'001000
+  transition:       2'00 16'-110------0---1- ->       2'00 6'001000
+  transition:       2'00 16'--110-----0---0- ->       2'00 6'001000
+  transition:       2'00 16'-0110-----0---1- ->       2'00 6'001000
+  transition:       2'00 16'-1110-----0---1- ->       2'00 6'001000
+  transition:       2'00 16'--111-----0---0- ->       2'00 6'001000
+  transition:       2'00 16'-0111-----0---1- ->       2'00 6'001000
+  transition:       2'00 16'-1111-----0---1- ->       2'00 6'001000
+  transition:       2'00 16'--10------1-000- ->       2'00 6'001000
+  transition:       2'00 16'-010------1-001- ->       2'00 6'001000
+  transition:       2'00 16'-110------1-001- ->       2'00 6'001000
+  transition:       2'00 16'--110-----1-000- ->       2'00 6'001000
+  transition:       2'00 16'-0110-----1-001- ->       2'00 6'001000
+  transition:       2'00 16'-1110-----1-001- ->       2'00 6'001000
+  transition:       2'00 16'--111-----1-000- ->       2'00 6'001000
+  transition:       2'00 16'-0111-----1-001- ->       2'00 6'001000
+  transition:       2'00 16'-1111-----1-001- ->       2'00 6'001000
+  transition:       2'00 16'--10------101-0- ->       2'00 6'001000
+  transition:       2'00 16'-010------101-1- ->       2'00 6'001000
+  transition:       2'00 16'-110------101-1- ->       2'00 6'001000
+  transition:       2'00 16'--110-----101-0- ->       2'00 6'001000
+  transition:       2'00 16'-0110-----101-1- ->       2'00 6'001000
+  transition:       2'00 16'-1110-----101-1- ->       2'00 6'001000
+  transition:       2'00 16'--111-----101-0- ->       2'00 6'001000
+  transition:       2'00 16'-0111-----101-1- ->       2'00 6'001000
+  transition:       2'00 16'-1111-----101-1- ->       2'00 6'001000
+  transition:       2'00 16'--1-------111--- ->       2'01 6'011000
+  transition:       2'00 16'--1-------1--1-- ->       2'00 6'001000
+  transition:       2'10 16'--00----------0- ->       2'10 6'100010
+  transition:       2'10 16'-000----------1- ->       2'10 6'100010
+  transition:       2'10 16'-100----------1- ->       2'00 6'000010
+  transition:       2'10 16'0-010---------00 ->       2'10 6'100010
+  transition:       2'10 16'00010---------10 ->       2'10 6'100010
+  transition:       2'10 16'01010---------10 ->       2'00 6'000010
+  transition:       2'10 16'1-010--0------00 ->       2'10 6'100010
+  transition:       2'10 16'10010--0------10 ->       2'10 6'100010
+  transition:       2'10 16'11010--0------10 ->       2'00 6'000010
+  transition:       2'10 16'1-010--1-------0 ->       2'00 6'000010
+  transition:       2'10 16'--010-0--------1 ->       2'11 6'110010
+  transition:       2'10 16'--010-1--------1 ->       2'00 6'000010
+  transition:       2'10 16'--011---------0- ->       2'10 6'100010
+  transition:       2'10 16'-0011---------1- ->       2'10 6'100010
+  transition:       2'10 16'-1011---------1- ->       2'00 6'000010
+  transition:       2'10 16'--10------0---0- ->       2'10 6'100010
+  transition:       2'10 16'-010------0---1- ->       2'10 6'100010
+  transition:       2'10 16'-110------0---1- ->       2'00 6'000010
+  transition:       2'10 16'0-110-----0---00 ->       2'10 6'100010
+  transition:       2'10 16'00110-----0---10 ->       2'10 6'100010
+  transition:       2'10 16'01110-----0---10 ->       2'00 6'000010
+  transition:       2'10 16'1-110--0--0---00 ->       2'10 6'100010
+  transition:       2'10 16'10110--0--0---10 ->       2'10 6'100010
+  transition:       2'10 16'11110--0--0---10 ->       2'00 6'000010
+  transition:       2'10 16'1-110--1--0----0 ->       2'00 6'000010
+  transition:       2'10 16'--110-0---0----1 ->       2'11 6'110010
+  transition:       2'10 16'--110-1---0----1 ->       2'00 6'000010
+  transition:       2'10 16'--111-----0---0- ->       2'10 6'100010
+  transition:       2'10 16'-0111-----0---1- ->       2'10 6'100010
+  transition:       2'10 16'-1111-----0---1- ->       2'00 6'000010
+  transition:       2'10 16'--10------1-000- ->       2'10 6'100010
+  transition:       2'10 16'-010------1-001- ->       2'10 6'100010
+  transition:       2'10 16'-110------1-001- ->       2'00 6'000010
+  transition:       2'10 16'0-110-----1-0000 ->       2'10 6'100010
+  transition:       2'10 16'00110-----1-0010 ->       2'10 6'100010
+  transition:       2'10 16'01110-----1-0010 ->       2'00 6'000010
+  transition:       2'10 16'1-110--0--1-0000 ->       2'10 6'100010
+  transition:       2'10 16'10110--0--1-0010 ->       2'10 6'100010
+  transition:       2'10 16'11110--0--1-0010 ->       2'00 6'000010
+  transition:       2'10 16'1-110--1--1-00-0 ->       2'00 6'000010
+  transition:       2'10 16'--110-0---1-00-1 ->       2'11 6'110010
+  transition:       2'10 16'--110-1---1-00-1 ->       2'00 6'000010
+  transition:       2'10 16'--111-----1-000- ->       2'10 6'100010
+  transition:       2'10 16'-0111-----1-001- ->       2'10 6'100010
+  transition:       2'10 16'-1111-----1-001- ->       2'00 6'000010
+  transition:       2'10 16'--10------101-0- ->       2'10 6'100010
+  transition:       2'10 16'-010------101-1- ->       2'10 6'100010
+  transition:       2'10 16'-110------101-1- ->       2'00 6'000010
+  transition:       2'10 16'0-110-----101-00 ->       2'10 6'100010
+  transition:       2'10 16'00110-----101-10 ->       2'10 6'100010
+  transition:       2'10 16'01110-----101-10 ->       2'00 6'000010
+  transition:       2'10 16'1-110--0--101-00 ->       2'10 6'100010
+  transition:       2'10 16'10110--0--101-10 ->       2'10 6'100010
+  transition:       2'10 16'11110--0--101-10 ->       2'00 6'000010
+  transition:       2'10 16'1-110--1--101--0 ->       2'00 6'000010
+  transition:       2'10 16'--110-0---101--1 ->       2'11 6'110010
+  transition:       2'10 16'--110-1---101--1 ->       2'00 6'000010
+  transition:       2'10 16'--111-----101-0- ->       2'10 6'100010
+  transition:       2'10 16'-0111-----101-1- ->       2'10 6'100010
+  transition:       2'10 16'-1111-----101-1- ->       2'00 6'000010
+  transition:       2'10 16'--1-------111--- ->       2'01 6'010010
+  transition:       2'10 16'--1-------1--1-- ->       2'00 6'000010
+  transition:       2'01 16'--00----------0- ->       2'01 6'011100
+  transition:       2'01 16'-000----------1- ->       2'01 6'011100
+  transition:       2'01 16'-100----------1- ->       2'00 6'001100
+  transition:       2'01 16'--0100--------0- ->       2'01 6'011100
+  transition:       2'01 16'-00100--------1- ->       2'01 6'011100
+  transition:       2'01 16'-10100--------1- ->       2'00 6'001100
+  transition:       2'01 16'--0101---------- ->       2'10 6'101100
+  transition:       2'01 16'--011---------0- ->       2'01 6'011100
+  transition:       2'01 16'-0011---------1- ->       2'01 6'011100
+  transition:       2'01 16'-1011---------1- ->       2'00 6'001100
+  transition:       2'01 16'--10------0---0- ->       2'01 6'011100
+  transition:       2'01 16'-010------0---1- ->       2'01 6'011100
+  transition:       2'01 16'-110------0---1- ->       2'00 6'001100
+  transition:       2'01 16'--1100----0---0- ->       2'01 6'011100
+  transition:       2'01 16'-01100----0---1- ->       2'01 6'011100
+  transition:       2'01 16'-11100----0---1- ->       2'00 6'001100
+  transition:       2'01 16'--1101----0----- ->       2'10 6'101100
+  transition:       2'01 16'--111-----0---0- ->       2'01 6'011100
+  transition:       2'01 16'-0111-----0---1- ->       2'01 6'011100
+  transition:       2'01 16'-1111-----0---1- ->       2'00 6'001100
+  transition:       2'01 16'--10------1-000- ->       2'01 6'011100
+  transition:       2'01 16'-010------1-001- ->       2'01 6'011100
+  transition:       2'01 16'-110------1-001- ->       2'00 6'001100
+  transition:       2'01 16'--1100----1-000- ->       2'01 6'011100
+  transition:       2'01 16'-01100----1-001- ->       2'01 6'011100
+  transition:       2'01 16'-11100----1-001- ->       2'00 6'001100
+  transition:       2'01 16'--1101----1-00-- ->       2'10 6'101100
+  transition:       2'01 16'--111-----1-000- ->       2'01 6'011100
+  transition:       2'01 16'-0111-----1-001- ->       2'01 6'011100
+  transition:       2'01 16'-1111-----1-001- ->       2'00 6'001100
+  transition:       2'01 16'--10------101-0- ->       2'01 6'011100
+  transition:       2'01 16'-010------101-1- ->       2'01 6'011100
+  transition:       2'01 16'-110------101-1- ->       2'00 6'001100
+  transition:       2'01 16'--1100----101-0- ->       2'01 6'011100
+  transition:       2'01 16'-01100----101-1- ->       2'01 6'011100
+  transition:       2'01 16'-11100----101-1- ->       2'00 6'001100
+  transition:       2'01 16'--1101----101--- ->       2'10 6'101100
+  transition:       2'01 16'--111-----101-0- ->       2'01 6'011100
+  transition:       2'01 16'-0111-----101-1- ->       2'01 6'011100
+  transition:       2'01 16'-1111-----101-1- ->       2'00 6'001100
+  transition:       2'01 16'--1-------111--- ->       2'01 6'011100
+  transition:       2'01 16'--1-------1--1-- ->       2'00 6'001100
+  transition:       2'11 16'--00----------0- ->       2'11 6'111001
+  transition:       2'11 16'-000----------1- ->       2'11 6'111001
+  transition:       2'11 16'-100----------1- ->       2'00 6'001001
+  transition:       2'11 16'--010---0-----0- ->       2'11 6'111001
+  transition:       2'11 16'-0010---0-----1- ->       2'11 6'111001
+  transition:       2'11 16'-1010---0-----1- ->       2'00 6'001001
+  transition:       2'11 16'--010---10----0- ->       2'11 6'111001
+  transition:       2'11 16'-0010---10----1- ->       2'11 6'111001
+  transition:       2'11 16'-1010---10----1- ->       2'00 6'001001
+  transition:       2'11 16'--010---11------ ->       2'01 6'011001
+  transition:       2'11 16'--011---------0- ->       2'11 6'111001
+  transition:       2'11 16'-0011---------1- ->       2'11 6'111001
+  transition:       2'11 16'-1011---------1- ->       2'00 6'001001
+  transition:       2'11 16'--10------0---0- ->       2'11 6'111001
+  transition:       2'11 16'-010------0---1- ->       2'11 6'111001
+  transition:       2'11 16'-110------0---1- ->       2'00 6'001001
+  transition:       2'11 16'--110---0-0---0- ->       2'11 6'111001
+  transition:       2'11 16'-0110---0-0---1- ->       2'11 6'111001
+  transition:       2'11 16'-1110---0-0---1- ->       2'00 6'001001
+  transition:       2'11 16'--110---100---0- ->       2'11 6'111001
+  transition:       2'11 16'-0110---100---1- ->       2'11 6'111001
+  transition:       2'11 16'-1110---100---1- ->       2'00 6'001001
+  transition:       2'11 16'--110---110----- ->       2'01 6'011001
+  transition:       2'11 16'--111-----0---0- ->       2'11 6'111001
+  transition:       2'11 16'-0111-----0---1- ->       2'11 6'111001
+  transition:       2'11 16'-1111-----0---1- ->       2'00 6'001001
+  transition:       2'11 16'--10------1-000- ->       2'11 6'111001
+  transition:       2'11 16'-010------1-001- ->       2'11 6'111001
+  transition:       2'11 16'-110------1-001- ->       2'00 6'001001
+  transition:       2'11 16'--110---0-1-000- ->       2'11 6'111001
+  transition:       2'11 16'-0110---0-1-001- ->       2'11 6'111001
+  transition:       2'11 16'-1110---0-1-001- ->       2'00 6'001001
+  transition:       2'11 16'--110---101-000- ->       2'11 6'111001
+  transition:       2'11 16'-0110---101-001- ->       2'11 6'111001
+  transition:       2'11 16'-1110---101-001- ->       2'00 6'001001
+  transition:       2'11 16'--110---111-00-- ->       2'01 6'011001
+  transition:       2'11 16'--111-----1-000- ->       2'11 6'111001
+  transition:       2'11 16'-0111-----1-001- ->       2'11 6'111001
+  transition:       2'11 16'-1111-----1-001- ->       2'00 6'001001
+  transition:       2'11 16'--10------101-0- ->       2'11 6'111001
+  transition:       2'11 16'-010------101-1- ->       2'11 6'111001
+  transition:       2'11 16'-110------101-1- ->       2'00 6'001001
+  transition:       2'11 16'--110---0-101-0- ->       2'11 6'111001
+  transition:       2'11 16'-0110---0-101-1- ->       2'11 6'111001
+  transition:       2'11 16'-1110---0-101-1- ->       2'00 6'001001
+  transition:       2'11 16'--110---10101-0- ->       2'11 6'111001
+  transition:       2'11 16'-0110---10101-1- ->       2'11 6'111001
+  transition:       2'11 16'-1110---10101-1- ->       2'00 6'001001
+  transition:       2'11 16'--110---11101--- ->       2'01 6'011001
+  transition:       2'11 16'--111-----101-0- ->       2'11 6'111001
+  transition:       2'11 16'-0111-----101-1- ->       2'11 6'111001
+  transition:       2'11 16'-1111-----101-1- ->       2'00 6'001001
+  transition:       2'11 16'--1-------111--- ->       2'01 6'011001
+  transition:       2'11 16'--1-------1--1-- ->       2'00 6'001001
+
+50.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\core.bist_state$3083' from module `\tt_um_dvirdc_gf180_diff8'.
+  Merging pattern 16'--110-----1-000- and 16'--111-----1-000- from group (0 0 6'001000).
+  Merging pattern 16'--111-----1-000- and 16'--110-----1-000- from group (0 0 6'001000).
+  Merging pattern 16'--110-----101-0- and 16'--111-----101-0- from group (0 0 6'001000).
+  Merging pattern 16'--111-----101-0- and 16'--110-----101-0- from group (0 0 6'001000).
+  Merging pattern 16'--110-----0---0- and 16'--111-----0---0- from group (0 0 6'001000).
+  Merging pattern 16'--111-----0---0- and 16'--110-----0---0- from group (0 0 6'001000).
+  Merging pattern 16'--010---------0- and 16'--011---------0- from group (0 0 6'001000).
+  Merging pattern 16'--011---------0- and 16'--010---------0- from group (0 0 6'001000).
+  Merging pattern 16'-0110-----1-001- and 16'-0111-----1-001- from group (0 0 6'001000).
+  Merging pattern 16'-1110-----1-001- and 16'-1111-----1-001- from group (0 0 6'001000).
+  Merging pattern 16'-0111-----1-001- and 16'-0110-----1-001- from group (0 0 6'001000).
+  Merging pattern 16'-1111-----1-001- and 16'-1110-----1-001- from group (0 0 6'001000).
+  Merging pattern 16'-0110-----101-1- and 16'-0111-----101-1- from group (0 0 6'001000).
+  Merging pattern 16'-1110-----101-1- and 16'-1111-----101-1- from group (0 0 6'001000).
+  Merging pattern 16'-0111-----101-1- and 16'-0110-----101-1- from group (0 0 6'001000).
+  Merging pattern 16'-1111-----101-1- and 16'-1110-----101-1- from group (0 0 6'001000).
+  Merging pattern 16'-0110-----0---1- and 16'-0111-----0---1- from group (0 0 6'001000).
+  Merging pattern 16'-1110-----0---1- and 16'-1111-----0---1- from group (0 0 6'001000).
+  Merging pattern 16'-0111-----0---1- and 16'-0110-----0---1- from group (0 0 6'001000).
+  Merging pattern 16'-1111-----0---1- and 16'-1110-----0---1- from group (0 0 6'001000).
+  Merging pattern 16'-0010---------1- and 16'-0011---------1- from group (0 0 6'001000).
+  Merging pattern 16'-1010---------1- and 16'-1011---------1- from group (0 0 6'001000).
+  Merging pattern 16'-0011---------1- and 16'-0010---------1- from group (0 0 6'001000).
+  Merging pattern 16'-1011---------1- and 16'-1010---------1- from group (0 0 6'001000).
+  Merging pattern 16'--10------1-000- and 16'--11------1-000- from group (0 0 6'001000).
+  Merging pattern 16'--11------1-000- and 16'--10------1-000- from group (0 0 6'001000).
+  Merging pattern 16'--10------101-0- and 16'--11------101-0- from group (0 0 6'001000).
+  Merging pattern 16'--11------101-0- and 16'--10------101-0- from group (0 0 6'001000).
+  Merging pattern 16'--10------0---0- and 16'--11------0---0- from group (0 0 6'001000).
+  Merging pattern 16'--11------0---0- and 16'--10------0---0- from group (0 0 6'001000).
+  Merging pattern 16'--00----------0- and 16'--01----------0- from group (0 0 6'001000).
+  Merging pattern 16'--01----------0- and 16'--00----------0- from group (0 0 6'001000).
+  Merging pattern 16'-010------1-001- and 16'-011------1-001- from group (0 0 6'001000).
+  Merging pattern 16'-110------1-001- and 16'-111------1-001- from group (0 0 6'001000).
+  Merging pattern 16'-011------1-001- and 16'-010------1-001- from group (0 0 6'001000).
+  Merging pattern 16'-111------1-001- and 16'-110------1-001- from group (0 0 6'001000).
+  Merging pattern 16'-010------101-1- and 16'-011------101-1- from group (0 0 6'001000).
+  Merging pattern 16'-110------101-1- and 16'-111------101-1- from group (0 0 6'001000).
+  Merging pattern 16'-011------101-1- and 16'-010------101-1- from group (0 0 6'001000).
+  Merging pattern 16'-111------101-1- and 16'-110------101-1- from group (0 0 6'001000).
+  Merging pattern 16'-010------0---1- and 16'-011------0---1- from group (0 0 6'001000).
+  Merging pattern 16'-110------0---1- and 16'-111------0---1- from group (0 0 6'001000).
+  Merging pattern 16'-011------0---1- and 16'-010------0---1- from group (0 0 6'001000).
+  Merging pattern 16'-111------0---1- and 16'-110------0---1- from group (0 0 6'001000).
+  Merging pattern 16'-000----------1- and 16'-001----------1- from group (0 0 6'001000).
+  Merging pattern 16'-100----------1- and 16'-101----------1- from group (0 0 6'001000).
+  Merging pattern 16'-001----------1- and 16'-000----------1- from group (0 0 6'001000).
+  Merging pattern 16'-101----------1- and 16'-100----------1- from group (0 0 6'001000).
+  Merging pattern 16'-01-------1-001- and 16'-11-------1-001- from group (0 0 6'001000).
+  Merging pattern 16'-11-------1-001- and 16'-01-------1-001- from group (0 0 6'001000).
+  Merging pattern 16'-01-------101-1- and 16'-11-------101-1- from group (0 0 6'001000).
+  Merging pattern 16'-11-------101-1- and 16'-01-------101-1- from group (0 0 6'001000).
+  Merging pattern 16'-01-------0---1- and 16'-11-------0---1- from group (0 0 6'001000).
+  Merging pattern 16'-11-------0---1- and 16'-01-------0---1- from group (0 0 6'001000).
+  Merging pattern 16'-00-----------1- and 16'-10-----------1- from group (0 0 6'001000).
+  Merging pattern 16'-10-----------1- and 16'-00-----------1- from group (0 0 6'001000).
+  Merging pattern 16'--1-------1-000- and 16'--1-------1-001- from group (0 0 6'001000).
+  Merging pattern 16'--1-------101-0- and 16'--1-------101-1- from group (0 0 6'001000).
+  Merging pattern 16'--1-------0---0- and 16'--1-------0---1- from group (0 0 6'001000).
+  Merging pattern 16'--0-----------0- and 16'--0-----------1- from group (0 0 6'001000).
+  Merging pattern 16'--1-------1-001- and 16'--1-------1-000- from group (0 0 6'001000).
+  Merging pattern 16'--1-------101-1- and 16'--1-------101-0- from group (0 0 6'001000).
+  Merging pattern 16'--1-------0---1- and 16'--1-------0---0- from group (0 0 6'001000).
+  Merging pattern 16'--0-----------1- and 16'--0-----------0- from group (0 0 6'001000).
+
+50.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 21 unused cells and 21 unused wires.
+<suppressed ~22 debug messages>
+
+50.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\core.bist_state$3083' from module `\tt_um_dvirdc_gf180_diff8'.
+  Removing unused output signal $flatten\core.$0\bist_state[1:0] [0].
+  Removing unused output signal $flatten\core.$0\bist_state[1:0] [1].
+
+50.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+Recoding FSM `$fsm$\core.bist_state$3083' from module `\tt_um_dvirdc_gf180_diff8' using `auto' encoding:
+  mapping auto encoding to `one-hot` for this FSM.
+  00 -> ---1
+  10 -> --1-
+  01 -> -1--
+  11 -> 1---
+
+50.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+FSM `$fsm$\core.bist_state$3083' from module `tt_um_dvirdc_gf180_diff8':
+-------------------------------------
+
+  Information on FSM $fsm$\core.bist_state$3083 (\core.bist_state):
+
+  Number of input signals:   16
+  Number of output signals:   4
+  Number of state bits:       4
+
+  Input signals:
+    0: \core.rx.valid
+    1: \core.rx.frame_error
+    2: $flatten\core.$procmux$1704_CMP
+    3: $flatten\core.$procmux$1528_CMP
+    4: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y
+    5: $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y
+    6: $flatten\core.$eq$/work/rtl/diff8_digital.v:150$271_Y
+    7: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:150$270_Y
+    8: $flatten\core.$eq$/work/rtl/diff8_digital.v:147$261_Y
+    9: $flatten\core.$eq$/work/rtl/diff8_digital.v:144$258_Y
+   10: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y
+   11: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y
+   12: $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y
+   13: \core.bus_wr
+   14: \core.running
+   15: \core.tick16
+
+  Output signals:
+    0: $flatten\core.$procmux$1598_CMP
+    1: $flatten\core.$procmux$1540_CMP
+    2: $flatten\core.$procmux$1458_CMP
+    3: $flatten\core.$ne$/work/rtl/diff8_digital.v:129$157_Y
+
+  State encoding:
+    0:     4'---1  <RESET STATE>
+    1:     4'--1-
+    2:     4'-1--
+    3:     4'1---
+
+  Transition Table (state_in, ctrl_in, state_out, ctrl_out):
+      0:     0 16'--1-------1-00--   ->     0 4'1000
+      1:     0 16'--1-------1--1--   ->     0 4'1000
+      2:     0 16'--1-------101---   ->     0 4'1000
+      3:     0 16'--1-------0-----   ->     0 4'1000
+      4:     0 16'--0-------------   ->     0 4'1000
+      5:     0 16'--1-------111---   ->     2 4'1000
+      6:     1 16'11110--0--1-0010   ->     0 4'0010
+      7:     1 16'01110-----1-0010   ->     0 4'0010
+      8:     1 16'11110--0--101-10   ->     0 4'0010
+      9:     1 16'01110-----101-10   ->     0 4'0010
+     10:     1 16'11110--0--0---10   ->     0 4'0010
+     11:     1 16'01110-----0---10   ->     0 4'0010
+     12:     1 16'11010--0------10   ->     0 4'0010
+     13:     1 16'01010---------10   ->     0 4'0010
+     14:     1 16'1-110--1--1-00-0   ->     0 4'0010
+     15:     1 16'1-110--1--101--0   ->     0 4'0010
+     16:     1 16'1-110--1--0----0   ->     0 4'0010
+     17:     1 16'1-010--1-------0   ->     0 4'0010
+     18:     1 16'--110-1---1-00-1   ->     0 4'0010
+     19:     1 16'--110-1---101--1   ->     0 4'0010
+     20:     1 16'--110-1---0----1   ->     0 4'0010
+     21:     1 16'--010-1--------1   ->     0 4'0010
+     22:     1 16'-1111-----1-001-   ->     0 4'0010
+     23:     1 16'-110------1-001-   ->     0 4'0010
+     24:     1 16'-1111-----101-1-   ->     0 4'0010
+     25:     1 16'-110------101-1-   ->     0 4'0010
+     26:     1 16'-1111-----0---1-   ->     0 4'0010
+     27:     1 16'-110------0---1-   ->     0 4'0010
+     28:     1 16'-1011---------1-   ->     0 4'0010
+     29:     1 16'-100----------1-   ->     0 4'0010
+     30:     1 16'--1-------1--1--   ->     0 4'0010
+     31:     1 16'1-110--0--1-0000   ->     1 4'0010
+     32:     1 16'0-110-----1-0000   ->     1 4'0010
+     33:     1 16'1-110--0--101-00   ->     1 4'0010
+     34:     1 16'0-110-----101-00   ->     1 4'0010
+     35:     1 16'1-110--0--0---00   ->     1 4'0010
+     36:     1 16'0-110-----0---00   ->     1 4'0010
+     37:     1 16'1-010--0------00   ->     1 4'0010
+     38:     1 16'0-010---------00   ->     1 4'0010
+     39:     1 16'10110--0--1-0010   ->     1 4'0010
+     40:     1 16'00110-----1-0010   ->     1 4'0010
+     41:     1 16'10110--0--101-10   ->     1 4'0010
+     42:     1 16'00110-----101-10   ->     1 4'0010
+     43:     1 16'10110--0--0---10   ->     1 4'0010
+     44:     1 16'00110-----0---10   ->     1 4'0010
+     45:     1 16'10010--0------10   ->     1 4'0010
+     46:     1 16'00010---------10   ->     1 4'0010
+     47:     1 16'--111-----1-000-   ->     1 4'0010
+     48:     1 16'--10------1-000-   ->     1 4'0010
+     49:     1 16'--111-----101-0-   ->     1 4'0010
+     50:     1 16'--10------101-0-   ->     1 4'0010
+     51:     1 16'--111-----0---0-   ->     1 4'0010
+     52:     1 16'--10------0---0-   ->     1 4'0010
+     53:     1 16'--011---------0-   ->     1 4'0010
+     54:     1 16'--00----------0-   ->     1 4'0010
+     55:     1 16'-0111-----1-001-   ->     1 4'0010
+     56:     1 16'-010------1-001-   ->     1 4'0010
+     57:     1 16'-0111-----101-1-   ->     1 4'0010
+     58:     1 16'-010------101-1-   ->     1 4'0010
+     59:     1 16'-0111-----0---1-   ->     1 4'0010
+     60:     1 16'-010------0---1-   ->     1 4'0010
+     61:     1 16'-0011---------1-   ->     1 4'0010
+     62:     1 16'-000----------1-   ->     1 4'0010
+     63:     1 16'--1-------111---   ->     2 4'0010
+     64:     1 16'--110-0---1-00-1   ->     3 4'0010
+     65:     1 16'--110-0---101--1   ->     3 4'0010
+     66:     1 16'--110-0---0----1   ->     3 4'0010
+     67:     1 16'--010-0--------1   ->     3 4'0010
+     68:     2 16'-11100----1-001-   ->     0 4'1100
+     69:     2 16'-1111-----1-001-   ->     0 4'1100
+     70:     2 16'-110------1-001-   ->     0 4'1100
+     71:     2 16'-11100----101-1-   ->     0 4'1100
+     72:     2 16'-1111-----101-1-   ->     0 4'1100
+     73:     2 16'-110------101-1-   ->     0 4'1100
+     74:     2 16'-11100----0---1-   ->     0 4'1100
+     75:     2 16'-1111-----0---1-   ->     0 4'1100
+     76:     2 16'-110------0---1-   ->     0 4'1100
+     77:     2 16'-10100--------1-   ->     0 4'1100
+     78:     2 16'-1011---------1-   ->     0 4'1100
+     79:     2 16'-100----------1-   ->     0 4'1100
+     80:     2 16'--1-------1--1--   ->     0 4'1100
+     81:     2 16'--1101----1-00--   ->     1 4'1100
+     82:     2 16'--1101----101---   ->     1 4'1100
+     83:     2 16'--1101----0-----   ->     1 4'1100
+     84:     2 16'--0101----------   ->     1 4'1100
+     85:     2 16'--1100----1-000-   ->     2 4'1100
+     86:     2 16'--111-----1-000-   ->     2 4'1100
+     87:     2 16'--10------1-000-   ->     2 4'1100
+     88:     2 16'--1100----101-0-   ->     2 4'1100
+     89:     2 16'--111-----101-0-   ->     2 4'1100
+     90:     2 16'--10------101-0-   ->     2 4'1100
+     91:     2 16'--1100----0---0-   ->     2 4'1100
+     92:     2 16'--111-----0---0-   ->     2 4'1100
+     93:     2 16'--10------0---0-   ->     2 4'1100
+     94:     2 16'--0100--------0-   ->     2 4'1100
+     95:     2 16'--011---------0-   ->     2 4'1100
+     96:     2 16'--00----------0-   ->     2 4'1100
+     97:     2 16'-01100----1-001-   ->     2 4'1100
+     98:     2 16'-0111-----1-001-   ->     2 4'1100
+     99:     2 16'-010------1-001-   ->     2 4'1100
+    100:     2 16'-01100----101-1-   ->     2 4'1100
+    101:     2 16'-0111-----101-1-   ->     2 4'1100
+    102:     2 16'-010------101-1-   ->     2 4'1100
+    103:     2 16'-01100----0---1-   ->     2 4'1100
+    104:     2 16'-0111-----0---1-   ->     2 4'1100
+    105:     2 16'-010------0---1-   ->     2 4'1100
+    106:     2 16'-00100--------1-   ->     2 4'1100
+    107:     2 16'-0011---------1-   ->     2 4'1100
+    108:     2 16'-000----------1-   ->     2 4'1100
+    109:     2 16'--1-------111---   ->     2 4'1100
+    110:     3 16'-1110---101-001-   ->     0 4'1001
+    111:     3 16'-1110---0-1-001-   ->     0 4'1001
+    112:     3 16'-1111-----1-001-   ->     0 4'1001
+    113:     3 16'-110------1-001-   ->     0 4'1001
+    114:     3 16'-1110---10101-1-   ->     0 4'1001
+    115:     3 16'-1110---0-101-1-   ->     0 4'1001
+    116:     3 16'-1111-----101-1-   ->     0 4'1001
+    117:     3 16'-110------101-1-   ->     0 4'1001
+    118:     3 16'-1110---100---1-   ->     0 4'1001
+    119:     3 16'-1110---0-0---1-   ->     0 4'1001
+    120:     3 16'-1111-----0---1-   ->     0 4'1001
+    121:     3 16'-110------0---1-   ->     0 4'1001
+    122:     3 16'-1010---10----1-   ->     0 4'1001
+    123:     3 16'-1010---0-----1-   ->     0 4'1001
+    124:     3 16'-1011---------1-   ->     0 4'1001
+    125:     3 16'-100----------1-   ->     0 4'1001
+    126:     3 16'--1-------1--1--   ->     0 4'1001
+    127:     3 16'--110---111-00--   ->     2 4'1001
+    128:     3 16'--110---11101---   ->     2 4'1001
+    129:     3 16'--1-------111---   ->     2 4'1001
+    130:     3 16'--110---110-----   ->     2 4'1001
+    131:     3 16'--010---11------   ->     2 4'1001
+    132:     3 16'--110---101-000-   ->     3 4'1001
+    133:     3 16'--110---0-1-000-   ->     3 4'1001
+    134:     3 16'--111-----1-000-   ->     3 4'1001
+    135:     3 16'--10------1-000-   ->     3 4'1001
+    136:     3 16'--110---10101-0-   ->     3 4'1001
+    137:     3 16'--110---0-101-0-   ->     3 4'1001
+    138:     3 16'--111-----101-0-   ->     3 4'1001
+    139:     3 16'--10------101-0-   ->     3 4'1001
+    140:     3 16'--110---100---0-   ->     3 4'1001
+    141:     3 16'--110---0-0---0-   ->     3 4'1001
+    142:     3 16'--111-----0---0-   ->     3 4'1001
+    143:     3 16'--10------0---0-   ->     3 4'1001
+    144:     3 16'--010---10----0-   ->     3 4'1001
+    145:     3 16'--010---0-----0-   ->     3 4'1001
+    146:     3 16'--011---------0-   ->     3 4'1001
+    147:     3 16'--00----------0-   ->     3 4'1001
+    148:     3 16'-0110---101-001-   ->     3 4'1001
+    149:     3 16'-0110---0-1-001-   ->     3 4'1001
+    150:     3 16'-0111-----1-001-   ->     3 4'1001
+    151:     3 16'-010------1-001-   ->     3 4'1001
+    152:     3 16'-0110---10101-1-   ->     3 4'1001
+    153:     3 16'-0110---0-101-1-   ->     3 4'1001
+    154:     3 16'-0111-----101-1-   ->     3 4'1001
+    155:     3 16'-010------101-1-   ->     3 4'1001
+    156:     3 16'-0110---100---1-   ->     3 4'1001
+    157:     3 16'-0110---0-0---1-   ->     3 4'1001
+    158:     3 16'-0111-----0---1-   ->     3 4'1001
+    159:     3 16'-010------0---1-   ->     3 4'1001
+    160:     3 16'-0010---10----1-   ->     3 4'1001
+    161:     3 16'-0010---0-----1-   ->     3 4'1001
+    162:     3 16'-0011---------1-   ->     3 4'1001
+    163:     3 16'-000----------1-   ->     3 4'1001
+
+-------------------------------------
+
+50.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+Mapping FSM `$fsm$\core.bist_state$3083' from module `\tt_um_dvirdc_gf180_diff8'.
+
+51. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+<suppressed ~4 debug messages>
+
+52. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 919 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 887 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+<suppressed ~96 debug messages>
+Removed a total of 32 cells.
+
+53. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1517 debug messages>
+
+54. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+55. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 887 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+56. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\core.\tx.$procdff$3065 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\tx.$0\frame[9:0], Q = \core.tx.frame).
+Adding EN signal on $flatten\core.\tx.$procdff$3060 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\tx.$0\bit_index[3:0], Q = \core.tx.bit_index).
+Adding EN signal on $flatten\core.\tx.$procdff$3055 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\tx.$0\phase[3:0], Q = \core.tx.phase).
+Adding EN signal on $flatten\core.\tx.$procdff$3050 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\tx.$0\busy[0:0], Q = \core.tx.busy).
+Adding EN signal on $flatten\core.\rx.$procdff$2650 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\rx.$or$/work/rtl/diff8_uart_rx.v:27$368_Y, Q = \core.rx.shift).
+Adding EN signal on $flatten\core.\rx.$procdff$2645 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\rx.$procmux$522_Y, Q = \core.rx.ones).
+Adding EN signal on $flatten\core.\rx.$procdff$2640 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\rx.$procmux$533_Y, Q = \core.rx.bit_index).
+Adding EN signal on $flatten\core.\rx.$procdff$2635 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\rx.$procmux$544_Y, Q = \core.rx.phase).
+Adding EN signal on $flatten\core.\rx.$procdff$2620 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.\rx.$procmux$563_Y, Q = \core.rx.busy).
+Adding EN signal on $flatten\core.\rx.$procdff$2615 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.rx.shift, Q = \core.rx.data).
+Adding EN signal on $flatten\core.$procdff$3035 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = { \core.spi_shift \core.mosi_pipe [1] }, Q = \core.bus_data).
+Adding EN signal on $flatten\core.$procdff$3030 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.spi_address, Q = \core.bus_address).
+Adding EN signal on $flatten\core.$procdff$3015 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.spi_shift [6], Q = \core.spi_write).
+Adding EN signal on $flatten\core.$procdff$3010 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = { \core.spi_shift [5:0] \core.mosi_pipe [1] }, Q = \core.spi_address).
+Adding EN signal on $flatten\core.$procdff$3005 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.$0\spi_reply[7:0], Q = \core.spi_reply).
+Adding EN signal on $flatten\core.$procdff$3000 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = { \core.spi_shift [5:0] \core.mosi_pipe [1] }, Q = \core.spi_shift).
+Adding EN signal on $flatten\core.$procdff$2995 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.$0\spi_count[4:0], Q = \core.spi_count).
+Adding EN signal on $flatten\core.$procdff$2790 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.overruns, Q = \core.snap_overruns).
+Adding EN signal on $flatten\core.$procdff$2785 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.timeouts, Q = \core.snap_timeouts).
+Adding EN signal on $flatten\core.$procdff$2780 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.framing_errors, Q = \core.snap_framing).
+Adding EN signal on $flatten\core.$procdff$2775 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.error_bits, Q = \core.snap_error_bits).
+Adding EN signal on $flatten\core.$procdff$2770 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.error_bytes, Q = \core.snap_error_bytes).
+Adding EN signal on $flatten\core.$procdff$2765 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.checked_bytes, Q = \core.snap_bytes).
+Adding EN signal on $flatten\core.$procdff$2720 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = $flatten\core.$procmux$2137_Y, Q = \core.command_error).
+Adding EN signal on $flatten\core.$procdff$2700 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data, Q = \core.target_count [7:0]).
+Adding EN signal on $flatten\core.$procdff$2700 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data, Q = \core.target_count [15:8]).
+Adding EN signal on $flatten\core.$procdff$2700 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data, Q = \core.target_count [23:16]).
+Adding EN signal on $flatten\core.$procdff$2700 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data, Q = \core.target_count [31:24]).
+Adding EN signal on $flatten\core.$procdff$2695 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.rx.data, Q = \core.rx_register).
+Adding EN signal on $flatten\core.$procdff$2690 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data, Q = \core.tx_register).
+Adding EN signal on $flatten\core.$procdff$2685 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data [2:0], Q = \core.pattern).
+Adding EN signal on $flatten\core.$procdff$2680 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data, Q = \core.baud_div [7:0]).
+Adding EN signal on $flatten\core.$procdff$2680 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data, Q = \core.baud_div [15:8]).
+Adding EN signal on $flatten\core.$procdff$2675 ($adff) from module tt_um_dvirdc_gf180_diff8 (D = \core.bus_data [0], Q = \core.boost).
+
+57. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 90 unused cells and 124 unused wires.
+<suppressed ~91 debug messages>
+
+58. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+<suppressed ~11 debug messages>
+
+59. Rerunning OPT passes. (Maybe there is more to do…)
+
+60. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1404 debug messages>
+
+61. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+62. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 881 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 847 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 845 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+<suppressed ~108 debug messages>
+Removed a total of 36 cells.
+
+63. Executing OPT_DFF pass (perform DFF optimizations).
+
+64. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 0 unused cells and 36 unused wires.
+<suppressed ~1 debug messages>
+
+65. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+66. Rerunning OPT passes. (Maybe there is more to do…)
+
+67. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1406 debug messages>
+
+68. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+69. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 845 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+70. Executing OPT_DFF pass (perform DFF optimizations).
+
+71. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+72. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+73. Executing WREDUCE pass (reducing word size of cells).
+Removed top 2 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$opt_dff.cc:235:make_patterns_logic$3771 ($ne).
+Removed top 2 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$opt_dff.cc:235:make_patterns_logic$3769 ($ne).
+Removed top 2 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$opt_dff.cc:235:make_patterns_logic$3767 ($ne).
+Removed top 2 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$opt_dff.cc:235:make_patterns_logic$3765 ($ne).
+Removed top 2 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$opt_dff.cc:235:make_patterns_logic$3763 ($ne).
+Removed top 1 bits (of 2) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$opt_dff.cc:235:make_patterns_logic$3690 ($ne).
+Removed top 2 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$opt_dff.cc:235:make_patterns_logic$3683 ($ne).
+Removed top 3 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3641 ($eq).
+Removed top 2 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3637 ($eq).
+Removed top 2 bits (of 6) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3633 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3629 ($eq).
+Removed top 1 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3625 ($eq).
+Removed top 1 bits (of 6) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3621 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3617 ($eq).
+Removed top 1 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3613 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3609 ($eq).
+Removed top 1 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3605 ($eq).
+Removed top 1 bits (of 9) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3601 ($eq).
+Removed top 1 bits (of 10) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3597 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3593 ($eq).
+Removed top 1 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3589 ($eq).
+Removed top 1 bits (of 9) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3585 ($eq).
+Removed top 1 bits (of 10) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3581 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3573 ($eq).
+Removed top 1 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3569 ($eq).
+Removed top 1 bits (of 6) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3565 ($eq).
+Removed top 1 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3513 ($eq).
+Removed top 1 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3496 ($eq).
+Removed top 2 bits (of 6) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3470 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3458 ($eq).
+Removed top 1 bits (of 9) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3446 ($eq).
+Removed top 1 bits (of 9) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3434 ($eq).
+Removed top 1 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3422 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3381 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3301 ($eq).
+Removed top 2 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3293 ($eq).
+Removed top 2 bits (of 10) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3285 ($eq).
+Removed top 2 bits (of 10) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3277 ($eq).
+Removed top 2 bits (of 6) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3269 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3261 ($eq).
+Removed top 1 bits (of 9) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3253 ($eq).
+Removed top 1 bits (of 9) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3245 ($eq).
+Removed top 1 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3154 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3122 ($eq).
+Removed top 1 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3114 ($eq).
+Removed top 1 bits (of 10) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3106 ($eq).
+Removed top 1 bits (of 10) from port B of cell tt_um_dvirdc_gf180_diff8.$auto$fsm_map.cc:77:implement_pattern_cache$3098 ($eq).
+Removed top 1 bits (of 3) from port A of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:10$329 ($add).
+Removed top 2 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:10$329 ($add).
+Removed top 1 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$ge$/work/rtl/diff8_uart_rx.v:10$330 ($ge).
+Removed top 1 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$eq$/work/rtl/diff8_uart_rx.v:24$346 ($eq).
+Removed top 1 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$eq$/work/rtl/diff8_uart_rx.v:24$347 ($eq).
+Removed top 1 bits (of 2) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:24$349 ($add).
+Removed top 31 bits (of 32) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$ge$/work/rtl/diff8_uart_rx.v:27$357 ($ge).
+Removed top 28 bits (of 32) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$le$/work/rtl/diff8_uart_rx.v:27$358 ($le).
+Converting cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$neg$/work/rtl/diff8_uart_rx.v:27$366 ($neg) from signed to unsigned.
+Removed top 1 bits (of 4) from port A of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$neg$/work/rtl/diff8_uart_rx.v:27$366 ($neg).
+Removed top 6 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2455_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2454_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2453_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2452_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2451_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2450_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2449_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2448_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2447_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2446_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2445_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2444_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2443_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2442_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2441_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2440_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2439_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2438_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2437_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2436_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2435_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2434_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2433_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2432_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2431_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2430_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2429_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2428_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2427_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2426_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2425_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2424_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2423_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2422_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2421_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2420_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2419_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2418_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2417_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2416_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2415_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2414_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2116_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2112_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2111_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2104_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2103_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$2099_CMP0 ($eq).
+Removed top 6 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$1838_CMP0 ($eq).
+Removed top 3 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$1778_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$1704_CMP0 ($eq).
+Removed top 7 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$1528_CMP0 ($eq).
+Removed top 5 bits (of 8) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$1472_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$948_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$658_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$642_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$627_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$591_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$procmux$590_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$326 ($add).
+Removed top 3 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$325 ($add).
+Removed top 3 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$324 ($add).
+Removed top 3 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$323 ($add).
+Removed top 3 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$322 ($add).
+Removed top 3 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$321 ($add).
+Removed top 3 bits (of 4) from port A of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$320 ($add).
+Removed top 3 bits (of 4) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$320 ($add).
+Removed top 2 bits (of 4) from port Y of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$320 ($add).
+Removed top 7 bits (of 8) from port A of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$shl$/work/rtl/diff8_digital.v:45$311 ($shl).
+Removed top 29 bits (of 32) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$le$/work/rtl/diff8_digital.v:179$297 ($le).
+Removed top 31 bits (of 32) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$le$/work/rtl/diff8_digital.v:177$296 ($le).
+Removed top 5 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$eq$/work/rtl/diff8_digital.v:155$273 ($eq).
+Removed top 1 bits (of 6) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$eq$/work/rtl/diff8_digital.v:150$271 ($eq).
+Removed top 1 bits (of 10) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$eq$/work/rtl/diff8_digital.v:147$261 ($eq).
+Converting cell tt_um_dvirdc_gf180_diff8.$flatten\core.$sub$/work/rtl/diff8_digital.v:141$254 ($sub) from unsigned to signed.
+Removed top 31 bits (of 32) from port A of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$sub$/work/rtl/diff8_digital.v:141$254 ($sub).
+Removed top 27 bits (of 32) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$sub$/work/rtl/diff8_digital.v:141$254 ($sub).
+Removed top 26 bits (of 32) from port Y of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$sub$/work/rtl/diff8_digital.v:141$254 ($sub).
+Removed top 28 bits (of 32) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:37$251 ($add).
+Removed top 2 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:133$219 ($add).
+Removed top 7 bits (of 8) from port A of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$shl$/work/rtl/diff8_digital.v:45$214 ($shl).
+Removed top 4 bits (of 7) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$eq$/work/rtl/diff8_digital.v:126$125 ($eq).
+Removed top 27 bits (of 32) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$lt$/work/rtl/diff8_digital.v:97$56 ($lt).
+Removed top 28 bits (of 32) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$gt$/work/rtl/diff8_digital.v:97$54 ($gt).
+Removed top 1 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$eq$/work/rtl/diff8_digital.v:95$52 ($eq).
+Removed top 2 bits (of 5) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.$eq$/work/rtl/diff8_digital.v:94$48 ($eq).
+Removed top 2 bits (of 3) from port B of cell tt_um_dvirdc_gf180_diff8.$flatten\core.\rx.$sub$/work/rtl/diff8_uart_rx.v:9$328 ($sub).
+Removed top 2 bits (of 4) from wire tt_um_dvirdc_gf180_diff8.$flatten\core.$add$/work/rtl/diff8_digital.v:38$320_Y.
+
+74. Executing PEEPOPT pass (run peephole optimizers).
+
+75. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+76. Executing BOOTH pass (map to Booth multipliers).
+Mapped 0 multipliers.
+
+77. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module tt_um_dvirdc_gf180_diff8:
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:104$60 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:133$219 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:148$268 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:150$272 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:35$132 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:35$180 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:35$232 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:35$247 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:35$265 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:37$251 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$320 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$321 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$322 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$323 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$324 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$325 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$326 ($add).
+  creating $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:93$47 ($add).
+  creating $macc model for $flatten\core.$sub$/work/rtl/diff8_digital.v:105$61 ($sub).
+  creating $macc model for $flatten\core.$sub$/work/rtl/diff8_digital.v:105$62 ($sub).
+  creating $macc model for $flatten\core.$sub$/work/rtl/diff8_digital.v:141$254 ($sub).
+  creating $macc model for $flatten\core.$sub$/work/rtl/diff8_digital.v:144$257 ($sub).
+  creating $macc model for $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:10$329 ($add).
+  creating $macc model for $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:24$349 ($add).
+  creating $macc model for $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:33$371 ($add).
+  creating $macc model for $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:34$372 ($add).
+  creating $macc model for $flatten\core.\rx.$neg$/work/rtl/diff8_uart_rx.v:27$366 ($neg).
+  creating $macc model for $flatten\core.\rx.$sub$/work/rtl/diff8_uart_rx.v:9$328 ($sub).
+  creating $macc model for $flatten\core.\tx.$add$/work/rtl/diff8_uart_tx.v:13$381 ($add).
+  creating $macc model for $flatten\core.\tx.$add$/work/rtl/diff8_uart_tx.v:14$382 ($add).
+  merging $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$325 into $flatten\core.$add$/work/rtl/diff8_digital.v:38$326.
+  merging $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$324 into $flatten\core.$add$/work/rtl/diff8_digital.v:38$326.
+  merging $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$323 into $flatten\core.$add$/work/rtl/diff8_digital.v:38$326.
+  merging $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$322 into $flatten\core.$add$/work/rtl/diff8_digital.v:38$326.
+  merging $macc model for $flatten\core.$add$/work/rtl/diff8_digital.v:38$321 into $flatten\core.$add$/work/rtl/diff8_digital.v:38$326.
+  creating $alu model for $macc $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:33$371.
+  creating $alu model for $macc $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:24$349.
+  creating $alu model for $macc $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:10$329.
+  creating $alu model for $macc $flatten\core.$sub$/work/rtl/diff8_digital.v:144$257.
+  creating $alu model for $macc $flatten\core.$sub$/work/rtl/diff8_digital.v:141$254.
+  creating $alu model for $macc $flatten\core.$sub$/work/rtl/diff8_digital.v:105$62.
+  creating $alu model for $macc $flatten\core.$sub$/work/rtl/diff8_digital.v:105$61.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:93$47.
+  creating $alu model for $macc $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:34$372.
+  creating $alu model for $macc $flatten\core.\rx.$neg$/work/rtl/diff8_uart_rx.v:27$366.
+  creating $alu model for $macc $flatten\core.\rx.$sub$/work/rtl/diff8_uart_rx.v:9$328.
+  creating $alu model for $macc $flatten\core.\tx.$add$/work/rtl/diff8_uart_tx.v:13$381.
+  creating $alu model for $macc $flatten\core.\tx.$add$/work/rtl/diff8_uart_tx.v:14$382.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:38$320.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:37$251.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:35$265.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:35$247.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:35$232.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:35$180.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:35$132.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:150$272.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:148$268.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:133$219.
+  creating $alu model for $macc $flatten\core.$add$/work/rtl/diff8_digital.v:104$60.
+  creating $macc cell for $flatten\core.$add$/work/rtl/diff8_digital.v:38$326: $auto$alumacc.cc:382:replace_macc$3841
+  creating $alu model for $flatten\core.$gt$/work/rtl/diff8_digital.v:137$235 ($gt): new $alu
+  creating $alu model for $flatten\core.$gt$/work/rtl/diff8_digital.v:141$255 ($gt): new $alu
+  creating $alu model for $flatten\core.$gt$/work/rtl/diff8_digital.v:97$54 ($gt): new $alu
+  creating $alu model for $flatten\core.$le$/work/rtl/diff8_digital.v:177$296 ($le): new $alu
+  creating $alu model for $flatten\core.$le$/work/rtl/diff8_digital.v:179$297 ($le): new $alu
+  creating $alu model for $flatten\core.$lt$/work/rtl/diff8_digital.v:97$56 ($lt): new $alu
+  creating $alu model for $flatten\core.\rx.$ge$/work/rtl/diff8_uart_rx.v:10$330 ($ge): new $alu
+  creating $alu model for $flatten\core.\rx.$ge$/work/rtl/diff8_uart_rx.v:27$357 ($ge): new $alu
+  creating $alu model for $flatten\core.\rx.$le$/work/rtl/diff8_uart_rx.v:27$358 ($le): new $alu
+  creating $alu model for $flatten\core.$procmux$1472_CMP0 ($eq): merged with $flatten\core.$le$/work/rtl/diff8_digital.v:179$297.
+  creating $alu model for $flatten\core.$procmux$1528_CMP0 ($eq): merged with $flatten\core.$le$/work/rtl/diff8_digital.v:177$296.
+  creating $alu cell for $flatten\core.\rx.$le$/work/rtl/diff8_uart_rx.v:27$358: $auto$alumacc.cc:512:replace_alu$3851
+  creating $alu cell for $flatten\core.\rx.$ge$/work/rtl/diff8_uart_rx.v:27$357: $auto$alumacc.cc:512:replace_alu$3860
+  creating $alu cell for $flatten\core.\rx.$ge$/work/rtl/diff8_uart_rx.v:10$330: $auto$alumacc.cc:512:replace_alu$3873
+  creating $alu cell for $flatten\core.$lt$/work/rtl/diff8_digital.v:97$56: $auto$alumacc.cc:512:replace_alu$3886
+  creating $alu cell for $flatten\core.$le$/work/rtl/diff8_digital.v:179$297, $flatten\core.$procmux$1472_CMP0: $auto$alumacc.cc:512:replace_alu$3891
+  creating $alu cell for $flatten\core.$le$/work/rtl/diff8_digital.v:177$296, $flatten\core.$procmux$1528_CMP0: $auto$alumacc.cc:512:replace_alu$3900
+  creating $alu cell for $flatten\core.$gt$/work/rtl/diff8_digital.v:97$54: $auto$alumacc.cc:512:replace_alu$3909
+  creating $alu cell for $flatten\core.$gt$/work/rtl/diff8_digital.v:141$255: $auto$alumacc.cc:512:replace_alu$3920
+  creating $alu cell for $flatten\core.$gt$/work/rtl/diff8_digital.v:137$235: $auto$alumacc.cc:512:replace_alu$3931
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:104$60: $auto$alumacc.cc:512:replace_alu$3942
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:133$219: $auto$alumacc.cc:512:replace_alu$3945
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:148$268: $auto$alumacc.cc:512:replace_alu$3948
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:150$272: $auto$alumacc.cc:512:replace_alu$3951
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:35$132: $auto$alumacc.cc:512:replace_alu$3954
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:35$180: $auto$alumacc.cc:512:replace_alu$3957
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:35$232: $auto$alumacc.cc:512:replace_alu$3960
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:35$247: $auto$alumacc.cc:512:replace_alu$3963
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:35$265: $auto$alumacc.cc:512:replace_alu$3966
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:37$251: $auto$alumacc.cc:512:replace_alu$3969
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:38$320: $auto$alumacc.cc:512:replace_alu$3972
+  creating $alu cell for $flatten\core.\tx.$add$/work/rtl/diff8_uart_tx.v:14$382: $auto$alumacc.cc:512:replace_alu$3975
+  creating $alu cell for $flatten\core.\tx.$add$/work/rtl/diff8_uart_tx.v:13$381: $auto$alumacc.cc:512:replace_alu$3978
+  creating $alu cell for $flatten\core.\rx.$sub$/work/rtl/diff8_uart_rx.v:9$328: $auto$alumacc.cc:512:replace_alu$3981
+  creating $alu cell for $flatten\core.\rx.$neg$/work/rtl/diff8_uart_rx.v:27$366: $auto$alumacc.cc:512:replace_alu$3984
+  creating $alu cell for $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:34$372: $auto$alumacc.cc:512:replace_alu$3987
+  creating $alu cell for $flatten\core.$add$/work/rtl/diff8_digital.v:93$47: $auto$alumacc.cc:512:replace_alu$3990
+  creating $alu cell for $flatten\core.$sub$/work/rtl/diff8_digital.v:105$61: $auto$alumacc.cc:512:replace_alu$3993
+  creating $alu cell for $flatten\core.$sub$/work/rtl/diff8_digital.v:105$62: $auto$alumacc.cc:512:replace_alu$3996
+  creating $alu cell for $flatten\core.$sub$/work/rtl/diff8_digital.v:141$254: $auto$alumacc.cc:512:replace_alu$3999
+  creating $alu cell for $flatten\core.$sub$/work/rtl/diff8_digital.v:144$257: $auto$alumacc.cc:512:replace_alu$4002
+  creating $alu cell for $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:10$329: $auto$alumacc.cc:512:replace_alu$4005
+  creating $alu cell for $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:24$349: $auto$alumacc.cc:512:replace_alu$4008
+  creating $alu cell for $flatten\core.\rx.$add$/work/rtl/diff8_uart_rx.v:33$371: $auto$alumacc.cc:512:replace_alu$4011
+  created 33 $alu and 1 $macc cells.
+
+78. Executing SHARE pass (SAT-based resource sharing).
+Found 2 cells in module tt_um_dvirdc_gf180_diff8 that may be considered for resource sharing.
+  Analyzing resource sharing options for $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311 ($shl):
+    Found cell that is never activated: $flatten\core.$add$/work/rtl/diff8_digital.v:38$325
+    Found cell that is never activated: $flatten\core.$add$/work/rtl/diff8_digital.v:38$324
+    Found cell that is never activated: $flatten\core.$add$/work/rtl/diff8_digital.v:38$323
+    Found cell that is never activated: $flatten\core.$add$/work/rtl/diff8_digital.v:38$322
+    Found cell that is never activated: $flatten\core.$add$/work/rtl/diff8_digital.v:38$321
+    Found 48 activation_patterns using ctrl signal { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:139$240_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:182$298_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:183$299_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$590_CMP $flatten\core.$procmux$1778_CMP $flatten\core.$procmux$1838_CMP $flatten\core.$procmux$2099_CMP $flatten\core.$procmux$2103_CMP $flatten\core.$procmux$2111_CMP $flatten\core.$procmux$2116_CMP \core.rx.valid $auto$opt_reduce.cc:135:opt_pmux$3070 $auto$rtlil.cc:3258:ReduceAnd$3897 $auto$rtlil.cc:3259:ReduceOr$3899 $auto$rtlil.cc:3258:ReduceAnd$3906 $auto$rtlil.cc:3259:ReduceOr$3908 $auto$rtlil.cc:3255:Not$3930 }.
+    Found 1 candidates: $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214
+    Analyzing resource sharing with $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214 ($shl):
+      Found 8 activation_patterns using ctrl signal { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$590_CMP $auto$rtlil.cc:3258:ReduceAnd$3897 }.
+      Forbidden control signals for this pair of cells: { $flatten\core.$ne$/work/rtl/diff8_digital.v:139$240_Y $flatten\core.$gt$/work/rtl/diff8_digital.v:141$255_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:141$256_Y }
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$procmux$590_CMP \core.rx.valid $auto$rtlil.cc:3255:Not$3930 } = 7'1010110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$590_CMP \core.rx.valid $auto$rtlil.cc:3255:Not$3930 } = 8'11100110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y $flatten\core.$procmux$590_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 $auto$rtlil.cc:3255:Not$3930 } = 10'1110101110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$1838_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 $auto$rtlil.cc:3255:Not$3930 } = 10'1110110100
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$1838_CMP \core.rx.valid $auto$rtlil.cc:3255:Not$3930 } = 10'1110101110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:183$299_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$2099_CMP \core.rx.valid } = 10'1110001111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$procmux$590_CMP \core.rx.valid $auto$opt_reduce.cc:135:opt_pmux$3070 } = 9'111000111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:182$298_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$2103_CMP \core.rx.valid } = 10'1110001111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$2111_CMP \core.rx.valid $auto$rtlil.cc:3259:ReduceOr$3899 } = 10'1110001111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$2116_CMP \core.rx.valid $auto$rtlil.cc:3259:ReduceOr$3908 } = 10'1110001111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$1778_CMP \core.rx.valid } = 8'11101111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$590_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3897 } = 9'111011111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$1838_CMP \core.rx.valid } = 9'111010111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$590_CMP $flatten\core.$procmux$1838_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 } = 9'111011010
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y $flatten\core.$procmux$590_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 } = 9'111010111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$590_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 } = 8'11101110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$590_CMP \core.rx.valid } = 7'1110011
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$procmux$590_CMP \core.rx.valid } = 6'101011
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$procmux$589_CMP \core.rx.valid } = 6'101011
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$589_CMP \core.rx.valid } = 7'1110011
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$589_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 } = 8'11101110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y $flatten\core.$procmux$589_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 } = 9'111010111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$1838_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 } = 9'111011010
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$1838_CMP \core.rx.valid } = 9'111010111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$589_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3897 } = 9'111011111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$1778_CMP \core.rx.valid } = 8'11101111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$2116_CMP \core.rx.valid $auto$rtlil.cc:3259:ReduceOr$3908 } = 10'1110001111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$2111_CMP \core.rx.valid $auto$rtlil.cc:3259:ReduceOr$3899 } = 10'1110001111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:182$298_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$2103_CMP \core.rx.valid } = 10'1110001111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$procmux$589_CMP \core.rx.valid $auto$opt_reduce.cc:135:opt_pmux$3070 } = 9'111000111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:183$299_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$2099_CMP \core.rx.valid } = 10'1110001111
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$1838_CMP \core.rx.valid $auto$rtlil.cc:3255:Not$3930 } = 10'1110101110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$1838_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 $auto$rtlil.cc:3255:Not$3930 } = 10'1110110100
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y $flatten\core.$procmux$589_CMP \core.rx.valid $auto$rtlil.cc:3258:ReduceAnd$3906 $auto$rtlil.cc:3255:Not$3930 } = 10'1110101110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$589_CMP \core.rx.valid $auto$rtlil.cc:3255:Not$3930 } = 8'11100110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311: { \core.bist_state [1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$procmux$589_CMP \core.rx.valid $auto$rtlil.cc:3255:Not$3930 } = 7'1010110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$procmux$590_CMP } = 6'101011
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$590_CMP } = 7'1110101
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$590_CMP $auto$rtlil.cc:3258:ReduceAnd$3897 } = 8'11101110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$590_CMP $auto$rtlil.cc:3258:ReduceAnd$3897 } = 9'111011011
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$procmux$589_CMP $auto$rtlil.cc:3258:ReduceAnd$3897 } = 9'111011011
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$589_CMP $auto$rtlil.cc:3258:ReduceAnd$3897 } = 8'11101110
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$procmux$589_CMP } = 7'1110101
+      Activation pattern for cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: { \core.bist_state [2] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$procmux$589_CMP } = 6'101011
+      Size of SAT problem: 49 cells, 1627 variables, 5014 clauses
+      According to the SAT solver this pair of cells can be shared.
+      Activation signal for $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214: $auto$share.cc:1072:make_cell_activation_logic$4023
+      New cell: $auto$share.cc:663:make_supercell$4030 ($shl)
+  Analyzing resource sharing options for $auto$share.cc:663:make_supercell$4030 ($shl):
+    Found 44 activation_patterns using ctrl signal { \core.bist_state [2:1] \core.bus_wr $flatten\core.$logic_and$/work/rtl/diff8_digital.v:128$136_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:129$158_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:131$203_Y $flatten\core.$eq$/work/rtl/diff8_digital.v:155$273_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:157$282_Y $flatten\core.$logic_and$/work/rtl/diff8_digital.v:162$287_Y $flatten\core.$logic_or$/work/rtl/diff8_digital.v:173$295_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:182$298_Y $flatten\core.$ne$/work/rtl/diff8_digital.v:183$299_Y $flatten\core.$procmux$589_CMP $flatten\core.$procmux$590_CMP $flatten\core.$procmux$1778_CMP $flatten\core.$procmux$1838_CMP $flatten\core.$procmux$2099_CMP $flatten\core.$procmux$2103_CMP $flatten\core.$procmux$2111_CMP $flatten\core.$procmux$2116_CMP \core.rx.valid $auto$opt_reduce.cc:135:opt_pmux$3070 $auto$rtlil.cc:3258:ReduceAnd$3897 $auto$rtlil.cc:3259:ReduceOr$3899 $auto$rtlil.cc:3258:ReduceAnd$3906 $auto$rtlil.cc:3259:ReduceOr$3908 $auto$rtlil.cc:3255:Not$3930 }.
+    No candidates found.
+Removing 7 cells in module tt_um_dvirdc_gf180_diff8:
+  Removing cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$214 ($shl).
+  Removing cell $flatten\core.$shl$/work/rtl/diff8_digital.v:45$311 ($shl).
+  Removing cell $flatten\core.$add$/work/rtl/diff8_digital.v:38$321 ($add).
+  Removing cell $flatten\core.$add$/work/rtl/diff8_digital.v:38$322 ($add).
+  Removing cell $flatten\core.$add$/work/rtl/diff8_digital.v:38$323 ($add).
+  Removing cell $flatten\core.$add$/work/rtl/diff8_digital.v:38$324 ($add).
+  Removing cell $flatten\core.$add$/work/rtl/diff8_digital.v:38$325 ($add).
+
+79. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+<suppressed ~2 debug messages>
+
+80. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 881 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 880 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 879 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+81. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1408 debug messages>
+
+82. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+83. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 879 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+84. Executing OPT_DFF pass (perform DFF optimizations).
+
+85. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 0 unused cells and 20 unused wires.
+<suppressed ~2 debug messages>
+
+86. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+87. Rerunning OPT passes. (Maybe there is more to do…)
+
+88. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1408 debug messages>
+
+89. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+90. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 878 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+91. Executing OPT_DFF pass (perform DFF optimizations).
+
+92. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+93. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+94. Executing MEMORY pass.
+
+94.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+94.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+94.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+94.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+94.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+94.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+94.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+94.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+94.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+94.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+95. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+96. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+<suppressed ~87 debug messages>
+
+97. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 870 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 867 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+98. Executing OPT_DFF pass (perform DFF optimizations).
+
+99. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 1 unused cells and 46 unused wires.
+<suppressed ~2 debug messages>
+
+100. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+101. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+102. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 866 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+103. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~691 debug messages>
+
+104. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+    Consolidated identical input bits for $pmux cell $flatten\core.$procmux$2098:
+      Old ports: A=1'1, B=4'1111, Y=$flatten\core.$procmux$2098_Y
+      New connections: $flatten\core.$procmux$2098_Y = 1'1
+    Consolidated identical input bits for $mux cell $flatten\core.$ternary$/work/rtl/diff8_digital.v:17$20:
+      Old ports: A={ \core.checked_bytes [28:0] 3'000 }, B=32'11111111111111111111111111111111, Y=\core.checked_bits
+      New ports: A={ \core.checked_bytes [28:0] 1'0 }, B=30'111111111111111111111111111111, Y={ \core.checked_bits [31:3] \core.checked_bits [0] }
+      New connections: \core.checked_bits [2:1] = { \core.checked_bits [0] \core.checked_bits [0] }
+    Consolidated identical input bits for $mux cell $flatten\core.$ternary$/work/rtl/diff8_digital.v:20$22:
+      Old ports: A={ \core.snap_bytes [28:0] 3'000 }, B=32'11111111111111111111111111111111, Y=\core.snap_bits
+      New ports: A={ \core.snap_bytes [28:0] 1'0 }, B=30'111111111111111111111111111111, Y={ \core.snap_bits [31:3] \core.snap_bits [0] }
+      New connections: \core.snap_bits [2:1] = { \core.snap_bits [0] \core.snap_bits [0] }
+    Consolidated identical input bits for $mux cell $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$212:
+      Old ports: A=8'01010101, B=8'10101010, Y=$flatten\core.$ternary$/work/rtl/diff8_digital.v:43$212_Y
+      New ports: A=2'01, B=2'10, Y=$flatten\core.$ternary$/work/rtl/diff8_digital.v:43$212_Y [1:0]
+      New connections: $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$212_Y [7:2] = { $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$212_Y [1:0] $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$212_Y [1:0] $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$212_Y [1:0] }
+    Consolidated identical input bits for $mux cell $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$309:
+      Old ports: A=8'01010101, B=8'10101010, Y=$flatten\core.$ternary$/work/rtl/diff8_digital.v:43$309_Y
+      New ports: A=2'01, B=2'10, Y=$flatten\core.$ternary$/work/rtl/diff8_digital.v:43$309_Y [1:0]
+      New connections: $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$309_Y [7:2] = { $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$309_Y [1:0] $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$309_Y [1:0] $flatten\core.$ternary$/work/rtl/diff8_digital.v:43$309_Y [1:0] }
+    Consolidated identical input bits for $mux cell $flatten\core.\tx.$procmux$2579:
+      Old ports: A={ 1'1 \core.tx.frame [9:1] }, B={ 1'1 \core.tx_data 1'0 }, Y=$flatten\core.\tx.$0\frame[9:0]
+      New ports: A=\core.tx.frame [9:1], B={ \core.tx_data 1'0 }, Y=$flatten\core.\tx.$0\frame[9:0] [8:0]
+      New connections: $flatten\core.\tx.$0\frame[9:0] [9] = 1'1
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 6 changes.
+
+105. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 865 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+106. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $mux $flatten\core.$procmux$2408 in front of them:
+        $auto$alumacc.cc:512:replace_alu$3993
+        $auto$alumacc.cc:512:replace_alu$3996
+
+107. Executing OPT_DFF pass (perform DFF optimizations).
+
+108. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~1 debug messages>
+
+109. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+<suppressed ~2 debug messages>
+
+110. Rerunning OPT passes. (Maybe there is more to do…)
+
+111. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~689 debug messages>
+
+112. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+113. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 863 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+114. Executing OPT_SHARE pass.
+
+115. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 1-bit at position 9 on $auto$ff.cc:337:slice$3646 ($adffe) from module tt_um_dvirdc_gf180_diff8.
+
+116. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+117. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+118. Rerunning OPT passes. (Maybe there is more to do…)
+
+119. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~689 debug messages>
+
+120. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+121. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 863 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+122. Executing OPT_SHARE pass.
+
+123. Executing OPT_DFF pass (perform DFF optimizations).
+
+124. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+125. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+126. Executing TECHMAP pass (map to technology primitives).
+
+126.1. Executing Verilog-2005 frontend: /nix/store/c14dhblj440yzvvsdcyai22fan5q2231-yosys-0.66/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/c14dhblj440yzvvsdcyai22fan5q2231-yosys-0.66/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+126.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$constmap:1b6115d36d46c0296d0024e3e3623593810ba834$paramod$3b3a66a7766bf28794ddcd35314b025da1fe57c8\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
+Using template $paramod$b3c20b05d9b1fc2c940ef2f6c917486aead042e8\_90_alu for cells of type $alu.
+Using template $paramod$c04af8dbf0e5d1d69bbccb2c7bd8a93fc9ef54dc\_90_alu for cells of type $alu.
+Using template $paramod$a1665ef28c749ebcdbe9aecd466e644647b56463\_90_alu for cells of type $alu.
+Using template $paramod$672a140277c71df8314410f22acc08d55222c3c7\_90_alu for cells of type $alu.
+Using template $paramod$b8c0a997bce700f23568a5ada79cc6781d1f5ca0\_90_alu for cells of type $alu.
+Using template $paramod$025d767fc934a3e7d59a671de523743ebaa07759\_90_alu for cells of type $alu.
+Using template $paramod$1d1e68f77481583066c6d429218f48ea9d5739b3\_90_alu for cells of type $alu.
+Using template $paramod$a7817265ef3ab2ee43da53bbd8a90f6450d412d9\_90_alu for cells of type $alu.
+Using template $paramod$6a42b6fefed750f8a1c58eab59479d960557103c\_90_alu for cells of type $alu.
+Using template $paramod$32efbfac1c4dc57230cf86180788fdfd12e3b511\_90_alu for cells of type $alu.
+Using template $paramod$754650b284649a026620fc6856e5b6886cbfe794\_90_alu for cells of type $alu.
+Using template $paramod$3ef7d3dd227da7627a99c5e5a6a4deb817573e39\_90_alu for cells of type $alu.
+Using template $paramod$ce0ec84be7047712840b0952f343ee9e63ef75d1\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$fbc7873bff55778c0b3173955b7e4bce1d9d6834\_90_alu for cells of type $alu.
+Using template $paramod$ba698a254f9a5947e85cbe7beae6b161eefc5386\_90_alu for cells of type $alu.
+Using template $paramod$403a3c2fa431a154c52a6a5429d7a6260b5d144f\_90_alu for cells of type $alu.
+Using template $paramod$a04dd9d4d8b430140c4ff94b50470fb380fda2a0\_90_alu for cells of type $alu.
+Using template $paramod$fc972a7a46956c1788f3cb5257b53c8f1df2d0cc\_90_alu for cells of type $alu.
+Using template $paramod$8742280fdebca84e1c87f2a86ed84f62d558f4cc\_90_alu for cells of type $alu.
+Using extmapper maccmap for cells of type $macc_v2.
+  add $auto$wreduce.cc:514:run$3840 [1:0] (2 bits, unsigned)
+  add $flatten\core.$0\popcount$func$/work/rtl/diff8_digital.v:50$16.x[7:0]$316 [7] (1 bits, unsigned)
+  add $flatten\core.$0\popcount$func$/work/rtl/diff8_digital.v:50$16.x[7:0]$316 [6] (1 bits, unsigned)
+  add $flatten\core.$0\popcount$func$/work/rtl/diff8_digital.v:50$16.x[7:0]$316 [5] (1 bits, unsigned)
+  add $flatten\core.$0\popcount$func$/work/rtl/diff8_digital.v:50$16.x[7:0]$316 [4] (1 bits, unsigned)
+  add $flatten\core.$0\popcount$func$/work/rtl/diff8_digital.v:50$16.x[7:0]$316 [3] (1 bits, unsigned)
+  add $flatten\core.$0\popcount$func$/work/rtl/diff8_digital.v:50$16.x[7:0]$316 [2] (1 bits, unsigned)
+  packed 3 (3) bits / 3 words into adder tree
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $logic_and.
+Using template $paramod$constmap:82d13b1faa4b21cb1487e5b4ddefba1164cb15a1$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx for cells of type $shift.
+Analyzing pattern of constant bits for this cell:
+Creating constmapped module `$paramod$constmap:9d7c541a436e2c9bb59914d3a53cc61c099f37b0$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx'.
+
+126.55. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:9d7c541a436e2c9bb59914d3a53cc61c099f37b0$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$8087.
+    dead port 2/2 on $mux $procmux$8093.
+    dead port 2/2 on $mux $procmux$8099.
+Removed 3 multiplexer ports.
+<suppressed ~1271 debug messages>
+
+126.56. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:9d7c541a436e2c9bb59914d3a53cc61c099f37b0$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx.
+<suppressed ~2 debug messages>
+Removed 0 unused cells and 9 unused wires.
+Using template $paramod$constmap:9d7c541a436e2c9bb59914d3a53cc61c099f37b0$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx for cells of type $shift.
+Using extmapper simplemap for cells of type $pmux.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000010 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000011 for cells of type $fa.
+Using template $paramod$740b056ede97228d3eae64ea2fdc81f0a33e0fe7\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000001 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000001 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000110 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000110 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001000 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000101 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000101 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010000 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010100 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001010 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001010 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~3910 debug messages>
+
+127. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+<suppressed ~5463 debug messages>
+
+128. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 9363 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 8433 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 8003 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 7825 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 7800 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 7794 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+<suppressed ~4707 debug messages>
+Removed a total of 1569 cells.
+
+129. Executing OPT_DFF pass (perform DFF optimizations).
+
+130. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 411 unused cells and 3796 unused wires.
+<suppressed ~412 debug messages>
+
+131. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+132. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 7383 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+133. Executing OPT_DFF pass (perform DFF optimizations).
+
+134. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+135. Executing ABC pass (technology mapping using ABC).
+
+135.1. Extracting gate netlist of module `\tt_um_dvirdc_gf180_diff8' to `<abc-temp-dir>/input.blif'..
+
+135.1.1. Executed ABC.
+Extracted 6720 gates and 7370 wires to a netlist network with 648 inputs and 382 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+135.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:      114
+ABC RESULTS:            ANDNOT cells:     1413
+ABC RESULTS:               MUX cells:     2095
+ABC RESULTS:              NAND cells:      178
+ABC RESULTS:               NOR cells:      217
+ABC RESULTS:               NOT cells:      486
+ABC RESULTS:                OR cells:     1691
+ABC RESULTS:             ORNOT cells:      121
+ABC RESULTS:              XNOR cells:       29
+ABC RESULTS:               XOR cells:      360
+ABC RESULTS:        internal signals:     6340
+ABC RESULTS:           input signals:      648
+ABC RESULTS:          output signals:      382
+Removing temp directory.
+Removing global temp directory.
+
+136. Executing OPT pass (performing simple optimizations).
+
+136.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+<suppressed ~729 debug messages>
+
+136.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 7367 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 7343 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+<suppressed ~72 debug messages>
+Removed a total of 24 cells.
+
+136.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+136.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 2 unused cells and 3392 unused wires.
+<suppressed ~9 debug messages>
+
+136.5. Finished fast OPT passes.
+
+137. Executing HIERARCHY pass (managing design hierarchy).
+
+137.1. Analyzing design hierarchy..
+Top module:  \tt_um_dvirdc_gf180_diff8
+
+137.2. Analyzing design hierarchy..
+Top module:  \tt_um_dvirdc_gf180_diff8
+Removed 0 unused modules.
+
+138. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_dvirdc_gf180_diff8...
+Found and reported 0 problems.
+
+139. Printing statistics.
+
+=== tt_um_dvirdc_gf180_diff8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     6757 wires
+     7622 wire bits
+      116 public wires
+      928 public wire bits
+       11 ports
+       53 port bits
+     7341 cells
+     1412   $_ANDNOT_
+      114   $_AND_
+      334   $_DFFE_PN0P_
+       15   $_DFFE_PN1P_
+      297   $_DFF_PN0_
+       13   $_DFF_PN1_
+     2095   $_MUX_
+      178   $_NAND_
+      199   $_NOR_
+      484   $_NOT_
+      121   $_ORNOT_
+     1686   $_OR_
+       29   $_XNOR_
+      360   $_XOR_
+        3   $scopeinfo
+        1   gf180_diff_phy
+
+140. Executing OPT pass (performing simple optimizations).
+
+140.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+140.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 7341 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+140.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_dvirdc_gf180_diff8..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+140.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_dvirdc_gf180_diff8.
+Performed a total of 0 changes.
+
+140.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_dvirdc_gf180_diff8'.
+Computing hashes of 7341 cells of `\tt_um_dvirdc_gf180_diff8'.
+Finding duplicate cells in `\tt_um_dvirdc_gf180_diff8'.
+Removed a total of 0 cells.
+
+140.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+140.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+
+140.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_dvirdc_gf180_diff8.
+
+140.9. Finished fast OPT passes. (There is nothing left to do.)
+
+141. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 3 unused cells and 36 unused wires.
+<suppressed ~39 debug messages>
+{
+   "creator": "Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)",
+   "invocation": "stat -json -liberty /work/physical/runs/diag_no_arith_tree/tmp/5c34ff79b6334743a4f89259ec266ab1.lib -liberty /work/physical/runs/diag_no_arith_tree/tmp/fde24a37823d41c89a4333c40dd38630.lib ",
+   "modules": {
+      "\\tt_um_dvirdc_gf180_diff8": {
+         "num_wires":         6721,
+         "num_wire_bits":     7419,
+         "num_pub_wires":     80,
+         "num_pub_wire_bits": 725,
+         "num_ports":         11,
+         "num_port_bits":     53,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7338,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1412,
+            "$_AND_": 114,
+            "$_DFFE_PN0P_": 334,
+            "$_DFFE_PN1P_": 15,
+            "$_DFF_PN0_": 297,
+            "$_DFF_PN1_": 13,
+            "$_MUX_": 2095,
+            "$_NAND_": 178,
+            "$_NOR_": 199,
+            "$_NOT_": 484,
+            "$_ORNOT_": 121,
+            "$_OR_": 1686,
+            "$_XNOR_": 29,
+            "$_XOR_": 360,
+            "gf180_diff_phy": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         6721,
+         "num_wire_bits":     7419,
+         "num_pub_wires":     80,
+         "num_pub_wire_bits": 725,
+         "num_ports":         11,
+         "num_port_bits":     53,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7338,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1412,
+            "$_AND_": 114,
+            "$_DFFE_PN0P_": 334,
+            "$_DFFE_PN1P_": 15,
+            "$_DFF_PN0_": 297,
+            "$_DFF_PN1_": 13,
+            "$_MUX_": 2095,
+            "$_NAND_": 178,
+            "$_NOR_": 199,
+            "$_NOT_": 484,
+            "$_ORNOT_": 121,
+            "$_OR_": 1686,
+            "$_XNOR_": 29,
+            "$_XOR_": 360,
+            "gf180_diff_phy": 1
+         }
+      }
+}
+
+142. Printing statistics.
+
+=== tt_um_dvirdc_gf180_diff8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     6721 wires
+     7419 wire bits
+       80 public wires
+      725 public wire bits
+       11 ports
+       53 port bits
+     7338 cells
+     1412   $_ANDNOT_
+      114   $_AND_
+      334   $_DFFE_PN0P_
+       15   $_DFFE_PN1P_
+      297   $_DFF_PN0_
+       13   $_DFF_PN1_
+     2095   $_MUX_
+      178   $_NAND_
+      199   $_NOR_
+      484   $_NOT_
+      121   $_ORNOT_
+     1686   $_OR_
+       29   $_XNOR_
+      360   $_XOR_
+        1   gf180_diff_phy
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PN1P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type \gf180_diff_phy is unknown!
+
+143. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnq_1 (noninv, pins=3, area=65.86) is a direct match for cell type $_DFF_N_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 (noninv, pins=3, area=63.66) is a direct match for cell type $_DFF_P_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 (noninv, pins=4, area=74.64) is a direct match for cell type $_DFF_NN0_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 (noninv, pins=4, area=79.03) is a direct match for cell type $_DFF_NN1_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (noninv, pins=4, area=74.64) is a direct match for cell type $_DFF_PN0_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 (noninv, pins=4, area=79.03) is a direct match for cell type $_DFF_PN1_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1 (noninv, pins=5, area=94.39) is a direct match for cell type $_DFFSR_NNN_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (noninv, pins=5, area=85.61) is a direct match for cell type $_DFFSR_PNN_.
+  final dff cell mappings:
+    \gf180mcu_fd_sc_mcu7t5v0__dffnq_1 _DFF_N_ (.CLKN( C), .D( D), .Q( Q));
+    \gf180mcu_fd_sc_mcu7t5v0__dffq_1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    \gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 _DFF_NN0_ (.CLKN( C), .D( D), .Q( Q), .RN( R));
+    \gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 _DFF_NN1_ (.CLKN( C), .D( D), .Q( Q), .SETN( R));
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RN( R));
+    \gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SETN( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    \gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1 _DFFSR_NNN_ (.CLKN( C), .D( D), .Q( Q), .RN( R), .SETN( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    \gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .RN( R), .SETN( S));
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+143.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\tt_um_dvirdc_gf180_diff8':
+  mapped 631 $_DFF_PN0_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 cells.
+  mapped 28 $_DFF_PN1_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 cells.
+{
+   "creator": "Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)",
+   "invocation": "stat -json -liberty /work/physical/runs/diag_no_arith_tree/tmp/5c34ff79b6334743a4f89259ec266ab1.lib -liberty /work/physical/runs/diag_no_arith_tree/tmp/fde24a37823d41c89a4333c40dd38630.lib ",
+   "modules": {
+      "\\tt_um_dvirdc_gf180_diff8": {
+         "num_wires":         7070,
+         "num_wire_bits":     7768,
+         "num_pub_wires":     80,
+         "num_pub_wire_bits": 725,
+         "num_ports":         11,
+         "num_port_bits":     53,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7687,
+         "num_submodules":       0,
+         "area":              49308.582400,
+         "sequential_area":    49308.582400,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1412,
+            "$_AND_": 114,
+            "$_MUX_": 2444,
+            "$_NAND_": 178,
+            "$_NOR_": 199,
+            "$_NOT_": 484,
+            "$_ORNOT_": 121,
+            "$_OR_": 1686,
+            "$_XNOR_": 29,
+            "$_XOR_": 360,
+            "gf180_diff_phy": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 631,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 28
+         }
+      }
+   },
+      "design": {
+         "num_wires":         7070,
+         "num_wire_bits":     7768,
+         "num_pub_wires":     80,
+         "num_pub_wire_bits": 725,
+         "num_ports":         11,
+         "num_port_bits":     53,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7687,
+         "num_submodules":       0,
+         "area":              49308.582400,
+         "sequential_area":    49308.582400,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1412,
+            "$_AND_": 114,
+            "$_MUX_": 2444,
+            "$_NAND_": 178,
+            "$_NOR_": 199,
+            "$_NOT_": 484,
+            "$_ORNOT_": 121,
+            "$_OR_": 1686,
+            "$_XNOR_": 29,
+            "$_XOR_": 360,
+            "gf180_diff_phy": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 631,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 28
+         }
+      }
+}
+
+144. Printing statistics.
+
+=== tt_um_dvirdc_gf180_diff8 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     7070        - wires
+     7768        - wire bits
+       80        - public wires
+      725        - public wire bits
+       11        - ports
+       53        - port bits
+     7687 4.93E+04 cells
+     1412        -   $_ANDNOT_
+      114        -   $_AND_
+     2444        -   $_MUX_
+      178        -   $_NAND_
+      199        -   $_NOR_
+      484        -   $_NOT_
+      121        -   $_ORNOT_
+     1686        -   $_OR_
+       29        -   $_XNOR_
+      360        -   $_XOR_
+        1        -   gf180_diff_phy
+      631 4.71E+04   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+       28 2.21E+03   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type \gf180_diff_phy is unknown!
+
+   Chip area for module '\tt_um_dvirdc_gf180_diff8': 49308.582400
+     of which used for sequential elements: 49308.582400 (100.00%)
+
+[INFO] Using generated ABC strategy script '/work/physical/runs/diag_no_arith_tree/06-yosys-synthesis/AREA_0.abc'…
+
+145. Executing ABC pass (technology mapping using ABC).
+
+145.1. Extracting gate netlist of module `\tt_um_dvirdc_gf180_diff8' to `/tmp/yosys-abc-sM6MK8/input.blif'..
+
+145.1.1. Executed ABC.
+Extracted 7027 gates and 7684 wires to a netlist network with 657 inputs and 653 outputs.
+Running ABC script: /tmp/yosys-abc-sM6MK8/abc.script
+ABC: ======== ABC command line "source /tmp/yosys-abc-sM6MK8/abc.script"
+ABC: + read_blif /tmp/yosys-abc-sM6MK8/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_6648275a.scl 
+ABC: Warning: Detected 6 multi-output cells (for example, "gf180mcu_fd_sc_mcu7t5v0__addf_1").
+ABC: + read_constr -v /work/physical/runs/diag_no_arith_tree/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "gf180mcu_fd_sc_mcu7t5v0__inv_1/ZN".
+ABC: Setting output load to be 72.910004.
+ABC: + source /work/physical/runs/diag_no_arith_tree/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (gf180mcu_fd_sc_mcu7t5v0__inv_1/ZN) in the library.
+ABC: WireLoad = "none"  Gates =   2545 (  5.7 %)   Cap = 24.7 ff (  7.9 %)   Area =    46748.98 ( 85.3 %)   Delay = 39666.66 ps  (  6.6 %)               
+ABC: Path  0 --      82 : 0    2 pi                               A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   7.3 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --    1560 : 3    6 gf180mcu_fd_sc_mcu7t5v0__or3_1   A =  21.95  Df =1219.7 -629.9 ps  S = 659.5 ps  Cin =  2.8 ff  Cout =  24.4 ff  Cmax = 359.9 ff  G =  877  
+ABC: Path  2 --    1562 : 3    2 gf180mcu_fd_sc_mcu7t5v0__nor3_1  A =  17.56  Df =1909.1 -948.0 ps  S = 870.9 ps  Cin =  4.0 ff  Cout =   8.4 ff  Cmax = 122.2 ff  G =  209  
+ABC: Path  3 --    1565 : 3    5 gf180mcu_fd_sc_mcu7t5v0__nand3_1 A =  15.37  Df =2444.7 -839.1 ps  S = 852.7 ps  Cin =  4.2 ff  Cout =  20.9 ff  Cmax = 278.1 ff  G =  497  
+ABC: Path  4 --    1566 : 2    2 gf180mcu_fd_sc_mcu7t5v0__nor2_1  A =  13.17  Df =2981.5-1045.0 ps  S = 631.9 ps  Cin =  4.3 ff  Cout =   9.4 ff  Cmax = 182.9 ff  G =  219  
+ABC: Path  5 --    2983 : 2  226 gf180mcu_fd_sc_mcu7t5v0__nand2_1 A =  10.98  Df =29429.2-4029.8 ps  S =48273.2 ps  Cin =  4.6 ff  Cout =1875.8 ff  Cmax = 322.3 ff  G =41181  
+ABC: Path  6 --    2984 : 3    1 gf180mcu_fd_sc_mcu7t5v0__mux2_2  A =  32.93  Df =39666.7-7751.6 ps  S =1613.4 ps  Cin =  6.4 ff  Cout =  72.9 ff  Cmax = 720.9 ff  G = 1143  
+ABC: Start-point = pi81 (\core.bus_address [6]).  End-point = po303 ($auto$rtlil.cc:3501:MuxGate$29699).
+ABC: netlist                       : i/o =  657/  653  lat =    0  nd =  2545  edge =   6955  area =46750.05  delay =19.00  lev = 19
+ABC: + write_blif /tmp/yosys-abc-sM6MK8/output.blif 
+
+145.1.2. Re-integrating ABC results.
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and2_1 cells:       79
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and3_1 cells:       57
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and4_1 cells:       60
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi211_1 cells:       63
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi21_1 cells:      212
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi221_1 cells:       35
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi222_1 cells:       13
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi22_1 cells:      112
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__clkinv_1 cells:      145
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__mux2_2 cells:      222
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand2_1 cells:      364
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand3_1 cells:      134
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand4_1 cells:       87
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor2_1 cells:      337
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor3_1 cells:       95
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor4_1 cells:       38
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai211_1 cells:       16
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai21_1 cells:      203
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai221_1 cells:        3
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai22_1 cells:       28
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai31_1 cells:       14
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai32_1 cells:       16
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or2_1 cells:       35
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or3_1 cells:       17
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or4_1 cells:        7
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xnor2_1 cells:       35
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xnor3_1 cells:        3
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xor2_1 cells:      112
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xor3_1 cells:        3
+ABC RESULTS:        internal signals:     6374
+ABC RESULTS:           input signals:      657
+ABC RESULTS:          output signals:      653
+Removing temp directory.
+Removing global temp directory.
+
+146. Executing SETUNDEF pass (replace undef values with defined constants).
+
+147. Executing HILOMAP pass (mapping to constant drivers).
+
+148. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+149. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_dvirdc_gf180_diff8..
+Removed 1 unused cells and 7728 unused wires.
+<suppressed ~11 debug messages>
+
+150. Executing INSBUF pass (insert buffer cells for connected wires).
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32974: \boost -> \uio_out [0]
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32975: \core.spi_reply[7] -> \uo_out [0]
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32976: \core.phy_rx -> \uo_out [1]
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32977: \core.running -> \uo_out [2]
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32978: \core.passed -> \uo_out [3]
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32979: \core.fail -> \uo_out [4]
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32980: \core.heartbeat[19] -> \uo_out [5]
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32981: \core.phy_tx -> \uo_out [6]
+Add tt_um_dvirdc_gf180_diff8/$auto$insbuf.cc:97:execute$32982: \core.rx.valid -> \uo_out [7]
+
+151. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_dvirdc_gf180_diff8...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)",
+   "invocation": "stat -json -liberty /work/physical/runs/diag_no_arith_tree/tmp/5c34ff79b6334743a4f89259ec266ab1.lib -liberty /work/physical/runs/diag_no_arith_tree/tmp/fde24a37823d41c89a4333c40dd38630.lib ",
+   "modules": {
+      "\\tt_um_dvirdc_gf180_diff8": {
+         "num_wires":         3216,
+         "num_wire_bits":     3258,
+         "num_pub_wires":     674,
+         "num_pub_wire_bits": 716,
+         "num_ports":         11,
+         "num_port_bits":     53,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3229,
+         "num_submodules":       0,
+         "area":              96307.814400,
+         "sequential_area":    49308.582400,
+         "num_cells_by_type": {
+            "gf180_diff_phy": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__and2_1": 79,
+            "gf180mcu_fd_sc_mcu7t5v0__and3_1": 57,
+            "gf180mcu_fd_sc_mcu7t5v0__and4_1": 60,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 63,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 212,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 35,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 13,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 112,
+            "gf180mcu_fd_sc_mcu7t5v0__buf_1": 9,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 145,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 631,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__mux2_2": 222,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 364,
+            "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 134,
+            "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 87,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 337,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 95,
+            "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 38,
+            "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 16,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 203,
+            "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 14,
+            "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 16,
+            "gf180mcu_fd_sc_mcu7t5v0__or2_1": 35,
+            "gf180mcu_fd_sc_mcu7t5v0__or3_1": 17,
+            "gf180mcu_fd_sc_mcu7t5v0__or4_1": 7,
+            "gf180mcu_fd_sc_mcu7t5v0__tieh": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__tiel": 14,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 35,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 112,
+            "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         3216,
+         "num_wire_bits":     3258,
+         "num_pub_wires":     674,
+         "num_pub_wire_bits": 716,
+         "num_ports":         11,
+         "num_port_bits":     53,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3229,
+         "num_submodules":       0,
+         "area":              96307.814400,
+         "sequential_area":    49308.582400,
+         "num_cells_by_type": {
+            "gf180_diff_phy": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__and2_1": 79,
+            "gf180mcu_fd_sc_mcu7t5v0__and3_1": 57,
+            "gf180mcu_fd_sc_mcu7t5v0__and4_1": 60,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 63,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 212,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 35,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 13,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 112,
+            "gf180mcu_fd_sc_mcu7t5v0__buf_1": 9,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 145,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 631,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__mux2_2": 222,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 364,
+            "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 134,
+            "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 87,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 337,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 95,
+            "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 38,
+            "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 16,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 203,
+            "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 14,
+            "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 16,
+            "gf180mcu_fd_sc_mcu7t5v0__or2_1": 35,
+            "gf180mcu_fd_sc_mcu7t5v0__or3_1": 17,
+            "gf180mcu_fd_sc_mcu7t5v0__or4_1": 7,
+            "gf180mcu_fd_sc_mcu7t5v0__tieh": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__tiel": 14,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 35,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 112,
+            "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 3
+         }
+      }
+}
+
+152. Printing statistics.
+
+=== tt_um_dvirdc_gf180_diff8 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     3216        - wires
+     3258        - wire bits
+      674        - public wires
+      716        - public wire bits
+       11        - ports
+       53        - port bits
+     3229 9.63E+04 cells
+        1        -   gf180_diff_phy
+       79 1.39E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       57 1.25E+03   gf180mcu_fd_sc_mcu7t5v0__and3_1
+       60 1.45E+03   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       63 1.38E+03   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      212 3.72E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       35  845.152   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+       13  399.526   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+      112 2.21E+03   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        9  118.541   gf180mcu_fd_sc_mcu7t5v0__buf_1
+      145 1.27E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      631 4.71E+04   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+       28 2.21E+03   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+      222 7.31E+03   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+      364    4E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+      134 2.06E+03   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       87 1.72E+03   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      337 4.44E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       95 1.67E+03   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       38  834.176   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       16  351.232   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      203 3.57E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        3   79.027   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+       28  614.656   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       14  338.061   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       16  421.478   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       35  614.656   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       17  373.184   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        7  184.397   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        1    8.781   gf180mcu_fd_sc_mcu7t5v0__tieh
+       14  122.931   gf180mcu_fd_sc_mcu7t5v0__tiel
+       35  998.816   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        3  158.054   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+      112 2.95E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        3  151.469   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Area for cell type \gf180_diff_phy is unknown!
+
+   Chip area for module '\tt_um_dvirdc_gf180_diff8': 96307.814400
+     of which used for sequential elements: 49308.582400 (51.20%)
+
+153. Executing Verilog backend.
+Dumping module `\tt_um_dvirdc_gf180_diff8'.
+
+154. Executing JSON backend.

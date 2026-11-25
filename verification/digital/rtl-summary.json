@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "tests": 44,
+  "boundary": "digital behavioral; not transistor/PEX/physical verification",
+  "source_sha256": {
+    "rtl/diff8_uart_tx.v": "35154e34211bfba75af66cd5e097cdfc8fc19ded4716b19e8b261ad911ca10ba",
+    "rtl/diff8_uart_rx.v": "2519e9f6a533ec89008bae1749444dfa8936602187b313cba5368de7389c88ce",
+    "rtl/diff8_digital.v": "3c68ad1452199b820d4a9e9732ead0e4162d7204bb80581a686308aff3042d96",
+    "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+    "sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+    "sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+  }
+}

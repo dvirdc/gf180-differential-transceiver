@@ -1,0 +1,70 @@
+* NGSPICE file created from gf180_diff_phy.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_w24_l1 G D B S
+X0 S G D B nfet_03v3 ad=10.56p pd=48.88u as=10.56p ps=48.88u w=24u l=1u
+.ends
+
+.subckt ppolyf_u_1k_w1_l32 B P N
+X0 P N B ppolyf_u_1k r_width=1u r_length=32u
+.ends
+
+.subckt ppolyf_u_1k_w1_l1 B P N
+X0 P N B ppolyf_u_1k r_width=1u r_length=1u
+.ends
+
+.subckt pfet_03v3_w10_l0p28 G D B S
+X0 S G D B pfet_03v3 ad=6.55p pd=21.31u as=6.55p ps=21.31u w=10u l=0.28u
+.ends
+
+.subckt nfet_03v3_w4_l0p28 G D B S
+X0 S G D B nfet_03v3 ad=2.62p pd=9.31u as=2.62p ps=9.31u w=4u l=0.28u
+.ends
+
+.subckt ppolyf_u_1k_w1_l20 B P N
+X0 P N B ppolyf_u_1k r_width=1u r_length=20u
+.ends
+
+.subckt nfet_03v3_w12_l0p28 G D B S
+X0 S G D B nfet_03v3 ad=7.86p pd=25.31u as=7.86p ps=25.31u w=12u l=0.28u
+.ends
+
+.subckt pfet_03v3_w24_l0p28 G D B S
+X0 S G D B pfet_03v3 ad=15.72p pd=49.31u as=15.72p ps=49.31u w=24u l=0.28u
+.ends
+
+.subckt pfet_03v3_w12_l1 G D B S
+X0 S G D B pfet_03v3 ad=5.28p pd=24.88u as=5.28p ps=24.88u w=12u l=1u
+.ends
+
+.subckt gf180_diff_phy din boost rxp rxn txp txn dout VDPWR VGND
+Xxn1 rxn xp2/G VGND xrt/P nfet_03v3_w24_l1
+Xxrn2 VGND xrn2/P txn ppolyf_u_1k_w1_l32
+Xxrbn VGND txn xrc2/P ppolyf_u_1k_w1_l1
+Xxn2 rxp xp2/D VGND xrt/P nfet_03v3_w24_l1
+Xxout_xp xout_xp/G dout VDPWR VDPWR pfet_03v3_w10_l0p28
+Xxib_xn boost xtp_xp/G VGND VGND nfet_03v3_w4_l0p28
+Xxi0_xn din xrn/P VGND VGND nfet_03v3_w4_l0p28
+Xxrbp VGND txp xrc2/P ppolyf_u_1k_w1_l1
+Xxib_xp boost xtp_xp/G VDPWR VDPWR pfet_03v3_w10_l0p28
+Xxi0_xp din xrn/P VDPWR VDPWR pfet_03v3_w10_l0p28
+Xxbuf_xn xis_xp/D xout_xp/G VGND VGND nfet_03v3_w4_l0p28
+Xxbuf_xp xis_xp/D xout_xp/G VDPWR VDPWR pfet_03v3_w10_l0p28
+Xxrc1 VGND VDPWR xrc2/P ppolyf_u_1k_w1_l20
+Xxrc2 VGND xrc2/P VGND ppolyf_u_1k_w1_l20
+Xxtp_xn boost xrp/P VGND xrp2/P nfet_03v3_w12_l0p28
+Xxi1_xn xrn/P xrp/P VGND VGND nfet_03v3_w4_l0p28
+Xxtp_xp xtp_xp/G xrp/P VDPWR xrp2/P pfet_03v3_w24_l0p28
+Xxi1_xp xrn/P xrp/P VDPWR VDPWR pfet_03v3_w10_l0p28
+Xxrn VGND xrn/P txn ppolyf_u_1k_w1_l32
+Xxrp VGND xrp/P txp ppolyf_u_1k_w1_l32
+Xxrt VGND xrt/P VGND ppolyf_u_1k_w1_l20
+Xxtn_xn boost xrn/P VGND xrn2/P nfet_03v3_w12_l0p28
+Xxtn_xp xtp_xp/G xrn/P VDPWR xrn2/P pfet_03v3_w24_l0p28
+Xxis_xn xp2/D xis_xp/D VGND VGND nfet_03v3_w4_l0p28
+Xxis_xp xp2/D xis_xp/D VDPWR VDPWR pfet_03v3_w10_l0p28
+Xxp1 xp2/G xp2/G VDPWR VDPWR pfet_03v3_w12_l1
+Xxrp2 VGND xrp2/P txp ppolyf_u_1k_w1_l32
+Xxp2 xp2/G xp2/D VDPWR VDPWR pfet_03v3_w12_l1
+Xxout_xn xout_xp/G dout VGND VGND nfet_03v3_w4_l0p28
+.ends
+

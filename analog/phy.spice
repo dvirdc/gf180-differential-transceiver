@@ -1,0 +1,35 @@
+* GF180 3.3V short-wire differential PHY. Ports are internal ua nodes.
+.subckt inv a y vdd vss
+xn y a vss vss nmos_3p3 w=4u l=0.28u
+xp y a vdd vdd pmos_3p3 w=10u l=0.28u
+.ends
+.subckt tg a b en enb vdd vss
+xn a en b vss nmos_3p3 w=12u l=0.28u
+xp a enb b vdd pmos_3p3 w=24u l=0.28u
+.ends
+.subckt phy din boost rxp rxn txp txn dout vdd vss
+xi0 din dinb vdd vss inv
+xi1 dinb dp vdd vss inv
+xib boost boostb vdd vss inv
+* PDK poly resistors, approx 32k drive / 1k shunt => 100mV differential.
+xrp dp txp vss ppolyf_u_1k r_length=32u r_width=1u
+xrn dinb txn vss ppolyf_u_1k r_length=32u r_width=1u
+xrbp txp cm vss ppolyf_u_1k r_length=1u r_width=1u
+xrbn txn cm vss ppolyf_u_1k r_length=1u r_width=1u
+xrc1 vdd cm vss ppolyf_u_1k r_length=20u r_width=1u
+xrc2 cm vss vss ppolyf_u_1k r_length=20u r_width=1u
+* Second drive leg approximately doubles differential swing when boost=1.
+xtp dp ap boost boostb vdd vss tg
+xtn dinb an boost boostb vdd vss tg
+xrp2 ap txp vss ppolyf_u_1k r_length=32u r_width=1u
+xrn2 an txn vss ppolyf_u_1k r_length=32u r_width=1u
+* NMOS differential preamp with PMOS current mirror and resistive tail.
+xn1 n1 rxn tail vss nmos_3p3 w=24u l=1u
+xn2 pre rxp tail vss nmos_3p3 w=24u l=1u
+xp1 n1 n1 vdd vdd pmos_3p3 w=12u l=1u
+xp2 pre n1 vdd vdd pmos_3p3 w=12u l=1u
+xrt tail vss vss ppolyf_u_1k r_length=20u r_width=1u
+xis pre q vdd vss inv
+xbuf q qb vdd vss inv
+xout qb dout vdd vss inv
+.ends phy

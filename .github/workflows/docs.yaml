@@ -1,0 +1,23 @@
+# Official Docs action; private PDF artifact only, no Pages deployment.
+name: docs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v6
+      - name: Validate metadata and build PDF datasheet
+        uses: TinyTapeout/tt-gds-action/docs@df73a1e7b52e940423ff55f9354b2b8140d38cb7
+        with:
+          pdk: gf180mcuD
+          tools-ref: 0922544e6c7f6126047c3fba720b0437fa32a1b8

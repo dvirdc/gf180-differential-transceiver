@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "tests": 44,
+  "scope": "Native GF180 3.3 V mapped-cell functional regression; no SDF/STA/PEX claims.\n\nThe unmodified GF180 models do not implement SKY130's UNIT_DELAY macro.\nRun both their zero-delay FUNCTIONAL mode and nominal specify-path-delay mode.\nThe latter uses supported 1 ns placeholder arcs, not characterized timing.\nIcarus does not support edge-sensitive ifnone paths; compile diagnostics are saved.",
+  "modes": {
+    "functional": {
+      "passed": true,
+      "tests": 44,
+      "returncode": 0,
+      "specify_enabled": false,
+      "unsupported_ifnone_notices": 0
+    },
+    "nominal_specify": {
+      "passed": true,
+      "tests": 44,
+      "returncode": 0,
+      "specify_enabled": true,
+      "unsupported_ifnone_notices": 120
+    }
+  },
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "library": "gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib",
+  "library_sha256": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53",
+  "mapped_area_um2": 96966.3744,
+  "mapped_cell_count": 3168,
+  "mapped_cells_by_type": {
+    "$scopeinfo": 2,
+    "gf180mcu_fd_sc_mcu7t5v0__and2_1": 63,
+    "gf180mcu_fd_sc_mcu7t5v0__and3_1": 40,
+    "gf180mcu_fd_sc_mcu7t5v0__and4_1": 44,
+    "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 36,
+    "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 263,
+    "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 26,
+    "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 45,
+    "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 73,
+    "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 166,
+    "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 631,
+    "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 28,
+    "gf180mcu_fd_sc_mcu7t5v0__mux2_1": 325,
+    "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 309,
+    "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 145,
+    "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 80,
+    "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 250,
+    "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 68,
+    "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 49,
+    "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 15,
+    "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 149,
+    "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 19,
+    "gf180mcu_fd_sc_mcu7t5v0__oai222_1": 1,
+    "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 8,
+    "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 12,
+    "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 3,
+    "gf180mcu_fd_sc_mcu7t5v0__or2_1": 54,
+    "gf180mcu_fd_sc_mcu7t5v0__or3_1": 9,
+    "gf180mcu_fd_sc_mcu7t5v0__or4_1": 11,
+    "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 75,
+    "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 2,
+    "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 165,
+    "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 4
+  },
+  "source_sha256": {
+    "rtl/diff8_uart_tx.v": "35154e34211bfba75af66cd5e097cdfc8fc19ded4716b19e8b261ad911ca10ba",
+    "rtl/diff8_uart_rx.v": "2519e9f6a533ec89008bae1749444dfa8936602187b313cba5368de7389c88ce",
+    "rtl/diff8_digital.v": "3c68ad1452199b820d4a9e9732ead0e4162d7204bb80581a686308aff3042d96",
+    "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+    "sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+    "sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+  },
+  "model_sha256": {
+    "primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+    "gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b"
+  },
+  "netlist_sha256": "1fdede78bc644440024883f32eb4f1241ed83f510f49f840909a205a7d0a443b",
+  "all_modes_passed": true,
+  "yosys_cell_count_including_metadata": 3170,
+  "report_note": "Compiler diagnostics and metadata-cell distinction recorded after the completed run; simulation command lines, sources, tests and cell models were unchanged."
+}

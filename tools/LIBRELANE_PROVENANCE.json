@@ -1,0 +1,11 @@
+{
+  "image": "ghcr.io/librelane/librelane:3.1.0.dev3",
+  "arm64_manifest_digest": "sha256:32244c826f512166840284332874bd9c26e5fd780b11cf23076c5dae8e2c3e04",
+  "index_digest": "sha256:d109140b8f17fc54f4fca998beb8124f4949404ec52e339eebd2250854a18b5a",
+  "upstream_commit": "deeae1ff720ae22ef01c12aa1bda7bfb01cc307e",
+  "runtime_exclusions": [
+    "Build-only linux-headers packages have case-colliding filenames on the Mac host and are unused by prebuilt EDA tools.",
+    "Case-colliding interactive terminal descriptions are unused by batch EDA tools.",
+    "Second-layer sudo/system overlay is not needed for unprivileged EDA commands."
+  ]
+}

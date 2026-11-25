@@ -1,0 +1,18 @@
+{
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "technology_sha256": {
+    "libs.tech/magic/gf180mcuD.tech": "3393fd8c487b80926d0a0235694a3523df8a8d88614c773b814a02d8f2070a25",
+    "libs.tech/magic/gf180mcuD-GDS.tech": "e62d657d57fd328e1f7a7de55b9caba90b84e98a8c981a2ade87302725702b2f",
+    "libs.tech/netgen/gf180mcuD_setup.tcl": "eb6217e33acb2c81680351745bc184a2ee37b31a25d37f4dce423f61ba466fe4"
+  },
+  "gds_sha256": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
+  "lef_sha256": "03c3b3bac9152c743679b09abd3dd87b9f7da135e39f3b8dca7f456a42d0cb1a",
+  "reference_spice_sha256": "724df0e2ebead975ed3a969642a9c8bac4fb3ac328e10bd00e899acfd597a8cb",
+  "macro_um": [
+    160,
+    110
+  ],
+  "devices": 29,
+  "magic_drc_errors": 0,
+  "scope": "Connected native GF180 macro; independent GDS reimport/LVS/PEX still required."
+}

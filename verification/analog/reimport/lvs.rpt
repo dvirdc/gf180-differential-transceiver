@@ -1,0 +1,85 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell ppolyf_u_1k and Circuit 2 cell ppolyf_u_1k are black boxes.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u_1k                     |Circuit 2: ppolyf_u_1k                     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u_1k and ppolyf_u_1k are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell nfet_03v3_w24_l1 in circuit gf180_diff_phy (0)(2 instances)
+Flattening unmatched subcell ppolyf_u_1k_w1_l32 in circuit gf180_diff_phy (0)(4 instances)
+Flattening unmatched subcell ppolyf_u_1k_w1_l1 in circuit gf180_diff_phy (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_w10_l0p28 in circuit gf180_diff_phy (0)(6 instances)
+Flattening unmatched subcell nfet_03v3_w4_l0p28 in circuit gf180_diff_phy (0)(6 instances)
+Flattening unmatched subcell ppolyf_u_1k_w1_l20 in circuit gf180_diff_phy (0)(3 instances)
+Flattening unmatched subcell nfet_03v3_w12_l0p28 in circuit gf180_diff_phy (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_w24_l0p28 in circuit gf180_diff_phy (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_w12_l1 in circuit gf180_diff_phy (0)(2 instances)
+Flattening unmatched subcell inv in circuit gf180_diff_phy (1)(6 instances)
+Flattening unmatched subcell tg in circuit gf180_diff_phy (1)(2 instances)
+
+Subcircuit summary:
+Circuit 1: gf180_diff_phy                  |Circuit 2: gf180_diff_phy                  
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (10)                             |nfet_03v3 (10)                             
+ppolyf_u_1k (9)                            |ppolyf_u_1k (9)                            
+pfet_03v3 (10)                             |pfet_03v3 (10)                             
+Number of devices: 29                      |Number of devices: 29                      
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180_diff_phy                  |Circuit 2: gf180_diff_phy                  
+-------------------------------------------|-------------------------------------------
+VDPWR                                      |VDPWR                                      
+din                                        |din                                        
+dout                                       |dout                                       
+txp                                        |txp                                        
+txn                                        |txn                                        
+VGND                                       |VGND                                       
+boost                                      |boost                                      
+rxp                                        |rxp                                        
+rxn                                        |rxn                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180_diff_phy and gf180_diff_phy are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,0 +1,16 @@
+{
+  "physical/integrated.json": "8903894316e444ae726a9060e532fc48405942a62af378bf36f2b2667d9f5cec",
+  "physical/signoff.sdc": "d49528e219dfbf7c5df2bc54a8e482c27f2fafb297e6a31fe9258b379c6794c2",
+  "physical/magicrc": "097d09ba15d476b78906f1d1e942ad2a002184c0f3dca523069a30065e90966d",
+  "physical/tt_analog_2x2.def": "fd309cb25df7de3a4cef0b57f9858274663291ce6d449fd48ef1b57d129ed3ba",
+  "physical/phy_reference.spice": "724df0e2ebead975ed3a969642a9c8bac4fb3ac328e10bd00e899acfd597a8cb",
+  "rtl/diff8_digital.v": "3c68ad1452199b820d4a9e9732ead0e4162d7204bb80581a686308aff3042d96",
+  "rtl/diff8_uart_tx.v": "35154e34211bfba75af66cd5e097cdfc8fc19ded4716b19e8b261ad911ca10ba",
+  "rtl/diff8_uart_rx.v": "2519e9f6a533ec89008bae1749444dfa8936602187b313cba5368de7389c88ce",
+  "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+  "rtl/gf180_diff_phy_blackbox.v": "91c0f17a177e2d8f5fd1ab733152eaccf391f52212eda9e69a41b2610345a9fd",
+  "build/physical/phy/gf180_diff_phy.gds": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
+  "build/physical/phy/gf180_diff_phy.lef": "03c3b3bac9152c743679b09abd3dd87b9f7da135e39f3b8dca7f456a42d0cb1a",
+  "analog/layout/gf180_diff_phy.gds": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
+  "analog/layout/gf180_diff_phy.lef": "03c3b3bac9152c743679b09abd3dd87b9f7da135e39f3b8dca7f456a42d0cb1a"
+}

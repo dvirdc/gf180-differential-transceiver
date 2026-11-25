@@ -1,0 +1,25 @@
+{
+  "geometry/export-before-comp-fill.gds": {
+    "sha256": "b052a872d9aa129ff35dd66917213fa691225bf0bb9128cbcd3c44feb49f4b97",
+    "source": "build/candidate-03-unfilled/gds/tt_um_dvirdc_gf180_diff8.gds"
+  },
+  "geometry/raw-routed.gds": {
+    "sha256": "5ad48fab7e7005fd26d53060ae748b8ee9af1a6e7df08a30362865636d642d14",
+    "source": "physical/runs/integrated_03/60-klayout-streamout/tt_um_dvirdc_gf180_diff8.klayout.gds"
+  },
+  "spef/tt_um_dvirdc_gf180_diff8.max.spef.gz": {
+    "bytes": 4381582,
+    "source": "physical/runs/integrated_03/56-openroad-rcx/max/tt_um_dvirdc_gf180_diff8.max.spef",
+    "uncompressed_sha256": "a5260bd3a4209cd5b60d3b93cc518f7c7f9211d3cdafd9822c3ef4d868a85ce1"
+  },
+  "spef/tt_um_dvirdc_gf180_diff8.min.spef.gz": {
+    "bytes": 4360060,
+    "source": "physical/runs/integrated_03/56-openroad-rcx/min/tt_um_dvirdc_gf180_diff8.min.spef",
+    "uncompressed_sha256": "cb1cc9a540bd821ca7b9c62de60b52a05f1b8d039c299d22572778ee7c35efa8"
+  },
+  "spef/tt_um_dvirdc_gf180_diff8.nom.spef.gz": {
+    "bytes": 4361616,
+    "source": "physical/runs/integrated_03/56-openroad-rcx/nom/tt_um_dvirdc_gf180_diff8.nom.spef",
+    "uncompressed_sha256": "96b7f9619df5ffe7496d9dd560cc86762070ee18308728e2d8d66c83b315ed67"
+  }
+}

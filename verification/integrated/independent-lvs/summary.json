@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "independent final GF26e GDS import and full transistor/resistor LVS, PHY explicitly included",
+  "target": "ttgf26e",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "gds_sha256": "ef5d4ed7785eb07fe06170f5a5ac547399fe8a5d7ae989c8da756b5128fa67d6",
+  "extracted_spice_sha256": "0916cdede73f67bc32df1a1e1a25dc77bb6a7341c9162943ef4e156a818dfab1",
+  "reference_spice_sha256": "724df0e2ebead975ed3a969642a9c8bac4fb3ac328e10bd00e899acfd597a8cb",
+  "lvs_report_sha256": "711b613deec9572808ec724ce474c99426eef7df26d8538348e6dc8920d43055"
+}

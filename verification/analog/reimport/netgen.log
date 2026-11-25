@@ -1,0 +1,123 @@
+Netgen 1.5.287 compiled on Wed Dec  4 13:37:29 UTC 2024
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file /work/build/physical/phy/reimport/gf180_diff_phy.spice
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit ppolyf_u_1k
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Reading netlist file /work/physical/phy_reference.spice
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit ppolyf_u_1k
+Creating placeholder cell definition.
+
+Reading setup file /pdk/gf180mcuD/libs.tech/netgen/gf180mcuD_setup.tcl
+
+Model ppolyf_u_1k pin 1 == 2
+No property par1 found for device ppolyf_u_1k
+No property pm found for device ppolyf_u_1k
+No property par found for device ppolyf_u_1k
+No property r found for device ppolyf_u_1k
+Model ppolyf_u_1k pin 1 == 2
+No property par1 found for device ppolyf_u_1k
+No property pm found for device ppolyf_u_1k
+No property par found for device ppolyf_u_1k
+No property r found for device ppolyf_u_1k
+Model nfet_03v3 pin 1 == 3
+No property par1 found for device nfet_03v3
+No property NRD found for device nfet_03v3
+No property NRS found for device nfet_03v3
+No property par found for device nfet_03v3
+No property sa found for device nfet_03v3
+No property sb found for device nfet_03v3
+No property sd found for device nfet_03v3
+No property par found for device nfet_03v3
+No property dtemp found for device nfet_03v3
+No property nf found for device nfet_03v3
+No property $D found for device nfet_03v3
+No property $X found for device nfet_03v3
+No property $Y found for device nfet_03v3
+Model nfet_03v3 pin 1 == 3
+No property par1 found for device nfet_03v3
+No property NRD found for device nfet_03v3
+No property NRS found for device nfet_03v3
+No property par found for device nfet_03v3
+No property sa found for device nfet_03v3
+No property sb found for device nfet_03v3
+No property sd found for device nfet_03v3
+No property par found for device nfet_03v3
+No property dtemp found for device nfet_03v3
+No property nf found for device nfet_03v3
+No property as found for device nfet_03v3
+No property ad found for device nfet_03v3
+No property ps found for device nfet_03v3
+No property pd found for device nfet_03v3
+No property $D found for device nfet_03v3
+No property $X found for device nfet_03v3
+No property $Y found for device nfet_03v3
+Model pfet_03v3 pin 1 == 3
+No property par1 found for device pfet_03v3
+No property NRD found for device pfet_03v3
+No property NRS found for device pfet_03v3
+No property par found for device pfet_03v3
+No property sa found for device pfet_03v3
+No property sb found for device pfet_03v3
+No property sd found for device pfet_03v3
+No property par found for device pfet_03v3
+No property dtemp found for device pfet_03v3
+No property nf found for device pfet_03v3
+No property $D found for device pfet_03v3
+No property $X found for device pfet_03v3
+No property $Y found for device pfet_03v3
+Model pfet_03v3 pin 1 == 3
+No property par1 found for device pfet_03v3
+No property NRD found for device pfet_03v3
+No property NRS found for device pfet_03v3
+No property par found for device pfet_03v3
+No property sa found for device pfet_03v3
+No property sb found for device pfet_03v3
+No property sd found for device pfet_03v3
+No property par found for device pfet_03v3
+No property dtemp found for device pfet_03v3
+No property nf found for device pfet_03v3
+No property as found for device pfet_03v3
+No property ad found for device pfet_03v3
+No property ps found for device pfet_03v3
+No property pd found for device pfet_03v3
+No property $D found for device pfet_03v3
+No property $X found for device pfet_03v3
+No property $Y found for device pfet_03v3
+Comparison output logged to file /work/build/physical/phy/reimport/lvs.rpt
+Logging to file "/work/build/physical/phy/reimport/lvs.rpt" enabled
+Circuit nfet_03v3 contains no devices.
+Circuit ppolyf_u_1k contains no devices.
+Circuit pfet_03v3 contains no devices.
+
+Contents of circuit 1:  Circuit: 'gf180_diff_phy'
+Circuit gf180_diff_phy contains 29 device instances.
+  Class: nfet_03v3             instances:  10
+  Class: ppolyf_u_1k           instances:   9
+  Class: pfet_03v3             instances:  10
+Circuit contains 20 nets.
+Contents of circuit 2:  Circuit: 'gf180_diff_phy'
+Circuit gf180_diff_phy contains 29 device instances.
+  Class: nfet_03v3             instances:  10
+  Class: ppolyf_u_1k           instances:   9
+  Class: pfet_03v3             instances:  10
+Circuit contains 20 nets.
+
+Circuit 1 contains 29 devices, Circuit 2 contains 29 devices.
+Circuit 1 contains 20 nets,    Circuit 2 contains 20 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "/work/build/physical/phy/reimport/lvs.rpt" disabled
+LVS Done.
