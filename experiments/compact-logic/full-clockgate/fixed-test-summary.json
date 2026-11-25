@@ -1,0 +1,330 @@
+{
+  "base-8-fixed": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "area_um2": 87606.0416,
+    "netlist_sha256": "3d4598648f0fccc39dc45ee36aea95953916d70a19f0145d2a259affc9b42d1c",
+    "icg_count": 15,
+    "all_te_explicitly_tied_low": true,
+    "ff_clocks": {
+      "_2106_": 9,
+      "clk": 347,
+      "_2105_": 8,
+      "_2104_": 8,
+      "_2103_": 8,
+      "_2102_": 8,
+      "_2101_": 8,
+      "_2100_": 8,
+      "_2099_": 8,
+      "_2098_": 8,
+      "_2112_": 192,
+      "_2111_": 8,
+      "_2110_": 8,
+      "_2109_": 15,
+      "_2108_": 8,
+      "_2107_": 8
+    },
+    "gates": [
+      {
+        "instance": "_4229_",
+        "CLK": "clk",
+        "E": "_0011_",
+        "Q": "_2098_",
+        "TE": "_2126_"
+      },
+      {
+        "instance": "_4230_",
+        "CLK": "clk",
+        "E": "_0012_",
+        "Q": "_2099_",
+        "TE": "_2125_"
+      },
+      {
+        "instance": "_4231_",
+        "CLK": "clk",
+        "E": "_0013_",
+        "Q": "_2100_",
+        "TE": "_2124_"
+      },
+      {
+        "instance": "_4232_",
+        "CLK": "clk",
+        "E": "_0014_",
+        "Q": "_2101_",
+        "TE": "_2123_"
+      },
+      {
+        "instance": "_4233_",
+        "CLK": "clk",
+        "E": "_0285_",
+        "Q": "_2102_",
+        "TE": "_2122_"
+      },
+      {
+        "instance": "_4234_",
+        "CLK": "clk",
+        "E": "_0015_",
+        "Q": "_2103_",
+        "TE": "_2121_"
+      },
+      {
+        "instance": "_4235_",
+        "CLK": "clk",
+        "E": "_0016_",
+        "Q": "_2104_",
+        "TE": "_2120_"
+      },
+      {
+        "instance": "_4236_",
+        "CLK": "clk",
+        "E": "_0017_",
+        "Q": "_2105_",
+        "TE": "_2119_"
+      },
+      {
+        "instance": "_4237_",
+        "CLK": "clk",
+        "E": "_0004_",
+        "Q": "_2106_",
+        "TE": "_2118_"
+      },
+      {
+        "instance": "_4238_",
+        "CLK": "clk",
+        "E": "_0005_",
+        "Q": "_2107_",
+        "TE": "_2117_"
+      },
+      {
+        "instance": "_4239_",
+        "CLK": "clk",
+        "E": "_0006_",
+        "Q": "_2108_",
+        "TE": "_2116_"
+      },
+      {
+        "instance": "_4240_",
+        "CLK": "clk",
+        "E": "_0007_",
+        "Q": "_2109_",
+        "TE": "_2115_"
+      },
+      {
+        "instance": "_4241_",
+        "CLK": "clk",
+        "E": "_0008_",
+        "Q": "_2110_",
+        "TE": "_2114_"
+      },
+      {
+        "instance": "_4242_",
+        "CLK": "clk",
+        "E": "_0009_",
+        "Q": "_2111_",
+        "TE": "_2113_"
+      },
+      {
+        "instance": "_4243_",
+        "CLK": "clk",
+        "E": "_0010_",
+        "Q": "_2112_",
+        "TE": "_2127_"
+      }
+    ],
+    "synthesis_warnings": [
+      "ABC: Warning: Detected 6 multi-output cells (for example, \"gf180mcu_fd_sc_mcu7t5v0__addf_1\")."
+    ],
+    "physical_sta_done": false
+  },
+  "base-16-fixed": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "area_um2": 89403.9104,
+    "netlist_sha256": "d948e6b9f541e500ae92dbf5beedfef9b40f426a37fd99663cca0589ff8cccff",
+    "icg_count": 1,
+    "all_te_explicitly_tied_low": true,
+    "ff_clocks": {
+      "clk": 467,
+      "_2270_": 192
+    },
+    "gates": [
+      {
+        "instance": "_4545_",
+        "CLK": "clk",
+        "E": "_0004_",
+        "Q": "_2270_",
+        "TE": "_2271_"
+      }
+    ],
+    "synthesis_warnings": [
+      "ABC: Warning: Detected 6 multi-output cells (for example, \"gf180mcu_fd_sc_mcu7t5v0__addf_1\")."
+    ],
+    "physical_sta_done": false
+  },
+  "combined-8-fixed": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "area_um2": 77751.7888,
+    "netlist_sha256": "18fb7e530b702e3b4f2ff9a2574cd55662f8e8fa9b8679620c5971708d51ade4",
+    "icg_count": 15,
+    "all_te_explicitly_tied_low": true,
+    "ff_clocks": {
+      "_1887_": 9,
+      "_1901_": 161,
+      "clk": 317,
+      "_1900_": 8,
+      "_1899_": 8,
+      "_1898_": 8,
+      "_1897_": 8,
+      "_1896_": 8,
+      "_1895_": 8,
+      "_1894_": 8,
+      "_1893_": 8,
+      "_1892_": 8,
+      "_1891_": 8,
+      "_1890_": 15,
+      "_1889_": 8,
+      "_1888_": 8
+    },
+    "gates": [
+      {
+        "instance": "_3807_",
+        "CLK": "clk",
+        "E": "_0004_",
+        "Q": "_1887_",
+        "TE": "_1915_"
+      },
+      {
+        "instance": "_3808_",
+        "CLK": "clk",
+        "E": "_0005_",
+        "Q": "_1888_",
+        "TE": "_1914_"
+      },
+      {
+        "instance": "_3809_",
+        "CLK": "clk",
+        "E": "_0006_",
+        "Q": "_1889_",
+        "TE": "_1913_"
+      },
+      {
+        "instance": "_3810_",
+        "CLK": "clk",
+        "E": "_0007_",
+        "Q": "_1890_",
+        "TE": "_1912_"
+      },
+      {
+        "instance": "_3811_",
+        "CLK": "clk",
+        "E": "_0008_",
+        "Q": "_1891_",
+        "TE": "_1911_"
+      },
+      {
+        "instance": "_3812_",
+        "CLK": "clk",
+        "E": "_0009_",
+        "Q": "_1892_",
+        "TE": "_1910_"
+      },
+      {
+        "instance": "_3813_",
+        "CLK": "clk",
+        "E": "_0010_",
+        "Q": "_1893_",
+        "TE": "_1909_"
+      },
+      {
+        "instance": "_3814_",
+        "CLK": "clk",
+        "E": "_0011_",
+        "Q": "_1894_",
+        "TE": "_1908_"
+      },
+      {
+        "instance": "_3815_",
+        "CLK": "clk",
+        "E": "_0012_",
+        "Q": "_1895_",
+        "TE": "_1907_"
+      },
+      {
+        "instance": "_3816_",
+        "CLK": "clk",
+        "E": "_0013_",
+        "Q": "_1896_",
+        "TE": "_1906_"
+      },
+      {
+        "instance": "_3817_",
+        "CLK": "clk",
+        "E": "_0253_",
+        "Q": "_1897_",
+        "TE": "_1905_"
+      },
+      {
+        "instance": "_3818_",
+        "CLK": "clk",
+        "E": "_0014_",
+        "Q": "_1898_",
+        "TE": "_1904_"
+      },
+      {
+        "instance": "_3819_",
+        "CLK": "clk",
+        "E": "_0015_",
+        "Q": "_1899_",
+        "TE": "_1903_"
+      },
+      {
+        "instance": "_3820_",
+        "CLK": "clk",
+        "E": "_0016_",
+        "Q": "_1900_",
+        "TE": "_1902_"
+      },
+      {
+        "instance": "_3821_",
+        "CLK": "clk",
+        "E": "_0254_",
+        "Q": "_1901_",
+        "TE": "_1916_"
+      }
+    ],
+    "synthesis_warnings": [
+      "ABC: Warning: Detected 6 multi-output cells (for example, \"gf180mcu_fd_sc_mcu7t5v0__addf_1\")."
+    ],
+    "physical_sta_done": false
+  },
+  "combined-16-fixed": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "area_um2": 81189.472,
+    "netlist_sha256": "601395cdc7e665ff5ff0816774e074a523916b88898e5fe50caa1aedd1a66399",
+    "icg_count": 1,
+    "all_te_explicitly_tied_low": true,
+    "ff_clocks": {
+      "clk": 437,
+      "_2151_": 161
+    },
+    "gates": [
+      {
+        "instance": "_4307_",
+        "CLK": "clk",
+        "E": "_0232_",
+        "Q": "_2151_",
+        "TE": "_2152_"
+      }
+    ],
+    "synthesis_warnings": [
+      "ABC: Warning: Detected 6 multi-output cells (for example, \"gf180mcu_fd_sc_mcu7t5v0__addf_1\")."
+    ],
+    "physical_sta_done": false
+  }
+}

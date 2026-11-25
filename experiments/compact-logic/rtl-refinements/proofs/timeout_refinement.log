@@ -1,0 +1,237 @@
+
+-- Executing script file `/work/build/shrink-logic/timeout_refinement.ys' --
+
+1. Executing Verilog-2005 frontend: /work/build/shrink-logic/properties.sv
+Parsing formal SystemVerilog input from `/work/build/shrink-logic/properties.sv' to AST representation.
+Generating RTLIL representation for module `\timeout_refinement'.
+Generating RTLIL representation for module `\snapshot_refinement'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \timeout_refinement
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \timeout_refinement
+Removing unused module `\snapshot_refinement'.
+Removed 1 unused modules.
+Module timeout_refinement directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 7 redundant assignments.
+Promoted 7 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\timeout_refinement.$proc$/work/build/shrink-logic/properties.sv:9$18'.
+     1/1: $assert$/work/build/shrink-logic/properties.sv:18$43_EN
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\timeout_refinement.$proc$/work/build/shrink-logic/properties.sv:9$18'.
+Removing empty process `timeout_refinement.$proc$/work/build/shrink-logic/properties.sv:9$18'.
+Cleaned up 1 empty switch.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timeout_refinement.
+<suppressed ~1 debug messages>
+
+2.3. Executing FUTURE pass.
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timeout_refinement.
+
+2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timeout_refinement..
+Removed 0 unused cells and 13 unused wires.
+<suppressed ~2 debug messages>
+
+2.6. Executing CHECK pass (checking for obvious problems).
+Checking module timeout_refinement...
+Found and reported 0 problems.
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timeout_refinement.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timeout_refinement'.
+Computing hashes of 47 cells of `\timeout_refinement'.
+Finding duplicate cells in `\timeout_refinement'.
+Computing hashes of 41 cells of `\timeout_refinement'.
+Finding duplicate cells in `\timeout_refinement'.
+Computing hashes of 40 cells of `\timeout_refinement'.
+Finding duplicate cells in `\timeout_refinement'.
+<suppressed ~21 debug messages>
+Removed a total of 7 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timeout_refinement..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timeout_refinement.
+Performed a total of 0 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timeout_refinement'.
+Computing hashes of 40 cells of `\timeout_refinement'.
+Finding duplicate cells in `\timeout_refinement'.
+Removed a total of 0 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timeout_refinement..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~1 debug messages>
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timeout_refinement.
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timeout_refinement..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timeout_refinement.
+Performed a total of 0 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timeout_refinement'.
+Computing hashes of 40 cells of `\timeout_refinement'.
+Finding duplicate cells in `\timeout_refinement'.
+Removed a total of 0 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timeout_refinement..
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timeout_refinement.
+
+2.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from mux cell timeout_refinement.$ternary$/work/build/shrink-logic/properties.sv:7$12 ($mux).
+Removed top 31 bits (of 32) from mux cell timeout_refinement.$ternary$/work/build/shrink-logic/properties.sv:8$15 ($mux).
+Removed top 31 bits (of 32) from mux cell timeout_refinement.$ternary$/work/build/shrink-logic/properties.sv:8$16 ($mux).
+Removed top 31 bits (of 32) from mux cell timeout_refinement.$ternary$/work/build/shrink-logic/properties.sv:8$17 ($mux).
+Removed top 31 bits (of 32) from port B of cell timeout_refinement.$eq$/work/build/shrink-logic/properties.sv:11$20 ($eq).
+Removed top 31 bits (of 32) from port B of cell timeout_refinement.$eq$/work/build/shrink-logic/properties.sv:15$34 ($eq).
+Removed top 31 bits (of 32) from wire timeout_refinement.$ternary$/work/build/shrink-logic/properties.sv:8$16_Y.
+Removed top 31 bits (of 32) from wire timeout_refinement.$ternary$/work/build/shrink-logic/properties.sv:8$15_Y.
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timeout_refinement..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timeout_refinement.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timeout_refinement'.
+Computing hashes of 40 cells of `\timeout_refinement'.
+Finding duplicate cells in `\timeout_refinement'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timeout_refinement..
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Executing SORT pass.
+
+2.13. Printing statistics.
+
+=== timeout_refinement ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+      257 wire bits
+       13 public wires
+      106 public wire bits
+        8 ports
+       39 port bits
+       40 cells
+        1   $add
+        8   $check
+        2   $eq
+        4   $logic_and
+        8   $logic_not
+        7   $logic_or
+        9   $mux
+        1   $reduce_and
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module timeout_refinement...
+Found and reported 0 problems.
+
+3. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Imported 56 cells to SAT database.
+Import constraint from assume cell: $logic_or$/work/build/shrink-logic/properties.sv:14$32_Y when 1'1.
+Import constraint from assume cell: $logic_or$/work/build/shrink-logic/properties.sv:13$28_Y when 1'1.
+Import constraint from assume cell: $logic_or$/work/build/shrink-logic/properties.sv:12$24_Y when 1'1.
+Import constraint from assume cell: $eq$/work/build/shrink-logic/properties.sv:11$20_Y when 1'1.
+Import proof for assert: $logic_and$/work/build/shrink-logic/properties.sv:18$48_Y when $assert$/work/build/shrink-logic/properties.sv:18$43_EN.
+Import proof for assert: $logic_not$/work/build/shrink-logic/properties.sv:17$42_Y when 1'1.
+Import proof for assert: $logic_or$/work/build/shrink-logic/properties.sv:16$38_Y when 1'1.
+Import proof for assert: $eq$/work/build/shrink-logic/properties.sv:15$34_Y when 1'1.
+
+Solving problem with 1303 variables and 3572 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: 6716d511ec, time: 0.07s, user: 0.02s, system: 0.01s, MEM: 28.39 MB peak
+Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)
+Time spent: 22% 2x read_verilog (0 sec), 22% 1x sat (0 sec), ...

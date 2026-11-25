@@ -1,0 +1,206 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x din xrn.P VDPWR VDPWR s=262000,4262 d=262000,4262 l=56 w=2000 x=1772 y=3900 pfet_03v3
+x xp2.D xbuf_xp.G VDPWR VDPWR s=262000,4262 d=262000,4262 l=56 w=2000 x=6572 y=3900 pfet_03v3
+x xout_xp.G dout VGND VGND s=104800,1862 d=104800,1862 l=56 w=800 x=8972 y=4500 nfet_03v3
+x a_23300_2900# xrt.P VGND VGND s=24400,644 d=24400,644 l=4000 w=200 x=23300 y=2900 ppolyf_u_1k
+x boost xrp.P xrp2.P VGND s=314400,5062 d=314400,5062 l=56 w=2400 x=10572 y=3700 nfet_03v3
+x din xrn.P VGND VGND s=104800,1862 d=104800,1862 l=56 w=800 x=972 y=4500 nfet_03v3
+x xtn_xp.G xrp.P xrp2.P VDPWR s=628800,9862 d=628800,9862 l=56 w=4800 x=11372 y=2500 pfet_03v3
+x xp2.G xp2.D VDPWR VDPWR s=211200,4976 d=211200,4976 l=200 w=2400 x=16900 y=3700 pfet_03v3
+x boost xtn_xp.G VDPWR VDPWR s=262000,4262 d=262000,4262 l=56 w=2000 x=4972 y=3900 pfet_03v3
+x xout_xp.G dout VDPWR VDPWR s=262000,4262 d=262000,4262 l=56 w=2000 x=9772 y=3900 pfet_03v3
+x a_22500_1700# xrn2.P txn VGND s=24400,644 d=24400,644 l=6400 w=200 x=22500 y=1700 ppolyf_u_1k
+x boost xtn_xp.G VGND VGND s=104800,1862 d=104800,1862 l=56 w=800 x=4172 y=4500 nfet_03v3
+x a_17700_1700# xrn.P txn VGND s=24400,644 d=24400,644 l=6400 w=200 x=17700 y=1700 ppolyf_u_1k
+x a_18500_4800# txp xrc2.P VGND s=24400,644 d=24400,644 l=200 w=200 x=18500 y=4800 ppolyf_u_1k
+x xrn.P xrp.P VGND VGND s=104800,1862 d=104800,1862 l=56 w=800 x=2572 y=4500 nfet_03v3
+x rxn xp2.G xrt.P VGND s=422400,9776 d=422400,9776 l=200 w=4800 x=13700 y=2500 nfet_03v3
+x xbuf_xp.G xout_xp.G VGND VGND s=104800,1862 d=104800,1862 l=56 w=800 x=7372 y=4500 nfet_03v3
+x xtn_xp.G xrn.P xrn2.P VDPWR s=628800,9862 d=628800,9862 l=56 w=4800 x=12972 y=2500 pfet_03v3
+x xp2.G xp2.G VDPWR VDPWR s=211200,4976 d=211200,4976 l=200 w=2400 x=15300 y=3700 pfet_03v3
+x a_19300_4800# txn xrc2.P VGND s=24400,644 d=24400,644 l=200 w=200 x=19300 y=4800 ppolyf_u_1k
+x xrn.P xrp.P VDPWR VDPWR s=262000,4262 d=262000,4262 l=56 w=2000 x=3372 y=3900 pfet_03v3
+x xp2.D xbuf_xp.G VGND VGND s=104800,1862 d=104800,1862 l=56 w=800 x=5772 y=4500 nfet_03v3
+x a_20100_2900# VDPWR xrc2.P VGND s=24400,644 d=24400,644 l=4000 w=200 x=20100 y=2900 ppolyf_u_1k
+x xbuf_xp.G xout_xp.G VDPWR VDPWR s=262000,4262 d=262000,4262 l=56 w=2000 x=8172 y=3900 pfet_03v3
+x boost xrn.P xrn2.P VGND s=314400,5062 d=314400,5062 l=56 w=2400 x=12172 y=3700 nfet_03v3
+x a_20900_2900# xrc2.P VGND VGND s=24400,644 d=24400,644 l=4000 w=200 x=20900 y=2900 ppolyf_u_1k
+x a_21700_1700# xrp2.P txp VGND s=24400,644 d=24400,644 l=6400 w=200 x=21700 y=1700 ppolyf_u_1k
+x a_16100_1700# xrp.P txp VGND s=24400,644 d=24400,644 l=6400 w=200 x=16100 y=1700 ppolyf_u_1k
+x rxp xp2.D xrt.P VGND s=422400,9776 d=422400,9776 l=200 w=4800 x=14500 y=2500 nfet_03v3
+C xrn.P xrn2.P 4.7
+C xrn.P VDPWR 8.8
+C xrn.P din 21.8
+C xrn.P dout 21.8
+C xrp.P xrp2.P 4.3
+C xrp.P xp2.G 21.9
+C xrp.P VDPWR 7.1
+C xrp.P dout 21.7
+C xtn_xp.G xrc2.P 21.6
+C xtn_xp.G VDPWR 5.3
+C xtn_xp.G boost 21.7
+C xp2.D xbuf_xp.G 21.8
+C xp2.D xp2.G 22.1
+C xp2.D VDPWR 5.5
+C xbuf_xp.G xout_xp.G 21.9
+C xbuf_xp.G VDPWR 5.5
+C xout_xp.G VDPWR 5.6
+C xout_xp.G rxn 21.6
+C xrp2.P xrn2.P 21.8
+C xrp2.P VDPWR 3.9
+C xrp2.P boost 21.9
+C xrn2.P VDPWR 4.0
+C xp2.G VDPWR 7.4
+C xrt.P rxp 22.0
+C xrt.P txn 21.7
+C xrc2.P din 21.8
+C VDPWR din 2.3
+C VDPWR boost 3.2
+C VDPWR dout 3.3
+C VDPWR txp 22.8
+C rxn rxp 21.5
+C txp txn 21.6
+C txn0 6.0
+R txn 129
+= txn xrn.N
+= txn xrbn.P
+= txn xrn2.N
+C txp0 6.1
+R txp 129
+= txp xrp.N
+= txp xrbp.P
+= txp xrp2.N
+C rxp0 6.4
+R rxp 230
+= rxp xn2.G
+C rxn0 6.2
+R rxn 230
+= rxn xn1.G
+C dout0 5.6
+R dout 198
+= dout xout_xn.D
+= dout xout_xp.D
+C boost0 9.9
+R boost 1282
+= boost xib_xn.G
+= boost xib_xp.G
+= boost xtp_xn.G
+= boost xtn_xn.G
+C din0 7.3
+R din 526
+= din xi0_xn.G
+= din xi0_xp.G
+C VDPWR0 126.2
+R VDPWR 72354
+= VDPWR xi0_xp.B
+= VDPWR xi0_xp.S
+= VDPWR xi1_xp.B
+= VDPWR xi1_xp.S
+= VDPWR xib_xp.B
+= VDPWR xib_xp.S
+= VDPWR xis_xp.B
+= VDPWR xis_xp.S
+= VDPWR xbuf_xp.B
+= VDPWR xbuf_xp.S
+= VDPWR xout_xp.B
+= VDPWR xout_xp.S
+= VDPWR xtp_xp.B
+= VDPWR xtn_xp.B
+= VDPWR xp1.B
+= VDPWR xp1.S
+= VDPWR xp2.B
+= VDPWR xp2.S
+= VDPWR xrc1.P
+R VGND 14586
+= VGND xi0_xn.B
+= VGND xi0_xn.S
+= VGND xi1_xn.B
+= VGND xi1_xn.S
+= VGND xib_xn.B
+= VGND xib_xn.S
+= VGND xis_xn.B
+= VGND xis_xn.S
+= VGND xbuf_xn.B
+= VGND xbuf_xn.S
+= VGND xout_xn.B
+= VGND xout_xn.S
+= VGND xtp_xn.B
+= VGND xtn_xn.B
+= VGND xn1.B
+= VGND xn2.B
+= VGND xrp.B
+= VGND xrn.B
+= VGND xrbp.B
+= VGND xrbn.B
+= VGND xrc1.B
+= VGND xrc2.B
+= VGND xrc2.N
+= VGND xrp2.B
+= VGND xrn2.B
+= VGND xrt.B
+= VGND xrt.N
+R a_23300_2900# 20000
+R a_22500_1700# 32000
+R a_21700_1700# 32000
+R a_20900_2900# 20000
+R a_20100_2900# 20000
+R a_19300_4800# 1000
+C xrc2.P0 9.3
+R xrc2.P 169
+= xrc2.P xrbp.N
+= xrc2.P xrbn.N
+= xrc2.P xrc1.N
+R a_18500_4800# 1000
+R a_17700_1700# 32000
+R a_16100_1700# 32000
+C xrt.P0 11.1
+R xrt.P 781
+= xrt.P xn1.S
+= xrt.P xn2.S
+C xp2.G0 9.2
+R xp2.G 814
+= xp2.G xn1.D
+= xp2.G xp1.G
+= xp2.G xp1.D
+C xrn2.P0 16.8
+R xrn2.P 454
+= xrn2.P xtn_xn.S
+= xrn2.P xtn_xp.S
+C xrp2.P0 9.0
+R xrp2.P 453
+= xrp2.P xtp_xn.S
+= xrp2.P xtp_xp.S
+C xout_xp.G0 9.3
+R xout_xp.G 683
+= xout_xp.G xbuf_xn.D
+= xout_xp.G xbuf_xp.D
+= xout_xp.G xout_xn.G
+C xbuf_xp.G0 9.1
+R xbuf_xp.G 683
+= xbuf_xp.G xis_xn.D
+= xbuf_xp.G xis_xp.D
+= xbuf_xp.G xbuf_xn.G
+C xp2.D0 10.7
+R xp2.D 1083
+= xp2.D xis_xn.G
+= xp2.D xis_xp.G
+= xp2.D xn2.D
+C xtn_xp.G0 7.2
+R xtn_xp.G 1565
+= xtn_xp.G xib_xn.D
+= xtn_xp.G xib_xp.D
+= xtn_xp.G xtp_xp.G
+C xrp.P0 9.3
+R xrp.P 631
+= xrp.P xi1_xn.D
+= xrp.P xi1_xp.D
+= xrp.P xtp_xn.D
+= xrp.P xtp_xp.D
+C xrn.P0 13.2
+R xrn.P 1134
+= xrn.P xi0_xn.D
+= xrn.P xi0_xp.D
+= xrn.P xi1_xn.G
+= xrn.P xi1_xp.G
+= xrn.P xtn_xn.D
+= xrn.P xtn_xp.D

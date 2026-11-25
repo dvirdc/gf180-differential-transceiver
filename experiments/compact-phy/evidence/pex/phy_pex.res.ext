@@ -1,0 +1,390 @@
+scale 1000 1 0.5
+rnode "VDPWR.n0" 0 2773.22 4000 4400 0
+rnode "VDPWR.n1" 0 15844.8 4000 12400 0
+rnode "VDPWR.t3" 0 3451.05 1800 4900 0
+rnode "VDPWR.t15" 0 3349.29 3400 4900 0
+rnode "VDPWR.t0" 0 586.151 20200 6900 0
+rnode "VDPWR.t12" 0 1106.76 17100 4900 0
+rnode "VDPWR.t14" 0 836.259 15500 4900 0
+rnode "VDPWR.n2" 0 3614.67 15552 4400 0
+rnode "VDPWR.t8" 0 1139.87 9828 4900 0
+rnode "VDPWR.t6" 0 1041.44 8228 4900 0
+rnode "VDPWR.n3" 0 1391.77 8308 4400 0
+rnode "VDPWR.t10" 0 1041.44 6628 4900 0
+rnode "VDPWR.n4" 0 796.107 6708 4400 0
+rnode "VDPWR.t2" 0 1069.03 5028 4900 0
+rnode "VDPWR.t4" 0 1125.49 1828 4900 0
+rnode "VDPWR.t16" 0 1041.44 3428 4900 0
+rnode "VDPWR.t1" 0 3397.86 5000 4900 0
+rnode "VDPWR.t9" 0 3349.29 6600 4900 0
+rnode "VDPWR.n5" 0 11505.7 6876 12400 0
+rnode "VDPWR.t5" 0 3398.26 8200 4900 0
+rnode "VDPWR.t7" 0 3349.29 9800 4900 0
+rnode "VDPWR.n6" 0 12573.4 10076 12400 0
+rnode "VDPWR.t17" 0 8593.82 11400 4900 0
+rnode "VDPWR.t18" 0 8486.19 13000 4900 0
+rnode "VDPWR.n7" 0 14089.2 13276 12400 0
+rnode "VDPWR.t13" 0 3490.58 15400 4900 0
+rnode "VDPWR.t11" 0 3435.61 17000 4900 0
+rnode "VDPWR.n8" 0 9172.98 17290 12400 0
+rnode "VDPWR" 0 -125051 23800 12340 0
+resist "VDPWR.n7" "VDPWR.t13" 176.919
+resist "VDPWR.n8" "VDPWR.t13" 117.262
+resist "VDPWR.n8" "VDPWR.n7" 3.04163
+resist "VDPWR.n6" "VDPWR.t17" 88.4757
+resist "VDPWR.n7" "VDPWR.t17" 88.4757
+resist "VDPWR.n7" "VDPWR.n6" 2.433
+resist "VDPWR.n5" "VDPWR.t5" 141.858
+resist "VDPWR.n6" "VDPWR.t5" 141.858
+resist "VDPWR.n6" "VDPWR.n5" 2.42048
+resist "VDPWR.n1" "VDPWR.t1" 141.858
+resist "VDPWR.n5" "VDPWR.t1" 141.858
+resist "VDPWR.n5" "VDPWR.n1" 2.42048
+resist "VDPWR.n3" "VDPWR.t8" 14.1505
+resist "VDPWR.n2" "VDPWR.t8" 49.916
+resist "VDPWR.n2" "VDPWR.n3" 5.93642
+resist "VDPWR.n2" "VDPWR.t12" 11.6793
+resist "VDPWR.t0" "VDPWR.t12" 208.006
+resist "VDPWR.t0" "VDPWR.n2" 25.1565
+resist "VDPWR.n0" "VDPWR.t2" 21.3802
+resist "VDPWR.n4" "VDPWR.t2" 21.3802
+resist "VDPWR.n4" "VDPWR.n0" 2.54271
+resist "VDPWR.n4" "VDPWR.n3" 1.2
+resist "VDPWR" "VDPWR.n8" 4.8825
+resist "VDPWR.n2" "VDPWR.t14" 9.92217
+resist "VDPWR.n0" "VDPWR.t16" 10.0901
+resist "VDPWR.n4" "VDPWR.t10" 10.0901
+resist "VDPWR.n3" "VDPWR.t6" 10.0901
+resist "VDPWR.n0" "VDPWR.t4" 11.2901
+resist "VDPWR.n1" "VDPWR.n0" 15
+resist "VDPWR.n7" "VDPWR.t18" 43.6378
+resist "VDPWR.n8" "VDPWR.t11" 69.7992
+resist "VDPWR.n1" "VDPWR.t15" 70.3289
+resist "VDPWR.n5" "VDPWR.t9" 70.3289
+resist "VDPWR.n6" "VDPWR.t7" 70.3289
+resist "VDPWR.n1" "VDPWR.t3" 71.5289
+rnode "VGND.n0" 0 0 18876 12600 0
+rnode "VGND.n1" 0 0 19676 12600 0
+rnode "VGND" 0 0 23800 12540 0
+rnode "VGND.n2" 0 0 21276 12600 0
+rnode "VGND.t18" 0 0 21800 4900 0
+rnode "VGND.n3" 0 0 21276 5100 0
+rnode "VGND.n4" 0 0 20476 5100 0
+rnode "VGND.n5" 0 0 22876 5100 0
+rnode "VGND.t1" 0 0 4476 12600 0
+rnode "VGND.t19" 0 0 22600 4900 0
+rnode "VGND.t17" 0 0 20200 4900 0
+rnode "VGND.t16" 0 0 19400 4900 0
+rnode "VGND.t14" 0 0 17800 4900 0
+rnode "VGND.t12" 0 0 14600 4900 0
+rnode "VGND.t11" 0 0 13800 4900 0
+rnode "VGND.t10" 0 0 12200 7619 0
+rnode "VGND.n6" 0 0 13510 4900 0
+rnode "VGND.n7" 0 0 7676 12600 0
+rnode "VGND.t4" 0 0 894 3581 0
+rnode "VGND.t8" 0 0 2600 6219 0
+rnode "VGND.t3" 0 0 4200 6219 0
+rnode "VGND.t7" 0 0 5800 6219 0
+rnode "VGND.t5" 0 0 7400 6219 0
+rnode "VGND.t6" 0 0 9000 6219 0
+rnode "VGND.t9" 0 0 10600 6219 0
+rnode "VGND.t13" 0 0 16200 6310 0
+rnode "VGND.t15" 0 0 18600 4900 0
+rnode "VGND.n8" 0 0 18876 4900 0
+rnode "VGND.t0" 0 0 21000 4900 0
+rnode "VGND.t2" 0 0 23124 4900 0
+resist "VGND.n7" "VGND.t9" 360.705
+resist "VGND.n7" "VGND.n6" 5.21989
+resist "VGND.n7" "VGND.t10" 348.996
+resist "VGND.t6" "VGND.n6" 818.875
+resist "VGND.t6" "VGND.t10" 54749
+resist "VGND.t10" "VGND.t13" 31992.3
+resist "VGND.t9" "VGND.t13" 2037.25
+resist "VGND.t9" "VGND.n6" 379.443
+resist "VGND.t12" "VGND.t11" 1027.77
+resist "VGND.n6" "VGND.t11" 5902.42
+resist "VGND.n6" "VGND.t12" 5902.42
+resist "VGND.t17" "VGND.t16" 4550.15
+resist "VGND.n4" "VGND.t16" 321.297
+resist "VGND.n8" "VGND.t17" 9054.04
+resist "VGND.n8" "VGND.n4" 639.328
+resist "VGND.n1" "VGND.t17" 2204.93
+resist "VGND.n0" "VGND.t15" 700.433
+resist "VGND.t14" "VGND.t15" 5526.48
+resist "VGND.t14" "VGND.n8" 319.091
+resist "VGND.t13" "VGND.t15" 71176.3
+resist "VGND.t13" "VGND.n8" 4109.62
+resist "VGND.t16" "VGND.n1" 76.3053
+resist "VGND.n8" "VGND.n1" 138.815
+resist "VGND.t14" "VGND.t13" 1433.48
+resist "VGND.n0" "VGND.t14" 67.1255
+resist "VGND.n5" "VGND.n2" 134.561
+resist "VGND.t18" "VGND.n2" 77.8838
+resist "VGND.t18" "VGND.n5" 314.626
+resist "VGND.n3" "VGND.n5" 624.626
+resist "VGND.n8" "VGND.n0" 17.4822
+resist "VGND.t10" "VGND.t9" 1718.16
+resist "VGND.n7" "VGND.t6" 248.186
+resist "VGND.n6" "VGND.t10" 144.525
+resist "VGND.n6" "VGND.t13" 381.845
+resist "VGND.n0" "VGND.t13" 235.649
+resist "VGND.n0" "VGND.n6" 2.69506
+resist "VGND.t16" "VGND.n8" 274.112
+resist "VGND.t1" "VGND.t7" 410.383
+resist "VGND.n7" "VGND.t7" 350.006
+resist "VGND.n7" "VGND.t1" 2.61597
+resist "VGND.n5" "VGND" 22.0671
+resist "VGND.n5" "VGND.t2" 87.6666
+resist "VGND.t17" "VGND.n4" 40.0505
+resist "VGND.n4" "VGND.n3" 77.7059
+resist "VGND.t0" "VGND.n3" 40.2387
+resist "VGND.t0" "VGND.n4" 1100.46
+resist "VGND.t18" "VGND.n3" 251.363
+resist "VGND.n2" "VGND.n1" 1.2
+resist "VGND.n2" "VGND" 1.2
+resist "VGND.n1" "VGND.n0" 1.8
+resist "VGND.n4" "VGND.n1" 15.826
+resist "VGND.n2" "VGND.n3" 15.8148
+resist "VGND" "VGND.t2" 19.123
+resist "VGND.t4" "VGND.t1" 25.6052
+resist "VGND.n5" "VGND.t19" 35.8494
+resist "VGND.n8" "VGND.t15" 41.1218
+resist "VGND.t8" "VGND.t4" 126.345
+resist "VGND.t3" "VGND.t1" 188.251
+resist "VGND.t5" "VGND.n7" 188.251
+resist "VGND.t9" "VGND.t6" 554.732
+resist "VGND.t6" "VGND.t5" 560.224
+resist "VGND.t5" "VGND.t7" 560.224
+resist "VGND.t7" "VGND.t3" 560.224
+resist "VGND.t3" "VGND.t8" 560.224
+resist "VGND.t13" "VGND.t12" 1890.91
+resist "VGND.t10" "VGND.t11" 3126.58
+rnode "dout.t0" 0 1762.29 9772 4900 0
+rnode "dout.t1" 0 1484.81 8972 4900 0
+rnode "dout" 0 -3247.1 23800 10140 0
+resist "dout" "dout.t1" 87.9037
+resist "dout.t0" "dout.t1" 31.4311
+resist "dout.t0" "dout" 86.0099
+rnode "txn.t2" 0 161.984 22600 1700 0
+rnode "txn.t1" 0 86.3945 19400 5000 0
+rnode "txn.t0" 0 76.4333 17800 1700 0
+rnode "txn.n0" 0 3210.91 17900 4000 0
+rnode "txn" 0 -3535.72 23800 11940 0
+resist "txn.n0" "txn.t1" 19.3772
+resist "txn.t2" "txn.t1" 396.507
+resist "txn.t2" "txn.n0" 23.8269
+resist "txn.n0" "txn.t0" 18.9357
+resist "txn" "txn.n0" 40.875
+rnode "txp.t2" 0 200.102 21800 1700 0
+rnode "txp.t1" 0 111.678 18600 5000 0
+rnode "txp.t0" 0 81.8914 16200 1700 0
+rnode "txp.n0" 0 3269.18 16300 4200 0
+rnode "txp" 0 -3662.85 23800 12140 0
+resist "txp.n0" "txp.t1" 20.2091
+resist "txp.t2" "txp.t1" 265.912
+resist "txp.t2" "txp.n0" 25.4376
+resist "txp.n0" "txp.t0" 19.1607
+resist "txp" "txp.n0" 39.375
+killnode "xbuf_xp.G"
+rnode "xbuf_xp.G.t3" 0 544.614 8200 4900 0
+rnode "xbuf_xp.G.t2" 0 859.942 7400 4900 0
+rnode "xbuf_xp.G.t1" 0 7055.96 5692 3000 0
+rnode "xbuf_xp.G.t0" 0 612.142 6572 4900 0
+resist "xbuf_xp.G.t1" "xbuf_xp.G.t2" 120.068
+resist "xbuf_xp.G.t3" "xbuf_xp.G.t2" 953.958
+resist "xbuf_xp.G.t3" "xbuf_xp.G.t1" 226.604
+resist "xbuf_xp.G.t0" "xbuf_xp.G.t1" 12.2651
+killnode "xout_xp.G"
+rnode "xout_xp.G.t3" 0 591.162 9800 4900 0
+rnode "xout_xp.G.t2" 0 943.65 9000 4900 0
+rnode "xout_xp.G.t0" 0 7167.31 7292 3200 0
+rnode "xout_xp.G.t1" 0 611.628 8172 4900 0
+resist "xout_xp.G.t0" "xout_xp.G.t2" 123.52
+resist "xout_xp.G.t3" "xout_xp.G.t2" 893.063
+resist "xout_xp.G.t3" "xout_xp.G.t0" 232.84
+resist "xout_xp.G.t1" "xout_xp.G.t0" 12.0401
+killnode "xp2.D"
+rnode "xp2.D.t3" 0 754.921 6600 4900 0
+rnode "xp2.D.t2" 0 1235.29 5800 4900 0
+rnode "xp2.D.t1" 0 7848.1 14448 2800 0
+rnode "xp2.D.t0" 0 847.495 14500 4900 0
+resist "xp2.D.t1" "xp2.D.t2" 128.496
+resist "xp2.D.t3" "xp2.D.t2" 802.214
+resist "xp2.D.t3" "xp2.D.t1" 242.801
+resist "xp2.D.t0" "xp2.D.t1" 11.5543
+killnode "xp2.G"
+rnode "xp2.G.t3" 0 1435.31 17000 4900 0
+rnode "xp2.G.t1" 0 1429.15 15400 4900 0
+rnode "xp2.G.t2" 0 5689.37 13648 2600 0
+rnode "xp2.G.t0" 0 683.678 13700 4900 0
+resist "xp2.G.t2" "xp2.G.t1" 130.225
+resist "xp2.G.t3" "xp2.G.t1" 253.055
+resist "xp2.G.t3" "xp2.G.t2" 132.672
+resist "xp2.G.t0" "xp2.G.t2" 11.7793
+killnode "xrn.P"
+rnode "xrn.P.t0" 0 4110.7 12092 2000 0
+rnode "xrn.P.n0" 0 5551.25 1692 2000 0
+rnode "xrn.P.t2" 0 318.594 972 4900 0
+rnode "xrn.P.t5" 0 516.556 3400 4900 0
+rnode "xrn.P.t4" 0 785.146 2600 4900 0
+rnode "xrn.P.t1" 0 605.916 1772 4900 0
+rnode "xrn.P.t3" 0 1286.14 12972 4900 0
+resist "xrn.P.n0" "xrn.P.t4" 110.985
+resist "xrn.P.t5" "xrn.P.t4" 1163.26
+resist "xrn.P.t5" "xrn.P.n0" 210.735
+resist "xrn.P.t0" "xrn.P.n0" 8.469
+resist "xrn.P.t3" "xrn.P.t0" 12.4811
+resist "xrn.P.n0" "xrn.P.t1" 12.7901
+resist "xrn.P.n0" "xrn.P.t2" 14.211
+killnode "xrp.P"
+rnode "xrp.P.t0" 0 5414.21 10492 2400 0
+rnode "xrp.P.t1" 0 1377.67 2572 4900 0
+rnode "xrp.P.t2" 0 1558.16 3372 4900 0
+rnode "xrp.P.t3" 0 996.665 11372 4900 0
+resist "xrp.P.t1" "xrp.P.t2" 54.6141
+resist "xrp.P.t0" "xrp.P.t2" 23.6938
+resist "xrp.P.t0" "xrp.P.t1" 26.5544
+resist "xrp.P.t3" "xrp.P.t0" 12.0311
+killnode "xtn_xp.G"
+rnode "xtn_xp.G.t3" 0 380.502 13000 4900 0
+rnode "xtn_xp.G.t2" 0 376.284 11400 4900 0
+rnode "xtn_xp.G.t1" 0 5958.32 4092 1400 0
+rnode "xtn_xp.G.t0" 0 532.003 4972 4900 0
+resist "xtn_xp.G.t1" "xtn_xp.G.t2" 394.88
+resist "xtn_xp.G.t3" "xtn_xp.G.t2" 5438.14
+resist "xtn_xp.G.t3" "xtn_xp.G.t1" 396.255
+resist "xtn_xp.G.t0" "xtn_xp.G.t1" 14.0651
+device msubckt nfet_03v3 972 4500 973 4501  "VGND.t4" "din" 112 0 "xrn.P.t2" 800 104800,1862 "VGND.t1" 800 104800,1862
+device msubckt pfet_03v3 1772 3900 1773 3901  "VDPWR.t3" "din" 112 0 "xrn.P.t1" 2000 262000,4262 "VDPWR.t4" 2000 262000,4262
+device msubckt nfet_03v3 2572 4500 2573 4501  "VGND.t8" "xrn.P.t4" 112 0 "xrp.P.t1" 800 104800,1862 "VGND.t1" 800 104800,1862
+device msubckt pfet_03v3 3372 3900 3373 3901  "VDPWR.t15" "xrn.P.t5" 112 0 "xrp.P.t2" 2000 262000,4262 "VDPWR.t16" 2000 262000,4262
+device msubckt nfet_03v3 4172 4500 4173 4501  "VGND.t3" "boost" 112 0 "xtn_xp.G.t1" 800 104800,1862 "VGND.t1" 800 104800,1862
+device msubckt pfet_03v3 4972 3900 4973 3901  "VDPWR.t1" "boost" 112 0 "xtn_xp.G.t0" 2000 262000,4262 "VDPWR.t2" 2000 262000,4262
+device msubckt nfet_03v3 5772 4500 5773 4501  "VGND.t7" "xp2.D.t2" 112 0 "xbuf_xp.G.t1" 800 104800,1862 "VGND.t1" 800 104800,1862
+device msubckt pfet_03v3 6572 3900 6573 3901  "VDPWR.t9" "xp2.D.t3" 112 0 "xbuf_xp.G.t0" 2000 262000,4262 "VDPWR.t10" 2000 262000,4262
+device msubckt nfet_03v3 7372 4500 7373 4501  "VGND.t5" "xbuf_xp.G.t2" 112 0 "xout_xp.G.t0" 800 104800,1862 "VGND.t1" 800 104800,1862
+device msubckt pfet_03v3 8172 3900 8173 3901  "VDPWR.t5" "xbuf_xp.G.t3" 112 0 "xout_xp.G.t1" 2000 262000,4262 "VDPWR.t6" 2000 262000,4262
+device msubckt nfet_03v3 8972 4500 8973 4501  "VGND.t6" "xout_xp.G.t2" 112 0 "dout.t1" 800 104800,1862 "VGND.t1" 800 104800,1862
+device msubckt pfet_03v3 9772 3900 9773 3901  "VDPWR.t7" "xout_xp.G.t3" 112 0 "dout.t0" 2000 262000,4262 "VDPWR.t8" 2000 262000,4262
+device msubckt nfet_03v3 10572 3700 10573 3701  "VGND.t9" "boost" 112 0 "xrp.P.t0" 2400 314400,5062 "xrp2.P" 2400 314400,5062
+device msubckt pfet_03v3 11372 2500 11373 2501  "VDPWR.t17" "xtn_xp.G.t2" 112 0 "xrp.P.t3" 4800 628800,9862 "xrp2.P" 4800 628800,9862
+device msubckt nfet_03v3 12172 3700 12173 3701  "VGND.t10" "boost" 112 0 "xrn.P.t0" 2400 314400,5062 "xrn2.P" 2400 314400,5062
+device msubckt pfet_03v3 12972 2500 12973 2501  "VDPWR.t18" "xtn_xp.G.t3" 112 0 "xrn.P.t3" 4800 628800,9862 "xrn2.P" 4800 628800,9862
+device msubckt nfet_03v3 13700 2500 13701 2501  "VGND.t11" "rxn" 400 0 "xp2.G.t0" 4800 422400,9776 "xrt.P" 4800 422400,9776
+device msubckt nfet_03v3 14500 2500 14501 2501  "VGND.t12" "rxp" 400 0 "xp2.D.t0" 4800 422400,9776 "xrt.P" 4800 422400,9776
+device msubckt pfet_03v3 15300 3700 15301 3701  "VDPWR.t13" "xp2.G.t1" 400 0 "xp2.G.t2" 2400 211200,4976 "VDPWR.t14" 2400 211200,4976
+device rsubckt ppolyf_u_1k 16100 1700 16101 1701  "VGND.t13" "a_16100_1700#" 400 0 "xrp.P.t0" 6400 24400,644 "txp.t0" 6400 24400,644
+device msubckt pfet_03v3 16900 3700 16901 3701  "VDPWR.t11" "xp2.G.t3" 400 0 "xp2.D.t1" 2400 211200,4976 "VDPWR.t12" 2400 211200,4976
+device rsubckt ppolyf_u_1k 17700 1700 17701 1701  "VGND.t14" "a_17700_1700#" 400 0 "xrn.P.t0" 6400 24400,644 "txn.t0" 6400 24400,644
+device rsubckt ppolyf_u_1k 18500 4800 18501 4801  "VGND.t15" "a_18500_4800#" 400 0 "txp.t1" 200 24400,644 "xrc2.P" 200 24400,644
+device rsubckt ppolyf_u_1k 19300 4800 19301 4801  "VGND.t16" "a_19300_4800#" 400 0 "txn.t1" 200 24400,644 "xrc2.P" 200 24400,644
+device rsubckt ppolyf_u_1k 20100 2900 20101 2901  "VGND.t17" "a_20100_2900#" 400 0 "VDPWR.t0" 4000 24400,644 "xrc2.P" 4000 24400,644
+device rsubckt ppolyf_u_1k 20900 2900 20901 2901  "VGND.t0" "a_20900_2900#" 400 0 "xrc2.P" 4000 24400,644 "VGND.t1" 4000 24400,644
+device rsubckt ppolyf_u_1k 21700 1700 21701 1701  "VGND.t18" "a_21700_1700#" 400 0 "xrp2.P" 6400 24400,644 "txp.t2" 6400 24400,644
+device rsubckt ppolyf_u_1k 22500 1700 22501 1701  "VGND.t19" "a_22500_1700#" 400 0 "xrn2.P" 6400 24400,644 "txn.t2" 6400 24400,644
+device rsubckt ppolyf_u_1k 23300 2900 23301 2901  "VGND.t2" "a_23300_2900#" 400 0 "xrt.P" 4000 24400,644 "VGND.t1" 4000 24400,644
+cap "VDPWR" "xbuf_xp.G.t1" 5548.63
+cap "VDPWR" "xout_xp.G.t0" 5618.52
+cap "VDPWR" "xp2.D.t1" 5491.19
+cap "VDPWR" "xp2.G.t2" 7368.06
+cap "VDPWR" "xrn.P.n0" 8768.78
+cap "VDPWR" "xrp.P.t0" 7113.13
+cap "VDPWR" "xtn_xp.G.t1" 5303.58
+cap "boost" "xbuf_xp.G.t1" 214.17
+cap "boost" "xout_xp.G.t0" 210.994
+cap "boost" "xp2.D.t1" 216.319
+cap "boost" "xp2.G.t2" 212.1
+cap "boost" "xrn.P.n0" 406.075
+cap "boost" "xrp.P.t0" 232.394
+cap "boost" "xtn_xp.G.t1" 21696.9
+cap "din" "xbuf_xp.G.t1" 211.417
+cap "din" "xout_xp.G.t0" 211.241
+cap "din" "xp2.D.t1" 212.331
+cap "din" "xp2.G.t2" 214.15
+cap "din" "xrn.P.n0" 21783.6
+cap "din" "xrp.P.t0" 153.121
+cap "din" "xtn_xp.G.t1" 544.167
+cap "dout" "xbuf_xp.G.t1" 342.579
+cap "dout" "xout_xp.G.t0" 576.868
+cap "dout" "xp2.D.t1" 340.427
+cap "dout" "xp2.G.t2" 345.666
+cap "dout" "xrn.P.n0" 21769.1
+cap "dout" "xrp.P.t0" 21672.2
+cap "dout" "xtn_xp.G.t1" 233.709
+cap "rxn" "xbuf_xp.G.t1" 301.83
+cap "rxn" "xout_xp.G.t0" 21599.1
+cap "rxn" "xp2.D.t1" 320.859
+cap "rxn" "xp2.G.t2" 918.956
+cap "rxn" "xrn.P.n0" 482.175
+cap "rxn" "xrp.P.t0" 472.835
+cap "rxn" "xtn_xp.G.t1" 291.949
+cap "rxp" "xbuf_xp.G.t1" 297.559
+cap "rxp" "xout_xp.G.t0" 301.369
+cap "rxp" "xp2.D.t1" 908.117
+cap "rxp" "xp2.G.t2" 346.221
+cap "rxp" "xrn.P.n0" 496.345
+cap "rxp" "xrp.P.t0" 509.222
+cap "rxp" "xtn_xp.G.t1" 288.724
+cap "txn" "xbuf_xp.G.t1" 344.29
+cap "txn" "xout_xp.G.t0" 344.992
+cap "txn" "xp2.D.t1" 340
+cap "txn" "xp2.G.t2" 362.105
+cap "txn" "xrn.P.n0" 1108.7
+cap "txn" "xrp.P.t0" 512.614
+cap "txn" "xtn_xp.G.t1" 253.64
+cap "txp" "xbuf_xp.G.t1" 340.989
+cap "txp" "xout_xp.G.t0" 341.311
+cap "txp" "xp2.D.t1" 468.448
+cap "txp" "xp2.G.t2" 359.348
+cap "txp" "xrn.P.n0" 616.689
+cap "txp" "xrp.P.t0" 1008.2
+cap "txp" "xtn_xp.G.t1" 255.456
+cap "xbuf_xp.G.t1" "xout_xp.G.t0" 21893.9
+cap "xbuf_xp.G.t1" "xp2.D.t1" 21823.7
+cap "xbuf_xp.G.t1" "xp2.G.t2" 349.792
+cap "xbuf_xp.G.t1" "xrc2.P" 399.044
+cap "xbuf_xp.G.t1" "xrn.P.n0" 705.428
+cap "xbuf_xp.G.t1" "xrn2.P" 403.778
+cap "xbuf_xp.G.t1" "xrp.P.t0" 550.459
+cap "xbuf_xp.G.t1" "xrp2.P" 371.049
+cap "xbuf_xp.G.t1" "xrt.P" 265.353
+cap "xbuf_xp.G.t1" "xtn_xp.G.t1" 429.286
+cap "xout_xp.G.t0" "xp2.D.t1" 353.238
+cap "xout_xp.G.t0" "xp2.G.t2" 344.413
+cap "xout_xp.G.t0" "xrc2.P" 394.755
+cap "xout_xp.G.t0" "xrn.P.n0" 547.955
+cap "xout_xp.G.t0" "xrn2.P" 403.778
+cap "xout_xp.G.t0" "xrp.P.t0" 521.351
+cap "xout_xp.G.t0" "xrp2.P" 371.426
+cap "xout_xp.G.t0" "xrt.P" 267.34
+cap "xout_xp.G.t0" "xtn_xp.G.t1" 342.539
+cap "xp2.D.t1" "xp2.G.t2" 22109.1
+cap "xp2.D.t1" "xrc2.P" 457.42
+cap "xp2.D.t1" "xrn.P.n0" 655.653
+cap "xp2.D.t1" "xrn2.P" 404.261
+cap "xp2.D.t1" "xrp.P.t0" 601.149
+cap "xp2.D.t1" "xrp2.P" 371.381
+cap "xp2.D.t1" "xrt.P" 1483.59
+cap "xp2.D.t1" "xtn_xp.G.t1" 346.305
+cap "xp2.G.t2" "xrc2.P" 461.008
+cap "xp2.G.t2" "xrn.P.n0" 569.223
+cap "xp2.G.t2" "xrn2.P" 623.768
+cap "xp2.G.t2" "xrp.P.t0" 21942.5
+cap "xp2.G.t2" "xrp2.P" 373.236
+cap "xp2.G.t2" "xrt.P" 1504.05
+cap "xp2.G.t2" "xtn_xp.G.t1" 347.793
+cap "xrc2.P" "xrn.P.n0" 502.267
+cap "xrc2.P" "xrp.P.t0" 353.477
+cap "xrc2.P" "xtn_xp.G.t1" 21550.6
+cap "xrn.P.n0" "xrn2.P" 4657.21
+cap "xrn.P.n0" "xrp.P.t0" 702.384
+cap "xrn.P.n0" "xrp2.P" 661.302
+cap "xrn.P.n0" "xrt.P" 597.67
+cap "xrn.P.n0" "xtn_xp.G.t1" 645.389
+cap "xrn2.P" "xrp.P.t0" 274.659
+cap "xrn2.P" "xtn_xp.G.t1" 671.466
+cap "xrp.P.t0" "xrp2.P" 4270.06
+cap "xrp.P.t0" "xrt.P" 448.67
+cap "xrp.P.t0" "xtn_xp.G.t1" 605.321
+cap "xrp2.P" "xtn_xp.G.t1" 642.187
+cap "xrt.P" "xtn_xp.G.t1" 236.109

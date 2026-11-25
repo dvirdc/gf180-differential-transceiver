@@ -1,3 +1,5 @@
+> **Compaction experiment branch — not a submission candidate.** This checkout contains modified RTL and 1×2 experiments. Its inherited root layout, metadata and signoff artifacts belong to the verified 2×2 baseline and do not qualify these changes. See [experiment status](COMPACT_EXPERIMENT.md) and [measured outcomes](experiments/compact-transceiver/README.md). The baseline description below is retained for reference.
+
 # GF26e differential byte transceiver
 
 A complete GF180 port of the differential byte transceiver and autonomous loopback tester, designed for one Tiny Tapeout GF26e **2x2 analog frame** with four analog pins. The project includes the native 3.3 V PHY, 8N1 serial TX/RX, SPI registers, five test patterns, all seven 32-bit counter values, coherent snapshots and fault detection. The default line rate is 100 kbit/s from a 1.6 MHz clock.

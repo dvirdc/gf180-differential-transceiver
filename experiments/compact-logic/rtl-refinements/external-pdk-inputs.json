@@ -1,0 +1,17 @@
+{
+  "paths_relative_to_libs_ref": {
+    "gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib": {
+      "purpose": "3.3V characterized synthesis Liberty",
+      "sha256": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53"
+    },
+    "gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": {
+      "purpose": "Unmodified GF180 simulation cell model",
+      "sha256": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b"
+    },
+    "gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": {
+      "purpose": "Unmodified GF180 simulation cell model",
+      "sha256": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92"
+    }
+  },
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae"
+}

@@ -1,0 +1,8 @@
+{
+  "librelane_version": "3.1.0.dev3",
+  "upstream_file": "/Users/dvirdc/Projects/gf180-phys/toolchain/librelane-3.1.0.dev3/rootfs/nix/store/2vgjzxxlmi26sqnlmkbqxj96yj3vv4y4-python3.13-librelane-3.1.0.dev3/lib/python3.13/site-packages/librelane/scripts/pyosys/synthesize.py",
+  "upstream_sha256": "0ef94aa58bb5ff1befe90d40561c8210bf360b3c5923ae5e184471c23a85128c",
+  "fixed_sha256": "16a77a05905452d69f664c0c3d126b629684a5290767108ac7c754318efe45e8",
+  "only_diff": "clockgate arguments add -tie_lo TE",
+  "reason": "Native GF180 ICG TE input must be tied low; no implicit default exists."
+}

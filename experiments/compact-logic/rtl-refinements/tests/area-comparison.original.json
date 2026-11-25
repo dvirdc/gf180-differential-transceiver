@@ -1,0 +1,62 @@
+{
+  "scope": "Isolated lossless digital reduction experiments; no physical fitting or signoff is claimed. Production files unchanged.",
+  "baseline_commit": "dc81136485ec0d8a0e100307a48a231a246e4c7f",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "simple_tool": "Yosys0.66",
+  "physical_flow": "LibreLane3.1.0.dev3, productionsettings including SYNTH_ARITH_TREE=false, through Yosys.Synthesis only",
+  "variants": [
+    {
+      "variant": "baseline",
+      "source_sha256": "3c68ad1452199b820d4a9e9732ead0e4162d7204bb80581a686308aff3042d96",
+      "simple_area_um2": 96878.5664,
+      "simple_flip_flops": 659,
+      "librelane_area_um2": 96307.8144
+    },
+    {
+      "variant": "timeout",
+      "source_sha256": "0a934f3204109d45b2c91156b91372efc1b0f9a45b6d156c1b52fdbcfdaacd7c",
+      "simple_area_um2": 88143.8656,
+      "simple_flip_flops": 597,
+      "librelane_area_um2": 87472.1344,
+      "librelane_flip_flops": 597,
+      "librelane_saving_percent": 9.174416484318023,
+      "rtl_tests": 44,
+      "simple_mapped_tests": 44,
+      "librelane_mapped_tests": 44
+    },
+    {
+      "variant": "snapshot",
+      "source_sha256": "71887494fd56c783c04870f2023c4132d698b3407be9097cf11850e25aef1759",
+      "simple_area_um2": 94793.1264,
+      "simple_flip_flops": 660,
+      "librelane_area_um2": 94281.6448,
+      "librelane_flip_flops": 660,
+      "librelane_saving_percent": 2.1038475565280903,
+      "rtl_tests": 44,
+      "simple_mapped_tests": 44,
+      "librelane_mapped_tests": 44
+    },
+    {
+      "variant": "combined",
+      "source_sha256": "79926c2525a80c949a422ed72c18cb05f23fe419fd021bcf550219cfb4d209f4",
+      "simple_area_um2": 87118.7072,
+      "simple_flip_flops": 598,
+      "librelane_area_um2": 86299.8976,
+      "librelane_flip_flops": 598,
+      "librelane_saving_percent": 10.391593727206425,
+      "rtl_tests": 44,
+      "simple_mapped_tests": 44,
+      "librelane_mapped_tests": 44
+    }
+  ],
+  "proofs": {
+    "timeout": "Inductive0/1 refinement and unreachable old32-bit overflow branch under acceptedSTART/CLEAR guards.",
+    "snapshot": "Inductive masked32-bit snapshot refinement; byte reads and derived checked-bit reads, reset and pre-first-capturezero behavior."
+  },
+  "proof_scope": "Local algebraic/inductive refinements; not whole-core equivalence. Source integration also checked by unchanged44-case external-pin regression.",
+  "intentional_new_lint": "Snapshot variants report SYNCASYNCNET for reset_n used as async-valid reset and sync raw-bank capture guard; no rule suppression or latches.",
+  "remaining": [
+    "Physical placement/routing/STA/DRC/LVS and exact-head remote checks if any variant is promoted.",
+    "Combined86,299.8976um2 synthesis area alone leaves almost no1x2 routing/physical-cell headroom once17,600um2 analog macro is included; clock-gating or larger architecture changes are separate experiments."
+  ]
+}

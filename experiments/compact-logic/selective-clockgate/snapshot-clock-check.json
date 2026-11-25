@@ -1,0 +1,22 @@
+{
+  "netlist_json_sha256": "735b7860762fc49cfe544885b1ed7756a4f53fe5f85c4f34fffebfb4e1012037",
+  "resetless_snapshot_ff_count": 161,
+  "all_resetless_snapshot_ffs_on_primary_clk": true,
+  "icg_test_enable_drivers": {
+    "$auto$clockgate.cc:374:execute$28221": "$auto$hilomap.cc:48:hilomap_worker$30498",
+    "$auto$clockgate.cc:374:execute$28223": "$auto$hilomap.cc:48:hilomap_worker$30496",
+    "$auto$clockgate.cc:374:execute$28225": "$auto$hilomap.cc:48:hilomap_worker$30494",
+    "$auto$clockgate.cc:374:execute$28227": "$auto$hilomap.cc:48:hilomap_worker$30492",
+    "$auto$clockgate.cc:374:execute$28229": "$auto$hilomap.cc:48:hilomap_worker$30518",
+    "$auto$clockgate.cc:374:execute$28231": "$auto$hilomap.cc:48:hilomap_worker$30516",
+    "$auto$clockgate.cc:374:execute$28233": "$auto$hilomap.cc:48:hilomap_worker$30514",
+    "$auto$clockgate.cc:374:execute$28235": "$auto$hilomap.cc:48:hilomap_worker$30512",
+    "$auto$clockgate.cc:374:execute$28237": "$auto$hilomap.cc:48:hilomap_worker$30510",
+    "$auto$clockgate.cc:374:execute$28239": "$auto$hilomap.cc:48:hilomap_worker$30508",
+    "$auto$clockgate.cc:374:execute$28241": "$auto$hilomap.cc:48:hilomap_worker$30506",
+    "$auto$clockgate.cc:374:execute$28243": "$auto$hilomap.cc:48:hilomap_worker$30504",
+    "$auto$clockgate.cc:374:execute$28245": "$auto$hilomap.cc:48:hilomap_worker$30502",
+    "$auto$clockgate.cc:374:execute$28247": "$auto$hilomap.cc:48:hilomap_worker$30500"
+  },
+  "synthesis_area_um2": 83465.8944
+}

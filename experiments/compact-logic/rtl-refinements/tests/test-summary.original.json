@@ -1,0 +1,80 @@
+{
+  "timeout-rtl": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "input_sha256": {
+      "rtl/diff8_uart_tx.v": "35154e34211bfba75af66cd5e097cdfc8fc19ded4716b19e8b261ad911ca10ba",
+      "rtl/diff8_uart_rx.v": "2519e9f6a533ec89008bae1749444dfa8936602187b313cba5368de7389c88ce",
+      "build/shrink-logic/timeout/diff8_digital.v": "0a934f3204109d45b2c91156b91372efc1b0f9a45b6d156c1b52fdbcfdaacd7c",
+      "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+      "sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+      "sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+    }
+  },
+  "timeout-mapped": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "input_sha256": {
+      "build/shrink-logic/timeout/mapped.v": "4c7d6e6c0802e3e99c462e01cbf009a8299a083e901f5992a9e4047395a12f60",
+      "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+      "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b",
+      "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+      "sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+      "sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+    }
+  },
+  "snapshot-rtl": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "input_sha256": {
+      "rtl/diff8_uart_tx.v": "35154e34211bfba75af66cd5e097cdfc8fc19ded4716b19e8b261ad911ca10ba",
+      "rtl/diff8_uart_rx.v": "2519e9f6a533ec89008bae1749444dfa8936602187b313cba5368de7389c88ce",
+      "build/shrink-logic/snapshot/diff8_digital.v": "71887494fd56c783c04870f2023c4132d698b3407be9097cf11850e25aef1759",
+      "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+      "sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+      "sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+    }
+  },
+  "snapshot-mapped": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "input_sha256": {
+      "build/shrink-logic/snapshot/mapped.v": "008c6b7c7ab1f3334d41686cbe2738305a92700d7682b017a535356805422348",
+      "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+      "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b",
+      "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+      "sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+      "sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+    }
+  },
+  "combined-rtl": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "input_sha256": {
+      "rtl/diff8_uart_tx.v": "35154e34211bfba75af66cd5e097cdfc8fc19ded4716b19e8b261ad911ca10ba",
+      "rtl/diff8_uart_rx.v": "2519e9f6a533ec89008bae1749444dfa8936602187b313cba5368de7389c88ce",
+      "build/shrink-logic/combined/diff8_digital.v": "79926c2525a80c949a422ed72c18cb05f23fe419fd021bcf550219cfb4d209f4",
+      "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+      "sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+      "sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+    }
+  },
+  "combined-mapped": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "input_sha256": {
+      "build/shrink-logic/combined/mapped.v": "11db0c725107d111be807096ba1c624319af9e0a243e814ba10123442d760719",
+      "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+      "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b",
+      "rtl/tt_um_dvirdc_gf180_diff8.v": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505",
+      "sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+      "sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+    }
+  }
+}

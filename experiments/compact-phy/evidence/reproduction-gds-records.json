@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "selected_gds_sha256": "8d7696a723315a539f7b4901cae311f87cca9b35516c7dda7cf917dba3faca2b",
+  "regenerated_gds_sha256": "e0f460fd6edc864e26b990d6ff4710603be5c1b20e73d7a2c9be7333fc6b828b",
+  "only_timestamp_records_differ": true,
+  "differing_records": {
+    "0x1": 1,
+    "0x5": 10
+  },
+  "record_types": {
+    "0x1": "BGNLIB timestamps",
+    "0x5": "BGNSTR timestamps"
+  }
+}

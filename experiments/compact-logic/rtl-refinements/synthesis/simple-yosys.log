@@ -1,0 +1,2427 @@
+
+-- Executing script file `/work/build/shrink-logic/combined/map.ys' --
+
+1. Executing Verilog-2005 frontend: /work/rtl/diff8_uart_tx.v
+Parsing Verilog input from `/work/rtl/diff8_uart_tx.v' to AST representation.
+Generating RTLIL representation for module `\diff8_uart_tx'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /work/rtl/diff8_uart_rx.v
+Parsing Verilog input from `/work/rtl/diff8_uart_rx.v' to AST representation.
+Generating RTLIL representation for module `\diff8_uart_rx'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /work/build/shrink-logic/combined/diff8_digital.v
+Parsing Verilog input from `/work/build/shrink-logic/combined/diff8_digital.v' to AST representation.
+Generating RTLIL representation for module `\diff8_digital'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \diff8_digital
+Used module:     \diff8_uart_rx
+Used module:     \diff8_uart_tx
+
+4.2. Analyzing design hierarchy..
+Top module:  \diff8_digital
+Used module:     \diff8_uart_rx
+Used module:     \diff8_uart_tx
+Removed 0 unused modules.
+
+5. Executing SYNTH pass.
+
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1.1. Analyzing design hierarchy..
+Top module:  \diff8_digital
+Used module:     \diff8_uart_rx
+Used module:     \diff8_uart_tx
+
+5.1.2. Analyzing design hierarchy..
+Top module:  \diff8_digital
+Used module:     \diff8_uart_rx
+Used module:     \diff8_uart_tx
+Removed 0 unused modules.
+
+5.2. Executing PROC pass (convert processes to netlists).
+
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/work/build/shrink-logic/combined/diff8_digital.v:53$350 in module diff8_digital.
+Marked 1 switch rules as full_case in process $proc$/work/build/shrink-logic/combined/diff8_digital.v:194$345 in module diff8_digital.
+Marked 25 switch rules as full_case in process $proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128 in module diff8_digital.
+Marked 2 switch rules as full_case in process $proc$/work/build/shrink-logic/combined/diff8_digital.v:107$123 in module diff8_digital.
+Marked 6 switch rules as full_case in process $proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94 in module diff8_digital.
+Marked 8 switch rules as full_case in process $proc$/work/rtl/diff8_uart_rx.v:15$18 in module diff8_uart_rx.
+Marked 1 switch rules as full_case in process $proc$/work/rtl/diff8_uart_rx.v:11$15 in module diff8_uart_rx.
+Marked 4 switch rules as full_case in process $proc$/work/rtl/diff8_uart_tx.v:8$2 in module diff8_uart_tx.
+Removed a total of 0 dead cases.
+
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 13 redundant assignments.
+Promoted 37 assignments to connections.
+
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset_n in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:194$345'.
+Found async reset \reset_n in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+Found async reset \reset_n in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:107$123'.
+Found async reset \reset_n in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+Found async reset \reset_n in `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+Found async reset \reset_n in `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$15'.
+Found async reset \reset_n in `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$2'.
+
+5.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~59 debug messages>
+
+5.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:54$362'.
+Creating decoders for process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:53$350'.
+     1/1: $1\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:53$70.$result[7:0]$357
+Creating decoders for process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+     1/6: $0\snap_overruns[31:0]
+     2/6: $0\snap_timeouts[31:0]
+     3/6: $0\snap_framing[31:0]
+     4/6: $0\snap_error_bits[31:0]
+     5/6: $0\snap_error_bytes[31:0]
+     6/6: $0\snap_bytes[31:0]
+Creating decoders for process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:194$345'.
+     1/1: $0\snapshot_valid[0:0]
+Creating decoders for process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+     1/134: $0\baud_div[15:0] [15:8]
+     2/134: $0\baud_div[15:0] [7:0]
+     3/134: $0\target_count[31:0] [23:16]
+     4/134: $0\target_count[31:0] [15:8]
+     5/134: $0\target_count[31:0] [7:0]
+     6/134: $6\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.n[3:0]$298
+     7/134: $6\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.x[31:0]$297
+     8/134: $6\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.$result[31:0]$294
+     9/134: $6\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.x[31:0]$295
+    10/134: $5\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.n[3:0]$283
+    11/134: $5\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.x[31:0]$282
+    12/134: $5\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.$result[31:0]$281
+    13/134: $5\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.x[31:0]$280
+    14/134: $5\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.$result[31:0]$279
+    15/134: $5\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.$result[7:0]$277
+    16/134: $5\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.x[7:0]$278
+    17/134: $5\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.$result[31:0]$275
+    18/134: $5\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.x[31:0]$276
+    19/134: $6\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.$result[7:0]$266
+    20/134: $5\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.$result[7:0]$264
+    21/134: $5\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.x[7:0]$265
+    22/134: $5\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.$result[7:0]$259
+    23/134: $5\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.fixed_byte[7:0]$263
+    24/134: $5\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.seq[7:0]$262
+    25/134: $5\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.index[2:0]$261
+    26/134: $5\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.mode[2:0]$260
+    27/134: $4\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.x[7:0]$246
+    28/134: $4\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.$result[7:0]$245
+    29/134: $4\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.fixed_byte[7:0]$244
+    30/134: $4\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.seq[7:0]$243
+    31/134: $4\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.index[2:0]$242
+    32/134: $4\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.mode[2:0]$241
+    33/134: $4\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.$result[7:0]$240
+    34/134: $4\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.n[3:0]$255
+    35/134: $4\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.x[31:0]$254
+    36/134: $4\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.$result[31:0]$253
+    37/134: $4\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.x[31:0]$252
+    38/134: $4\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.$result[31:0]$251
+    39/134: $4\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.x[7:0]$250
+    40/134: $4\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.$result[7:0]$249
+    41/134: $4\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.x[31:0]$248
+    42/134: $4\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.$result[31:0]$247
+    43/134: $3\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:134$63.$result[31:0]$218
+    44/134: $3\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:134$63.x[31:0]$219
+    45/134: $3\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.n[3:0]$235
+    46/134: $3\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.x[31:0]$234
+    47/134: $3\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.$result[31:0]$233
+    48/134: $3\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.x[31:0]$232
+    49/134: $3\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.$result[31:0]$231
+    50/134: $3\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.x[7:0]$230
+    51/134: $3\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.$result[7:0]$229
+    52/134: $3\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.x[31:0]$228
+    53/134: $3\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.$result[31:0]$227
+    54/134: $3\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.x[7:0]$226
+    55/134: $3\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.$result[7:0]$225
+    56/134: $3\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.fixed_byte[7:0]$224
+    57/134: $3\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.seq[7:0]$223
+    58/134: $3\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.index[2:0]$222
+    59/134: $3\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.mode[2:0]$221
+    60/134: $3\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.$result[7:0]$220
+    61/134: $2\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.n[3:0]$215
+    62/134: $2\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.x[31:0]$214
+    63/134: $2\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.$result[31:0]$213
+    64/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.x[31:0]$212
+    65/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.$result[31:0]$211
+    66/134: $2\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.x[7:0]$210
+    67/134: $2\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.$result[7:0]$209
+    68/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.x[31:0]$208
+    69/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.$result[31:0]$207
+    70/134: $2\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.x[7:0]$206
+    71/134: $2\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.$result[7:0]$205
+    72/134: $2\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.fixed_byte[7:0]$204
+    73/134: $2\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.seq[7:0]$203
+    74/134: $2\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.index[2:0]$202
+    75/134: $2\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.mode[2:0]$201
+    76/134: $2\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.$result[7:0]$200
+    77/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:134$63.x[31:0]$199
+    78/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:134$63.$result[31:0]$198
+    79/134: $3\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:131$62.$result[31:0]$190
+    80/134: $3\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:131$62.x[31:0]$191
+    81/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:131$62.x[31:0]$185
+    82/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:131$62.$result[31:0]$184
+    83/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:125$61.$result[31:0]$176
+    84/134: $2\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:125$61.x[31:0]$177
+    85/134: $1\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.n[3:0]$173
+    86/134: $1\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.x[31:0]$172
+    87/134: $1\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.$result[31:0]$171
+    88/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.x[31:0]$170
+    89/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.$result[31:0]$169
+    90/134: $1\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.x[7:0]$168
+    91/134: $1\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.$result[7:0]$167
+    92/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.x[31:0]$166
+    93/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.$result[31:0]$165
+    94/134: $1\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.x[7:0]$164
+    95/134: $1\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.$result[7:0]$163
+    96/134: $1\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.fixed_byte[7:0]$162
+    97/134: $1\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.seq[7:0]$161
+    98/134: $1\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.index[2:0]$160
+    99/134: $1\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.mode[2:0]$159
+   100/134: $1\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.$result[7:0]$158
+   101/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:134$63.x[31:0]$157
+   102/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:134$63.$result[31:0]$156
+   103/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:131$62.x[31:0]$155
+   104/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:131$62.$result[31:0]$154
+   105/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:125$61.x[31:0]$153
+   106/134: $1\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:125$61.$result[31:0]$152
+   107/134: $0\tx_start[0:0]
+   108/134: $0\tx_data[7:0]
+   109/134: $0\sent_bytes[2:0]
+   110/134: $0\rx_sequence[7:0]
+   111/134: $0\tx_sequence[7:0]
+   112/134: $0\gap_ticks[5:0]
+   113/134: $0\wait_ticks[9:0]
+   114/134: $0\bist_state[1:0]
+   115/134: $0\bad_actual[7:0]
+   116/134: $0\bad_expected[7:0]
+   117/134: $0\timeout_seen[0:0]
+   118/134: $0\overruns[31:0]
+   119/134: $0\framing_errors[31:0]
+   120/134: $0\error_bits[31:0]
+   121/134: $0\error_bytes[31:0]
+   122/134: $0\checked_bytes[31:0]
+   123/134: $0\rx_ready[0:0]
+   124/134: $0\overflow[0:0]
+   125/134: $0\command_error[0:0]
+   126/134: $0\fail[0:0]
+   127/134: $0\done[0:0]
+   128/134: $0\running[0:0]
+   129/134: $6\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.$result[31:0]$296
+   130/134: $0\rx_register[7:0]
+   131/134: $0\tx_register[7:0]
+   132/134: $0\pattern[2:0]
+   133/134: $0\boost[0:0]
+   134/134: $0\target_count[31:0] [31:24]
+Creating decoders for process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:107$123'.
+     1/2: $0\div_count[15:0]
+     2/2: $0\heartbeat[19:0]
+Creating decoders for process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+     1/23: $6\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.$result[7:0]$116
+     2/23: $5\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.$result[7:0]$110
+     3/23: $4\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.$result[7:0]$108
+     4/23: $4\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.address[6:0]$109
+     5/23: $3\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.address[6:0]$105
+     6/23: $3\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.$result[7:0]$104
+     7/23: $2\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.address[6:0]$101
+     8/23: $2\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.$result[7:0]$100
+     9/23: $1\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.address[6:0]$99
+    10/23: $1\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.$result[7:0]$98
+    11/23: $0\bus_rd[0:0]
+    12/23: $0\bus_wr[0:0]
+    13/23: $0\sck_old[0:0]
+    14/23: $0\mosi_pipe[1:0]
+    15/23: $0\sck_pipe[1:0]
+    16/23: $0\cs_pipe[1:0]
+    17/23: $0\bus_data[7:0]
+    18/23: $0\bus_address[6:0]
+    19/23: $0\spi_write[0:0]
+    20/23: $0\spi_address[6:0]
+    21/23: $0\spi_reply[7:0]
+    22/23: $0\spi_shift[6:0]
+    23/23: $0\spi_count[4:0]
+Creating decoders for process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+     1/19: $6$lookahead\shift$17[7:0]$45
+     2/19: $6$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$11[2:0]$44
+     3/19: $5$lookahead\shift$17[7:0]$40
+     4/19: $5$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$11[2:0]$39
+     5/19: $4$lookahead\shift$17[7:0]$36
+     6/19: $4$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$11[2:0]$35
+     7/19: $3$lookahead\shift$17[7:0]$28
+     8/19: $3$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$11[2:0]$27
+     9/19: $2$lookahead\shift$17[7:0]$25
+    10/19: $2$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$11[2:0]$24
+    11/19: $1$lookahead\shift$17[7:0]$23
+    12/19: $1$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$11[2:0]$22
+    13/19: $0\frame_error[0:0]
+    14/19: $0\valid[0:0]
+    15/19: $0\ones[1:0]
+    16/19: $0\bit_index[3:0]
+    17/19: $0\phase[3:0]
+    18/19: $0\busy[0:0]
+    19/19: $0\data[7:0]
+Creating decoders for process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$15'.
+     1/2: $0\rx_sync[0:0]
+     2/2: $0\rx_meta[0:0]
+Creating decoders for process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$2'.
+     1/4: $0\bit_index[3:0]
+     2/4: $0\phase[3:0]
+     3/4: $0\frame[9:0]
+     4/4: $0\busy[0:0]
+
+5.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\diff8_digital.\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$59.$result' from process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:54$362'.
+No latch inferred for signal `\diff8_digital.\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:53$58.$result' from process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:53$350'.
+
+5.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\diff8_digital.\snap_bytes' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+  created $dff cell `$procdff$2434' with positive edge clock.
+Creating register for signal `\diff8_digital.\snap_error_bytes' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+  created $dff cell `$procdff$2435' with positive edge clock.
+Creating register for signal `\diff8_digital.\snap_error_bits' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+  created $dff cell `$procdff$2436' with positive edge clock.
+Creating register for signal `\diff8_digital.\snap_framing' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+  created $dff cell `$procdff$2437' with positive edge clock.
+Creating register for signal `\diff8_digital.\snap_timeouts' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+  created $dff cell `$procdff$2438' with positive edge clock.
+Creating register for signal `\diff8_digital.\snap_overruns' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+  created $dff cell `$procdff$2439' with positive edge clock.
+Creating register for signal `\diff8_digital.\snapshot_valid' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:194$345'.
+  created $adff cell `$procdff$2444' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\baud_div' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2449' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\boost' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2454' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2459' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\tx_register' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2464' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\rx_register' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2469' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\target_count' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2474' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\running' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2479' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\done' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2484' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\fail' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2489' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\command_error' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2494' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\overflow' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2499' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\rx_ready' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2504' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\checked_bytes' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2509' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\error_bytes' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2514' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\error_bits' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2519' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\framing_errors' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2524' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\overruns' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2529' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\timeout_seen' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2534' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bad_expected' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2539' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bad_actual' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2544' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bist_state' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2549' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\wait_ticks' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2554' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\gap_ticks' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2559' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\tx_sequence' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2564' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\rx_sequence' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2569' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\sent_bytes' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2574' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\tx_start' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2579' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\tx_data' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2584' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:125$61.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2589' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:125$61.x' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2594' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:131$62.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2599' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:131$62.x' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2604' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:134$63.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2609' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:134$63.x' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2614' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2619' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.mode' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2624' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.index' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2629' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.seq' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2634' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\pattern_byte$func$/work/build/shrink-logic/combined/diff8_digital.v:137$64.fixed_byte' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2639' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2644' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:138$65.x' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2649' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2654' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:141$66.x' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2659' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2664' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\lfsr_next$func$/work/build/shrink-logic/combined/diff8_digital.v:143$67.x' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2669' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2674' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\inc32$func$/work/build/shrink-logic/combined/diff8_digital.v:145$68.x' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2679' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2684' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.x' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2689' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\addsmall$func$/work/build/shrink-logic/combined/diff8_digital.v:145$69.n' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+  created $adff cell `$procdff$2694' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\div_count' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:107$123'.
+  created $adff cell `$procdff$2699' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\heartbeat' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:107$123'.
+  created $adff cell `$procdff$2704' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\cs_pipe' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2709' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\sck_pipe' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2714' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\mosi_pipe' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2719' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\sck_old' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2724' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_count' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2729' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_shift' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2734' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_reply' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2739' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_address' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2744' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\spi_write' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2749' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bus_wr' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2754' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bus_rd' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2759' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bus_address' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2764' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\bus_data' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2769' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.$result' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2774' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_digital.\read_register$func$/work/build/shrink-logic/combined/diff8_digital.v:100$60.address' using process `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+  created $adff cell `$procdff$2779' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\data' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2784' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\busy' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2789' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\phase' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2794' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\bit_index' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2799' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\valid' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2804' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\frame_error' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2809' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\ones' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2814' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\shift' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2819' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.$bitselwrite$pos$/work/rtl/diff8_uart_rx.v:27$11' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2824' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.$lookahead\shift$17' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+  created $adff cell `$procdff$2829' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\rx_meta' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$15'.
+  created $adff cell `$procdff$2834' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_rx.\rx_sync' using process `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$15'.
+  created $adff cell `$procdff$2839' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_tx.\busy' using process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$2'.
+  created $adff cell `$procdff$2844' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_tx.\frame' using process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$2'.
+  created $adff cell `$procdff$2849' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_tx.\phase' using process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$2'.
+  created $adff cell `$procdff$2854' with positive edge clock and positive level reset.
+Creating register for signal `\diff8_uart_tx.\bit_index' using process `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$2'.
+  created $adff cell `$procdff$2859' with positive edge clock and positive level reset.
+
+5.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:54$362'.
+Found and cleaned up 1 empty switch in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:53$350'.
+Removing empty process `diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:53$350'.
+Found and cleaned up 1 empty switch in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+Removing empty process `diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:198$347'.
+Found and cleaned up 1 empty switch in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:194$345'.
+Removing empty process `diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:194$345'.
+Found and cleaned up 34 empty switches in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+Removing empty process `diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:114$128'.
+Found and cleaned up 1 empty switch in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:107$123'.
+Removing empty process `diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:107$123'.
+Found and cleaned up 7 empty switches in `\diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+Removing empty process `diff8_digital.$proc$/work/build/shrink-logic/combined/diff8_digital.v:89$94'.
+Found and cleaned up 10 empty switches in `\diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+Removing empty process `diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:15$18'.
+Removing empty process `diff8_uart_rx.$proc$/work/rtl/diff8_uart_rx.v:11$15'.
+Found and cleaned up 4 empty switches in `\diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$2'.
+Removing empty process `diff8_uart_tx.$proc$/work/rtl/diff8_uart_tx.v:8$2'.
+Cleaned up 59 empty switches.
+
+5.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~146 debug messages>
+Optimizing module diff8_uart_rx.
+<suppressed ~44 debug messages>
+Optimizing module diff8_uart_tx.
+<suppressed ~8 debug messages>
+
+5.3. Executing CHECK pass (checking for obvious problems).
+Checking module diff8_digital...
+Checking module diff8_uart_rx...
+Checking module diff8_uart_tx...
+Found and reported 0 problems.
+
+5.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module diff8_uart_rx.
+Deleting now unused module diff8_uart_tx.
+<suppressed ~2 debug messages>
+
+5.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~1 debug messages>
+
+5.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 382 unused cells and 1246 unused wires.
+<suppressed ~398 debug messages>
+
+5.7. Executing CHECK pass (checking for obvious problems).
+Checking module diff8_digital...
+Found and reported 0 problems.
+
+5.8. Executing OPT pass (performing simple optimizations).
+
+5.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 789 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 677 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 673 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 672 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+<suppressed ~351 debug messages>
+Removed a total of 117 cells.
+
+5.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $procmux$1883: \running -> 1'0
+      Replacing known input bits on port A of cell $flatten\rx.$procmux$2367: \rx.busy -> 1'1
+      Replacing known input bits on port B of cell $flatten\rx.$procmux$2362: \rx.busy -> 1'1
+      Replacing known input bits on port A of cell $flatten\rx.$procmux$2359: \rx.busy -> 1'1
+      Replacing known input bits on port B of cell $flatten\rx.$procmux$2370: \rx.busy -> 1'0
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2268.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2253.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2251.
+    dead port 1/2 on $mux $procmux$2027.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2232.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2230.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2227.
+    dead port 2/2 on $mux $procmux$2024.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2205.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2203.
+    dead port 2/2 on $mux $flatten\rx.$procmux$2200.
+    dead port 1/2 on $mux $flatten\rx.$procmux$2198.
+    dead port 1/2 on $mux $procmux$2081.
+    dead port 2/2 on $mux $procmux$2022.
+    dead port 2/2 on $mux $procmux$2078.
+    dead port 2/2 on $mux $procmux$2076.
+    dead port 2/2 on $mux $procmux$669.
+    dead port 1/2 on $mux $procmux$667.
+    dead port 2/2 on $mux $procmux$664.
+    dead port 2/2 on $mux $procmux$662.
+Removed 20 multiplexer ports.
+<suppressed ~1782 debug messages>
+
+5.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+    New ctrl vector for $pmux cell $procmux$1889: { $auto$opt_reduce.cc:135:opt_pmux$2863 $procmux$1902_CMP }
+    New ctrl vector for $pmux cell $procmux$1838: { $auto$opt_reduce.cc:135:opt_pmux$2865 $procmux$1902_CMP }
+    New ctrl vector for $pmux cell $procmux$1735: { $auto$opt_reduce.cc:135:opt_pmux$2867 $procmux$1869_CMP $procmux$1873_CMP $procmux$1917_CMP }
+    New ctrl vector for $pmux cell $procmux$1711: { $procmux$1790_CMP $procmux$1794_CMP $auto$opt_reduce.cc:135:opt_pmux$2869 $procmux$1970_CMP $procmux$1992_CMP }
+    New ctrl vector for $pmux cell $procmux$1789: { $procmux$1790_CMP $procmux$1794_CMP $auto$opt_reduce.cc:135:opt_pmux$2871 $procmux$1970_CMP $procmux$1992_CMP }
+    New ctrl vector for $pmux cell $procmux$1765: { $auto$opt_reduce.cc:135:opt_pmux$2873 $procmux$1902_CMP }
+  Optimizing cells in module \diff8_digital.
+Performed a total of 6 changes.
+
+5.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 658 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 651 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+<suppressed ~21 debug messages>
+Removed a total of 7 cells.
+
+5.8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 0 unused cells and 144 unused wires.
+<suppressed ~1 debug messages>
+
+5.8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~1 debug messages>
+
+5.8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1593 debug messages>
+
+5.8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+    New ctrl vector for $pmux cell $procmux$1864: { $procmux$1374_CMP $auto$opt_reduce.cc:135:opt_pmux$2875 $procmux$1200_CMP }
+  Optimizing cells in module \diff8_digital.
+Performed a total of 1 changes.
+
+5.8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 651 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+5.8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.8.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.8.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1575 debug messages>
+
+5.8.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+Performed a total of 0 changes.
+
+5.8.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 651 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.8.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.8.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+
+5.8.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.8.23. Finished fast OPT passes. (There is nothing left to do.)
+
+5.9. Executing FSM pass (extract and optimize FSM).
+
+5.9.1. Executing FSM_DETECT pass (finding FSMs in design).
+Found FSM state register diff8_digital.bist_state.
+
+5.9.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+Extracting FSM `\bist_state' from module `\diff8_digital'.
+  found $adff cell for state register: $procdff$2549
+  root of input selection tree: $0\bist_state[1:0]
+  found reset state: 2'00 (from async reset)
+  found ctrl input: \bus_wr
+  found ctrl input: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y
+  found ctrl input: \rx.frame_error
+  found ctrl input: \running
+  found ctrl input: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y
+  found ctrl input: $procmux$1270_CMP
+  found ctrl input: $procmux$1212_CMP
+  found ctrl input: $procmux$1130_CMP
+  found ctrl input: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:155$315_Y
+  found ctrl input: $eq$/work/build/shrink-logic/combined/diff8_digital.v:155$316_Y
+  found state code: 2'01
+  found ctrl input: \rx.valid
+  found ctrl input: \tick16
+  found ctrl input: $eq$/work/build/shrink-logic/combined/diff8_digital.v:152$312_Y
+  found ctrl input: $eq$/work/build/shrink-logic/combined/diff8_digital.v:149$311_Y
+  found state code: 2'11
+  found ctrl input: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y
+  found state code: 2'10
+  found ctrl input: $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y
+  found ctrl input: $procmux$1374_CMP
+  found ctrl input: $procmux$1200_CMP
+  found ctrl input: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y
+  found ctrl output: $ne$/work/build/shrink-logic/combined/diff8_digital.v:134$216_Y
+  found ctrl output: $procmux$1270_CMP
+  found ctrl output: $procmux$1212_CMP
+  found ctrl output: $procmux$1130_CMP
+  ctrl inputs: { \rx.valid \rx.frame_error $procmux$1374_CMP $procmux$1200_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:155$316_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:155$315_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:152$312_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:149$311_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \running \tick16 }
+  ctrl outputs: { $procmux$1270_CMP $procmux$1212_CMP $procmux$1130_CMP $ne$/work/build/shrink-logic/combined/diff8_digital.v:134$216_Y $0\bist_state[1:0] }
+  transition:       2'00 16'-0----------00-- ->       2'00 6'000100
+  transition:       2'00 16'-1----------000- ->       2'00 6'000100
+  transition:       2'00 16'-1----------001- ->       2'00 6'000100
+  transition:       2'00 16'-0---------010-- ->       2'00 6'000100
+  transition:       2'00 16'-1---------0100- ->       2'00 6'000100
+  transition:       2'00 16'-1---------0101- ->       2'00 6'000100
+  transition:       2'00 16'-0---------110-- ->       2'00 6'000100
+  transition:       2'00 16'-1---------1100- ->       2'00 6'000100
+  transition:       2'00 16'-1---------1101- ->       2'00 6'000100
+  transition:       2'00 16'-0---0------01-- ->       2'00 6'000100
+  transition:       2'00 16'-1---0------010- ->       2'00 6'000100
+  transition:       2'00 16'-1---0------011- ->       2'00 6'000100
+  transition:       2'00 16'-0---0-----011-- ->       2'00 6'000100
+  transition:       2'00 16'-1---0-----0110- ->       2'00 6'000100
+  transition:       2'00 16'-1---0-----0111- ->       2'00 6'000100
+  transition:       2'00 16'-0---0-----111-- ->       2'00 6'000100
+  transition:       2'00 16'-1---0-----1110- ->       2'00 6'000100
+  transition:       2'00 16'-1---0-----1111- ->       2'00 6'000100
+  transition:       2'00 16'-000-1------01-- ->       2'00 6'000100
+  transition:       2'00 16'-100-1------010- ->       2'00 6'000100
+  transition:       2'00 16'-100-1------011- ->       2'00 6'000100
+  transition:       2'00 16'-000-1-----011-- ->       2'00 6'000100
+  transition:       2'00 16'-100-1-----0110- ->       2'00 6'000100
+  transition:       2'00 16'-100-1-----0111- ->       2'00 6'000100
+  transition:       2'00 16'-000-1-----111-- ->       2'00 6'000100
+  transition:       2'00 16'-100-1-----1110- ->       2'00 6'000100
+  transition:       2'00 16'-100-1-----1111- ->       2'00 6'000100
+  transition:       2'00 16'-0-101------01-- ->       2'00 6'000100
+  transition:       2'00 16'-1-101------010- ->       2'00 6'000100
+  transition:       2'00 16'-1-101------011- ->       2'00 6'000100
+  transition:       2'00 16'-0-101-----011-- ->       2'00 6'000100
+  transition:       2'00 16'-1-101-----0110- ->       2'00 6'000100
+  transition:       2'00 16'-1-101-----0111- ->       2'00 6'000100
+  transition:       2'00 16'-0-101-----111-- ->       2'00 6'000100
+  transition:       2'00 16'-1-101-----1110- ->       2'00 6'000100
+  transition:       2'00 16'-1-101-----1111- ->       2'00 6'000100
+  transition:       2'00 16'---111-------1-- ->       2'01 6'000101
+  transition:       2'00 16'--1--1-------1-- ->       2'00 6'000100
+  transition:       2'10 16'-0----------00-- ->       2'10 6'010010
+  transition:       2'10 16'-1----------000- ->       2'10 6'010010
+  transition:       2'10 16'-1----------001- ->       2'00 6'010000
+  transition:       2'10 16'00---------010-0 ->       2'10 6'010010
+  transition:       2'10 16'01---------01000 ->       2'10 6'010010
+  transition:       2'10 16'01---------01010 ->       2'00 6'010000
+  transition:       2'10 16'00------0--010-1 ->       2'10 6'010010
+  transition:       2'10 16'01------0--01001 ->       2'10 6'010010
+  transition:       2'10 16'01------0--01011 ->       2'00 6'010000
+  transition:       2'10 16'0-------1--010-1 ->       2'00 6'010000
+  transition:       2'10 16'1--------0-010-- ->       2'11 6'010011
+  transition:       2'10 16'1--------1-010-- ->       2'00 6'010000
+  transition:       2'10 16'-0---------110-- ->       2'10 6'010010
+  transition:       2'10 16'-1---------1100- ->       2'10 6'010010
+  transition:       2'10 16'-1---------1101- ->       2'00 6'010000
+  transition:       2'10 16'-0---0------01-- ->       2'10 6'010010
+  transition:       2'10 16'-1---0------010- ->       2'10 6'010010
+  transition:       2'10 16'-1---0------011- ->       2'00 6'010000
+  transition:       2'10 16'00---0-----011-0 ->       2'10 6'010010
+  transition:       2'10 16'01---0-----01100 ->       2'10 6'010010
+  transition:       2'10 16'01---0-----01110 ->       2'00 6'010000
+  transition:       2'10 16'00---0--0--011-1 ->       2'10 6'010010
+  transition:       2'10 16'01---0--0--01101 ->       2'10 6'010010
+  transition:       2'10 16'01---0--0--01111 ->       2'00 6'010000
+  transition:       2'10 16'0----0--1--011-1 ->       2'00 6'010000
+  transition:       2'10 16'1----0---0-011-- ->       2'11 6'010011
+  transition:       2'10 16'1----0---1-011-- ->       2'00 6'010000
+  transition:       2'10 16'-0---0-----111-- ->       2'10 6'010010
+  transition:       2'10 16'-1---0-----1110- ->       2'10 6'010010
+  transition:       2'10 16'-1---0-----1111- ->       2'00 6'010000
+  transition:       2'10 16'-000-1------01-- ->       2'10 6'010010
+  transition:       2'10 16'-100-1------010- ->       2'10 6'010010
+  transition:       2'10 16'-100-1------011- ->       2'00 6'010000
+  transition:       2'10 16'0000-1-----011-0 ->       2'10 6'010010
+  transition:       2'10 16'0100-1-----01100 ->       2'10 6'010010
+  transition:       2'10 16'0100-1-----01110 ->       2'00 6'010000
+  transition:       2'10 16'0000-1--0--011-1 ->       2'10 6'010010
+  transition:       2'10 16'0100-1--0--01101 ->       2'10 6'010010
+  transition:       2'10 16'0100-1--0--01111 ->       2'00 6'010000
+  transition:       2'10 16'0-00-1--1--011-1 ->       2'00 6'010000
+  transition:       2'10 16'1-00-1---0-011-- ->       2'11 6'010011
+  transition:       2'10 16'1-00-1---1-011-- ->       2'00 6'010000
+  transition:       2'10 16'-000-1-----111-- ->       2'10 6'010010
+  transition:       2'10 16'-100-1-----1110- ->       2'10 6'010010
+  transition:       2'10 16'-100-1-----1111- ->       2'00 6'010000
+  transition:       2'10 16'-0-101------01-- ->       2'10 6'010010
+  transition:       2'10 16'-1-101------010- ->       2'10 6'010010
+  transition:       2'10 16'-1-101------011- ->       2'00 6'010000
+  transition:       2'10 16'00-101-----011-0 ->       2'10 6'010010
+  transition:       2'10 16'01-101-----01100 ->       2'10 6'010010
+  transition:       2'10 16'01-101-----01110 ->       2'00 6'010000
+  transition:       2'10 16'00-101--0--011-1 ->       2'10 6'010010
+  transition:       2'10 16'01-101--0--01101 ->       2'10 6'010010
+  transition:       2'10 16'01-101--0--01111 ->       2'00 6'010000
+  transition:       2'10 16'0--101--1--011-1 ->       2'00 6'010000
+  transition:       2'10 16'1--101---0-011-- ->       2'11 6'010011
+  transition:       2'10 16'1--101---1-011-- ->       2'00 6'010000
+  transition:       2'10 16'-0-101-----111-- ->       2'10 6'010010
+  transition:       2'10 16'-1-101-----1110- ->       2'10 6'010010
+  transition:       2'10 16'-1-101-----1111- ->       2'00 6'010000
+  transition:       2'10 16'---111-------1-- ->       2'01 6'010001
+  transition:       2'10 16'--1--1-------1-- ->       2'00 6'010000
+  transition:       2'01 16'-0----------00-- ->       2'01 6'001101
+  transition:       2'01 16'-1----------000- ->       2'01 6'001101
+  transition:       2'01 16'-1----------001- ->       2'00 6'001100
+  transition:       2'01 16'-0--------0010-- ->       2'01 6'001101
+  transition:       2'01 16'-1--------00100- ->       2'01 6'001101
+  transition:       2'01 16'-1--------00101- ->       2'00 6'001100
+  transition:       2'01 16'----------1010-- ->       2'10 6'001110
+  transition:       2'01 16'-0---------110-- ->       2'01 6'001101
+  transition:       2'01 16'-1---------1100- ->       2'01 6'001101
+  transition:       2'01 16'-1---------1101- ->       2'00 6'001100
+  transition:       2'01 16'-0---0------01-- ->       2'01 6'001101
+  transition:       2'01 16'-1---0------010- ->       2'01 6'001101
+  transition:       2'01 16'-1---0------011- ->       2'00 6'001100
+  transition:       2'01 16'-0---0----0011-- ->       2'01 6'001101
+  transition:       2'01 16'-1---0----00110- ->       2'01 6'001101
+  transition:       2'01 16'-1---0----00111- ->       2'00 6'001100
+  transition:       2'01 16'-----0----1011-- ->       2'10 6'001110
+  transition:       2'01 16'-0---0-----111-- ->       2'01 6'001101
+  transition:       2'01 16'-1---0-----1110- ->       2'01 6'001101
+  transition:       2'01 16'-1---0-----1111- ->       2'00 6'001100
+  transition:       2'01 16'-000-1------01-- ->       2'01 6'001101
+  transition:       2'01 16'-100-1------010- ->       2'01 6'001101
+  transition:       2'01 16'-100-1------011- ->       2'00 6'001100
+  transition:       2'01 16'-000-1----0011-- ->       2'01 6'001101
+  transition:       2'01 16'-100-1----00110- ->       2'01 6'001101
+  transition:       2'01 16'-100-1----00111- ->       2'00 6'001100
+  transition:       2'01 16'--00-1----1011-- ->       2'10 6'001110
+  transition:       2'01 16'-000-1-----111-- ->       2'01 6'001101
+  transition:       2'01 16'-100-1-----1110- ->       2'01 6'001101
+  transition:       2'01 16'-100-1-----1111- ->       2'00 6'001100
+  transition:       2'01 16'-0-101------01-- ->       2'01 6'001101
+  transition:       2'01 16'-1-101------010- ->       2'01 6'001101
+  transition:       2'01 16'-1-101------011- ->       2'00 6'001100
+  transition:       2'01 16'-0-101----0011-- ->       2'01 6'001101
+  transition:       2'01 16'-1-101----00110- ->       2'01 6'001101
+  transition:       2'01 16'-1-101----00111- ->       2'00 6'001100
+  transition:       2'01 16'---101----1011-- ->       2'10 6'001110
+  transition:       2'01 16'-0-101-----111-- ->       2'01 6'001101
+  transition:       2'01 16'-1-101-----1110- ->       2'01 6'001101
+  transition:       2'01 16'-1-101-----1111- ->       2'00 6'001100
+  transition:       2'01 16'---111-------1-- ->       2'01 6'001101
+  transition:       2'01 16'--1--1-------1-- ->       2'00 6'001100
+  transition:       2'11 16'-0----------00-- ->       2'11 6'100111
+  transition:       2'11 16'-1----------000- ->       2'11 6'100111
+  transition:       2'11 16'-1----------001- ->       2'00 6'100100
+  transition:       2'11 16'-0-----0---010-- ->       2'11 6'100111
+  transition:       2'11 16'-1-----0---0100- ->       2'11 6'100111
+  transition:       2'11 16'-1-----0---0101- ->       2'00 6'100100
+  transition:       2'11 16'-0----01---010-- ->       2'11 6'100111
+  transition:       2'11 16'-1----01---0100- ->       2'11 6'100111
+  transition:       2'11 16'-1----01---0101- ->       2'00 6'100100
+  transition:       2'11 16'------11---010-- ->       2'01 6'100101
+  transition:       2'11 16'-0---------110-- ->       2'11 6'100111
+  transition:       2'11 16'-1---------1100- ->       2'11 6'100111
+  transition:       2'11 16'-1---------1101- ->       2'00 6'100100
+  transition:       2'11 16'-0---0------01-- ->       2'11 6'100111
+  transition:       2'11 16'-1---0------010- ->       2'11 6'100111
+  transition:       2'11 16'-1---0------011- ->       2'00 6'100100
+  transition:       2'11 16'-0---0-0---011-- ->       2'11 6'100111
+  transition:       2'11 16'-1---0-0---0110- ->       2'11 6'100111
+  transition:       2'11 16'-1---0-0---0111- ->       2'00 6'100100
+  transition:       2'11 16'-0---001---011-- ->       2'11 6'100111
+  transition:       2'11 16'-1---001---0110- ->       2'11 6'100111
+  transition:       2'11 16'-1---001---0111- ->       2'00 6'100100
+  transition:       2'11 16'-----011---011-- ->       2'01 6'100101
+  transition:       2'11 16'-0---0-----111-- ->       2'11 6'100111
+  transition:       2'11 16'-1---0-----1110- ->       2'11 6'100111
+  transition:       2'11 16'-1---0-----1111- ->       2'00 6'100100
+  transition:       2'11 16'-000-1------01-- ->       2'11 6'100111
+  transition:       2'11 16'-100-1------010- ->       2'11 6'100111
+  transition:       2'11 16'-100-1------011- ->       2'00 6'100100
+  transition:       2'11 16'-000-1-0---011-- ->       2'11 6'100111
+  transition:       2'11 16'-100-1-0---0110- ->       2'11 6'100111
+  transition:       2'11 16'-100-1-0---0111- ->       2'00 6'100100
+  transition:       2'11 16'-000-101---011-- ->       2'11 6'100111
+  transition:       2'11 16'-100-101---0110- ->       2'11 6'100111
+  transition:       2'11 16'-100-101---0111- ->       2'00 6'100100
+  transition:       2'11 16'--00-111---011-- ->       2'01 6'100101
+  transition:       2'11 16'-000-1-----111-- ->       2'11 6'100111
+  transition:       2'11 16'-100-1-----1110- ->       2'11 6'100111
+  transition:       2'11 16'-100-1-----1111- ->       2'00 6'100100
+  transition:       2'11 16'-0-101------01-- ->       2'11 6'100111
+  transition:       2'11 16'-1-101------010- ->       2'11 6'100111
+  transition:       2'11 16'-1-101------011- ->       2'00 6'100100
+  transition:       2'11 16'-0-101-0---011-- ->       2'11 6'100111
+  transition:       2'11 16'-1-101-0---0110- ->       2'11 6'100111
+  transition:       2'11 16'-1-101-0---0111- ->       2'00 6'100100
+  transition:       2'11 16'-0-10101---011-- ->       2'11 6'100111
+  transition:       2'11 16'-1-10101---0110- ->       2'11 6'100111
+  transition:       2'11 16'-1-10101---0111- ->       2'00 6'100100
+  transition:       2'11 16'---10111---011-- ->       2'01 6'100101
+  transition:       2'11 16'-0-101-----111-- ->       2'11 6'100111
+  transition:       2'11 16'-1-101-----1110- ->       2'11 6'100111
+  transition:       2'11 16'-1-101-----1111- ->       2'00 6'100100
+  transition:       2'11 16'---111-------1-- ->       2'01 6'100101
+  transition:       2'11 16'--1--1-------1-- ->       2'00 6'100100
+
+5.9.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\bist_state$2876' from module `\diff8_digital'.
+  Merging pattern 16'-1----------000- and 16'-1----------001- from group (0 0 6'000100).
+  Merging pattern 16'-1---------0100- and 16'-1---------0101- from group (0 0 6'000100).
+  Merging pattern 16'-1---------1100- and 16'-1---------1101- from group (0 0 6'000100).
+  Merging pattern 16'-1---0------010- and 16'-1---0------011- from group (0 0 6'000100).
+  Merging pattern 16'-1-101------010- and 16'-1-101------011- from group (0 0 6'000100).
+  Merging pattern 16'-100-1------010- and 16'-100-1------011- from group (0 0 6'000100).
+  Merging pattern 16'-1---0-----0110- and 16'-1---0-----0111- from group (0 0 6'000100).
+  Merging pattern 16'-1-101-----0110- and 16'-1-101-----0111- from group (0 0 6'000100).
+  Merging pattern 16'-100-1-----0110- and 16'-100-1-----0111- from group (0 0 6'000100).
+  Merging pattern 16'-1---0-----1110- and 16'-1---0-----1111- from group (0 0 6'000100).
+  Merging pattern 16'-1-101-----1110- and 16'-1-101-----1111- from group (0 0 6'000100).
+  Merging pattern 16'-100-1-----1110- and 16'-100-1-----1111- from group (0 0 6'000100).
+  Merging pattern 16'-1----------001- and 16'-1----------000- from group (0 0 6'000100).
+  Merging pattern 16'-1---------0101- and 16'-1---------0100- from group (0 0 6'000100).
+  Merging pattern 16'-1---------1101- and 16'-1---------1100- from group (0 0 6'000100).
+  Merging pattern 16'-1---0------011- and 16'-1---0------010- from group (0 0 6'000100).
+  Merging pattern 16'-1-101------011- and 16'-1-101------010- from group (0 0 6'000100).
+  Merging pattern 16'-100-1------011- and 16'-100-1------010- from group (0 0 6'000100).
+  Merging pattern 16'-1---0-----0111- and 16'-1---0-----0110- from group (0 0 6'000100).
+  Merging pattern 16'-1-101-----0111- and 16'-1-101-----0110- from group (0 0 6'000100).
+  Merging pattern 16'-100-1-----0111- and 16'-100-1-----0110- from group (0 0 6'000100).
+  Merging pattern 16'-1---0-----1111- and 16'-1---0-----1110- from group (0 0 6'000100).
+  Merging pattern 16'-1-101-----1111- and 16'-1-101-----1110- from group (0 0 6'000100).
+  Merging pattern 16'-100-1-----1111- and 16'-100-1-----1110- from group (0 0 6'000100).
+  Merging pattern 16'-0---------010-- and 16'-0---------110-- from group (0 0 6'000100).
+  Merging pattern 16'-1---------010-- and 16'-1---------110-- from group (0 0 6'000100).
+  Merging pattern 16'-0---------110-- and 16'-0---------010-- from group (0 0 6'000100).
+  Merging pattern 16'-1---------110-- and 16'-1---------010-- from group (0 0 6'000100).
+  Merging pattern 16'-0---0-----011-- and 16'-0---0-----111-- from group (0 0 6'000100).
+  Merging pattern 16'-1---0-----011-- and 16'-1---0-----111-- from group (0 0 6'000100).
+  Merging pattern 16'-0-101-----011-- and 16'-0-101-----111-- from group (0 0 6'000100).
+  Merging pattern 16'-1-101-----011-- and 16'-1-101-----111-- from group (0 0 6'000100).
+  Merging pattern 16'-000-1-----011-- and 16'-000-1-----111-- from group (0 0 6'000100).
+  Merging pattern 16'-100-1-----011-- and 16'-100-1-----111-- from group (0 0 6'000100).
+  Merging pattern 16'-0---0-----111-- and 16'-0---0-----011-- from group (0 0 6'000100).
+  Merging pattern 16'-1---0-----111-- and 16'-1---0-----011-- from group (0 0 6'000100).
+  Merging pattern 16'-0-101-----111-- and 16'-0-101-----011-- from group (0 0 6'000100).
+  Merging pattern 16'-1-101-----111-- and 16'-1-101-----011-- from group (0 0 6'000100).
+  Merging pattern 16'-000-1-----111-- and 16'-000-1-----011-- from group (0 0 6'000100).
+  Merging pattern 16'-100-1-----111-- and 16'-100-1-----011-- from group (0 0 6'000100).
+  Merging pattern 16'-0----------00-- and 16'-1----------00-- from group (0 0 6'000100).
+  Merging pattern 16'-1----------00-- and 16'-0----------00-- from group (0 0 6'000100).
+  Merging pattern 16'-0----------10-- and 16'-1----------10-- from group (0 0 6'000100).
+  Merging pattern 16'-1----------10-- and 16'-0----------10-- from group (0 0 6'000100).
+  Merging pattern 16'-0---0------01-- and 16'-1---0------01-- from group (0 0 6'000100).
+  Merging pattern 16'-1---0------01-- and 16'-0---0------01-- from group (0 0 6'000100).
+  Merging pattern 16'-0-101------01-- and 16'-1-101------01-- from group (0 0 6'000100).
+  Merging pattern 16'-1-101------01-- and 16'-0-101------01-- from group (0 0 6'000100).
+  Merging pattern 16'-000-1------01-- and 16'-100-1------01-- from group (0 0 6'000100).
+  Merging pattern 16'-100-1------01-- and 16'-000-1------01-- from group (0 0 6'000100).
+  Merging pattern 16'-0---0------11-- and 16'-1---0------11-- from group (0 0 6'000100).
+  Merging pattern 16'-1---0------11-- and 16'-0---0------11-- from group (0 0 6'000100).
+  Merging pattern 16'-0-101------11-- and 16'-1-101------11-- from group (0 0 6'000100).
+  Merging pattern 16'-1-101------11-- and 16'-0-101------11-- from group (0 0 6'000100).
+  Merging pattern 16'-000-1------11-- and 16'-100-1------11-- from group (0 0 6'000100).
+  Merging pattern 16'-100-1------11-- and 16'-000-1------11-- from group (0 0 6'000100).
+  Merging pattern 16'------------00-- and 16'------------10-- from group (0 0 6'000100).
+  Merging pattern 16'------------10-- and 16'------------00-- from group (0 0 6'000100).
+  Merging pattern 16'-----0------01-- and 16'-----0------11-- from group (0 0 6'000100).
+  Merging pattern 16'---101------01-- and 16'---101------11-- from group (0 0 6'000100).
+  Merging pattern 16'--00-1------01-- and 16'--00-1------11-- from group (0 0 6'000100).
+  Merging pattern 16'-----0------11-- and 16'-----0------01-- from group (0 0 6'000100).
+  Merging pattern 16'---101------11-- and 16'---101------01-- from group (0 0 6'000100).
+  Merging pattern 16'--00-1------11-- and 16'--00-1------01-- from group (0 0 6'000100).
+
+5.9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 21 unused cells and 21 unused wires.
+<suppressed ~22 debug messages>
+
+5.9.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\bist_state$2876' from module `\diff8_digital'.
+  Removing unused output signal $0\bist_state[1:0] [0].
+  Removing unused output signal $0\bist_state[1:0] [1].
+
+5.9.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+Recoding FSM `$fsm$\bist_state$2876' from module `\diff8_digital' using `auto' encoding:
+  mapping auto encoding to `one-hot` for this FSM.
+  00 -> ---1
+  10 -> --1-
+  01 -> -1--
+  11 -> 1---
+
+5.9.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+FSM `$fsm$\bist_state$2876' from module `diff8_digital':
+-------------------------------------
+
+  Information on FSM $fsm$\bist_state$2876 (\bist_state):
+
+  Number of input signals:   16
+  Number of output signals:   4
+  Number of state bits:       4
+
+  Input signals:
+    0: \tick16
+    1: \running
+    2: \bus_wr
+    3: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y
+    4: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y
+    5: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y
+    6: $eq$/work/build/shrink-logic/combined/diff8_digital.v:149$311_Y
+    7: $eq$/work/build/shrink-logic/combined/diff8_digital.v:152$312_Y
+    8: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:155$315_Y
+    9: $eq$/work/build/shrink-logic/combined/diff8_digital.v:155$316_Y
+   10: $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y
+   11: $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y
+   12: $procmux$1200_CMP
+   13: $procmux$1374_CMP
+   14: \rx.frame_error
+   15: \rx.valid
+
+  Output signals:
+    0: $ne$/work/build/shrink-logic/combined/diff8_digital.v:134$216_Y
+    1: $procmux$1130_CMP
+    2: $procmux$1212_CMP
+    3: $procmux$1270_CMP
+
+  State encoding:
+    0:     4'---1  <RESET STATE>
+    1:     4'--1-
+    2:     4'-1--
+    3:     4'1---
+
+  Transition Table (state_in, ctrl_in, state_out, ctrl_out):
+      0:     0 16'-------------0--   ->     0 4'0001
+      1:     0 16'-----0-------1--   ->     0 4'0001
+      2:     0 16'---101-------1--   ->     0 4'0001
+      3:     0 16'--00-1-------1--   ->     0 4'0001
+      4:     0 16'--1--1-------1--   ->     0 4'0001
+      5:     0 16'---111-------1--   ->     2 4'0001
+      6:     1 16'01---------01010   ->     0 4'0100
+      7:     1 16'01---0-----01110   ->     0 4'0100
+      8:     1 16'01-101-----01110   ->     0 4'0100
+      9:     1 16'0100-1-----01110   ->     0 4'0100
+     10:     1 16'01------0--01011   ->     0 4'0100
+     11:     1 16'01---0--0--01111   ->     0 4'0100
+     12:     1 16'01-101--0--01111   ->     0 4'0100
+     13:     1 16'0100-1--0--01111   ->     0 4'0100
+     14:     1 16'0-------1--010-1   ->     0 4'0100
+     15:     1 16'0----0--1--011-1   ->     0 4'0100
+     16:     1 16'0--101--1--011-1   ->     0 4'0100
+     17:     1 16'0-00-1--1--011-1   ->     0 4'0100
+     18:     1 16'-1----------001-   ->     0 4'0100
+     19:     1 16'-1---------1101-   ->     0 4'0100
+     20:     1 16'-1---0------011-   ->     0 4'0100
+     21:     1 16'-1-101------011-   ->     0 4'0100
+     22:     1 16'-100-1------011-   ->     0 4'0100
+     23:     1 16'-1---0-----1111-   ->     0 4'0100
+     24:     1 16'-1-101-----1111-   ->     0 4'0100
+     25:     1 16'-100-1-----1111-   ->     0 4'0100
+     26:     1 16'1--------1-010--   ->     0 4'0100
+     27:     1 16'1----0---1-011--   ->     0 4'0100
+     28:     1 16'1--101---1-011--   ->     0 4'0100
+     29:     1 16'1-00-1---1-011--   ->     0 4'0100
+     30:     1 16'--1--1-------1--   ->     0 4'0100
+     31:     1 16'01---------01000   ->     1 4'0100
+     32:     1 16'01---0-----01100   ->     1 4'0100
+     33:     1 16'01-101-----01100   ->     1 4'0100
+     34:     1 16'0100-1-----01100   ->     1 4'0100
+     35:     1 16'00---------010-0   ->     1 4'0100
+     36:     1 16'00---0-----011-0   ->     1 4'0100
+     37:     1 16'00-101-----011-0   ->     1 4'0100
+     38:     1 16'0000-1-----011-0   ->     1 4'0100
+     39:     1 16'01------0--01001   ->     1 4'0100
+     40:     1 16'01---0--0--01101   ->     1 4'0100
+     41:     1 16'01-101--0--01101   ->     1 4'0100
+     42:     1 16'0100-1--0--01101   ->     1 4'0100
+     43:     1 16'00------0--010-1   ->     1 4'0100
+     44:     1 16'00---0--0--011-1   ->     1 4'0100
+     45:     1 16'00-101--0--011-1   ->     1 4'0100
+     46:     1 16'0000-1--0--011-1   ->     1 4'0100
+     47:     1 16'-1----------000-   ->     1 4'0100
+     48:     1 16'-1---------1100-   ->     1 4'0100
+     49:     1 16'-1---0------010-   ->     1 4'0100
+     50:     1 16'-1-101------010-   ->     1 4'0100
+     51:     1 16'-100-1------010-   ->     1 4'0100
+     52:     1 16'-1---0-----1110-   ->     1 4'0100
+     53:     1 16'-1-101-----1110-   ->     1 4'0100
+     54:     1 16'-100-1-----1110-   ->     1 4'0100
+     55:     1 16'-0----------00--   ->     1 4'0100
+     56:     1 16'-0---------110--   ->     1 4'0100
+     57:     1 16'-0---0------01--   ->     1 4'0100
+     58:     1 16'-0-101------01--   ->     1 4'0100
+     59:     1 16'-000-1------01--   ->     1 4'0100
+     60:     1 16'-0---0-----111--   ->     1 4'0100
+     61:     1 16'-0-101-----111--   ->     1 4'0100
+     62:     1 16'-000-1-----111--   ->     1 4'0100
+     63:     1 16'---111-------1--   ->     2 4'0100
+     64:     1 16'1--------0-010--   ->     3 4'0100
+     65:     1 16'1----0---0-011--   ->     3 4'0100
+     66:     1 16'1--101---0-011--   ->     3 4'0100
+     67:     1 16'1-00-1---0-011--   ->     3 4'0100
+     68:     2 16'-1----------001-   ->     0 4'0011
+     69:     2 16'-1--------00101-   ->     0 4'0011
+     70:     2 16'-1---------1101-   ->     0 4'0011
+     71:     2 16'-1---0------011-   ->     0 4'0011
+     72:     2 16'-1-101------011-   ->     0 4'0011
+     73:     2 16'-100-1------011-   ->     0 4'0011
+     74:     2 16'-1---0----00111-   ->     0 4'0011
+     75:     2 16'-1-101----00111-   ->     0 4'0011
+     76:     2 16'-100-1----00111-   ->     0 4'0011
+     77:     2 16'-1---0-----1111-   ->     0 4'0011
+     78:     2 16'-1-101-----1111-   ->     0 4'0011
+     79:     2 16'-100-1-----1111-   ->     0 4'0011
+     80:     2 16'--1--1-------1--   ->     0 4'0011
+     81:     2 16'----------1010--   ->     1 4'0011
+     82:     2 16'-----0----1011--   ->     1 4'0011
+     83:     2 16'---101----1011--   ->     1 4'0011
+     84:     2 16'--00-1----1011--   ->     1 4'0011
+     85:     2 16'-1----------000-   ->     2 4'0011
+     86:     2 16'-1--------00100-   ->     2 4'0011
+     87:     2 16'-1---------1100-   ->     2 4'0011
+     88:     2 16'-1---0------010-   ->     2 4'0011
+     89:     2 16'-1-101------010-   ->     2 4'0011
+     90:     2 16'-100-1------010-   ->     2 4'0011
+     91:     2 16'-1---0----00110-   ->     2 4'0011
+     92:     2 16'-1-101----00110-   ->     2 4'0011
+     93:     2 16'-100-1----00110-   ->     2 4'0011
+     94:     2 16'-1---0-----1110-   ->     2 4'0011
+     95:     2 16'-1-101-----1110-   ->     2 4'0011
+     96:     2 16'-100-1-----1110-   ->     2 4'0011
+     97:     2 16'-0----------00--   ->     2 4'0011
+     98:     2 16'-0--------0010--   ->     2 4'0011
+     99:     2 16'-0---------110--   ->     2 4'0011
+    100:     2 16'-0---0------01--   ->     2 4'0011
+    101:     2 16'-0-101------01--   ->     2 4'0011
+    102:     2 16'-000-1------01--   ->     2 4'0011
+    103:     2 16'-0---0----0011--   ->     2 4'0011
+    104:     2 16'-0-101----0011--   ->     2 4'0011
+    105:     2 16'-000-1----0011--   ->     2 4'0011
+    106:     2 16'-0---0-----111--   ->     2 4'0011
+    107:     2 16'-0-101-----111--   ->     2 4'0011
+    108:     2 16'-000-1-----111--   ->     2 4'0011
+    109:     2 16'---111-------1--   ->     2 4'0011
+    110:     3 16'-1----------001-   ->     0 4'1001
+    111:     3 16'-1-----0---0101-   ->     0 4'1001
+    112:     3 16'-1----01---0101-   ->     0 4'1001
+    113:     3 16'-1---------1101-   ->     0 4'1001
+    114:     3 16'-1---0------011-   ->     0 4'1001
+    115:     3 16'-1-101------011-   ->     0 4'1001
+    116:     3 16'-100-1------011-   ->     0 4'1001
+    117:     3 16'-1---0-0---0111-   ->     0 4'1001
+    118:     3 16'-1-101-0---0111-   ->     0 4'1001
+    119:     3 16'-100-1-0---0111-   ->     0 4'1001
+    120:     3 16'-1---001---0111-   ->     0 4'1001
+    121:     3 16'-1-10101---0111-   ->     0 4'1001
+    122:     3 16'-100-101---0111-   ->     0 4'1001
+    123:     3 16'-1---0-----1111-   ->     0 4'1001
+    124:     3 16'-1-101-----1111-   ->     0 4'1001
+    125:     3 16'-100-1-----1111-   ->     0 4'1001
+    126:     3 16'--1--1-------1--   ->     0 4'1001
+    127:     3 16'------11---010--   ->     2 4'1001
+    128:     3 16'-----011---011--   ->     2 4'1001
+    129:     3 16'---10111---011--   ->     2 4'1001
+    130:     3 16'--00-111---011--   ->     2 4'1001
+    131:     3 16'---111-------1--   ->     2 4'1001
+    132:     3 16'-1----------000-   ->     3 4'1001
+    133:     3 16'-1-----0---0100-   ->     3 4'1001
+    134:     3 16'-1----01---0100-   ->     3 4'1001
+    135:     3 16'-1---------1100-   ->     3 4'1001
+    136:     3 16'-1---0------010-   ->     3 4'1001
+    137:     3 16'-1-101------010-   ->     3 4'1001
+    138:     3 16'-100-1------010-   ->     3 4'1001
+    139:     3 16'-1---0-0---0110-   ->     3 4'1001
+    140:     3 16'-1-101-0---0110-   ->     3 4'1001
+    141:     3 16'-100-1-0---0110-   ->     3 4'1001
+    142:     3 16'-1---001---0110-   ->     3 4'1001
+    143:     3 16'-1-10101---0110-   ->     3 4'1001
+    144:     3 16'-100-101---0110-   ->     3 4'1001
+    145:     3 16'-1---0-----1110-   ->     3 4'1001
+    146:     3 16'-1-101-----1110-   ->     3 4'1001
+    147:     3 16'-100-1-----1110-   ->     3 4'1001
+    148:     3 16'-0----------00--   ->     3 4'1001
+    149:     3 16'-0-----0---010--   ->     3 4'1001
+    150:     3 16'-0----01---010--   ->     3 4'1001
+    151:     3 16'-0---------110--   ->     3 4'1001
+    152:     3 16'-0---0------01--   ->     3 4'1001
+    153:     3 16'-0-101------01--   ->     3 4'1001
+    154:     3 16'-000-1------01--   ->     3 4'1001
+    155:     3 16'-0---0-0---011--   ->     3 4'1001
+    156:     3 16'-0-101-0---011--   ->     3 4'1001
+    157:     3 16'-000-1-0---011--   ->     3 4'1001
+    158:     3 16'-0---001---011--   ->     3 4'1001
+    159:     3 16'-0-10101---011--   ->     3 4'1001
+    160:     3 16'-000-101---011--   ->     3 4'1001
+    161:     3 16'-0---0-----111--   ->     3 4'1001
+    162:     3 16'-0-101-----111--   ->     3 4'1001
+    163:     3 16'-000-1-----111--   ->     3 4'1001
+
+-------------------------------------
+
+5.9.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+Mapping FSM `$fsm$\bist_state$2876' from module `\diff8_digital'.
+
+5.10. Executing OPT pass (performing simple optimizations).
+
+5.10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~4 debug messages>
+
+5.10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 910 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 878 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+<suppressed ~96 debug messages>
+Removed a total of 32 cells.
+
+5.10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1436 debug messages>
+
+5.10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+Performed a total of 0 changes.
+
+5.10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 878 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.10.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\rx.$procdff$2784 ($adff) from module diff8_digital (D = \rx.shift, Q = \rx.data).
+Adding EN signal on $flatten\rx.$procdff$2789 ($adff) from module diff8_digital (D = $flatten\rx.$procmux$2372_Y, Q = \rx.busy).
+Adding EN signal on $flatten\rx.$procdff$2794 ($adff) from module diff8_digital (D = $flatten\rx.$procmux$2353_Y, Q = \rx.phase).
+Adding EN signal on $flatten\rx.$procdff$2799 ($adff) from module diff8_digital (D = $flatten\rx.$procmux$2342_Y, Q = \rx.bit_index).
+Adding EN signal on $flatten\rx.$procdff$2814 ($adff) from module diff8_digital (D = $flatten\rx.$procmux$2331_Y, Q = \rx.ones).
+Adding EN signal on $flatten\rx.$procdff$2819 ($adff) from module diff8_digital (D = $flatten\rx.$or$/work/rtl/diff8_uart_rx.v:27$52_Y, Q = \rx.shift).
+Adding EN signal on $flatten\tx.$procdff$2854 ($adff) from module diff8_digital (D = $flatten\tx.$0\phase[3:0], Q = \tx.phase).
+Adding EN signal on $flatten\tx.$procdff$2844 ($adff) from module diff8_digital (D = $flatten\tx.$0\busy[0:0], Q = \tx.busy).
+Adding EN signal on $flatten\tx.$procdff$2849 ($adff) from module diff8_digital (D = $flatten\tx.$0\frame[9:0], Q = \tx.frame).
+Adding EN signal on $flatten\tx.$procdff$2859 ($adff) from module diff8_digital (D = $flatten\tx.$0\bit_index[3:0], Q = \tx.bit_index).
+Adding EN signal on $procdff$2739 ($adff) from module diff8_digital (D = $0\spi_reply[7:0], Q = \spi_reply).
+Adding EN signal on $procdff$2734 ($adff) from module diff8_digital (D = { \spi_shift [5:0] \mosi_pipe [1] }, Q = \spi_shift).
+Adding EN signal on $procdff$2764 ($adff) from module diff8_digital (D = \spi_address, Q = \bus_address).
+Adding EN signal on $procdff$2729 ($adff) from module diff8_digital (D = $0\spi_count[4:0], Q = \spi_count).
+Adding EN signal on $procdff$2749 ($adff) from module diff8_digital (D = \spi_shift [6], Q = \spi_write).
+Adding EN signal on $procdff$2494 ($adff) from module diff8_digital (D = $procmux$1750_Y, Q = \command_error).
+Adding EN signal on $procdff$2769 ($adff) from module diff8_digital (D = { \spi_shift \mosi_pipe [1] }, Q = \bus_data).
+Adding EN signal on $procdff$2474 ($adff) from module diff8_digital (D = \bus_data, Q = \target_count [31:24]).
+Adding EN signal on $procdff$2474 ($adff) from module diff8_digital (D = \bus_data, Q = \target_count [23:16]).
+Adding EN signal on $procdff$2474 ($adff) from module diff8_digital (D = \bus_data, Q = \target_count [15:8]).
+Adding EN signal on $procdff$2474 ($adff) from module diff8_digital (D = \bus_data, Q = \target_count [7:0]).
+Adding EN signal on $procdff$2469 ($adff) from module diff8_digital (D = \rx.data, Q = \rx_register).
+Adding EN signal on $procdff$2464 ($adff) from module diff8_digital (D = \bus_data, Q = \tx_register).
+Adding EN signal on $procdff$2459 ($adff) from module diff8_digital (D = \bus_data [2:0], Q = \pattern).
+Adding EN signal on $procdff$2744 ($adff) from module diff8_digital (D = { \spi_shift [5:0] \mosi_pipe [1] }, Q = \spi_address).
+Adding EN signal on $procdff$2454 ($adff) from module diff8_digital (D = \bus_data [0], Q = \boost).
+Adding EN signal on $procdff$2449 ($adff) from module diff8_digital (D = \bus_data, Q = \baud_div [7:0]).
+Adding EN signal on $procdff$2449 ($adff) from module diff8_digital (D = \bus_data, Q = \baud_div [15:8]).
+Adding EN signal on $procdff$2444 ($adff) from module diff8_digital (D = 1'1, Q = \snapshot_valid).
+Adding EN signal on $procdff$2439 ($dff) from module diff8_digital (D = \overruns, Q = \snap_overruns).
+Adding EN signal on $procdff$2438 ($dff) from module diff8_digital (D = { 31'0000000000000000000000000000000 \timeout_seen }, Q = \snap_timeouts).
+Adding EN signal on $procdff$2437 ($dff) from module diff8_digital (D = \framing_errors, Q = \snap_framing).
+Adding EN signal on $procdff$2436 ($dff) from module diff8_digital (D = \error_bits, Q = \snap_error_bits).
+Adding EN signal on $procdff$2435 ($dff) from module diff8_digital (D = \error_bytes, Q = \snap_error_bytes).
+Adding EN signal on $procdff$2434 ($dff) from module diff8_digital (D = \checked_bytes, Q = \snap_bytes).
+Setting constant 0-bit at position 1 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 2 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 3 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 4 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 5 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 6 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 7 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 8 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 9 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 10 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 11 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 12 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 13 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 14 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 15 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 16 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 17 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 18 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 19 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 20 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 21 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 22 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 23 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 24 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 25 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 26 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 27 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 28 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 29 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 30 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+Setting constant 0-bit at position 31 on $auto$ff.cc:337:slice$3617 ($dffe) from module diff8_digital.
+
+5.10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 79 unused cells and 113 unused wires.
+<suppressed ~80 debug messages>
+
+5.10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~11 debug messages>
+
+5.10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1333 debug messages>
+
+5.10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+    New ctrl vector for $pmux cell $procmux$2032: { $procmux$2033_CMP $procmux$2034_CMP $procmux$2035_CMP $procmux$2036_CMP $procmux$2037_CMP $procmux$2038_CMP $auto$opt_reduce.cc:135:opt_pmux$3624 $procmux$2042_CMP $procmux$2043_CMP $procmux$2044_CMP $procmux$2045_CMP $procmux$2046_CMP $procmux$2047_CMP $procmux$2048_CMP $procmux$2049_CMP $procmux$2050_CMP $procmux$2051_CMP $procmux$2052_CMP $procmux$2053_CMP $procmux$2054_CMP $procmux$2055_CMP $procmux$2056_CMP $procmux$2057_CMP $procmux$2058_CMP $procmux$2059_CMP $procmux$2060_CMP $procmux$2061_CMP $procmux$2062_CMP $procmux$2063_CMP $procmux$2064_CMP $procmux$2065_CMP $procmux$2066_CMP $procmux$2067_CMP $procmux$2068_CMP $procmux$2069_CMP $procmux$2070_CMP $procmux$2071_CMP $procmux$2072_CMP $procmux$2073_CMP $procmux$2074_CMP $procmux$2075_CMP }
+  Optimizing cells in module \diff8_digital.
+Performed a total of 1 changes.
+
+5.10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 878 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 849 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 847 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+<suppressed ~93 debug messages>
+Removed a total of 31 cells.
+
+5.10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 0 unused cells and 31 unused wires.
+<suppressed ~1 debug messages>
+
+5.10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.10.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.10.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1335 debug messages>
+
+5.10.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+Performed a total of 0 changes.
+
+5.10.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 847 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.10.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.10.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+
+5.10.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.10.23. Finished fast OPT passes. (There is nothing left to do.)
+
+5.11. Executing WREDUCE pass (reducing word size of cells).
+Removed top 2 bits (of 3) from port B of cell diff8_digital.$auto$opt_dff.cc:235:make_patterns_logic$3526 ($ne).
+Removed top 1 bits (of 2) from port B of cell diff8_digital.$auto$opt_dff.cc:235:make_patterns_logic$3492 ($ne).
+Removed top 1 bits (of 2) from port B of cell diff8_digital.$auto$opt_dff.cc:235:make_patterns_logic$3449 ($ne).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3434 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3430 ($eq).
+Removed top 2 bits (of 5) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3426 ($eq).
+Removed top 3 bits (of 9) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3422 ($eq).
+Removed top 1 bits (of 9) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3418 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3414 ($eq).
+Removed top 3 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3410 ($eq).
+Removed top 1 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3406 ($eq).
+Removed top 4 bits (of 6) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3402 ($eq).
+Removed top 3 bits (of 6) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3386 ($eq).
+Removed top 1 bits (of 6) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3382 ($eq).
+Removed top 3 bits (of 4) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3378 ($eq).
+Removed top 1 bits (of 4) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3374 ($eq).
+Removed top 2 bits (of 6) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3370 ($eq).
+Removed top 3 bits (of 5) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3366 ($eq).
+Removed top 2 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3275 ($eq).
+Removed top 1 bits (of 6) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3267 ($eq).
+Removed top 3 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3263 ($eq).
+Removed top 1 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3259 ($eq).
+Removed top 4 bits (of 6) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3255 ($eq).
+Removed top 3 bits (of 5) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3231 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3162 ($eq).
+Removed top 1 bits (of 5) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3154 ($eq).
+Removed top 4 bits (of 10) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3094 ($eq).
+Removed top 2 bits (of 10) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3090 ($eq).
+Removed top 5 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3086 ($eq).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3082 ($eq).
+Removed top 1 bits (of 11) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3078 ($eq).
+Removed top 1 bits (of 11) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3074 ($eq).
+Removed top 1 bits (of 9) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3070 ($eq).
+Removed top 1 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3066 ($eq).
+Removed top 4 bits (of 9) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3062 ($eq).
+Removed top 2 bits (of 9) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3058 ($eq).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3054 ($eq).
+Removed top 3 bits (of 6) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3050 ($eq).
+Removed top 1 bits (of 10) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3046 ($eq).
+Removed top 1 bits (of 10) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3042 ($eq).
+Removed top 1 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3038 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3034 ($eq).
+Removed top 2 bits (of 4) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3027 ($eq).
+Removed top 1 bits (of 2) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$3019 ($eq).
+Removed top 3 bits (of 9) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2931 ($eq).
+Removed top 1 bits (of 9) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2927 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2923 ($eq).
+Removed top 1 bits (of 6) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2919 ($eq).
+Removed top 1 bits (of 11) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2915 ($eq).
+Removed top 1 bits (of 11) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2911 ($eq).
+Removed top 1 bits (of 9) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2907 ($eq).
+Removed top 1 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2903 ($eq).
+Removed top 1 bits (of 10) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2899 ($eq).
+Removed top 1 bits (of 10) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2895 ($eq).
+Removed top 1 bits (of 8) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2891 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$auto$fsm_map.cc:77:implement_pattern_cache$2887 ($eq).
+Removed top 2 bits (of 5) from port B of cell diff8_digital.$eq$/work/build/shrink-logic/combined/diff8_digital.v:100$107 ($eq).
+Removed top 27 bits (of 32) from port B of cell diff8_digital.$ge$/work/build/shrink-logic/combined/diff8_digital.v:86$112 ($ge).
+Removed top 26 bits (of 32) from port B of cell diff8_digital.$le$/work/build/shrink-logic/combined/diff8_digital.v:86$114 ($le).
+Removed top 1 bits (of 5) from port B of cell diff8_digital.$eq$/work/build/shrink-logic/combined/diff8_digital.v:101$117 ($eq).
+Removed top 28 bits (of 32) from port B of cell diff8_digital.$gt$/work/build/shrink-logic/combined/diff8_digital.v:103$119 ($gt).
+Removed top 27 bits (of 32) from port B of cell diff8_digital.$lt$/work/build/shrink-logic/combined/diff8_digital.v:103$121 ($lt).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$eq$/work/build/shrink-logic/combined/diff8_digital.v:131$186 ($eq).
+Removed top 7 bits (of 8) from port A of cell diff8_digital.$shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269 ($shl).
+Removed top 2 bits (of 3) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:138$274 ($add).
+Removed top 28 bits (of 32) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:41$304 ($add).
+Converting cell diff8_digital.$sub$/work/build/shrink-logic/combined/diff8_digital.v:146$307 ($sub) from unsigned to signed.
+Removed top 31 bits (of 32) from port A of cell diff8_digital.$sub$/work/build/shrink-logic/combined/diff8_digital.v:146$307 ($sub).
+Removed top 27 bits (of 32) from port B of cell diff8_digital.$sub$/work/build/shrink-logic/combined/diff8_digital.v:146$307 ($sub).
+Removed top 26 bits (of 32) from port Y of cell diff8_digital.$sub$/work/build/shrink-logic/combined/diff8_digital.v:146$307 ($sub).
+Removed top 1 bits (of 10) from port B of cell diff8_digital.$eq$/work/build/shrink-logic/combined/diff8_digital.v:152$312 ($eq).
+Removed top 1 bits (of 6) from port B of cell diff8_digital.$eq$/work/build/shrink-logic/combined/diff8_digital.v:155$316 ($eq).
+Removed top 5 bits (of 7) from port B of cell diff8_digital.$eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318 ($eq).
+Removed top 31 bits (of 32) from port B of cell diff8_digital.$le$/work/build/shrink-logic/combined/diff8_digital.v:181$341 ($le).
+Removed top 29 bits (of 32) from port B of cell diff8_digital.$le$/work/build/shrink-logic/combined/diff8_digital.v:183$342 ($le).
+Removed top 7 bits (of 8) from port A of cell diff8_digital.$shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360 ($shl).
+Removed top 3 bits (of 4) from port A of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$369 ($add).
+Removed top 3 bits (of 4) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$369 ($add).
+Removed top 2 bits (of 4) from port Y of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$369 ($add).
+Removed top 2 bits (of 4) from port A of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$370 ($add).
+Removed top 3 bits (of 4) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$370 ($add).
+Removed top 1 bits (of 4) from port Y of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$370 ($add).
+Removed top 1 bits (of 4) from port A of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$371 ($add).
+Removed top 3 bits (of 4) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$371 ($add).
+Removed top 3 bits (of 4) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$372 ($add).
+Removed top 3 bits (of 4) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$373 ($add).
+Removed top 3 bits (of 4) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$374 ($add).
+Removed top 3 bits (of 4) from port B of cell diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$375 ($add).
+Removed top 1 bits (of 3) from port B of cell diff8_digital.$procmux$658_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell diff8_digital.$procmux$659_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell diff8_digital.$procmux$660_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$1790_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$1794_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$1796_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$1797_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$1798_CMP0 ($eq).
+Removed top 3 bits (of 8) from port B of cell diff8_digital.$procmux$1814_CMP0 ($eq).
+Removed top 5 bits (of 8) from port B of cell diff8_digital.$procmux$1869_CMP0 ($eq).
+Removed top 6 bits (of 8) from port B of cell diff8_digital.$procmux$1873_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell diff8_digital.$procmux$1913_CMP0 ($eq).
+Removed top 7 bits (of 8) from port B of cell diff8_digital.$procmux$1917_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$procmux$1950_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$procmux$1970_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell diff8_digital.$procmux$1992_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$2005_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2033_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2034_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2035_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2036_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2037_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2038_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2039_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2040_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2041_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2042_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2043_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2044_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2045_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell diff8_digital.$procmux$2046_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2047_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2048_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2049_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2050_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2051_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2052_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2053_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2054_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2055_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2056_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2057_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2058_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2059_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2060_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2061_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell diff8_digital.$procmux$2062_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$2063_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$2064_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$2065_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$2066_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$2067_CMP0 ($eq).
+Removed top 3 bits (of 7) from port B of cell diff8_digital.$procmux$2068_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$procmux$2069_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$procmux$2070_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$procmux$2071_CMP0 ($eq).
+Removed top 4 bits (of 7) from port B of cell diff8_digital.$procmux$2072_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell diff8_digital.$procmux$2073_CMP0 ($eq).
+Removed top 6 bits (of 7) from port B of cell diff8_digital.$procmux$2074_CMP0 ($eq).
+Converting cell diff8_digital.$flatten\rx.$neg$/work/rtl/diff8_uart_rx.v:27$50 ($neg) from signed to unsigned.
+Removed top 1 bits (of 4) from port A of cell diff8_digital.$flatten\rx.$neg$/work/rtl/diff8_uart_rx.v:27$50 ($neg).
+Removed top 28 bits (of 32) from port B of cell diff8_digital.$flatten\rx.$le$/work/rtl/diff8_uart_rx.v:27$42 ($le).
+Removed top 31 bits (of 32) from port B of cell diff8_digital.$flatten\rx.$ge$/work/rtl/diff8_uart_rx.v:27$41 ($ge).
+Removed top 1 bits (of 2) from port B of cell diff8_digital.$flatten\rx.$add$/work/rtl/diff8_uart_rx.v:24$33 ($add).
+Removed top 1 bits (of 4) from port B of cell diff8_digital.$flatten\rx.$eq$/work/rtl/diff8_uart_rx.v:24$31 ($eq).
+Removed top 1 bits (of 4) from port B of cell diff8_digital.$flatten\rx.$eq$/work/rtl/diff8_uart_rx.v:24$30 ($eq).
+Removed top 1 bits (of 3) from port B of cell diff8_digital.$flatten\rx.$ge$/work/rtl/diff8_uart_rx.v:10$14 ($ge).
+Removed top 1 bits (of 3) from port A of cell diff8_digital.$flatten\rx.$add$/work/rtl/diff8_uart_rx.v:10$13 ($add).
+Removed top 2 bits (of 3) from port B of cell diff8_digital.$flatten\rx.$add$/work/rtl/diff8_uart_rx.v:10$13 ($add).
+Removed top 2 bits (of 3) from port B of cell diff8_digital.$flatten\rx.$sub$/work/rtl/diff8_uart_rx.v:9$12 ($sub).
+Removed top 1 bits (of 4) from wire diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$370_Y.
+Removed top 2 bits (of 4) from wire diff8_digital.$add$/work/build/shrink-logic/combined/diff8_digital.v:42$369_Y.
+Removed top 31 bits (of 32) from wire diff8_digital.snap_timeouts.
+
+5.12. Executing PEEPOPT pass (run peephole optimizers).
+
+5.13. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+5.14. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module diff8_digital:
+  creating $macc model for $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:10$13 ($add).
+  creating $macc model for $flatten\rx.$neg$/work/rtl/diff8_uart_rx.v:27$50 ($neg).
+  creating $macc model for $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:24$33 ($add).
+  creating $macc model for $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:34$56 ($add).
+  creating $macc model for $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:33$55 ($add).
+  creating $macc model for $flatten\tx.$add$/work/rtl/diff8_uart_tx.v:14$10 ($add).
+  creating $macc model for $flatten\tx.$add$/work/rtl/diff8_uart_tx.v:13$9 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$375 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$374 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$373 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$372 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$371 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$370 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$369 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:155$317 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:153$313 ($add).
+  creating $macc model for $sub$/work/build/shrink-logic/combined/diff8_digital.v:149$310 ($sub).
+  creating $macc model for $sub$/work/build/shrink-logic/combined/diff8_digital.v:146$307 ($sub).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:41$304 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:39$300 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:39$285 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:138$274 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:39$237 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:39$193 ($add).
+  creating $macc model for $sub$/work/build/shrink-logic/combined/diff8_digital.v:111$127 ($sub).
+  creating $macc model for $sub$/work/build/shrink-logic/combined/diff8_digital.v:111$126 ($sub).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:110$125 ($add).
+  creating $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:99$106 ($add).
+  creating $macc model for $flatten\rx.$sub$/work/rtl/diff8_uart_rx.v:9$12 ($sub).
+  merging $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$369 into $add$/work/build/shrink-logic/combined/diff8_digital.v:42$370.
+  merging $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$370 into $add$/work/build/shrink-logic/combined/diff8_digital.v:42$371.
+  merging $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$371 into $add$/work/build/shrink-logic/combined/diff8_digital.v:42$372.
+  merging $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$372 into $add$/work/build/shrink-logic/combined/diff8_digital.v:42$373.
+  merging $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$373 into $add$/work/build/shrink-logic/combined/diff8_digital.v:42$374.
+  merging $macc model for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$374 into $add$/work/build/shrink-logic/combined/diff8_digital.v:42$375.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:39$237.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:138$274.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:39$285.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:39$300.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:41$304.
+  creating $alu model for $macc $sub$/work/build/shrink-logic/combined/diff8_digital.v:146$307.
+  creating $alu model for $macc $sub$/work/build/shrink-logic/combined/diff8_digital.v:149$310.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:153$313.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:155$317.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:39$193.
+  creating $alu model for $macc $sub$/work/build/shrink-logic/combined/diff8_digital.v:111$127.
+  creating $alu model for $macc $sub$/work/build/shrink-logic/combined/diff8_digital.v:111$126.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:110$125.
+  creating $alu model for $macc $add$/work/build/shrink-logic/combined/diff8_digital.v:99$106.
+  creating $alu model for $macc $flatten\rx.$sub$/work/rtl/diff8_uart_rx.v:9$12.
+  creating $alu model for $macc $flatten\tx.$add$/work/rtl/diff8_uart_tx.v:13$9.
+  creating $alu model for $macc $flatten\tx.$add$/work/rtl/diff8_uart_tx.v:14$10.
+  creating $alu model for $macc $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:33$55.
+  creating $alu model for $macc $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:34$56.
+  creating $alu model for $macc $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:24$33.
+  creating $alu model for $macc $flatten\rx.$neg$/work/rtl/diff8_uart_rx.v:27$50.
+  creating $alu model for $macc $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:10$13.
+  creating $macc cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:42$375: $auto$alumacc.cc:382:replace_macc$3628
+  creating $alu model for $flatten\rx.$ge$/work/rtl/diff8_uart_rx.v:10$14 ($ge): new $alu
+  creating $alu model for $flatten\rx.$le$/work/rtl/diff8_uart_rx.v:27$42 ($le): new $alu
+  creating $alu model for $flatten\rx.$ge$/work/rtl/diff8_uart_rx.v:27$41 ($ge): new $alu
+  creating $alu model for $le$/work/build/shrink-logic/combined/diff8_digital.v:183$342 ($le): new $alu
+  creating $alu model for $le$/work/build/shrink-logic/combined/diff8_digital.v:181$341 ($le): new $alu
+  creating $alu model for $gt$/work/build/shrink-logic/combined/diff8_digital.v:146$308 ($gt): new $alu
+  creating $alu model for $gt$/work/build/shrink-logic/combined/diff8_digital.v:142$288 ($gt): new $alu
+  creating $alu model for $lt$/work/build/shrink-logic/combined/diff8_digital.v:103$121 ($lt): new $alu
+  creating $alu model for $gt$/work/build/shrink-logic/combined/diff8_digital.v:103$119 ($gt): new $alu
+  creating $alu model for $le$/work/build/shrink-logic/combined/diff8_digital.v:86$114 ($le): new $alu
+  creating $alu model for $ge$/work/build/shrink-logic/combined/diff8_digital.v:86$112 ($ge): new $alu
+  creating $alu model for $procmux$1917_CMP0 ($eq): merged with $le$/work/build/shrink-logic/combined/diff8_digital.v:181$341.
+  creating $alu model for $procmux$1869_CMP0 ($eq): merged with $le$/work/build/shrink-logic/combined/diff8_digital.v:183$342.
+  creating $alu model for $procmux$2035_CMP0 ($eq): merged with $le$/work/build/shrink-logic/combined/diff8_digital.v:86$114.
+  creating $alu model for $procmux$2062_CMP0 ($eq): merged with $ge$/work/build/shrink-logic/combined/diff8_digital.v:86$112.
+  creating $alu cell for $ge$/work/build/shrink-logic/combined/diff8_digital.v:86$112, $procmux$2062_CMP0: $auto$alumacc.cc:512:replace_alu$3640
+  creating $alu cell for $le$/work/build/shrink-logic/combined/diff8_digital.v:86$114, $procmux$2035_CMP0: $auto$alumacc.cc:512:replace_alu$3653
+  creating $alu cell for $gt$/work/build/shrink-logic/combined/diff8_digital.v:103$119: $auto$alumacc.cc:512:replace_alu$3662
+  creating $alu cell for $lt$/work/build/shrink-logic/combined/diff8_digital.v:103$121: $auto$alumacc.cc:512:replace_alu$3673
+  creating $alu cell for $gt$/work/build/shrink-logic/combined/diff8_digital.v:142$288: $auto$alumacc.cc:512:replace_alu$3678
+  creating $alu cell for $gt$/work/build/shrink-logic/combined/diff8_digital.v:146$308: $auto$alumacc.cc:512:replace_alu$3689
+  creating $alu cell for $le$/work/build/shrink-logic/combined/diff8_digital.v:181$341, $procmux$1917_CMP0: $auto$alumacc.cc:512:replace_alu$3700
+  creating $alu cell for $le$/work/build/shrink-logic/combined/diff8_digital.v:183$342, $procmux$1869_CMP0: $auto$alumacc.cc:512:replace_alu$3709
+  creating $alu cell for $flatten\rx.$ge$/work/rtl/diff8_uart_rx.v:27$41: $auto$alumacc.cc:512:replace_alu$3718
+  creating $alu cell for $flatten\rx.$le$/work/rtl/diff8_uart_rx.v:27$42: $auto$alumacc.cc:512:replace_alu$3731
+  creating $alu cell for $flatten\rx.$ge$/work/rtl/diff8_uart_rx.v:10$14: $auto$alumacc.cc:512:replace_alu$3740
+  creating $alu cell for $flatten\rx.$neg$/work/rtl/diff8_uart_rx.v:27$50: $auto$alumacc.cc:512:replace_alu$3753
+  creating $alu cell for $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:10$13: $auto$alumacc.cc:512:replace_alu$3756
+  creating $alu cell for $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:24$33: $auto$alumacc.cc:512:replace_alu$3759
+  creating $alu cell for $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:34$56: $auto$alumacc.cc:512:replace_alu$3762
+  creating $alu cell for $flatten\rx.$add$/work/rtl/diff8_uart_rx.v:33$55: $auto$alumacc.cc:512:replace_alu$3765
+  creating $alu cell for $flatten\tx.$add$/work/rtl/diff8_uart_tx.v:14$10: $auto$alumacc.cc:512:replace_alu$3768
+  creating $alu cell for $flatten\tx.$add$/work/rtl/diff8_uart_tx.v:13$9: $auto$alumacc.cc:512:replace_alu$3771
+  creating $alu cell for $flatten\rx.$sub$/work/rtl/diff8_uart_rx.v:9$12: $auto$alumacc.cc:512:replace_alu$3774
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:99$106: $auto$alumacc.cc:512:replace_alu$3777
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:110$125: $auto$alumacc.cc:512:replace_alu$3780
+  creating $alu cell for $sub$/work/build/shrink-logic/combined/diff8_digital.v:111$126: $auto$alumacc.cc:512:replace_alu$3783
+  creating $alu cell for $sub$/work/build/shrink-logic/combined/diff8_digital.v:111$127: $auto$alumacc.cc:512:replace_alu$3786
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:39$193: $auto$alumacc.cc:512:replace_alu$3789
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:155$317: $auto$alumacc.cc:512:replace_alu$3792
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:153$313: $auto$alumacc.cc:512:replace_alu$3795
+  creating $alu cell for $sub$/work/build/shrink-logic/combined/diff8_digital.v:149$310: $auto$alumacc.cc:512:replace_alu$3798
+  creating $alu cell for $sub$/work/build/shrink-logic/combined/diff8_digital.v:146$307: $auto$alumacc.cc:512:replace_alu$3801
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:41$304: $auto$alumacc.cc:512:replace_alu$3804
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:39$300: $auto$alumacc.cc:512:replace_alu$3807
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:39$285: $auto$alumacc.cc:512:replace_alu$3810
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:138$274: $auto$alumacc.cc:512:replace_alu$3813
+  creating $alu cell for $add$/work/build/shrink-logic/combined/diff8_digital.v:39$237: $auto$alumacc.cc:512:replace_alu$3816
+  created 33 $alu and 1 $macc cells.
+
+5.15. Executing SHARE pass (SAT-based resource sharing).
+Found 2 cells in module diff8_digital that may be considered for resource sharing.
+  Analyzing resource sharing options for $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269 ($shl):
+    Found 8 activation_patterns using ctrl signal { $procmux$379_CMP $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] $auto$rtlil.cc:3258:ReduceAnd$3715 }.
+    Found 1 candidates: $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360
+    Analyzing resource sharing with $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360 ($shl):
+      Found cell that is never activated: $add$/work/build/shrink-logic/combined/diff8_digital.v:42$374
+      Found cell that is never activated: $add$/work/build/shrink-logic/combined/diff8_digital.v:42$373
+      Found cell that is never activated: $add$/work/build/shrink-logic/combined/diff8_digital.v:42$372
+      Found cell that is never activated: $add$/work/build/shrink-logic/combined/diff8_digital.v:42$371
+      Found cell that is never activated: $add$/work/build/shrink-logic/combined/diff8_digital.v:42$370
+      Found cell that is never activated: $add$/work/build/shrink-logic/combined/diff8_digital.v:42$369
+      Found 48 activation_patterns using ctrl signal { \rx.valid $procmux$1729_CMP $procmux$1724_CMP $procmux$1716_CMP $procmux$1712_CMP $procmux$1472_CMP $procmux$379_CMP $procmux$378_CMP $ne$/work/build/shrink-logic/combined/diff8_digital.v:187$344_Y $ne$/work/build/shrink-logic/combined/diff8_digital.v:186$343_Y $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $ne$/work/build/shrink-logic/combined/diff8_digital.v:144$293_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:25$80_Y \bus_wr \bist_state [1] $auto$opt_reduce.cc:135:opt_pmux$2869 $auto$rtlil.cc:3255:Not$3699 $auto$rtlil.cc:3258:ReduceAnd$3706 $auto$rtlil.cc:3259:ReduceOr$3708 $auto$rtlil.cc:3258:ReduceAnd$3715 $auto$rtlil.cc:3259:ReduceOr$3717 }.
+      Forbidden control signals for this pair of cells: { $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:146$309_Y $gt$/work/build/shrink-logic/combined/diff8_digital.v:146$308_Y $ne$/work/build/shrink-logic/combined/diff8_digital.v:144$293_Y }
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: { $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] $auto$rtlil.cc:3258:ReduceAnd$3715 } = 9'101101111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: { $procmux$379_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] $auto$rtlil.cc:3258:ReduceAnd$3715 } = 8'11101110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: { $procmux$379_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] } = 7'1010111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: { $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] } = 6'110101
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: { $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] } = 6'110101
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: { $procmux$378_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] } = 7'1010111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: { $procmux$378_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] $auto$rtlil.cc:3258:ReduceAnd$3715 } = 8'11101110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: { $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [2] $auto$rtlil.cc:3258:ReduceAnd$3715 } = 9'101101111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1712_CMP $procmux$379_CMP $ne$/work/build/shrink-logic/combined/diff8_digital.v:187$344_Y $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 10'1111000111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$opt_reduce.cc:135:opt_pmux$2869 } = 9'110001111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1716_CMP $procmux$379_CMP $ne$/work/build/shrink-logic/combined/diff8_digital.v:186$343_Y $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 10'1111000111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1724_CMP $procmux$379_CMP $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3259:ReduceOr$3717 } = 10'1110001111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1729_CMP $procmux$379_CMP $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3259:ReduceOr$3708 } = 10'1110001111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:25$80_Y \bus_wr \bist_state [1] } = 8'11101111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3258:ReduceAnd$3715 } = 9'111101111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 } = 7'1101010
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 } = 8'11001110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 $auto$rtlil.cc:3258:ReduceAnd$3706 } = 10'1101011101
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1472_CMP $procmux$379_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 $auto$rtlil.cc:3258:ReduceAnd$3706 } = 10'1011011100
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1472_CMP $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 } = 10'1110101110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1472_CMP $procmux$379_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3258:ReduceAnd$3706 } = 9'101101110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1472_CMP $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 9'111010111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 6'110101
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 7'1100111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3258:ReduceAnd$3706 } = 8'11101110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$379_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3258:ReduceAnd$3706 } = 9'110101111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1472_CMP $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 } = 10'1110101110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1472_CMP $procmux$378_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 $auto$rtlil.cc:3258:ReduceAnd$3706 } = 10'1011011100
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 $auto$rtlil.cc:3258:ReduceAnd$3706 } = 10'1101011101
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 } = 8'11001110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3255:Not$3699 } = 7'1101010
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3258:ReduceAnd$3715 } = 9'111101111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:25$80_Y \bus_wr \bist_state [1] } = 8'11101111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1729_CMP $procmux$378_CMP $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3259:ReduceOr$3708 } = 10'1110001111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1724_CMP $procmux$378_CMP $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3259:ReduceOr$3717 } = 10'1110001111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1716_CMP $procmux$378_CMP $ne$/work/build/shrink-logic/combined/diff8_digital.v:186$343_Y $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 10'1111000111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$opt_reduce.cc:135:opt_pmux$2869 } = 9'110001111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1712_CMP $procmux$378_CMP $ne$/work/build/shrink-logic/combined/diff8_digital.v:187$344_Y $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 10'1111000111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3258:ReduceAnd$3706 } = 8'11101110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 6'110101
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 7'1100111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3258:ReduceAnd$3706 } = 9'110101111
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1472_CMP $procmux$378_CMP $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] $auto$rtlil.cc:3258:ReduceAnd$3706 } = 9'101101110
+      Activation pattern for cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360: { \rx.valid $procmux$1472_CMP $procmux$378_CMP $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y \bus_wr \bist_state [1] } = 9'111010111
+      Size of SAT problem: 49 cells, 1621 variables, 4984 clauses
+      According to the SAT solver this pair of cells can be shared.
+      Activation signal for $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269: $auto$share.cc:1072:make_cell_activation_logic$3828
+      New cell: $auto$share.cc:663:make_supercell$3835 ($shl)
+  Analyzing resource sharing options for $auto$share.cc:663:make_supercell$3835 ($shl):
+    Found 44 activation_patterns using ctrl signal { \rx.valid $procmux$1729_CMP $procmux$1724_CMP $procmux$1716_CMP $procmux$1712_CMP $procmux$1472_CMP $procmux$379_CMP $procmux$378_CMP $ne$/work/build/shrink-logic/combined/diff8_digital.v:187$344_Y $ne$/work/build/shrink-logic/combined/diff8_digital.v:186$343_Y $logic_or$/work/build/shrink-logic/combined/diff8_digital.v:177$340_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:167$332_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:162$327_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:160$318_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:136$258_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:134$217_Y $logic_and$/work/build/shrink-logic/combined/diff8_digital.v:133$197_Y $eq$/work/build/shrink-logic/combined/diff8_digital.v:25$80_Y \bus_wr \bist_state [2:1] $auto$opt_reduce.cc:135:opt_pmux$2869 $auto$rtlil.cc:3255:Not$3699 $auto$rtlil.cc:3258:ReduceAnd$3706 $auto$rtlil.cc:3259:ReduceOr$3708 $auto$rtlil.cc:3258:ReduceAnd$3715 $auto$rtlil.cc:3259:ReduceOr$3717 }.
+    No candidates found.
+Removing 8 cells in module diff8_digital:
+  Removing cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$360 ($shl).
+  Removing cell $shl$/work/build/shrink-logic/combined/diff8_digital.v:49$269 ($shl).
+  Removing cell $add$/work/build/shrink-logic/combined/diff8_digital.v:42$369 ($add).
+  Removing cell $add$/work/build/shrink-logic/combined/diff8_digital.v:42$370 ($add).
+  Removing cell $add$/work/build/shrink-logic/combined/diff8_digital.v:42$371 ($add).
+  Removing cell $add$/work/build/shrink-logic/combined/diff8_digital.v:42$372 ($add).
+  Removing cell $add$/work/build/shrink-logic/combined/diff8_digital.v:42$373 ($add).
+  Removing cell $add$/work/build/shrink-logic/combined/diff8_digital.v:42$374 ($add).
+
+5.16. Executing OPT pass (performing simple optimizations).
+
+5.16.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~2 debug messages>
+
+5.16.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 888 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 887 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 886 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+5.16.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1337 debug messages>
+
+5.16.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+Performed a total of 0 changes.
+
+5.16.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 886 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.16.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.16.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 0 unused cells and 25 unused wires.
+<suppressed ~2 debug messages>
+
+5.16.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.16.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.16.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1337 debug messages>
+
+5.16.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+Performed a total of 0 changes.
+
+5.16.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 885 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.16.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.16.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+
+5.16.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.16.16. Finished fast OPT passes. (There is nothing left to do.)
+
+5.17. Executing MEMORY pass.
+
+5.17.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.17.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+5.17.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+5.17.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+5.17.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+5.17.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+
+5.17.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+5.17.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+5.17.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+
+5.17.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+
+5.19. Executing OPT pass (performing simple optimizations).
+
+5.19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~88 debug messages>
+
+5.19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 881 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 878 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+5.19.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.19.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 1 unused cells and 50 unused wires.
+<suppressed ~2 debug messages>
+
+5.19.5. Finished fast OPT passes.
+
+5.20. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+5.21. Executing OPT pass (performing simple optimizations).
+
+5.21.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.21.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 877 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.21.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~668 debug messages>
+
+5.21.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+    Consolidated identical input bits for $pmux cell $procmux$1711:
+      Old ports: A=1'1, B=4'1111, Y=$procmux$1711_Y
+      New connections: $procmux$1711_Y = 1'1
+    Consolidated identical input bits for $mux cell $flatten\tx.$procmux$2421:
+      Old ports: A={ 1'1 \tx.frame [9:1] }, B={ 1'1 \tx_data 1'0 }, Y=$flatten\tx.$0\frame[9:0]
+      New ports: A=\tx.frame [9:1], B={ \tx_data 1'0 }, Y=$flatten\tx.$0\frame[9:0] [8:0]
+      New connections: $flatten\tx.$0\frame[9:0] [9] = 1'1
+    Consolidated identical input bits for $mux cell $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$358:
+      Old ports: A=8'01010101, B=8'10101010, Y=$ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$358_Y
+      New ports: A=2'01, B=2'10, Y=$ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$358_Y [1:0]
+      New connections: $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$358_Y [7:2] = { $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$358_Y [1:0] $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$358_Y [1:0] $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$358_Y [1:0] }
+    Consolidated identical input bits for $mux cell $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$267:
+      Old ports: A=8'01010101, B=8'10101010, Y=$ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$267_Y
+      New ports: A=2'01, B=2'10, Y=$ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$267_Y [1:0]
+      New connections: $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$267_Y [7:2] = { $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$267_Y [1:0] $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$267_Y [1:0] $ternary$/work/build/shrink-logic/combined/diff8_digital.v:47$267_Y [1:0] }
+    Consolidated identical input bits for $mux cell $ternary$/work/build/shrink-logic/combined/diff8_digital.v:22$77:
+      Old ports: A={ \snap_bytes [28:0] 3'000 }, B=32'11111111111111111111111111111111, Y=\snap_bits
+      New ports: A={ \snap_bytes [28:0] 1'0 }, B=30'111111111111111111111111111111, Y={ \snap_bits [31:3] \snap_bits [0] }
+      New connections: \snap_bits [2:1] = { \snap_bits [0] \snap_bits [0] }
+    Consolidated identical input bits for $mux cell $ternary$/work/build/shrink-logic/combined/diff8_digital.v:17$75:
+      Old ports: A={ \checked_bytes [28:0] 3'000 }, B=32'11111111111111111111111111111111, Y=\checked_bits
+      New ports: A={ \checked_bytes [28:0] 1'0 }, B=30'111111111111111111111111111111, Y={ \checked_bits [31:3] \checked_bits [0] }
+      New connections: \checked_bits [2:1] = { \checked_bits [0] \checked_bits [0] }
+  Optimizing cells in module \diff8_digital.
+Performed a total of 6 changes.
+
+5.21.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 876 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.21.6. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $mux $procmux$2015 in front of them:
+        $auto$alumacc.cc:512:replace_alu$3783
+        $auto$alumacc.cc:512:replace_alu$3786
+
+5.21.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.21.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~1 debug messages>
+
+5.21.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~2 debug messages>
+
+5.21.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.21.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~666 debug messages>
+
+5.21.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+Performed a total of 0 changes.
+
+5.21.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 874 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.21.14. Executing OPT_SHARE pass.
+
+5.21.15. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 1-bit at position 9 on $auto$ff.cc:337:slice$3483 ($adffe) from module diff8_digital.
+
+5.21.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+5.21.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.21.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.21.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \diff8_digital..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~666 debug messages>
+
+5.21.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \diff8_digital.
+Performed a total of 0 changes.
+
+5.21.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 874 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Removed a total of 0 cells.
+
+5.21.22. Executing OPT_SHARE pass.
+
+5.21.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.21.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+
+5.21.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+
+5.21.26. Finished fast OPT passes. (There is nothing left to do.)
+
+5.22. Executing TECHMAP pass (map to technology primitives).
+
+5.22.1. Executing Verilog-2005 frontend: /nix/store/c14dhblj440yzvvsdcyai22fan5q2231-yosys-0.66/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/c14dhblj440yzvvsdcyai22fan5q2231-yosys-0.66/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+5.22.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$constmap:5aa045b1c701d9ff08b7ffd142f09ea3a766edbc$paramod$3b3a66a7766bf28794ddcd35314b025da1fe57c8\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$6a42b6fefed750f8a1c58eab59479d960557103c\_90_alu for cells of type $alu.
+Using template $paramod$3ef7d3dd227da7627a99c5e5a6a4deb817573e39\_90_alu for cells of type $alu.
+Using template $paramod$a7817265ef3ab2ee43da53bbd8a90f6450d412d9\_90_alu for cells of type $alu.
+Using template $paramod$c04af8dbf0e5d1d69bbccb2c7bd8a93fc9ef54dc\_90_alu for cells of type $alu.
+Using template $paramod$754650b284649a026620fc6856e5b6886cbfe794\_90_alu for cells of type $alu.
+Using template $paramod$32efbfac1c4dc57230cf86180788fdfd12e3b511\_90_alu for cells of type $alu.
+Using template $paramod$a1665ef28c749ebcdbe9aecd466e644647b56463\_90_alu for cells of type $alu.
+Using template $paramod$ce0ec84be7047712840b0952f343ee9e63ef75d1\_90_alu for cells of type $alu.
+Using template $paramod$672a140277c71df8314410f22acc08d55222c3c7\_90_alu for cells of type $alu.
+Using template $paramod$b8c0a997bce700f23568a5ada79cc6781d1f5ca0\_90_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
+Using template $paramod$b3c20b05d9b1fc2c940ef2f6c917486aead042e8\_90_alu for cells of type $alu.
+Using template $paramod$025d767fc934a3e7d59a671de523743ebaa07759\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$ba698a254f9a5947e85cbe7beae6b161eefc5386\_90_alu for cells of type $alu.
+Using template $paramod$fc972a7a46956c1788f3cb5257b53c8f1df2d0cc\_90_alu for cells of type $alu.
+Using template $paramod$8742280fdebca84e1c87f2a86ed84f62d558f4cc\_90_alu for cells of type $alu.
+Using template $paramod$a04dd9d4d8b430140c4ff94b50470fb380fda2a0\_90_alu for cells of type $alu.
+Using template $paramod$403a3c2fa431a154c52a6a5429d7a6260b5d144f\_90_alu for cells of type $alu.
+Using template $paramod$fbc7873bff55778c0b3173955b7e4bce1d9d6834\_90_alu for cells of type $alu.
+Using template $paramod$d597a1d02e4b78ac244cbe0a6bc64f098a6f19e7\_90_alu for cells of type $alu.
+Using extmapper maccmap for cells of type $macc_v2.
+  add $0\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$71.x[7:0]$365 [0] (1 bits, unsigned)
+  add $0\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$71.x[7:0]$365 [7] (1 bits, unsigned)
+  add $0\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$71.x[7:0]$365 [6] (1 bits, unsigned)
+  add $0\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$71.x[7:0]$365 [5] (1 bits, unsigned)
+  add $0\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$71.x[7:0]$365 [4] (1 bits, unsigned)
+  add $0\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$71.x[7:0]$365 [3] (1 bits, unsigned)
+  add $0\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$71.x[7:0]$365 [2] (1 bits, unsigned)
+  add $0\popcount$func$/work/build/shrink-logic/combined/diff8_digital.v:54$71.x[7:0]$365 [1] (1 bits, unsigned)
+  packed 3 (3) bits / 3 words into adder tree
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $pmux.
+Using template $paramod$constmap:ed202111594f0a1b622ac8dc4bd7c990ea27025c$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx for cells of type $shift.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+Creating constmapped module `$paramod$constmap:aaa79bdfe7451deca7ae697c0784fd1c184bd8f2$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx'.
+
+5.22.55. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:aaa79bdfe7451deca7ae697c0784fd1c184bd8f2$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$14854.
+    dead port 2/2 on $mux $procmux$14860.
+    dead port 2/2 on $mux $procmux$14866.
+Removed 3 multiplexer ports.
+<suppressed ~1704 debug messages>
+
+5.22.56. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:aaa79bdfe7451deca7ae697c0784fd1c184bd8f2$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx.
+<suppressed ~2 debug messages>
+Removed 0 unused cells and 9 unused wires.
+Using template $paramod$constmap:aaa79bdfe7451deca7ae697c0784fd1c184bd8f2$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx for cells of type $shift.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000001 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000010 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000011 for cells of type $fa.
+Using template $paramod$740b056ede97228d3eae64ea2fdc81f0a33e0fe7\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000101 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000101 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010100 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010000 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000110 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000110 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001010 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001010 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000111 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000111 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000001 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001000 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~3500 debug messages>
+
+5.23. Executing OPT pass (performing simple optimizations).
+
+5.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module diff8_digital.
+<suppressed ~5170 debug messages>
+
+5.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\diff8_digital'.
+Computing hashes of 8665 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 7747 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 7319 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 7153 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 7139 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+Computing hashes of 7134 cells of `\diff8_digital'.
+Finding duplicate cells in `\diff8_digital'.
+<suppressed ~4593 debug messages>
+Removed a total of 1531 cells.
+
+5.23.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.23.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \diff8_digital..
+Removed 391 unused cells and 3737 unused wires.
+<suppressed ~392 debug messages>
+
+5.23.5. Finished fast OPT passes.
+
+5.24. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `diff8_digital'. Setting top module to diff8_digital.
+
+5.24.1. Analyzing design hierarchy..
+Top module:  \diff8_digital
+
+5.24.2. Analyzing design hierarchy..
+Top module:  \diff8_digital
+Removed 0 unused modules.
+
+5.25. Printing statistics.
+
+=== diff8_digital ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2656 wires
+     7792 wire bits
+      111 public wires
+      862 public wire bits
+       11 ports
+       46 port bits
+     6743 cells
+     1498   $_AND_
+      143   $_DFFE_PN0P_
+       15   $_DFFE_PN1P_
+      161   $_DFFE_PP_
+      266   $_DFF_PN0_
+       13   $_DFF_PN1_
+     2396   $_MUX_
+      372   $_NOT_
+     1526   $_OR_
+      351   $_XOR_
+        2   $scopeinfo
+
+5.26. Executing CHECK pass (checking for obvious problems).
+Checking module diff8_digital...
+Found and reported 0 problems.
+
+6. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnq_1 (noninv, pins=3, area=65.86) is a direct match for cell type $_DFF_N_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 (noninv, pins=3, area=63.66) is a direct match for cell type $_DFF_P_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 (noninv, pins=4, area=74.64) is a direct match for cell type $_DFF_NN0_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 (noninv, pins=4, area=79.03) is a direct match for cell type $_DFF_NN1_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (noninv, pins=4, area=74.64) is a direct match for cell type $_DFF_PN0_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 (noninv, pins=4, area=79.03) is a direct match for cell type $_DFF_PN1_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1 (noninv, pins=5, area=94.39) is a direct match for cell type $_DFFSR_NNN_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (noninv, pins=5, area=85.61) is a direct match for cell type $_DFFSR_PNN_.
+  final dff cell mappings:
+    \gf180mcu_fd_sc_mcu7t5v0__dffnq_1 _DFF_N_ (.CLKN( C), .D( D), .Q( Q));
+    \gf180mcu_fd_sc_mcu7t5v0__dffq_1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    \gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 _DFF_NN0_ (.CLKN( C), .D( D), .Q( Q), .RN( R));
+    \gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 _DFF_NN1_ (.CLKN( C), .D( D), .Q( Q), .SETN( R));
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RN( R));
+    \gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SETN( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    \gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1 _DFFSR_NNN_ (.CLKN( C), .D( D), .Q( Q), .RN( R), .SETN( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    \gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .RN( R), .SETN( S));
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+6.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~12 debug messages>
+Mapping DFF cells in module `\diff8_digital':
+  mapped 409 $_DFF_PN0_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 cells.
+  mapped 28 $_DFF_PN1_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 cells.
+  mapped 161 $_DFF_P_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffq_1 cells.
+
+7. Executing ABC pass (technology mapping using ABC).
+
+7.1. Extracting gate netlist of module `\diff8_digital' to `<abc-temp-dir>/input.blif'..
+
+7.1.1. Executed ABC.
+Extracted 6462 gates and 7060 wires to a netlist network with 596 inputs and 592 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_5d50ad6d.scl 
+ABC: Warning: Detected 6 multi-output cells (for example, "gf180mcu_fd_sc_mcu7t5v0__addf_1").
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+7.1.2. Re-integrating ABC results.
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and2_1 cells:       59
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and3_1 cells:       39
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and4_1 cells:       36
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi211_1 cells:       42
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi21_1 cells:      234
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi221_1 cells:       25
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi222_1 cells:       40
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi22_1 cells:       68
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__clkinv_1 cells:      139
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__mux2_1 cells:      296
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand2_1 cells:      245
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand3_1 cells:      153
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand4_1 cells:       93
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor2_1 cells:      262
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor3_1 cells:       87
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor4_1 cells:       49
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai211_1 cells:       17
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai21_1 cells:      104
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai221_1 cells:        8
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai22_1 cells:        9
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai31_1 cells:       13
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai32_1 cells:        5
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or2_1 cells:       44
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or3_1 cells:       11
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or4_1 cells:       14
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xnor2_1 cells:       69
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xnor3_1 cells:        2
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xor2_1 cells:      148
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xor3_1 cells:        3
+ABC RESULTS:        internal signals:     5872
+ABC RESULTS:           input signals:      596
+ABC RESULTS:          output signals:      592
+Removing temp directory.
+Removing global temp directory.
+
+8. Executing Liberty frontend: /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+Imported 229 cell types from liberty file.
+Removed 0 unused cells and 3712 unused wires.
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module diff8_digital...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)",
+   "invocation": "stat -json -liberty /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib ",
+   "modules": {
+      "\\diff8_digital": {
+         "num_wires":         2173,
+         "num_wire_bits":     3171,
+         "num_pub_wires":     101,
+         "num_pub_wire_bits": 840,
+         "num_ports":         11,
+         "num_port_bits":     46,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2914,
+         "num_submodules":       0,
+         "area":              87118.707200,
+         "sequential_area":    42988.601600,
+         "num_cells_by_type": {
+            "$scopeinfo": 2,
+            "gf180mcu_fd_sc_mcu7t5v0__and2_1": 59,
+            "gf180mcu_fd_sc_mcu7t5v0__and3_1": 39,
+            "gf180mcu_fd_sc_mcu7t5v0__and4_1": 36,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 42,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 234,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 25,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 40,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 68,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 139,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 161,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 409,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__mux2_1": 296,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 245,
+            "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 153,
+            "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 93,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 262,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 87,
+            "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 49,
+            "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 17,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 104,
+            "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 8,
+            "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 9,
+            "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 13,
+            "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 5,
+            "gf180mcu_fd_sc_mcu7t5v0__or2_1": 44,
+            "gf180mcu_fd_sc_mcu7t5v0__or3_1": 11,
+            "gf180mcu_fd_sc_mcu7t5v0__or4_1": 14,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 69,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 2,
+            "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 148,
+            "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         2173,
+         "num_wire_bits":     3171,
+         "num_pub_wires":     101,
+         "num_pub_wire_bits": 840,
+         "num_ports":         11,
+         "num_port_bits":     46,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2914,
+         "num_submodules":       0,
+         "area":              87118.707200,
+         "sequential_area":    42988.601600,
+         "num_cells_by_type": {
+            "$scopeinfo": 2,
+            "gf180mcu_fd_sc_mcu7t5v0__and2_1": 59,
+            "gf180mcu_fd_sc_mcu7t5v0__and3_1": 39,
+            "gf180mcu_fd_sc_mcu7t5v0__and4_1": 36,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 42,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 234,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 25,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 40,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 68,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 139,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 161,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 409,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__mux2_1": 296,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 245,
+            "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 153,
+            "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 93,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 262,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 87,
+            "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 49,
+            "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 17,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 104,
+            "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 8,
+            "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 9,
+            "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 13,
+            "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 5,
+            "gf180mcu_fd_sc_mcu7t5v0__or2_1": 44,
+            "gf180mcu_fd_sc_mcu7t5v0__or3_1": 11,
+            "gf180mcu_fd_sc_mcu7t5v0__or4_1": 14,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 69,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 2,
+            "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 148,
+            "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 3
+         }
+      }
+}
+
+10. Executing Verilog backend.
+
+10.1. Executing BMUXMAP pass.
+
+10.2. Executing DEMUXMAP pass.
+Dumping module `\diff8_digital'.
+
+End of script. Logfile hash: 4ad5cb4e8c, time: 1.78s, user: 0.93s, system: 0.07s, MEM: 84.14 MB peak
+Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)
+Time spent: 41% 1x abc (0 sec), 10% 48x opt_expr (0 sec), ...

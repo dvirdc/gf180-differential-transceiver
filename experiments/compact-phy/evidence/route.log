@@ -1,0 +1,70 @@
+
+Magic 8.3 revision 706 - Compiled on Tue Nov 24 19:10:32 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "/work/build/shrink-analog/trial125x65r/route.tcl" from command line.
+Processing timestamp mismatches.
+Cell ppolyf_u_1k_w1_l20 read from current working directory
+Cell ppolyf_u_1k_w1_l32 read from current working directory
+Cell pfet_03v3_w12_l1 read from current working directory
+Cell nfet_03v3_w24_l1 read from current working directory
+Cell pfet_03v3_w24_l0p28 read from current working directory
+Cell nfet_03v3_w12_l0p28 read from current working directory
+Cell pfet_03v3_w10_l0p28 read from current working directory
+Cell nfet_03v3_w4_l0p28 read from current working directory
+Timestamp mismatches found in these cells: nfet_03v3_w4_l0p28, pfet_03v3_w10_l0p28, nfet_03v3_w12_l0p28, pfet_03v3_w24_l0p28, nfet_03v3_w24_l1, pfet_03v3_w12_l1, ppolyf_u_1k_w1_l1, ppolyf_u_1k_w1_l32, ppolyf_u_1k_w1_l20.
+Loading DRC CIF style.
+DRC_TOTAL=0
+No errors found.
+DRC_WHY=
+Extracting nfet_03v3_w4_l0p28 into nfet_03v3_w4_l0p28.ext:
+Processing nfet_03v3_w4_l0p28
+Extracting pfet_03v3_w10_l0p28 into pfet_03v3_w10_l0p28.ext:
+Processing pfet_03v3_w10_l0p28
+Extracting nfet_03v3_w12_l0p28 into nfet_03v3_w12_l0p28.ext:
+Processing nfet_03v3_w12_l0p28
+Extracting pfet_03v3_w24_l0p28 into pfet_03v3_w24_l0p28.ext:
+Processing pfet_03v3_w24_l0p28
+Extracting nfet_03v3_w24_l1 into nfet_03v3_w24_l1.ext:
+Processing nfet_03v3_w24_l1
+Extracting pfet_03v3_w12_l1 into pfet_03v3_w12_l1.ext:
+Processing pfet_03v3_w12_l1
+Extracting ppolyf_u_1k_w1_l32 into ppolyf_u_1k_w1_l32.ext:
+Processing ppolyf_u_1k_w1_l32
+Extracting ppolyf_u_1k_w1_l1 into ppolyf_u_1k_w1_l1.ext:
+Processing ppolyf_u_1k_w1_l1
+Extracting ppolyf_u_1k_w1_l20 into ppolyf_u_1k_w1_l20.ext:
+Processing ppolyf_u_1k_w1_l20
+Extracting gf180_diff_phy into gf180_diff_phy.ext:
+Processing gf180_diff_phy
+exttospice finished.
+   Generating output for cell nfet_03v3_w4_l0p28
+   Generating output for cell pfet_03v3_w10_l0p28
+   Generating output for cell nfet_03v3_w12_l0p28
+   Generating output for cell pfet_03v3_w24_l0p28
+   Generating output for cell nfet_03v3_w24_l1
+   Generating output for cell pfet_03v3_w12_l1
+   Generating output for cell ppolyf_u_1k_w1_l32
+   Generating output for cell ppolyf_u_1k_w1_l1
+   Generating output for cell ppolyf_u_1k_w1_l20
+   Generating output for cell gf180_diff_phy
+Generating LEF output gf180_diff_phy.lef for cell gf180_diff_phy:
+Diagnostic:  Write LEF header for cell gf180_diff_phy
+Diagnostic:  Writing LEF output for cell gf180_diff_phy
+Diagnostic:  Scale value is 0.005000
+"gf180_diff_phy" has a zero timestamp; it should be written out
+    to establish a correct timestamp.

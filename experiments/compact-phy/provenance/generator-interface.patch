@@ -1,0 +1,38 @@
+--- original/route125x65r.py
++++ package/generate.py
+@@ -1,11 +1,16 @@
+ #!/usr/bin/env python3
+ """Native GF180 29-device PHY hardmacro, with independent final-GDS verification."""
+ from pathlib import Path
+-import sys
+-sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'scripts'))
++import argparse
+ from gf_analog_tools import ROOT,TOP,PDK_REVISION,magic,sha,tech_hashes
+ import json,re
+-SRC=ROOT/'build/physical/cells';OUT=ROOT/'build/shrink-analog/trial125x65r';OUT.mkdir(parents=True,exist_ok=True)
++PACKAGE=Path(__file__).resolve().parent
++parser=argparse.ArgumentParser(description='Regenerate the fixed, verified 125 x 65 um GF180 PHY.')
++parser.add_argument('--output',type=Path,default=PACKAGE/'build',help='Output directory inside this package build/ tree.')
++args=parser.parse_args()
++SRC=PACKAGE/'inputs/cells';OUT=args.output.resolve()
++if not OUT.is_relative_to((PACKAGE/'build').resolve()):parser.error('--output must remain inside this package build/ tree')
++OUT.mkdir(parents=True,exist_ok=True)
+ WIDTH,HEIGHT=125,65
+ DEV=[]
+ def mos(inst,model,w,l,d,g,s,b):DEV.append((inst,f'{model}_w{w:g}_l{l:g}'.replace('.','p'),dict(D=d,G=g,S=s,B=b)))
+@@ -92,7 +97,7 @@
+ lef write {TOP}.lef -hide
+ '''
+ log=magic(cmd,OUT,'route')
+-assert 'DRC_TOTAL=0\n' in log and 'DRC_WHY=\n' in log,'Inspect build/physical/phy/route.log'
++assert 'DRC_TOTAL=0\n' in log and 'DRC_WHY=\n' in log,f'Inspect {OUT}/route.log'
+ # Obstruction view reserves all lower metals, except true M3 pin windows.
+ p=OUT/(TOP+'.lef');s=p.read_text();windows={}
+ for m in list(re.finditer(r'  PIN (\S+)\n(.*?)  END \1',s,re.S)):
+@@ -112,5 +117,5 @@
+ for layer,rs in [('Metal1',[(0,0,WIDTH,HEIGHT)]),('Metal2',[(0,0,WIDTH,HEIGHT)]),('Metal3',regions),('Metal4',[(1.4,3.4,21.6,63.6)])]:obs+='    LAYER '+layer+' ;\n'+''.join('      RECT '+' '.join(f'{v:.3f}' for v in rr)+' ;\n' for rr in rs)
+ obs+='  END\n';s=re.sub(r'  OBS\n.*?  END\n',obs,s,flags=re.S);p.write_text(s)
+ (OUT/'lef-pin-windows.json').write_text(json.dumps(windows,indent=2)+'\n')
+-report={'pdk_revision':PDK_REVISION,'technology_sha256':tech_hashes(),'gds_sha256':sha(OUT/(TOP+'.gds')),'lef_sha256':sha(p),'reference_spice_sha256':sha(ROOT/'physical/phy_reference.spice'),'macro_um':[WIDTH,HEIGHT],'devices':29,'magic_drc_errors':0,'scope':'Connected native GF180 macro; independent GDS reimport/LVS/PEX still required.'}
++report={'pdk_revision':PDK_REVISION,'technology_sha256':tech_hashes(),'gds_sha256':sha(OUT/(TOP+'.gds')),'lef_sha256':sha(p),'reference_spice_sha256':sha(PACKAGE/'inputs/phy_reference.spice'),'macro_um':[WIDTH,HEIGHT],'devices':29,'magic_drc_errors':0,'scope':'Connected native GF180 macro; independent GDS reimport/LVS/PEX still required.'}
+ (OUT/'route-summary.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

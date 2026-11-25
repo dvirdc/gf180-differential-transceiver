@@ -15,10 +15,14 @@ module diff8_digital(input wire clk, rst_n, ena,
  reg [31:0] checked_bytes, error_bytes, error_bits;
  // Every checked byte contributes eight payload bits; derive the saturated total.
  wire [31:0] checked_bits=(|checked_bytes[31:29])?32'hffffffff:{checked_bytes[28:0],3'b000};
- reg [31:0] framing_errors, timeouts, overruns;
+ reg [31:0] framing_errors, overruns;
+ reg timeout_seen;
+ wire [31:0] timeouts={31'b0,timeout_seen};
  reg [31:0] snap_bytes,snap_error_bytes,snap_error_bits;
  wire [31:0] snap_bits=(|snap_bytes[31:29])?32'hffffffff:{snap_bytes[28:0],3'b000};
  reg [31:0] snap_framing,snap_timeouts,snap_overruns;
+ reg snapshot_valid;
+ wire capture_snapshot=bus_wr && bus_address==3 && bus_data==16;
  reg [7:0] bad_expected,bad_actual;
  reg [1:0] bist_state;
  reg [9:0] wait_ticks; reg [5:0] gap_ticks;
@@ -78,7 +82,9 @@ module diff8_digital(input wire clk, rst_n, ena,
    40:read_register=snap_overruns[7:0];41:read_register=snap_overruns[15:8];42:read_register=snap_overruns[23:16];43:read_register=snap_overruns[31:24];
    44:read_register=bad_expected;45:read_register=bad_actual;
    default:read_register=0;
-  endcase end
+  endcase
+  if(!snapshot_valid && address>=16 && address<=43)read_register=0;
+  end
  endfunction
  always @(posedge clk or negedge reset_n) begin
   if (!reset_n) begin cs_pipe<=2'b11;sck_pipe<=0;mosi_pipe<=0;sck_old<=0;
@@ -109,8 +115,7 @@ module diff8_digital(input wire clk, rst_n, ena,
   if(!reset_n) begin
    baud_div<=1;boost<=0;pattern<=0;tx_register<=8'ha5;rx_register<=0;
    target_count<=32;running<=0;done<=0;fail<=0;command_error<=0;overflow<=0;rx_ready<=0;
-   checked_bytes<=0;error_bytes<=0;error_bits<=0;framing_errors<=0;timeouts<=0;overruns<=0;
-   snap_bytes<=0;snap_error_bytes<=0;snap_error_bits<=0;snap_framing<=0;snap_timeouts<=0;snap_overruns<=0;
+   checked_bytes<=0;error_bytes<=0;error_bits<=0;framing_errors<=0;timeout_seen<=1'b0;overruns<=0;
    bad_expected<=0;bad_actual<=0;bist_state<=0;wait_ticks<=0;gap_ticks<=0;
    tx_sequence<=8'ha5;rx_sequence<=8'ha5;sent_bytes<=0;tx_start<=0;tx_data<=0;
   end else begin
@@ -144,7 +149,7 @@ module diff8_digital(input wire clk, rst_n, ena,
       if(checked_bytes==target_count-1'b1)begin running<=0;done<=1;bist_state<=0;end
       else begin gap_ticks<=0;bist_state<=3;end
      end else if(tick16)begin
-      if(wait_ticks==511)begin timeouts<=inc32(timeouts);if(&timeouts)overflow<=1;fail<=1;done<=1;running<=0;bist_state<=0;end
+      if(wait_ticks==511)begin timeout_seen<=1'b1;fail<=1;done<=1;running<=0;bist_state<=0;end
       else wait_ticks<=wait_ticks+1'b1;
      end
      3:if(tick16 && !tx_busy) begin if(gap_ticks==31)bist_state<=1;else gap_ticks<=gap_ticks+1'b1;end
@@ -156,18 +161,17 @@ module diff8_digital(input wire clk, rst_n, ena,
      case(bus_data)
       1:if(!running && !tx_busy && !rx_busy && !tx_start && target_count!=0)begin
        running<=1;done<=0;fail<=0;command_error<=0;overflow<=0;rx_ready<=0;
-       checked_bytes<=0;error_bytes<=0;error_bits<=0;framing_errors<=0;timeouts<=0;overruns<=0;
+       checked_bytes<=0;error_bytes<=0;error_bits<=0;framing_errors<=0;timeout_seen<=1'b0;overruns<=0;
        bad_expected<=0;bad_actual<=0;tx_sequence<=8'ha5;rx_sequence<=8'ha5;sent_bytes<=0;wait_ticks<=0;gap_ticks<=0;bist_state<=1;
       end else begin command_error<=1;fail<=1;end
       2:if(!running && !tx_busy && !tx_start)begin
        done<=0;fail<=0;command_error<=0;overflow<=0;rx_ready<=0;
-       checked_bytes<=0;error_bytes<=0;error_bits<=0;framing_errors<=0;timeouts<=0;overruns<=0;
+       checked_bytes<=0;error_bytes<=0;error_bits<=0;framing_errors<=0;timeout_seen<=1'b0;overruns<=0;
       end else begin command_error<=1;fail<=1;end
       4:if(!running && !tx_busy && !tx_start)begin tx_data<=tx_register;tx_start<=1;done<=0;end
         else begin command_error<=1;fail<=1;end
       8:begin running<=0;done<=1;fail<=1;bist_state<=0;end
-      16:begin snap_bytes<=checked_bytes;snap_error_bytes<=error_bytes;snap_error_bits<=error_bits;
-       snap_framing<=framing_errors;snap_timeouts<=timeouts;snap_overruns<=overruns;end
+      16:begin end // Captured in the separate snapshot bank below.
       default:begin command_error<=1;fail<=1;end
      endcase
     end else if(running || tx_busy || rx_busy || tx_start)begin command_error<=1;fail<=1;end
@@ -185,6 +189,16 @@ module diff8_digital(input wire clk, rst_n, ena,
      endcase
     end
    end
+  end
+ end
+ always @(posedge clk or negedge reset_n) begin
+  if(!reset_n)snapshot_valid<=1'b0;
+  else if(capture_snapshot)snapshot_valid<=1'b1;
+ end
+ always @(posedge clk) begin
+  if(reset_n && capture_snapshot)begin
+   snap_bytes<=checked_bytes;snap_error_bytes<=error_bytes;snap_error_bits<=error_bits;
+   snap_framing<=framing_errors;snap_timeouts<=timeouts;snap_overruns<=overruns;
   end
  end
  assign uo_out={rx_valid,phy_tx,heartbeat[19],fail,passed,running,phy_rx,spi_reply[7]};

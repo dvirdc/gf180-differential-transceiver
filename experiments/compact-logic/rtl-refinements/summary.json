@@ -1,0 +1,74 @@
+{
+  "baseline_commit": "dc81136485ec0d8a0e100307a48a231a246e4c7f",
+  "baseline_controller_sha256": "3c68ad1452199b820d4a9e9732ead0e4162d7204bb80581a686308aff3042d96",
+  "compact_checkout_subject_match_observed": true,
+  "created_utc": "2026-11-25T22:22:35.166639+00:00",
+  "lint_note": "The snapshot raw capture guard uses reset_n synchronously while the valid flag resets asynchronously, producing the documented SYNCASYNCNET warning. No suppression or new latch is used.",
+  "not_covered": [
+    "ICG8 clock-gating transformation and test-enable hookup",
+    "125x65um analog macro electrical/layout qualification",
+    "1x2 placement, routing, CTS, extracted STA, DRC/LVS and official precheck",
+    "Post-fill/package/board/silicon behavior"
+  ],
+  "preserved": [
+    "SPI addresses and 32-bit public readout",
+    "32-bit BIST byte target",
+    "Saturating counter semantics and overflow/PASS rules",
+    "Coherent snapshot capture clock and old-snapshot retention across START/CLEAR",
+    "All 44 existing external-pin regression cases"
+  ],
+  "proof_scope": "Local inductive/algebraic refinement under RTL control invariants, not whole-core equivalence. Integration checked by unchanged external-pin tests.",
+  "results": {
+    "baseline_librelane_area_um2": 96307.8144,
+    "librelane_area_um2": 86299.8976,
+    "librelane_flip_flops": 598,
+    "librelane_mapped_tests": 44,
+    "rtl_tests": 44,
+    "simple_mapped_tests": 44,
+    "simple_yosys_area_um2": 87118.7072,
+    "snapshot_refinement_sat": "pass",
+    "timeout_refinement_sat": "pass"
+  },
+  "status": "BEHAVIORAL_REFINEMENT_EVIDENCE_PASSED",
+  "subject": {
+    "rtl/diff8_digital.v": {
+      "package_path": "source/candidate/diff8_digital.v",
+      "sha256": "79926c2525a80c949a422ed72c18cb05f23fe419fd021bcf550219cfb4d209f4"
+    },
+    "rtl/diff8_uart_rx.v": {
+      "package_path": "source/common/rtl/diff8_uart_rx.v",
+      "sha256": "2519e9f6a533ec89008bae1749444dfa8936602187b313cba5368de7389c88ce"
+    },
+    "rtl/diff8_uart_tx.v": {
+      "package_path": "source/common/rtl/diff8_uart_tx.v",
+      "sha256": "35154e34211bfba75af66cd5e097cdfc8fc19ded4716b19e8b261ad911ca10ba"
+    },
+    "rtl/gf180_diff_phy_blackbox.v": {
+      "package_path": "source/common/rtl/gf180_diff_phy_blackbox.v",
+      "sha256": "91c0f17a177e2d8f5fd1ab733152eaccf391f52212eda9e69a41b2610345a9fd"
+    },
+    "rtl/tt_um_dvirdc_gf180_diff8.v": {
+      "package_path": "source/common/rtl/tt_um_dvirdc_gf180_diff8.v",
+      "sha256": "60319e672c9e30d92d419bc5951476aa5e1b52df807fa9e456b49b8a9fc4e505"
+    },
+    "sim/phy_behavioral.v": {
+      "package_path": "source/common/sim/phy_behavioral.v",
+      "sha256": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828"
+    },
+    "sim/tb.sv": {
+      "package_path": "source/common/sim/tb.sv",
+      "sha256": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8"
+    }
+  },
+  "test_scope": "Functional zero-delay models with a behavioral PHY boundary, before the later ICG mapping and compact physical implementation.",
+  "tools": {
+    "SYNTH_ARITH_TREE": false,
+    "librelane": "3.1.0.dev3",
+    "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+    "yosys": "0.66 (86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51)"
+  },
+  "transformations": [
+    "Compress timeout live state to one bit with an unchanged zero-extended 32-bit public view; unreachable old overflow branch removed.",
+    "Remove reset from snapshot data banks; one asynchronously reset valid bit masks the common 8-bit read reply until capture."
+  ]
+}

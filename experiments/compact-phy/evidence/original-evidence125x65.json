@@ -1,0 +1,179 @@
+{
+  "selected_candidate": "trial125x65r",
+  "status": "Validated isolated analog compaction; integration and official fill qualification pending",
+  "base_commit": "dc81136485ec0d8a0e100307a48a231a246e4c7f",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "original_macro_um": [
+    160,
+    110
+  ],
+  "macro_um": [
+    125,
+    65
+  ],
+  "original_area_um2": 17600,
+  "area_um2": 8125,
+  "area_reduction_percent": 53.83522727272727,
+  "halo4um_footprint_um": [
+    133,
+    73
+  ],
+  "halo4um_area_um2": 9709,
+  "unchanged_electrical_design": {
+    "devices": 29,
+    "mosfets": 20,
+    "resistors": 9,
+    "reference_spice_sha256": "724df0e2ebead975ed3a969642a9c8bac4fb3ac328e10bd00e899acfd597a8cb",
+    "canonical_primitive_layer_xor": "All 9 unique primitive cells match exactly on every GDS polygon layer",
+    "placement_changes": "Device pitch 5 to 4 um; center y 53 to 24.5 um; swap adjacent PFET xp2 with first resistor xrp to preserve well spacing",
+    "routing_changes": "Lower buses 4..23 um, upper buses 44..63 um; shorter horizontal M3 buses; matching LEF outline, pin windows and M4 obstruction"
+  },
+  "independent_verification": {
+    "passed": true,
+    "scope": "Independent exact-GDS reimport under GF26e pinned PDK; full 29-device transistor/resistor LVS and extracted RC. Circuit transient qualification separate.",
+    "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+    "technology_sha256": {
+      "libs.tech/magic/gf180mcuD.tech": "3393fd8c487b80926d0a0235694a3523df8a8d88614c773b814a02d8f2070a25",
+      "libs.tech/magic/gf180mcuD-GDS.tech": "e62d657d57fd328e1f7a7de55b9caba90b84e98a8c981a2ade87302725702b2f",
+      "libs.tech/netgen/gf180mcuD_setup.tcl": "eb6217e33acb2c81680351745bc184a2ee37b31a25d37f4dce423f61ba466fe4"
+    },
+    "macro_um": [
+      125,
+      65
+    ],
+    "gds_sha256": "8d7696a723315a539f7b4901cae311f87cca9b35516c7dda7cf917dba3faca2b",
+    "lef_sha256": "334a0c0fe722d1ff21fc40b0cbc3aa7c6436c3a4579e08634cf80b372ebfd3fb",
+    "reference_spice_sha256": "724df0e2ebead975ed3a969642a9c8bac4fb3ac328e10bd00e899acfd597a8cb",
+    "extracted_lvs_spice_sha256": "6b080dbc3384d655c5a2c232b460ccaca49464dcf9525e9a69b79e120bf4952d",
+    "lvs_report_sha256": "f7f5fd9b22474f74812090f81eb381cd631aa8840e23969d41996732549f5d0d",
+    "drc_errors": 0,
+    "devices": 29,
+    "pex_sha256": "ee74a90df3bf9bd87540dffaa534551a89b7cf249a9c2220b68f6590dcb29d05",
+    "parasitic_resistors": 145,
+    "parasitic_capacitors": 252
+  },
+  "geometry_verification": {
+    "passed": true,
+    "gds_sha256": "8d7696a723315a539f7b4901cae311f87cca9b35516c7dda7cf917dba3faca2b",
+    "lef_sha256": "334a0c0fe722d1ff21fc40b0cbc3aa7c6436c3a4579e08634cf80b372ebfd3fb",
+    "canonical_gds_sha256": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
+    "unchanged_primitive_cells": [
+      "nfet_03v3_w12_l0p28",
+      "nfet_03v3_w24_l1",
+      "nfet_03v3_w4_l0p28",
+      "pfet_03v3_w10_l0p28",
+      "pfet_03v3_w12_l1",
+      "pfet_03v3_w24_l0p28",
+      "ppolyf_u_1k_w1_l1",
+      "ppolyf_u_1k_w1_l20",
+      "ppolyf_u_1k_w1_l32"
+    ],
+    "macro_um": [
+      125.0,
+      65.0
+    ],
+    "pin_windows_checked": 9,
+    "m4_obstruction_covers_all_m4": true,
+    "scope": "Exact primitive-cell layer XOR versus canonical PHY; all M3 LEF pin windows and M4 obstruction contained in actual trial GDS."
+  },
+  "klayout": {
+    "decks": "all,-density,-antenna",
+    "violations": {
+      "DCF.1a": 1
+    },
+    "passed": false,
+    "required_remaining_step": "Add official dummy COMP fill during wrapper integration and rerun applicable integrated checks; DCF.1a is not waived."
+  },
+  "loaded_simulations": {
+    "passed": true,
+    "cases": 60,
+    "checked_bit_decisions": 7200,
+    "bit_rate_bps": 100000,
+    "frames_per_case": 12,
+    "format": "8N1",
+    "corners": [
+      "typical",
+      "ff",
+      "ss",
+      "fs",
+      "sf"
+    ],
+    "paired_temperature_C_supply_V": [
+      [
+        25,
+        3.3
+      ],
+      [
+        -40,
+        3.6
+      ],
+      [
+        125,
+        3.0
+      ]
+    ],
+    "boost": [
+      0,
+      1
+    ],
+    "switch_supply_V": [
+      3.3,
+      5.0
+    ],
+    "assumptions": {
+      "switch_VAPWR_V": 3.3,
+      "switch_VDPWR_tracks_core": true,
+      "rx_load_pF_per_leg": 20,
+      "differential_leakage_ohm": 1000000,
+      "digital_output_load_pF": 5,
+      "input_transition_ns": 10
+    },
+    "all_runs_use_four_exact_current_shuttle_switches": true,
+    "limits": [
+      "Paired temperature/supply points, not a full Cartesian sweep.",
+      "No mismatch, digital coupling/noise, package inductance or post-fill simulation.",
+      "Switch uses transistor extraction only; no switch RC extraction or independent switch LVS claimed.",
+      "Actual carrier supply and parasitic loading still require validation."
+    ]
+  },
+  "canonical_files_unchanged": {
+    "analog/layout/gf180_diff_phy.gds": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
+    "analog/layout/gf180_diff_phy.lef": "03c3b3bac9152c743679b09abd3dd87b9f7da135e39f3b8dca7f456a42d0cb1a",
+    "physical/phy_reference.spice": "724df0e2ebead975ed3a969642a9c8bac4fb3ac328e10bd00e899acfd597a8cb"
+  },
+  "tracked_tree_clean": true,
+  "source_primitive_mag_sha256": {
+    "nfet_03v3_w12_l0p28.mag": "97c25a78992d1a3cfdc559cc1d379eff7cda183f2d8eaaa6c5030050a9f67fd5",
+    "nfet_03v3_w24_l1.mag": "2071a25f3562187ae066236fec5983669aefcec5c581f499913619f2f35dba6d",
+    "nfet_03v3_w4_l0p28.mag": "d3b19b2012dbdd561358eba128b5089b0a10b79b627483d1deef3634e58fde2f",
+    "pfet_03v3_w10_l0p28.mag": "e532e6c3d54f49495d99269508860f356dd383297e2dd174e4414e5a5ca74785",
+    "pfet_03v3_w12_l1.mag": "7ce540b4d757f33227b2b20839e0c5699ec8fcfb979b99cfe14977fa1458573c",
+    "pfet_03v3_w24_l0p28.mag": "7df3bdf6d48bc89cf352eb2e39db4b9c2e7522c32a4a3c608e71b2fb956125f2",
+    "ppolyf_u_1k_w1_l1.mag": "11c7ee9b15dfe199a718ec09cc560232b88522239f1c3a1c6049a24514ddbde2",
+    "ppolyf_u_1k_w1_l20.mag": "d42286aa2248d92623d46c55ff691e38edf5f4030d28dc31754ca28e9c6b47f7",
+    "ppolyf_u_1k_w1_l32.mag": "ad3130babbae55bb286964da6af26540a7f237188553bea969a94d64e3d63b78"
+  },
+  "artifact_sha256": {
+    "route125x65r.py": "ce8d88209c41181e0174a197d2b92df8f26eb466ee0ef29c9d84da6ed39d927f",
+    "verify_trial.py": "0867956037c5d1b4108332cb97672afdf44d23cd1478dc6d48b7441cb97c4b0b",
+    "test_trial.py": "252a5a978f5c8766c56cade61598d4be09d3980f251bad46fc1c82ca7cf72f80",
+    "geometry_trial.py": "77acc9aa11f6e5d8221e3863fe1a90d914e113bb7ac9cfe0e286b624eb8bb1dd",
+    "trial125x65r/gf180_diff_phy.gds": "8d7696a723315a539f7b4901cae311f87cca9b35516c7dda7cf917dba3faca2b",
+    "trial125x65r/gf180_diff_phy.lef": "334a0c0fe722d1ff21fc40b0cbc3aa7c6436c3a4579e08634cf80b372ebfd3fb",
+    "trial125x65r/gf180_diff_phy.mag": "2d927a000c8afc0f4ce4d4bcd8c45282b2d3888d5dbc085890ab4a2e144da8c9",
+    "trial125x65r/routing.json": "bcef004421810fcbe79717ec27eeca1c4a2ce650130d85ec5c7334d6b0803a1a",
+    "trial125x65r/route-summary.json": "fa6af2ad9f453493cc335122c40da74d97a0ac6063d855982a55095637192071",
+    "trial125x65r/verification.json": "4da5dc4d6d21a8b77535b6f11145c775be2b16b431693c20d867a2b21feb1d22",
+    "trial125x65r/geometry-check.json": "e2613b3cb18513eb1ed7a90e6163d73c59445ea852e6f1e86c92cfe2d05d9c63",
+    "trial125x65r/klayout-drc.xml": "015cec0284cc1bb2df207d8124ce3692e9dc1f3fc01ecccf190aab22474d7880",
+    "trial125x65r/pex/phy_pex.spice": "ee74a90df3bf9bd87540dffaa534551a89b7cf249a9c2220b68f6590dcb29d05",
+    "trial125x65r/loaded-vapwr3p3/summary.json": "cd2c2a8adbf9928094d564d5e55a6d63b08c8c6684a16ef70d7df5e9530a9877",
+    "trial125x65r/loaded-vapwr5p0/summary.json": "93b0f4a5ecddab339e488eb075b73225f001034d82c068af0f27f06936e8ceba"
+  },
+  "excluded_trials": {
+    "trial125x65": "Rejected: adjacent PFET well spacing (NW.2a)",
+    "trial120x65r": "Rejected: 30 PP.1 implant minimum-width violations at 3.8 um pitch",
+    "trial120x65r4": "Not selected: shortened buses do not cover every rightmost access stub; stable 125 um trial retained despite matching LVS."
+  },
+  "no_canonical_edits_or_commits": true
+}

@@ -1,0 +1,20 @@
+{
+  "timeout": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "netlist_sha256": "26b1f2b75176492e766b03140b88b991739e38b493d63c646d513f41e35e9a38"
+  },
+  "snapshot": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "netlist_sha256": "79a919661e2a25fa92deec5d802930d82d60082ff65a937f68cfa22b05f56a50"
+  },
+  "combined": {
+    "passed": true,
+    "tests": 44,
+    "returncode": 0,
+    "netlist_sha256": "a154f59a05d1a7e8f2f9c2983ffa6c3bab2e96734dc50ec187fa02ad658a0e8e"
+  }
+}

@@ -1,0 +1,43 @@
+─────────────────────── Static Timing Analysis (Mid-PnR) ───────────────────────
+[22:36:14] VERBOSE  Running 'OpenROAD.STAMidPNR' at                 step.py:1138
+                    'build/clockgate-sta-audit/compact_09-postrepai             
+                    r-replay/step'…                                             
+[22:36:14] WARNING  No libs found for macro gf180_diff_phy at     toolbox.py:289
+                    corner nom_tt_025C_3v30. The module will be                 
+                    black-boxed.                                                
+[22:36:14] VERBOSE  OpenROAD will use 8 threads                  openroad.py:520
+[22:36:14] VERBOSE  Logging subprocess to                           step.py:1338
+                    'build/clockgate-sta-audit/compact_09-postrepai             
+                    r-replay/step/openroad-stamidpnr.log'…                      
+Reading timing models for corner nom_tt_025C_3v30…                              
+Reading timing library for the 'nom_tt_025C_3v30' corner at                     
+'/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt
+_025C_3v30.lib'…                                                                
+Reading timing library for the 'nom_tt_025C_3v30' corner at                     
+'/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib'…  
+Reading OpenROAD database at                                                    
+'/work/physical/runs/compact_09/37-openroad-resizertimingpostcts/tt_um_dvirdc_gf
+180_diff8.odb'…                                                                 
+Reading design constraints file at '/work/physical/signoff.sdc'…                
+[INFO] No information on clock propagation in input SDC file-- propagating all  
+clocks.                                                                         
+AUDIT_CORNER nom_tt_025C_3v30                                                   
+AUDIT_CLOCKS clk                                                                
+AUDIT_CLOCK clk PROPAGATED 1                                                    
+AUDIT_CLK_REGISTER_PINS 598                                                     
+AUDIT_GATE _4355_                                                               
+AUDIT_GATE _4356_                                                               
+AUDIT_GATE _4357_                                                               
+AUDIT_GATE _4358_                                                               
+AUDIT_GATE _4359_                                                               
+AUDIT_GATE _4360_                                                               
+AUDIT_GATE _4361_                                                               
+AUDIT_GATE _4362_                                                               
+AUDIT_GATE _4363_                                                               
+AUDIT_GATE _4364_                                                               
+AUDIT_GATE _4365_                                                               
+AUDIT_GATE _4366_                                                               
+AUDIT_GATE _4367_                                                               
+AUDIT_GATE _4368_                                                               
+AUDIT_ICG_COUNT 14                                                              
+AUDIT_DONE nom_tt_025C_3v30                                                     

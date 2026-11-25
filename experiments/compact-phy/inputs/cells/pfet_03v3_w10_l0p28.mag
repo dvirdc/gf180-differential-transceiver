@@ -1,0 +1,77 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1795634803
+<< checkpaint >>
+rect -2361 -3329 2361 3329
+<< nwell >>
+rect -351 -1319 351 1319
+<< pmos >>
+rect -28 -1000 28 1000
+<< pdiff >>
+rect -159 987 -28 1000
+rect -159 -987 -146 987
+rect -70 -987 -28 987
+rect -159 -1000 -28 -987
+rect 28 987 159 1000
+rect 28 -987 70 987
+rect 146 -987 159 987
+rect 28 -1000 159 -987
+<< pdiffc >>
+rect -146 -987 -70 987
+rect 70 -987 146 987
+<< nsubdiff >>
+rect -327 1193 327 1295
+rect -327 1145 -225 1193
+rect -327 -1145 -314 1145
+rect -238 -1145 -225 1145
+rect 225 1145 327 1193
+rect -327 -1193 -225 -1145
+rect 225 -1145 238 1145
+rect 314 -1145 327 1145
+rect 225 -1193 327 -1145
+rect -327 -1295 327 -1193
+<< nsubdiffcont >>
+rect -314 -1145 -238 1145
+rect 238 -1145 314 1145
+<< polysilicon >>
+rect -51 1158 51 1171
+rect -51 1082 -38 1158
+rect 38 1082 51 1158
+rect -51 1069 51 1082
+rect -28 1000 28 1069
+rect -28 -1069 28 -1000
+rect -51 -1082 51 -1069
+rect -51 -1158 -38 -1082
+rect 38 -1158 51 -1082
+rect -51 -1171 51 -1158
+<< polycontact >>
+rect -38 1082 38 1158
+rect -38 -1158 38 -1082
+<< metal1 >>
+rect -314 1206 314 1282
+rect -314 1145 -238 1206
+rect -53 1082 -38 1158
+rect 38 1082 53 1158
+rect 238 1145 314 1206
+rect -146 987 -70 1002
+rect -146 -1002 -70 -987
+rect 70 987 146 1002
+rect 70 -1002 146 -987
+rect -314 -1206 -238 -1145
+rect -53 -1158 -38 -1082
+rect 38 -1158 53 -1082
+rect 238 -1206 314 -1145
+rect -314 -1282 314 -1206
+<< labels >>
+rlabel pdiffc -108 0 -108 0 0 D
+port 1 nsew
+rlabel pdiffc 108 0 108 0 0 S
+port 2 nsew
+rlabel polycontact 0 1120 0 1120 0 G
+port 3 nsew
+rlabel nsubdiffcont -276 0 -276 0 0 B
+port 4 nsew
+<< properties >>
+string FIXED_BBOX -276 -1244 276 1244
+<< end >>

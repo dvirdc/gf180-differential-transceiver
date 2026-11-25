@@ -1,0 +1,191 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: gf26e compact phy loaded exact-rc loopback, typical_t125_v3.0_b1
+
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          3
+vh                                         3.3
+din                                          3
+boost                                        3
+xphy.vdpwr.t4                          2.99354
+xphy.xrn.p.t1                        0.0515963
+xphy.vdpwr.t3                          2.99676
+xphy.vdpwr.t10                         2.99302
+xphy.xp2.d.t3                         0.591704
+xphy.xbuf_xp.g.t0                      2.97857
+xphy.vdpwr.t9                          2.99727
+xphy.vgnd.t1                         0.0031172
+xphy.xout_xp.g.t2                   0.00311725
+xphy.dout.t1                           2.99297
+xphy.vgnd.t6                        0.00229626
+xphy.xrt.p                            0.564565
+xphy.x3.11                            0.562944
+xphy.vgnd.t2                        8.2417e-06
+xphy.x3.21                          0.00473841
+xphy.xrp2.p                            2.92899
+xphy.xrp.p.t0                          2.94008
+xphy.vgnd.t9                        0.00201584
+xphy.xrn.p.t2                        0.0503566
+xphy.vgnd.t4                        0.00311508
+xphy.xtn_xp.g.t2                    0.00311723
+xphy.xrp.p.t3                          2.93956
+xphy.vdpwr.t17                         2.99805
+xphy.vdpwr.t12                         2.99227
+xphy.xp2.g.t3                          2.00701
+xphy.xp2.d.t1                         0.591704
+xphy.vdpwr.t11                         2.99895
+xphy.vdpwr.t2                          2.99338
+xphy.xtn_xp.g.t0                    0.00311724
+xphy.vdpwr.t1                          2.99702
+xphy.vdpwr.t8                          2.99297
+xphy.xout_xp.g.t3                   0.00311725
+xphy.dout.t0                           2.99297
+xphy.vdpwr.t7                          2.99779
+xphy.xrn2.p                          0.0601257
+xphy.x10.11                          0.0625498
+xphy.vgnd.t19                      4.60238e-05
+xphy.x10.21                            1.39799
+xphy.txn.t2                            1.40041
+xphy.xtn_xp.g.t1                    0.00311723
+xphy.vgnd.t3                        0.00305814
+xphy.xrn.p.t0                        0.0523351
+xphy.x12.11                          0.0547734
+xphy.vgnd.t14                      0.000888353
+xphy.x12.21                            1.39803
+xphy.txn.t0                            1.40047
+xphy.txp.t1                            1.58922
+xphy.x13.11                            1.58438
+xphy.vgnd.t15                      0.000832338
+xphy.x13.21                            1.50094
+xphy.xrc2.p                            1.49609
+xphy.xrn.p.t4                        0.0515963
+xphy.xrp.p.t1                           2.9406
+xphy.vgnd.t8                         0.0031046
+rn                                     1.40132
+xphy.xp2.g.t0                          2.00684
+xphy.vgnd.t11                        0.0014722
+xphy.xbuf_xp.g.t2                      2.97831
+xphy.xout_xp.g.t0                   0.00311725
+xphy.vgnd.t5                        0.00256158
+xphy.xtn_xp.g.t3                    0.00311723
+xphy.xrn.p.t3                        0.0523351
+xphy.vdpwr.t18                          2.9983
+xphy.vdpwr.t14                         2.99238
+xphy.xp2.g.t1                          2.00701
+xphy.xp2.g.t2                          2.00701
+xphy.vdpwr.t13                         2.99869
+xphy.txn.t1                            1.40287
+xphy.x19.11                            1.40772
+xphy.vgnd.t16                       0.00056273
+xphy.x19.21                            1.49124
+xphy.vdpwr.t16                         2.99266
+xphy.xrn.p.t5                        0.0515963
+xphy.xrp.p.t2                          2.94168
+xphy.vdpwr.t15                         2.99676
+xphy.xp2.d.t2                         0.591704
+xphy.xbuf_xp.g.t1                      2.97831
+xphy.vgnd.t7                        0.00283593
+xphy.vdpwr.t0                          2.99076
+xphy.x22.11                            2.98644
+xphy.vgnd.t17                       0.00048371
+xphy.x22.21                            1.50041
+xphy.vdpwr.t6                           2.9931
+xphy.xbuf_xp.g.t3                      2.97831
+xphy.xout_xp.g.t1                   0.00311725
+xphy.vdpwr.t5                          2.99753
+xphy.vgnd.t10                       0.00178718
+xphy.x25.11                            1.49178
+xphy.vgnd.t0                       0.000294002
+xphy.x25.21                         0.00742824
+xphy.x26.11                            2.92657
+xphy.vgnd.t18                      0.000228082
+xphy.x26.21                            1.59409
+xphy.txp.t2                            1.59167
+xphy.x27.11                            2.93764
+xphy.vgnd.t13                       0.00115154
+xphy.x27.21                            1.59407
+xphy.txp.t0                            1.59164
+rp                                     1.59077
+xphy.xp2.d.t0                         0.591535
+xphy.vgnd.t12                       0.00136996
+xphy.xrn.p.n0                        0.0515963
+tp                                     1.59079
+xphy.txp.n0                             1.5908
+tn                                     1.40131
+xphy.txn.n0                             1.4013
+dout                                   2.99297
+xphy.vgnd.n7                        0.00255855
+xphy.vgnd.n8                       0.000828391
+xphy.vgnd.n5                       4.60238e-05
+xphy.vgnd.n2                       0.000254843
+xphy.vgnd.n3                       0.000287163
+xphy.vgnd.n4                       0.000481021
+xphy.vgnd.n1                       0.000509508
+xphy.vgnd.n0                       0.000889322
+xphy.vgnd.n6                         0.0014646
+xphy.vdpwr.n1                          2.99676
+xphy.vdpwr.n6                          2.99779
+xphy.vdpwr.n5                          2.99727
+xphy.vdpwr.n8                          2.99895
+xphy.vdpwr.n7                           2.9983
+xphy.vdpwr.n0                          2.99354
+xphy.vdpwr.n3                           2.9931
+xphy.vdpwr.n4                          2.99323
+xphy.vdpwr.n2                          2.99252
+pp                                     1.59078
+pn                                     1.40132
+vboost#branch                                0
+vin#branch                                   0
+vharness#branch                    -6.5632e-10
+vdd#branch                        -0.000214799
+
+ Reference value :  2.49027e-05
+ Reference value :  5.52097e-05
+ Reference value :  9.00051e-05
+ Reference value :  1.23385e-04
+ Reference value :  1.58735e-04
+ Reference value :  1.91960e-04
+ Reference value :  2.22085e-04
+ Reference value :  2.52460e-04
+ Reference value :  2.82335e-04
+ Reference value :  3.20099e-04
+ Reference value :  3.55035e-04
+ Reference value :  3.85310e-04
+ Reference value :  4.20009e-04
+ Reference value :  4.58410e-04
+ Reference value :  4.88335e-04
+ Reference value :  5.18460e-04
+ Reference value :  5.48485e-04
+ Reference value :  5.81260e-04
+ Reference value :  6.14999e-04
+ Reference value :  6.50061e-04
+ Reference value :  6.84385e-04
+ Reference value :  7.14660e-04
+ Reference value :  7.49499e-04
+ Reference value :  7.87510e-04
+ Reference value :  8.20099e-04
+ Reference value :  8.60011e-04
+ Reference value :  8.98110e-04
+ Reference value :  9.28035e-04
+ Reference value :  9.58660e-04
+ Reference value :  1.00005e-03
+ Reference value :  1.03441e-03
+ Reference value :  1.06991e-03
+ Reference value :  1.11010e-03
+ Reference value :  1.14325e-03
+ Reference value :  1.18001e-03
+ Reference value :  1.21821e-03
+No. of Data Rows : 27879
+ngspice-46 done
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
