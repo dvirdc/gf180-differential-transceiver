@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "version": 2,
+    "flow": "GF180SelectiveClockgateV2Classic"
+  },
+  "DESIGN_NAME": "tt_um_dvirdc_gf180_diff8",
+  "VERILOG_FILES": [
+    "dir::../rtl/diff8_uart_tx.v",
+    "dir::../rtl/diff8_uart_rx.v",
+    "dir::../rtl/diff8_digital.v",
+    "dir::../rtl/tt_um_dvirdc_gf180_diff8.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 625,
+  "VDD_NETS": [
+    "VDPWR"
+  ],
+  "GND_NETS": [
+    "VGND"
+  ],
+  "VDD_PIN": "VDPWR",
+  "GND_PIN": "VGND",
+  "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
+  "CELL_LIBS": {
+    "*_tt_025C_3v30": [
+      "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+    ],
+    "*_ss_125C_3v00": [
+      "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib"
+    ],
+    "*_ff_n40C_3v60": [
+      "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib"
+    ]
+  },
+  "DEFAULT_CORNER": "nom_tt_025C_3v30",
+  "STA_CORNERS": [
+    "nom_tt_025C_3v30",
+    "nom_ss_125C_3v00",
+    "nom_ff_n40C_3v60",
+    "min_tt_025C_3v30",
+    "min_ss_125C_3v00",
+    "min_ff_n40C_3v60",
+    "max_tt_025C_3v30",
+    "max_ss_125C_3v00",
+    "max_ff_n40C_3v60"
+  ],
+  "TIMING_VIOLATION_CORNERS": [
+    "nom_tt_025C_3v30",
+    "nom_ss_125C_3v00",
+    "nom_ff_n40C_3v60",
+    "min_tt_025C_3v30",
+    "min_ss_125C_3v00",
+    "min_ff_n40C_3v60",
+    "max_tt_025C_3v30",
+    "max_ss_125C_3v00",
+    "max_ff_n40C_3v60"
+  ],
+  "MAX_SLEW_VIOLATION_CORNERS": [
+    "nom_tt_025C_3v30",
+    "nom_ss_125C_3v00",
+    "nom_ff_n40C_3v60",
+    "min_tt_025C_3v30",
+    "min_ss_125C_3v00",
+    "min_ff_n40C_3v60",
+    "max_tt_025C_3v30",
+    "max_ss_125C_3v00",
+    "max_ff_n40C_3v60"
+  ],
+  "MAX_CAP_VIOLATION_CORNERS": [
+    "nom_tt_025C_3v30",
+    "nom_ss_125C_3v00",
+    "nom_ff_n40C_3v60",
+    "min_tt_025C_3v30",
+    "min_ss_125C_3v00",
+    "min_ff_n40C_3v60",
+    "max_tt_025C_3v30",
+    "max_ss_125C_3v00",
+    "max_ff_n40C_3v60"
+  ],
+  "RSZ_CORNERS": [
+    "max_tt_025C_3v30",
+    "max_ss_125C_3v00",
+    "max_ff_n40C_3v60"
+  ],
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    346.64,
+    325.36
+  ],
+  "FP_DEF_TEMPLATE": "dir::tt_analog_1x2.def",
+  "PL_TARGET_DENSITY_PCT": 90,
+  "RT_MAX_LAYER": "Metal4",
+  "PDN_MULTILAYER": false,
+  "PDN_HORIZONTAL_LAYER": "Metal3",
+  "PDN_VERTICAL_LAYER": "Metal4",
+  "PDN_VPITCH": 40,
+  "PDN_VOFFSET": 10,
+  "PDN_VWIDTH": 2,
+  "BOTTOM_MARGIN_MULT": 1,
+  "TOP_MARGIN_MULT": 1,
+  "PNR_SDC_FILE": "dir::signoff.sdc",
+  "SIGNOFF_SDC_FILE": "dir::signoff.sdc",
+  "MACROS": {
+    "gf180_diff_phy": {
+      "gds": [
+        "dir::../build/physical/phy/gf180_diff_phy.gds"
+      ],
+      "lef": [
+        "dir::../build/physical/phy/gf180_diff_phy.lef"
+      ],
+      "vh": [
+        "dir::../rtl/gf180_diff_phy_blackbox.v"
+      ],
+      "spice": [
+        "dir::phy_reference.spice"
+      ],
+      "instances": {
+        "phy": {
+          "location": [
+            7.36,
+            7.92
+          ],
+          "orientation": "N"
+        }
+      }
+    }
+  },
+  "PDN_MACRO_CONNECTIONS": [
+    "phy VDPWR VGND VDPWR VGND"
+  ],
+  "MAGICRC": "dir::magicrc",
+  "MAGIC_EXT_USE_GDS": true,
+  "DRT_ANTENNA_REPAIR_ITERS": 3,
+  "RUN_POST_GRT_DESIGN_REPAIR": true,
+  "RUN_POST_GRT_RESIZER_TIMING": true,
+  "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 30,
+  "GRT_DESIGN_REPAIR_MAX_CAP_PCT": 30,
+  "DESIGN_REPAIR_BUFFER_OUTPUT_PORTS": false,
+  "DIODE_ON_PORTS": "none",
+  "EXTRA_SPICE_MODELS": [
+    "dir::phy_reference.spice"
+  ],
+  "FP_MACRO_HORIZONTAL_HALO": 4,
+  "FP_MACRO_VERTICAL_HALO": 4,
+  "GRT_ADJUSTMENT": 0,
+  "GRT_OVERFLOW_ITERS": 200,
+  "RSZ_DONT_TOUCH_RX": "^ua\\[[0-7]\\]$",
+  "SYNTH_ARITH_TREE": false,
+  "OPENROAD_THREADS": 8,
+  "SYNTH_CLOCKGATE_MIN_WIDTH": 8,
+  "CTS_ROOT_BUFFER": "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2",
+  "CTS_CLK_BUFFERS": [
+    "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2"
+  ],
+  "LEFT_MARGIN_MULT": 6,
+  "RIGHT_MARGIN_MULT": 6,
+  "PL_MAX_DISPLACEMENT_Y": 500,
+  "CTS_APPLY_NDR": "none",
+  "DRT_SAVE_DRC_REPORT_ITERS": 5
+}

@@ -1,0 +1,58 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1795644536
+<< checkpaint >>
+rect -2346 -2468 2346 2468
+<< pwell >>
+rect -336 -458 336 458
+<< psubdiff >>
+rect -312 362 312 434
+rect -312 318 -240 362
+rect -312 -318 -299 318
+rect -253 -318 -240 318
+rect 240 318 312 362
+rect -312 -362 -240 -318
+rect 240 -318 253 318
+rect 299 -318 312 318
+rect 240 -362 312 -318
+rect -312 -434 312 -362
+<< psubdiffcont >>
+rect -299 -318 -253 318
+rect 253 -318 299 318
+<< polysilicon >>
+rect -100 209 100 222
+rect -100 163 -87 209
+rect 87 163 100 209
+rect -100 100 100 163
+rect -100 -163 100 -100
+rect -100 -209 -87 -163
+rect 87 -209 100 -163
+rect -100 -222 100 -209
+<< polycontact >>
+rect -87 163 87 209
+rect -87 -209 87 -163
+<< nhighres >>
+rect -100 -100 100 100
+<< metal1 >>
+rect -299 375 299 421
+rect -299 318 -253 375
+rect 253 318 299 375
+rect -98 163 -87 209
+rect 87 163 98 209
+rect -98 -209 -87 -163
+rect 87 -209 98 -163
+rect -299 -375 -253 -318
+rect 253 -375 299 -318
+rect -299 -421 299 -375
+<< labels >>
+rlabel polycontact 0 186 0 186 0 P
+port 1 nsew
+rlabel polycontact 0 -186 0 -186 0 N
+port 2 nsew
+rlabel psubdiffcont -276 0 -276 0 0 B
+port 4 nsew
+<< properties >>
+string FIXED_BBOX -276 -398 276 398
+string MASKHINTS_SBLK -180 -120 180 120
+<< end >>

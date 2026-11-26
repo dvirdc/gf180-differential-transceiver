@@ -1,0 +1,10 @@
+Tag group: 0
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.304336    0.304336 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.368655    0.672991 ^ clkbuf_1_1__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.351070    1.024061 ^ delaybuf_1_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.271415    1.295476 ^ _3965_/Q (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)

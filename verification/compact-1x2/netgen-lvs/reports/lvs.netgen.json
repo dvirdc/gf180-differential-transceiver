@@ -1,0 +1,2835 @@
+[
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3"
+      ], [
+        "1",
+        "2",
+        "3"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__aoi21_1",
+      "gf180mcu_fd_sc_mcu7t5v0__aoi21_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 3],
+         ["pfet_05v0", 3 ]
+       ], [
+         ["nfet_05v0", 3 ],
+         ["pfet_05v0", 3 ]
+       ]
+   ],
+   "nets": [
+    10,
+    10
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDD",
+        "ZN",
+        "VPW",
+        "VNW",
+        "A2",
+        "VSS",
+        "A1",
+        "B"
+      ], [
+        "VDD",
+        "ZN",
+        "VPW",
+        "VNW",
+        "A2",
+        "VSS",
+        "A1",
+        "B"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nand3_1",
+      "gf180mcu_fd_sc_mcu7t5v0__nand3_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 3],
+         ["pfet_05v0", 3 ]
+       ], [
+         ["nfet_05v0", 3 ],
+         ["pfet_05v0", 3 ]
+       ]
+   ],
+   "nets": [
+    10,
+    10
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "A3",
+        "A2",
+        "A1",
+        "ZN"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "A3",
+        "A2",
+        "A1",
+        "ZN"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_1",
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 1],
+         ["pfet_05v0", 1 ]
+       ], [
+         ["nfet_05v0", 1 ],
+         ["pfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__and2_1",
+      "gf180mcu_fd_sc_mcu7t5v0__and2_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 3],
+         ["nfet_05v0", 3 ]
+       ], [
+         ["pfet_05v0", 3 ],
+         ["nfet_05v0", 3 ]
+       ]
+   ],
+   "nets": [
+    9,
+    9
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "A1",
+        "VSS",
+        "A2",
+        "Z",
+        "VPW",
+        "VDD",
+        "VNW"
+      ], [
+        "A1",
+        "VSS",
+        "A2",
+        "Z",
+        "VPW",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__fillcap_4",
+      "gf180mcu_fd_sc_mcu7t5v0__fillcap_4"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 1],
+         ["pfet_05v0", 1 ]
+       ], [
+         ["nfet_05v0", 1 ],
+         ["pfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__aoi211_1",
+      "gf180mcu_fd_sc_mcu7t5v0__aoi211_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 4],
+         ["nfet_05v0", 4 ]
+       ], [
+         ["pfet_05v0", 4 ],
+         ["nfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDD",
+        "VPW",
+        "VNW",
+        "VSS",
+        "A2",
+        "A1",
+        "B",
+        "C",
+        "ZN"
+      ], [
+        "VDD",
+        "VPW",
+        "VNW",
+        "VSS",
+        "A2",
+        "A1",
+        "B",
+        "C",
+        "ZN"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__dffq_1",
+      "gf180mcu_fd_sc_mcu7t5v0__dffq_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 12],
+         ["pfet_05v0", 12 ]
+       ], [
+         ["nfet_05v0", 12 ],
+         ["pfet_05v0", 12 ]
+       ]
+   ],
+   "nets": [
+    19,
+    19
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "VNW",
+        "CLK",
+        "D",
+        "Q",
+        "VSS",
+        "VDD"
+      ], [
+        "VPW",
+        "VNW",
+        "CLK",
+        "D",
+        "Q",
+        "VSS",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2",
+      "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 2],
+         ["nfet_05v0", 2 ]
+       ], [
+         ["pfet_05v0", 2 ],
+         ["nfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    7,
+    7
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "I",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "I",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__buf_1",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 2],
+         ["pfet_05v0", 2 ]
+       ], [
+         ["nfet_05v0", 2 ],
+         ["pfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    7,
+    7
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "I",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "I",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__fillcap_16",
+      "gf180mcu_fd_sc_mcu7t5v0__fillcap_16"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 4],
+         ["nfet_05v0", 4 ]
+       ], [
+         ["pfet_05v0", 4 ],
+         ["nfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__buf_8",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_8"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 2],
+         ["nfet_05v0", 2 ]
+       ], [
+         ["pfet_05v0", 2 ],
+         ["nfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    7,
+    7
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "I",
+        "VSS",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ], [
+        "I",
+        "VSS",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__xor2_1",
+      "gf180mcu_fd_sc_mcu7t5v0__xor2_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 5],
+         ["nfet_05v0", 5 ]
+       ], [
+         ["pfet_05v0", 5 ],
+         ["nfet_05v0", 5 ]
+       ]
+   ],
+   "nets": [
+    11,
+    11
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "A2",
+        "VSS",
+        "A1",
+        "Z",
+        "VDD",
+        "VPW",
+        "VNW"
+      ], [
+        "A2",
+        "VSS",
+        "A1",
+        "Z",
+        "VDD",
+        "VPW",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__and4_1",
+      "gf180mcu_fd_sc_mcu7t5v0__and4_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 5],
+         ["nfet_05v0", 5 ]
+       ], [
+         ["pfet_05v0", 5 ],
+         ["nfet_05v0", 5 ]
+       ]
+   ],
+   "nets": [
+    13,
+    13
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "VDD",
+        "VNW",
+        "A1",
+        "VSS",
+        "A4",
+        "A3",
+        "A2",
+        "Z"
+      ], [
+        "VPW",
+        "VDD",
+        "VNW",
+        "A1",
+        "VSS",
+        "A4",
+        "A3",
+        "A2",
+        "Z"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_1",
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 2],
+         ["nfet_05v0", 2 ]
+       ], [
+         ["pfet_05v0", 2 ],
+         ["nfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    8,
+    8
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "A2",
+        "VPW",
+        "A1",
+        "VDD",
+        "VNW",
+        "ZN"
+      ], [
+        "VSS",
+        "A2",
+        "VPW",
+        "A1",
+        "VDD",
+        "VNW",
+        "ZN"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__or2_1",
+      "gf180mcu_fd_sc_mcu7t5v0__or2_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 3],
+         ["nfet_05v0", 3 ]
+       ], [
+         ["pfet_05v0", 3 ],
+         ["nfet_05v0", 3 ]
+       ]
+   ],
+   "nets": [
+    9,
+    9
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VNW",
+        "A1",
+        "A2",
+        "Z",
+        "VDD"
+      ], [
+        "VSS",
+        "VPW",
+        "VNW",
+        "A1",
+        "A2",
+        "Z",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1",
+      "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 14],
+         ["pfet_05v0", 14 ]
+       ], [
+         ["nfet_05v0", 14 ],
+         ["pfet_05v0", 14 ]
+       ]
+   ],
+   "nets": [
+    20,
+    20
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDD",
+        "RN",
+        "VPW",
+        "VNW",
+        "CLK",
+        "D",
+        "Q",
+        "VSS"
+      ], [
+        "VDD",
+        "RN",
+        "VPW",
+        "VNW",
+        "CLK",
+        "D",
+        "Q",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__oai21_1",
+      "gf180mcu_fd_sc_mcu7t5v0__oai21_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 3],
+         ["pfet_05v0", 3 ]
+       ], [
+         ["nfet_05v0", 3 ],
+         ["pfet_05v0", 3 ]
+       ]
+   ],
+   "nets": [
+    10,
+    10
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "ZN",
+        "VPW",
+        "VNW",
+        "A2",
+        "A1",
+        "B",
+        "VDD",
+        "VSS"
+      ], [
+        "ZN",
+        "VPW",
+        "VNW",
+        "A2",
+        "A1",
+        "B",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__oai211_1",
+      "gf180mcu_fd_sc_mcu7t5v0__oai211_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 4],
+         ["pfet_05v0", 4 ]
+       ], [
+         ["nfet_05v0", 4 ],
+         ["pfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "ZN",
+        "VPW",
+        "VNW",
+        "VDD",
+        "A2",
+        "A1",
+        "B",
+        "C"
+      ], [
+        "VSS",
+        "ZN",
+        "VPW",
+        "VNW",
+        "VDD",
+        "A2",
+        "A1",
+        "B",
+        "C"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nor2_1",
+      "gf180mcu_fd_sc_mcu7t5v0__nor2_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 2],
+         ["nfet_05v0", 2 ]
+       ], [
+         ["pfet_05v0", 2 ],
+         ["nfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    8,
+    8
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDD",
+        "A2",
+        "VSS",
+        "VPW",
+        "A1",
+        "VNW",
+        "ZN"
+      ], [
+        "VDD",
+        "A2",
+        "VSS",
+        "VPW",
+        "A1",
+        "VNW",
+        "ZN"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nand4_1",
+      "gf180mcu_fd_sc_mcu7t5v0__nand4_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 4],
+         ["nfet_05v0", 4 ]
+       ], [
+         ["pfet_05v0", 4 ],
+         ["nfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "A4",
+        "A2",
+        "A3",
+        "A1",
+        "ZN"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "A4",
+        "A2",
+        "A3",
+        "A1",
+        "ZN"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__aoi22_1",
+      "gf180mcu_fd_sc_mcu7t5v0__aoi22_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 4],
+         ["pfet_05v0", 4 ]
+       ], [
+         ["nfet_05v0", 4 ],
+         ["pfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "B2",
+        "VSS",
+        "B1",
+        "A1",
+        "A2",
+        "VDD",
+        "VPW",
+        "ZN",
+        "VNW"
+      ], [
+        "B2",
+        "VSS",
+        "B1",
+        "A1",
+        "A2",
+        "VDD",
+        "VPW",
+        "ZN",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__mux2_2",
+      "gf180mcu_fd_sc_mcu7t5v0__mux2_2"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 6],
+         ["nfet_05v0", 6 ]
+       ], [
+         ["pfet_05v0", 6 ],
+         ["nfet_05v0", 6 ]
+       ]
+   ],
+   "nets": [
+    14,
+    14
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "VNW",
+        "VSS",
+        "S",
+        "VDD",
+        "Z",
+        "I1",
+        "I0"
+      ], [
+        "VPW",
+        "VNW",
+        "VSS",
+        "S",
+        "VDD",
+        "Z",
+        "I1",
+        "I0"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nor3_1",
+      "gf180mcu_fd_sc_mcu7t5v0__nor3_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 3],
+         ["nfet_05v0", 3 ]
+       ], [
+         ["pfet_05v0", 3 ],
+         ["nfet_05v0", 3 ]
+       ]
+   ],
+   "nets": [
+    10,
+    10
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDD",
+        "VSS",
+        "VPW",
+        "VNW",
+        "A3",
+        "A2",
+        "A1",
+        "ZN"
+      ], [
+        "VDD",
+        "VSS",
+        "VPW",
+        "VNW",
+        "A3",
+        "A2",
+        "A1",
+        "ZN"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__dlyc_1",
+      "gf180mcu_fd_sc_mcu7t5v0__dlyc_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 10],
+         ["nfet_05v0", 10 ]
+       ], [
+         ["pfet_05v0", 10 ],
+         ["nfet_05v0", 10 ]
+       ]
+   ],
+   "nets": [
+    19,
+    19
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "VNW",
+        "I",
+        "Z",
+        "VSS",
+        "VDD"
+      ], [
+        "VPW",
+        "VNW",
+        "I",
+        "Z",
+        "VSS",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__fillcap_8",
+      "gf180mcu_fd_sc_mcu7t5v0__fillcap_8"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 2],
+         ["nfet_05v0", 2 ]
+       ], [
+         ["pfet_05v0", 2 ],
+         ["nfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    8,
+    8
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__and3_1",
+      "gf180mcu_fd_sc_mcu7t5v0__and3_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 4],
+         ["nfet_05v0", 4 ]
+       ], [
+         ["pfet_05v0", 4 ],
+         ["nfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    11,
+    11
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "VDD",
+        "VNW",
+        "A1",
+        "VSS",
+        "A3",
+        "A2",
+        "Z"
+      ], [
+        "VPW",
+        "VDD",
+        "VNW",
+        "A1",
+        "VSS",
+        "A3",
+        "A2",
+        "Z"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__oai221_1",
+      "gf180mcu_fd_sc_mcu7t5v0__oai221_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 5],
+         ["pfet_05v0", 5 ]
+       ], [
+         ["nfet_05v0", 5 ],
+         ["pfet_05v0", 5 ]
+       ]
+   ],
+   "nets": [
+    14,
+    14
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "ZN",
+        "VNW",
+        "VSS",
+        "B2",
+        "B1",
+        "C",
+        "A2",
+        "A1",
+        "VDD"
+      ], [
+        "VPW",
+        "ZN",
+        "VNW",
+        "VSS",
+        "B2",
+        "B1",
+        "C",
+        "A2",
+        "A1",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__aoi221_1",
+      "gf180mcu_fd_sc_mcu7t5v0__aoi221_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 5],
+         ["nfet_05v0", 5 ]
+       ], [
+         ["pfet_05v0", 5 ],
+         ["nfet_05v0", 5 ]
+       ]
+   ],
+   "nets": [
+    14,
+    14
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "ZN",
+        "VNW",
+        "B2",
+        "B1",
+        "C",
+        "A2",
+        "A1",
+        "VDD",
+        "VSS"
+      ], [
+        "VPW",
+        "ZN",
+        "VNW",
+        "B2",
+        "B1",
+        "C",
+        "A2",
+        "A1",
+        "VDD",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__xor3_1",
+      "gf180mcu_fd_sc_mcu7t5v0__xor3_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 10],
+         ["pfet_05v0", 10 ]
+       ], [
+         ["nfet_05v0", 10 ],
+         ["pfet_05v0", 10 ]
+       ]
+   ],
+   "nets": [
+    17,
+    17
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "VNW",
+        "VSS",
+        "A2",
+        "A1",
+        "A3",
+        "Z",
+        "VDD"
+      ], [
+        "VPW",
+        "VNW",
+        "VSS",
+        "A2",
+        "A1",
+        "A3",
+        "Z",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1",
+      "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 14],
+         ["pfet_05v0", 14 ]
+       ], [
+         ["nfet_05v0", 14 ],
+         ["pfet_05v0", 14 ]
+       ]
+   ],
+   "nets": [
+    20,
+    20
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDD",
+        "SETN",
+        "VPW",
+        "VNW",
+        "CLK",
+        "D",
+        "Q",
+        "VSS"
+      ], [
+        "VDD",
+        "SETN",
+        "VPW",
+        "VNW",
+        "CLK",
+        "D",
+        "Q",
+        "VSS"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nor4_1",
+      "gf180mcu_fd_sc_mcu7t5v0__nor4_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 4],
+         ["nfet_05v0", 4 ]
+       ], [
+         ["pfet_05v0", 4 ],
+         ["nfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDD",
+        "ZN",
+        "VSS",
+        "VPW",
+        "VNW",
+        "A4",
+        "A3",
+        "A2",
+        "A1"
+      ], [
+        "VDD",
+        "ZN",
+        "VSS",
+        "VPW",
+        "VNW",
+        "A4",
+        "A3",
+        "A2",
+        "A1"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "gf180mcu_fd_sc_mcu7t5v0__icgtp_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 11],
+         ["pfet_05v0", 11 ]
+       ], [
+         ["nfet_05v0", 11 ],
+         ["pfet_05v0", 11 ]
+       ]
+   ],
+   "nets": [
+    19,
+    19
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VDD",
+        "VPW",
+        "VNW",
+        "CLK",
+        "TE",
+        "E",
+        "Q"
+      ], [
+        "VSS",
+        "VDD",
+        "VPW",
+        "VNW",
+        "CLK",
+        "TE",
+        "E",
+        "Q"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__or3_1",
+      "gf180mcu_fd_sc_mcu7t5v0__or3_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 4],
+         ["nfet_05v0", 4 ]
+       ], [
+         ["pfet_05v0", 4 ],
+         ["nfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    11,
+    11
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VNW",
+        "A1",
+        "A3",
+        "A2",
+        "Z",
+        "VDD"
+      ], [
+        "VSS",
+        "VPW",
+        "VNW",
+        "A1",
+        "A3",
+        "A2",
+        "Z",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__and2_4",
+      "gf180mcu_fd_sc_mcu7t5v0__and2_4"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 5],
+         ["pfet_05v0", 3 ]
+       ], [
+         ["nfet_05v0", 5 ],
+         ["pfet_05v0", 3 ]
+       ]
+   ],
+   "nets": [
+    10,
+    10
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "A2",
+        "VSS",
+        "A1",
+        "VDD",
+        "VNW",
+        "Z"
+      ], [
+        "VPW",
+        "A2",
+        "VSS",
+        "A1",
+        "VDD",
+        "VNW",
+        "Z"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__oai31_1",
+      "gf180mcu_fd_sc_mcu7t5v0__oai31_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 4],
+         ["nfet_05v0", 4 ]
+       ], [
+         ["pfet_05v0", 4 ],
+         ["nfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VNW",
+        "ZN",
+        "B",
+        "A1",
+        "A2",
+        "A3",
+        "VDD"
+      ], [
+        "VSS",
+        "VPW",
+        "VNW",
+        "ZN",
+        "B",
+        "A1",
+        "A2",
+        "A3",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__xnor2_1",
+      "gf180mcu_fd_sc_mcu7t5v0__xnor2_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 5],
+         ["nfet_05v0", 5 ]
+       ], [
+         ["pfet_05v0", 5 ],
+         ["nfet_05v0", 5 ]
+       ]
+   ],
+   "nets": [
+    11,
+    11
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VNW",
+        "A2",
+        "A1",
+        "ZN",
+        "VDD"
+      ], [
+        "VSS",
+        "VPW",
+        "VNW",
+        "A2",
+        "A1",
+        "ZN",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__tiel",
+      "gf180mcu_fd_sc_mcu7t5v0__tiel"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 1],
+         ["pfet_05v0", 1 ]
+       ], [
+         ["nfet_05v0", 1 ],
+         ["pfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "ZN",
+        "VPW",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "ZN",
+        "VPW",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__aoi222_1",
+      "gf180mcu_fd_sc_mcu7t5v0__aoi222_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 6],
+         ["pfet_05v0", 6 ]
+       ], [
+         ["nfet_05v0", 6 ],
+         ["pfet_05v0", 6 ]
+       ]
+   ],
+   "nets": [
+    16,
+    16
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "ZN",
+        "VPW",
+        "VNW",
+        "VSS",
+        "C2",
+        "C1",
+        "B1",
+        "B2",
+        "A2",
+        "A1",
+        "VDD"
+      ], [
+        "ZN",
+        "VPW",
+        "VNW",
+        "VSS",
+        "C2",
+        "C1",
+        "B1",
+        "B2",
+        "A2",
+        "A1",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_8",
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_8"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 1],
+         ["nfet_05v0", 1 ]
+       ], [
+         ["pfet_05v0", 1 ],
+         ["nfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nand3_4",
+      "gf180mcu_fd_sc_mcu7t5v0__nand3_4"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 3],
+         ["nfet_05v0", 10 ]
+       ], [
+         ["pfet_05v0", 3 ],
+         ["nfet_05v0", 10 ]
+       ]
+   ],
+   "nets": [
+    14,
+    14
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "VSS",
+        "A2",
+        "A3",
+        "ZN",
+        "A1",
+        "VDD",
+        "VNW"
+      ], [
+        "VPW",
+        "VSS",
+        "A2",
+        "A3",
+        "ZN",
+        "A1",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_3",
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_3"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 1],
+         ["nfet_05v0", 1 ]
+       ], [
+         ["pfet_05v0", 1 ],
+         ["nfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__buf_12",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_12"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 2],
+         ["nfet_05v0", 2 ]
+       ], [
+         ["pfet_05v0", 2 ],
+         ["nfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    7,
+    7
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "I",
+        "VSS",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ], [
+        "I",
+        "VSS",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__buf_2",
+      "gf180mcu_fd_sc_mcu7t5v0__buf_2"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 2],
+         ["nfet_05v0", 2 ]
+       ], [
+         ["pfet_05v0", 2 ],
+         ["nfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    7,
+    7
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "I",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "I",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__tieh",
+      "gf180mcu_fd_sc_mcu7t5v0__tieh"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 1],
+         ["nfet_05v0", 1 ]
+       ], [
+         ["pfet_05v0", 1 ],
+         ["nfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "Z",
+        "VNW"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "Z",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__inv_4",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_4"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 1],
+         ["nfet_05v0", 1 ]
+       ], [
+         ["pfet_05v0", 1 ],
+         ["nfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_2",
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_2"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 1],
+         ["pfet_05v0", 1 ]
+       ], [
+         ["nfet_05v0", 1 ],
+         ["pfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nor2_2",
+      "gf180mcu_fd_sc_mcu7t5v0__nor2_2"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 4],
+         ["nfet_05v0", 2 ]
+       ], [
+         ["pfet_05v0", 4 ],
+         ["nfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    9,
+    9
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "ZN",
+        "VNW",
+        "A2",
+        "A1",
+        "VSS",
+        "VPW",
+        "VDD"
+      ], [
+        "ZN",
+        "VNW",
+        "A2",
+        "A1",
+        "VSS",
+        "VPW",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_4",
+      "gf180mcu_fd_sc_mcu7t5v0__clkinv_4"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 1],
+         ["nfet_05v0", 1 ]
+       ], [
+         ["pfet_05v0", 1 ],
+         ["nfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__or4_1",
+      "gf180mcu_fd_sc_mcu7t5v0__or4_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 5],
+         ["pfet_05v0", 5 ]
+       ], [
+         ["nfet_05v0", 5 ],
+         ["pfet_05v0", 5 ]
+       ]
+   ],
+   "nets": [
+    13,
+    13
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "A1",
+        "A3",
+        "A2",
+        "A4",
+        "Z",
+        "VDD",
+        "VSS",
+        "VPW",
+        "VNW"
+      ], [
+        "A1",
+        "A3",
+        "A2",
+        "A4",
+        "Z",
+        "VDD",
+        "VSS",
+        "VPW",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__oai32_1",
+      "gf180mcu_fd_sc_mcu7t5v0__oai32_1"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 5],
+         ["nfet_05v0", 5 ]
+       ], [
+         ["pfet_05v0", 5 ],
+         ["nfet_05v0", 5 ]
+       ]
+   ],
+   "nets": [
+    14,
+    14
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VNW",
+        "A2",
+        "A3",
+        "A1",
+        "B1",
+        "B2",
+        "VDD",
+        "ZN"
+      ], [
+        "VSS",
+        "VPW",
+        "VNW",
+        "A2",
+        "A3",
+        "A1",
+        "B1",
+        "B2",
+        "VDD",
+        "ZN"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__fillcap_32",
+      "gf180mcu_fd_sc_mcu7t5v0__fillcap_32"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 8],
+         ["nfet_05v0", 8 ]
+       ], [
+         ["pfet_05v0", 8 ],
+         ["nfet_05v0", 8 ]
+       ]
+   ],
+   "nets": [
+    20,
+    20
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__inv_2",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_2"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 1],
+         ["nfet_05v0", 1 ]
+       ], [
+         ["pfet_05v0", 1 ],
+         ["nfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "ZN",
+        "I",
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ], [
+        "ZN",
+        "I",
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__inv_3",
+      "gf180mcu_fd_sc_mcu7t5v0__inv_3"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 1],
+         ["nfet_05v0", 1 ]
+       ], [
+         ["pfet_05v0", 1 ],
+         ["nfet_05v0", 1 ]
+       ]
+   ],
+   "nets": [
+    6,
+    6
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ], [
+        "VSS",
+        "VPW",
+        "VDD",
+        "VNW",
+        "ZN",
+        "I"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__oai22_1",
+      "gf180mcu_fd_sc_mcu7t5v0__oai22_1"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 4],
+         ["pfet_05v0", 4 ]
+       ], [
+         ["nfet_05v0", 4 ],
+         ["pfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "B2",
+        "B1",
+        "A1",
+        "A2",
+        "VDD",
+        "VPW",
+        "ZN",
+        "VNW"
+      ], [
+        "VSS",
+        "B2",
+        "B1",
+        "A1",
+        "A2",
+        "VDD",
+        "VPW",
+        "ZN",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_4",
+      "gf180mcu_fd_sc_mcu7t5v0__nand2_4"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 2],
+         ["nfet_05v0", 8 ]
+       ], [
+         ["pfet_05v0", 2 ],
+         ["nfet_05v0", 8 ]
+       ]
+   ],
+   "nets": [
+    11,
+    11
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPW",
+        "VSS",
+        "VDD",
+        "VNW",
+        "A2",
+        "A1",
+        "ZN"
+      ], [
+        "VPW",
+        "VSS",
+        "VDD",
+        "VNW",
+        "A2",
+        "A1",
+        "ZN"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__and3_4",
+      "gf180mcu_fd_sc_mcu7t5v0__and3_4"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 7],
+         ["pfet_05v0", 4 ]
+       ], [
+         ["nfet_05v0", 7 ],
+         ["pfet_05v0", 4 ]
+       ]
+   ],
+   "nets": [
+    13,
+    13
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDD",
+        "VNW",
+        "VPW",
+        "A3",
+        "VSS",
+        "A2",
+        "A1",
+        "Z"
+      ], [
+        "VDD",
+        "VNW",
+        "VPW",
+        "A3",
+        "VSS",
+        "A2",
+        "A1",
+        "Z"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180_diff_phy",
+      "gf180_diff_phy"
+   ],
+   "devices": [
+       [
+         ["nfet_03v3", 10],
+         ["pfet_03v3", 10],
+         ["ppolyf_u_1k", 9 ]
+       ], [
+         ["nfet_03v3", 10 ],
+         ["pfet_03v3", 10 ],
+         ["ppolyf_u_1k", 9 ]
+       ]
+   ],
+   "nets": [
+    20,
+    20
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VDPWR",
+        "din",
+        "dout",
+        "txp",
+        "txn",
+        "VGND",
+        "boost",
+        "rxp",
+        "rxn"
+      ], [
+        "VDPWR",
+        "din",
+        "dout",
+        "txp",
+        "txn",
+        "VGND",
+        "boost",
+        "rxp",
+        "rxn"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4",
+      "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4"
+   ],
+   "devices": [
+       [
+         ["nfet_05v0", 2],
+         ["pfet_05v0", 2 ]
+       ], [
+         ["nfet_05v0", 2 ],
+         ["pfet_05v0", 2 ]
+       ]
+   ],
+   "nets": [
+    7,
+    7
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VSS",
+        "I",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ], [
+        "VSS",
+        "I",
+        "VPW",
+        "Z",
+        "VDD",
+        "VNW"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "gf180mcu_fd_sc_mcu7t5v0__nor3_2",
+      "gf180mcu_fd_sc_mcu7t5v0__nor3_2"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 6],
+         ["nfet_05v0", 3 ]
+       ], [
+         ["pfet_05v0", 6 ],
+         ["nfet_05v0", 3 ]
+       ]
+   ],
+   "nets": [
+    12,
+    12
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "ZN",
+        "VNW",
+        "VSS",
+        "VPW",
+        "A2",
+        "A3",
+        "A1",
+        "VDD"
+      ], [
+        "ZN",
+        "VNW",
+        "VSS",
+        "VPW",
+        "A2",
+        "A3",
+        "A1",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "tt_um_dvirdc_gf180_diff8",
+      "tt_um_dvirdc_gf180_diff8"
+   ],
+   "devices": [
+       [
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi21_1", 187],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand3_1", 107],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_1", 168],
+         ["gf180mcu_fd_sc_mcu7t5v0__and2_1", 69],
+         ["gf180mcu_fd_sc_mcu7t5v0__fillcap_4", 1],
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi211_1", 73],
+         ["gf180mcu_fd_sc_mcu7t5v0__dffq_1", 161],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkbuf_2", 182],
+         ["gf180mcu_fd_sc_mcu7t5v0__buf_1", 14],
+         ["gf180mcu_fd_sc_mcu7t5v0__fillcap_16", 1],
+         ["gf180mcu_fd_sc_mcu7t5v0__buf_8", 25],
+         ["gf180mcu_fd_sc_mcu7t5v0__xor2_1", 112],
+         ["gf180mcu_fd_sc_mcu7t5v0__and4_1", 54],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand2_1", 235],
+         ["gf180mcu_fd_sc_mcu7t5v0__or2_1", 30],
+         ["gf180mcu_fd_sc_mcu7t5v0__dffrnq_1", 409],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai21_1", 142],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai211_1", 20],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor2_1", 246],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand4_1", 65],
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi22_1", 96],
+         ["gf180mcu_fd_sc_mcu7t5v0__mux2_2", 23],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor3_1", 82],
+         ["gf180mcu_fd_sc_mcu7t5v0__dlyc_1", 17],
+         ["gf180mcu_fd_sc_mcu7t5v0__fillcap_8", 1],
+         ["gf180mcu_fd_sc_mcu7t5v0__and3_1", 39],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai221_1", 21],
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi221_1", 60],
+         ["gf180mcu_fd_sc_mcu7t5v0__xor3_1", 5],
+         ["gf180mcu_fd_sc_mcu7t5v0__dffsnq_1", 28],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor4_1", 45],
+         ["gf180mcu_fd_sc_mcu7t5v0__icgtp_1", 16],
+         ["gf180mcu_fd_sc_mcu7t5v0__or3_1", 6],
+         ["gf180mcu_fd_sc_mcu7t5v0__and2_4", 1],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai31_1", 7],
+         ["gf180mcu_fd_sc_mcu7t5v0__xnor2_1", 30],
+         ["gf180mcu_fd_sc_mcu7t5v0__tiel", 30],
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi222_1", 14],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_8", 6],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand3_4", 2],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_3", 2],
+         ["gf180mcu_fd_sc_mcu7t5v0__buf_12", 5],
+         ["gf180mcu_fd_sc_mcu7t5v0__buf_2", 8],
+         ["gf180mcu_fd_sc_mcu7t5v0__tieh", 2],
+         ["gf180mcu_fd_sc_mcu7t5v0__inv_4", 8],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_2", 5],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor2_2", 2],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_4", 2],
+         ["gf180mcu_fd_sc_mcu7t5v0__or4_1", 7],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai32_1", 9],
+         ["gf180mcu_fd_sc_mcu7t5v0__fillcap_32", 1],
+         ["gf180mcu_fd_sc_mcu7t5v0__inv_2", 10],
+         ["gf180mcu_fd_sc_mcu7t5v0__inv_3", 2],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai22_1", 5],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand2_4", 1],
+         ["gf180mcu_fd_sc_mcu7t5v0__and3_4", 1],
+         ["gf180_diff_phy", 1],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkbuf_4", 2],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor3_2", 1 ]
+       ], [
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi21_1", 187 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand3_1", 107 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_1", 168 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__and2_1", 69 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__fillcap_4", 1 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi211_1", 73 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__dffq_1", 161 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkbuf_2", 182 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__buf_1", 14 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__fillcap_16", 1 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__buf_8", 25 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__xor2_1", 112 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__and4_1", 54 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand2_1", 235 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__or2_1", 30 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__dffrnq_1", 409 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai21_1", 142 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai211_1", 20 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor2_1", 246 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand4_1", 65 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi22_1", 96 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__mux2_2", 23 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor3_1", 82 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__dlyc_1", 17 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__fillcap_8", 1 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__and3_1", 39 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai221_1", 21 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi221_1", 60 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__xor3_1", 5 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__dffsnq_1", 28 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor4_1", 45 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__icgtp_1", 16 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__or3_1", 6 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__and2_4", 1 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai31_1", 7 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__xnor2_1", 30 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__tiel", 30 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__aoi222_1", 14 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_8", 6 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand3_4", 2 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_3", 2 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__buf_12", 5 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__buf_2", 8 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__tieh", 2 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__inv_4", 8 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_2", 5 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor2_2", 2 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkinv_4", 2 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__or4_1", 7 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai32_1", 9 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__fillcap_32", 1 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__inv_2", 10 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__inv_3", 2 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__oai22_1", 5 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nand2_4", 1 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__and3_4", 1 ],
+         ["gf180_diff_phy", 1 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__clkbuf_4", 2 ],
+         ["gf180mcu_fd_sc_mcu7t5v0__nor3_2", 1 ]
+       ]
+   ],
+   "nets": [
+    2912,
+    2912
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "uo_out[0]",
+        "uo_out[2]",
+        "uo_out[4]",
+        "uio_out[0]",
+        "uo_out[3]",
+        "uo_out[5]",
+        "uo_out[6]",
+        "uo_out[1]",
+        "uo_out[7]",
+        "clk",
+        "ui_in[1]",
+        "ui_in[2]",
+        "ui_in[0]",
+        "rst_n",
+        "ena",
+        "ua[2]",
+        "ua[3]",
+        "ua[0]",
+        "ua[1]",
+        "uio_oe[4]",
+        "uio_oe[1]",
+        "uio_oe[3]",
+        "uio_out[7]",
+        "uio_oe[2]",
+        "uio_out[6]",
+        "uio_out[5]",
+        "uio_out[4]",
+        "uio_out[3]",
+        "uio_out[2]",
+        "uio_out[1]",
+        "uio_oe[7]",
+        "uio_oe[6]",
+        "uio_oe[5]",
+        "uio_oe[0]",
+        "VDPWR",
+        "VGND",
+        "ua[4]",
+        "ua[5]",
+        "ua[6]",
+        "ua[7]",
+        "ui_in[3]",
+        "ui_in[4]",
+        "ui_in[5]",
+        "ui_in[6]",
+        "ui_in[7]",
+        "uio_in[0]",
+        "uio_in[1]",
+        "uio_in[2]",
+        "uio_in[3]",
+        "uio_in[4]",
+        "uio_in[5]",
+        "uio_in[6]",
+        "uio_in[7]"
+      ], [
+        "uo_out[0]",
+        "uo_out[2]",
+        "uo_out[4]",
+        "uio_out[0]",
+        "uo_out[3]",
+        "uo_out[5]",
+        "uo_out[6]",
+        "uo_out[1]",
+        "uo_out[7]",
+        "clk",
+        "ui_in[1]",
+        "ui_in[2]",
+        "ui_in[0]",
+        "rst_n",
+        "ena",
+        "ua[2]",
+        "ua[3]",
+        "ua[0]",
+        "ua[1]",
+        "uio_oe[4]",
+        "uio_oe[1]",
+        "uio_oe[3]",
+        "uio_out[7]",
+        "uio_oe[2]",
+        "uio_out[6]",
+        "uio_out[5]",
+        "uio_out[4]",
+        "uio_out[3]",
+        "uio_out[2]",
+        "uio_out[1]",
+        "uio_oe[7]",
+        "uio_oe[6]",
+        "uio_oe[5]",
+        "uio_oe[0]",
+        "VDPWR",
+        "VGND",
+        "ua[4]",
+        "ua[5]",
+        "ua[6]",
+        "ua[7]",
+        "ui_in[3]",
+        "ui_in[4]",
+        "ui_in[5]",
+        "ui_in[6]",
+        "ui_in[7]",
+        "uio_in[0]",
+        "uio_in[1]",
+        "uio_in[2]",
+        "uio_in[3]",
+        "uio_in[4]",
+        "uio_in[5]",
+        "uio_in[6]",
+        "uio_in[7]"
+      ]
+   ]
+  }
+]

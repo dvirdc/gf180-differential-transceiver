@@ -1,0 +1,22 @@
+Pin: balanced_always_icg/CLK
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+ 312.500000  312.500000   clock clk (fall edge)
+   1.185668  313.685669   clock network delay (propagated)
+   0.000000  313.685669   balanced_always_icg/CLK
+             313.685669   open edge arrival time
+
+ 625.000000  625.000000   clock clk (rise edge)
+   1.075709  626.075684   clock network delay (propagated)
+   0.000000  626.075684   balanced_always_icg/CLK
+   0.112919  626.188599   clock reconvergence pessimism
+             626.188599   close edge arrival time
+-----------------------------------------------------------------
+               0.801000   required pulse width (low)
+             312.502960   actual pulse width
+-----------------------------------------------------------------
+             311.701935   slack (MET)
+
+

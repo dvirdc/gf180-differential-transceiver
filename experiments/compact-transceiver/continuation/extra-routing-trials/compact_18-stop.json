@@ -1,0 +1,36 @@
+{
+  "trial": "compact_18",
+  "utc": "2026-11-26T01:40:54.577868+00:00",
+  "outcome": "deliberately_stopped_before_routing_iteration_budget_exhausted",
+  "reason": "Detailed routing is nonconvergent: minimum2655 at iteration16;8334 at iteration42. Preserve evidence and devoteCPU to new area/spreading candidates. No pass or finalDRCfailure inferred.",
+  "container_id": "2373caeba913d7cfe2085d7900e25012aa4c118b94571abf7fb0103d3f385811",
+  "command": [
+    "python3",
+    "tools/gf180_selective_clockgate_v2_flow.py",
+    "--manual-pdk",
+    "--pdk-root",
+    "/pdk",
+    "--pdk",
+    "gf180mcuD",
+    "--scl",
+    "gf180mcu_fd_sc_mcu7t5v0",
+    "--run-tag",
+    "compact_18",
+    "--from",
+    "OpenROAD.CheckAntennas",
+    "physical/compact_18.json"
+  ],
+  "log_sha256_before": "a50fb7d616db3a2940b77448a14da917713cbb0fad4a65a359e47365451253ad",
+  "tail_before": [
+    " Metal4        0                                                                ",
+    "----------------                                                                ",
+    "       32431                                                                    ",
+    "                                                                                ",
+    "                                                                                ",
+    "[INFO DRT-0195] Start 44th optimization iteration.                              ",
+    "    Completing 10% with 7979 violations.                                        ",
+    "    elapsed time = 00:00:00, memory = 754.06 (MB).                              "
+  ],
+  "stop_result": "Flag --time has been deprecated, use --timeout instead\n2373caeba913d7cfe2085d7900e25012aa4c118b94571abf7fb0103d3f385811\n",
+  "log_sha256_after": "18e6c3a329c130c31b0dae1a161064f7f9cc86756009da2e33ee31cfea1d1e5b"
+}

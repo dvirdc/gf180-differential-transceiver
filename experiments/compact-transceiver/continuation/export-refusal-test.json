@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Normal export entry point refuses unfinished routing before creating any candidate; positive 1x2 GDS export remains unavailable.",
+  "command": [
+    "python3",
+    "tools/run_librelane.py",
+    "--precheck-python",
+    "/work/scripts/export_candidate.py",
+    "/work/physical/runs/compact_18",
+    "/work/build/compact-export-refusal-test"
+  ],
+  "returncode": 1,
+  "output": "Export refused: expected one completed detailed-routing result; found 0. No candidate was written.\n",
+  "exporter_sha256": "82b31a067f4152a583d0034be99bbfe60837e6d745a4a6af86d5dc5da8c997b0",
+  "candidate_directory_absent": true
+}

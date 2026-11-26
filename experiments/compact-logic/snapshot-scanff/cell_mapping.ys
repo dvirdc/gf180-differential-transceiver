@@ -1,0 +1,16 @@
+read_verilog experiments/compact-logic/snapshot-scanff/cell_mapping.v
+prep -top gold
+rename gold gold_saved
+design -stash gold
+read_liberty -ignore_miss_func -ignore_miss_dir -ignore_miss_data_latch -ignore_buses /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+read_verilog experiments/compact-logic/snapshot-scanff/cell_mapping.v
+prep -top gate -flatten
+rename gate gate_saved
+design -stash gate
+design -copy-from gold -as gold gold_saved
+design -copy-from gate -as gate gate_saved
+equiv_make gold gate equiv
+hierarchy -top equiv
+equiv_simple
+equiv_induct -seq 2
+equiv_status -assert

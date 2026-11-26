@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "scope": "Exporter regression using copied verified 2x2 raw flow views. This is NOT a compact result, does not qualify current RTL, and leaves the verified checkout unchanged. Positive 1x2 export still cannot be tested without a completed 1x2 GDS.",
+  "command": [
+    "python3",
+    "tools/run_librelane.py",
+    "--precheck-python",
+    "/work/scripts/export_candidate.py",
+    "/work/build/export-validation-2x2-source",
+    "/work/build/export-validation-2x2-candidate"
+  ],
+  "exporter_sha256": "82b31a067f4152a583d0034be99bbfe60837e6d745a4a6af86d5dc5da8c997b0",
+  "source_hashes": {
+    "/Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver/physical/runs/integrated_02/resolved.json": "b0be0fcf602e70051b7791192307a4a07f88bc487bb81e99789189434ce71815",
+    "/Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver/physical/runs/integrated_02/06-openroad-detailedrouting/state_out.json": "a05314376de5ac1c05859353e76913bf2f50e3e9e93b85488f97f022b2dbed42",
+    "/Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver/physical/runs/integrated_02/20-klayout-streamout/tt_um_dvirdc_gf180_diff8.klayout.gds": "b5fa485ac9d4c6b008b85deeb80de418161eb8c7dd91f236070cbede76767b4f",
+    "/Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver/physical/runs/integrated_02/22-magic-writelef/tt_um_dvirdc_gf180_diff8.lef": "d6f8c598adc4a287b04b6b58a8449f3c267d4e31dea381fed054de7e61dfc059",
+    "/Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver/physical/runs/integrated_02/14-openroad-fillinsertion/tt_um_dvirdc_gf180_diff8.pnl.v": "e0e19ca0e480aff1568807212bd57235e4cf6cbd6f3b24f4bdb1c1acf5dc75ff"
+  },
+  "export": {
+    "run": "/work/build/export-validation-2x2-source",
+    "frame": "2x2",
+    "frame_sha256": "fd309cb25df7de3a4cef0b57f9858274663291ce6d449fd48ef1b57d129ed3ba",
+    "paths_converted": 24974,
+    "conductive_geometry_unchanged": true,
+    "changed_layers": [],
+    "target": "ttgf26e",
+    "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+    "source_gds_sha256": "b5fa485ac9d4c6b008b85deeb80de418161eb8c7dd91f236070cbede76767b4f",
+    "xor_layers": [
+      "0/0",
+      "34/0",
+      "204/0",
+      "31/0",
+      "22/0",
+      "30/0",
+      "33/0",
+      "30/10",
+      "110/5",
+      "49/0",
+      "62/0",
+      "21/0",
+      "32/0",
+      "42/0",
+      "46/0",
+      "40/0",
+      "36/0",
+      "38/0",
+      "35/0",
+      "34/10",
+      "112/1",
+      "55/0",
+      "63/63",
+      "21/10",
+      "204/10",
+      "42/10",
+      "115/5",
+      "46/10"
+    ],
+    "pin_rectangles_checked": 85,
+    "gds_sha256": "718a979ae2b573568105116077277fcf80d240246d5e45b228b7a1ffa19054da"
+  }
+}

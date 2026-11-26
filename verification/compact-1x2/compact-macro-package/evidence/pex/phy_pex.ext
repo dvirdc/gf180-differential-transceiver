@@ -1,0 +1,345 @@
+timestamp 0
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters ppolyf_u_1k l=r_length w=r_width
+port "txn" 6 23800 11940 24200 12060 m3
+port "txp" 5 23800 12140 24200 12260 m3
+port "rxp" 3 23800 11540 24200 11660 m3
+port "rxn" 4 23800 11340 24200 11460 m3
+port "dout" 7 23800 10140 24200 10260 m3
+port "boost" 2 23800 9140 24200 9260 m3
+port "din" 1 23800 9740 24200 9860 m3
+port "VDPWR" 8 23800 12340 24200 12460 m3
+port "VGND" 9 23800 12540 24200 12660 m3
+node "a_23300_2900#" 20000 0 23300 2900 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0 0 0 0 0 0 0 0 0
+node "a_22500_1700#" 32000 0 22500 1700 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1280000 13200 0 0 0 0 0 0 0 0 0 0
+node "a_21700_1700#" 32000 0 21700 1700 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1280000 13200 0 0 0 0 0 0 0 0 0 0
+node "a_20900_2900#" 20000 0 20900 2900 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0 0 0 0 0 0 0 0 0
+node "a_20100_2900#" 20000 0 20100 2900 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0 0 0 0 0 0 0 0 0
+node "a_19300_4800#" 1000 0 19300 4800 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "xrc2.P" 169 9278.44 18500 4678 p 0 0 0 0 0 0 0 0 0 0 0 0 97600 2576 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68272 2544 1051840 26936 5788800 96960 974400 16480 0 0
+equiv "xrc2.P" "xrbp.N"
+equiv "xrc2.P" "xrbn.N"
+equiv "xrc2.P" "xrc1.N"
+node "a_18500_4800#" 1000 0 18500 4800 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0 0 0 0 0 0 0
+node "txn" 129 6046.22 23800 11940 m3 0 0 0 0 0 0 0 0 0 0 0 0 73200 1932 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51204 1908 487840 12676 5788800 96960 974400 16480 0 0
+equiv "txn" "xrn.N"
+equiv "txn" "xrbn.P"
+equiv "txn" "xrn2.N"
+node "a_17700_1700#" 32000 0 17700 1700 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1280000 13200 0 0 0 0 0 0 0 0 0 0
+node "txp" 129 6128.99 23800 12140 m3 0 0 0 0 0 0 0 0 0 0 0 0 73200 1932 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51204 1908 503840 13076 5788800 96960 974400 16480 0 0
+equiv "txp" "xrp.N"
+equiv "txp" "xrbp.P"
+equiv "txp" "xrp2.N"
+node "a_16100_1700#" 32000 0 16100 1700 hires 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1280000 13200 0 0 0 0 0 0 0 0 0 0
+node "rxp" 230 6432.74 23800 11540 m3 0 0 0 0 0 0 0 0 0 0 0 0 996800 10368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21312 1050 347840 8856 5788800 96960 974400 16480 0 0
+equiv "rxp" "xn2.G"
+node "xrt.P" 781 11114.8 13900 2500 ndif 0 0 0 0 844800 19552 0 0 0 0 0 0 24400 644 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 463740 20140 450080 11732 5788800 96960 974400 16480 0 0
+equiv "xrt.P" "xn1.S"
+equiv "xrt.P" "xn2.S"
+node "xp2.G" 814 9237.51 13612 2500 ndif 0 0 0 0 422400 9776 211200 4976 0 0 0 0 1033600 11136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 378896 16804 1108480 28352 5788800 96960 974400 16480 0 0
+equiv "xp2.G" "xn1.D"
+equiv "xp2.G" "xp1.G"
+equiv "xp2.G" "xp1.D"
+node "rxn" 230 6162.48 23800 11340 m3 0 0 0 0 0 0 0 0 0 0 0 0 996800 10368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21312 1050 331840 8456 5788800 96960 974400 16480 0 0
+equiv "rxn" "xn1.G"
+node "xrn2.P" 454 16837 12228 3700 ndif 0 0 0 0 314400 5062 628800 9862 0 0 0 0 24400 644 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 565516 15372 1266080 32132 5788800 96960 974400 16480 0 0
+equiv "xrn2.P" "xtn_xn.S"
+equiv "xrn2.P" "xtn_xp.S"
+node "xrp2.P" 453 8993.89 10628 3700 ndif 0 0 0 0 314400 5062 628800 9862 0 0 0 0 24400 644 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 565516 15372 1218080 30932 5788800 96960 974400 16480 0 0
+equiv "xrp2.P" "xtp_xn.S"
+equiv "xrp2.P" "xtp_xp.S"
+node "dout" 198 5641.76 23800 10140 m3 0 0 0 0 104800 1862 262000 4262 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 214048 5936 444800 11440 5788800 96960 974400 16480 0 0
+equiv "dout" "xout_xn.D"
+equiv "dout" "xout_xp.D"
+node "xout_xp.G" 683 9313.75 7241 4500 ndif 0 0 0 0 104800 1862 262000 4262 0 0 0 0 213872 7560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 246912 7408 1174400 30000 5788800 96960 974400 16480 0 0
+equiv "xout_xp.G" "xbuf_xn.D"
+equiv "xout_xp.G" "xbuf_xp.D"
+equiv "xout_xp.G" "xout_xn.G"
+node "xbuf_xp.G" 683 9072.66 5641 4500 ndif 0 0 0 0 104800 1862 262000 4262 0 0 0 0 213872 7560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 246912 7408 1174400 30000 5788800 96960 974400 16480 0 0
+equiv "xbuf_xp.G" "xis_xn.D"
+equiv "xbuf_xp.G" "xis_xp.D"
+equiv "xbuf_xp.G" "xbuf_xn.G"
+node "xp2.D" 1083 10685.8 5749 4329 p 0 0 0 0 422400 9776 211200 4976 0 0 0 0 213872 7560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 369136 16176 1174400 30000 5788800 96960 974400 16480 0 0
+equiv "xp2.D" "xis_xn.G"
+equiv "xp2.D" "xis_xp.G"
+equiv "xp2.D" "xn2.D"
+node "xtn_xp.G" 1565 7247.11 4041 4500 ndif 0 0 0 0 104800 1862 262000 4262 0 0 0 0 594672 21160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 246912 7408 902400 23200 5788800 96960 974400 16480 0 0
+equiv "xtn_xp.G" "xib_xn.D"
+equiv "xtn_xp.G" "xib_xp.D"
+equiv "xtn_xp.G" "xtp_xp.G"
+node "boost" 1282 9916.59 23800 9140 m3 0 0 0 0 0 0 0 0 0 0 0 0 539744 19120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65728 2944 1059200 27120 5788800 96960 974400 16480 0 0
+equiv "boost" "xib_xn.G"
+equiv "boost" "xib_xp.G"
+equiv "boost" "xtp_xn.G"
+equiv "boost" "xtn_xn.G"
+node "xrp.P" 631 9346.71 2441 4500 ndif 0 0 0 0 419200 6924 890800 14124 0 0 0 0 24400 644 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 779564 21308 1294880 33172 5788800 96960 974400 16480 0 0
+equiv "xrp.P" "xi1_xn.D"
+equiv "xrp.P" "xi1_xp.D"
+equiv "xrp.P" "xtp_xn.D"
+equiv "xrp.P" "xtp_xp.D"
+node "xrn.P" 1134 13174.3 841 4500 ndif 0 0 0 0 419200 6924 890800 14124 0 0 0 0 238272 8204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 812428 22780 2152480 54932 5788800 96960 974400 16480 0 0
+equiv "xrn.P" "xi0_xn.D"
+equiv "xrn.P" "xi0_xp.D"
+equiv "xrn.P" "xi1_xn.G"
+equiv "xrn.P" "xi1_xp.G"
+equiv "xrn.P" "xtn_xn.D"
+equiv "xrn.P" "xtn_xp.D"
+node "din" 526 7302.4 23800 9740 m3 0 0 0 0 0 0 0 0 0 0 0 0 213872 7560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32864 1472 665600 16960 5788800 96960 974400 16480 0 0
+equiv "din" "xi0_xn.G"
+equiv "din" "xi0_xp.G"
+node "VDPWR" 72354 126206 23800 12340 m3 22694208 78720 0 0 7048320 145920 1994400 35524 0 0 0 0 24400 644 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6318044 181668 6488480 165252 5788800 96960 974400 16480 0 0
+equiv "VDPWR" "xi0_xp.B"
+equiv "VDPWR" "xi0_xp.S"
+equiv "VDPWR" "xi1_xp.B"
+equiv "VDPWR" "xi1_xp.S"
+equiv "VDPWR" "xib_xp.B"
+equiv "VDPWR" "xib_xp.S"
+equiv "VDPWR" "xis_xp.B"
+equiv "VDPWR" "xis_xp.S"
+equiv "VDPWR" "xbuf_xp.B"
+equiv "VDPWR" "xbuf_xp.S"
+equiv "VDPWR" "xout_xp.B"
+equiv "VDPWR" "xout_xp.S"
+equiv "VDPWR" "xtp_xp.B"
+equiv "VDPWR" "xtn_xp.B"
+equiv "VDPWR" "xp1.B"
+equiv "VDPWR" "xp1.S"
+equiv "VDPWR" "xp2.B"
+equiv "VDPWR" "xp2.S"
+equiv "VDPWR" "xrc1.P"
+substrate "VGND" 14586 0 23800 12540 m3 0 0 0 0 628800 11172 12251328 310448 0 0 0 0 48800 1288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8650664 323140 12002560 304384 5788800 96960 974400 16480 0 0
+equiv "VGND" "xi0_xn.B"
+equiv "VGND" "xi0_xn.S"
+equiv "VGND" "xi1_xn.B"
+equiv "VGND" "xi1_xn.S"
+equiv "VGND" "xib_xn.B"
+equiv "VGND" "xib_xn.S"
+equiv "VGND" "xis_xn.B"
+equiv "VGND" "xis_xn.S"
+equiv "VGND" "xbuf_xn.B"
+equiv "VGND" "xbuf_xn.S"
+equiv "VGND" "xout_xn.B"
+equiv "VGND" "xout_xn.S"
+equiv "VGND" "xtp_xn.B"
+equiv "VGND" "xtn_xn.B"
+equiv "VGND" "xn1.B"
+equiv "VGND" "xn2.B"
+equiv "VGND" "xrp.B"
+equiv "VGND" "xrn.B"
+equiv "VGND" "xrbp.B"
+equiv "VGND" "xrbn.B"
+equiv "VGND" "xrc1.B"
+equiv "VGND" "xrc2.B"
+equiv "VGND" "xrc2.N"
+equiv "VGND" "xrp2.B"
+equiv "VGND" "xrn2.B"
+equiv "VGND" "xrt.B"
+equiv "VGND" "xrt.N"
+cap "xrn.P" "xrp.P" 702.384
+cap "xrn.P" "xtn_xp.G" 645.389
+cap "xrn.P" "xbuf_xp.G" 705.428
+cap "xrn.P" "xp2.D" 655.653
+cap "xrn.P" "xout_xp.G" 547.955
+cap "xrn.P" "xrp2.P" 661.302
+cap "xrn.P" "xrn2.P" 4657.21
+cap "xrn.P" "xp2.G" 569.223
+cap "xrn.P" "xrt.P" 597.67
+cap "xrn.P" "xrc2.P" 502.267
+cap "xrn.P" "boost" 406.075
+cap "xrn.P" "din" 21783.6
+cap "xrn.P" "dout" 21769.1
+cap "xrn.P" "rxn" 482.175
+cap "xrn.P" "rxp" 496.345
+cap "xrn.P" "txn" 1108.7
+cap "xrn.P" "txp" 616.689
+cap "xrn.P" "VDPWR" 8768.78
+cap "xrp.P" "xtn_xp.G" 605.321
+cap "xrp.P" "xbuf_xp.G" 550.459
+cap "xrp.P" "xp2.D" 601.149
+cap "xrp.P" "xout_xp.G" 521.351
+cap "xrp.P" "xrp2.P" 4270.06
+cap "xrp.P" "xrn2.P" 274.659
+cap "xrp.P" "xp2.G" 21942.5
+cap "xrp.P" "xrt.P" 448.67
+cap "xrp.P" "xrc2.P" 353.477
+cap "xrp.P" "boost" 232.394
+cap "xrp.P" "din" 153.121
+cap "xrp.P" "dout" 21672.2
+cap "xrp.P" "rxn" 472.835
+cap "xrp.P" "rxp" 509.222
+cap "xrp.P" "txn" 512.614
+cap "xrp.P" "txp" 1008.2
+cap "xrp.P" "VDPWR" 7113.13
+cap "xtn_xp.G" "xbuf_xp.G" 429.286
+cap "xtn_xp.G" "xp2.D" 346.305
+cap "xtn_xp.G" "xout_xp.G" 342.539
+cap "xtn_xp.G" "xrp2.P" 642.187
+cap "xtn_xp.G" "xrn2.P" 671.466
+cap "xtn_xp.G" "xp2.G" 347.793
+cap "xtn_xp.G" "xrt.P" 236.109
+cap "xtn_xp.G" "xrc2.P" 21550.6
+cap "xtn_xp.G" "boost" 21696.9
+cap "xtn_xp.G" "din" 544.167
+cap "xtn_xp.G" "dout" 233.709
+cap "xtn_xp.G" "rxn" 291.949
+cap "xtn_xp.G" "rxp" 288.724
+cap "xtn_xp.G" "txn" 253.64
+cap "xtn_xp.G" "txp" 255.456
+cap "xtn_xp.G" "VDPWR" 5303.58
+cap "xbuf_xp.G" "xp2.D" 21823.7
+cap "xbuf_xp.G" "xout_xp.G" 21893.9
+cap "xbuf_xp.G" "xrp2.P" 371.049
+cap "xbuf_xp.G" "xrn2.P" 403.778
+cap "xbuf_xp.G" "xp2.G" 349.792
+cap "xbuf_xp.G" "xrt.P" 265.353
+cap "xbuf_xp.G" "xrc2.P" 399.044
+cap "xbuf_xp.G" "boost" 214.17
+cap "xbuf_xp.G" "din" 211.417
+cap "xbuf_xp.G" "dout" 342.579
+cap "xbuf_xp.G" "rxn" 301.83
+cap "xbuf_xp.G" "rxp" 297.559
+cap "xbuf_xp.G" "txn" 344.29
+cap "xbuf_xp.G" "txp" 340.989
+cap "xbuf_xp.G" "VDPWR" 5548.63
+cap "xp2.D" "xout_xp.G" 353.238
+cap "xp2.D" "xrp2.P" 371.381
+cap "xp2.D" "xrn2.P" 404.261
+cap "xp2.D" "xp2.G" 22109.1
+cap "xp2.D" "xrt.P" 1483.59
+cap "xp2.D" "xrc2.P" 457.42
+cap "xp2.D" "boost" 216.319
+cap "xp2.D" "din" 212.331
+cap "xp2.D" "dout" 340.427
+cap "xp2.D" "rxn" 320.859
+cap "xp2.D" "rxp" 908.117
+cap "xp2.D" "txn" 340
+cap "xp2.D" "txp" 468.448
+cap "xp2.D" "VDPWR" 5491.19
+cap "xout_xp.G" "xrp2.P" 371.426
+cap "xout_xp.G" "xrn2.P" 403.778
+cap "xout_xp.G" "xp2.G" 344.413
+cap "xout_xp.G" "xrt.P" 267.34
+cap "xout_xp.G" "xrc2.P" 394.755
+cap "xout_xp.G" "boost" 210.994
+cap "xout_xp.G" "din" 211.241
+cap "xout_xp.G" "dout" 576.868
+cap "xout_xp.G" "rxn" 21599.1
+cap "xout_xp.G" "rxp" 301.369
+cap "xout_xp.G" "txn" 344.992
+cap "xout_xp.G" "txp" 341.311
+cap "xout_xp.G" "VDPWR" 5618.52
+cap "xrp2.P" "xrn2.P" 21765.5
+cap "xrp2.P" "xp2.G" 373.236
+cap "xrp2.P" "xrt.P" 268.437
+cap "xrp2.P" "xrc2.P" 387.72
+cap "xrp2.P" "boost" 21936
+cap "xrp2.P" "din" 432.093
+cap "xrp2.P" "dout" 289.41
+cap "xrp2.P" "rxn" 317.639
+cap "xrp2.P" "rxp" 317.712
+cap "xrp2.P" "txn" 270.358
+cap "xrp2.P" "txp" 997.523
+cap "xrp2.P" "VDPWR" 3892.24
+cap "xrn2.P" "xp2.G" 623.768
+cap "xrn2.P" "xrt.P" 338.074
+cap "xrn2.P" "xrc2.P" 294.282
+cap "xrn2.P" "boost" 700.964
+cap "xrn2.P" "din" 450.033
+cap "xrn2.P" "dout" 268.47
+cap "xrn2.P" "rxn" 341.176
+cap "xrn2.P" "rxp" 339.35
+cap "xrn2.P" "txn" 951.668
+cap "xrn2.P" "txp" 503.061
+cap "xrn2.P" "VDPWR" 4034.12
+cap "xp2.G" "xrt.P" 1504.05
+cap "xp2.G" "xrc2.P" 461.008
+cap "xp2.G" "boost" 212.1
+cap "xp2.G" "din" 214.15
+cap "xp2.G" "dout" 345.666
+cap "xp2.G" "rxn" 918.956
+cap "xp2.G" "rxp" 346.221
+cap "xp2.G" "txn" 362.105
+cap "xp2.G" "txp" 359.348
+cap "xp2.G" "VDPWR" 7368.06
+cap "xrt.P" "xrc2.P" 283.793
+cap "xrt.P" "boost" 123.998
+cap "xrt.P" "din" 114.45
+cap "xrt.P" "dout" 227.759
+cap "xrt.P" "rxn" 711.374
+cap "xrt.P" "rxp" 22013.7
+cap "xrt.P" "txn" 21701.6
+cap "xrt.P" "txp" 382.754
+cap "xrt.P" "VDPWR" 1545.48
+cap "xrc2.P" "boost" 116.783
+cap "xrc2.P" "din" 21807.3
+cap "xrc2.P" "dout" 353.76
+cap "xrc2.P" "rxn" 339.615
+cap "xrc2.P" "rxp" 338.788
+cap "xrc2.P" "txn" 862.206
+cap "xrc2.P" "txp" 584.975
+cap "xrc2.P" "VDPWR" 917.35
+cap "boost" "din" 272.037
+cap "boost" "dout" 104.052
+cap "boost" "rxn" 157.694
+cap "boost" "rxp" 178.909
+cap "boost" "txn" 118.51
+cap "boost" "txp" 157.829
+cap "boost" "VDPWR" 3166.92
+cap "din" "dout" 298.989
+cap "din" "rxn" 157.7
+cap "din" "rxp" 157.107
+cap "din" "txn" 230.192
+cap "din" "txp" 228.735
+cap "din" "VDPWR" 2255.72
+cap "dout" "rxn" 282.624
+cap "dout" "rxp" 282.321
+cap "dout" "txn" 341.006
+cap "dout" "txp" 351.796
+cap "dout" "VDPWR" 3259.88
+cap "rxn" "rxp" 21484.3
+cap "rxn" "txn" 221.462
+cap "rxn" "txp" 216.868
+cap "rxn" "VDPWR" 1368.4
+cap "rxp" "txn" 225.684
+cap "rxp" "txp" 218.423
+cap "rxp" "VDPWR" 1225.92
+cap "txn" "txp" 21601.2
+cap "txn" "VDPWR" 1606.01
+cap "txp" "VDPWR" 22783.4
+device rsubckt ppolyf_u_1k 23300 2900 23301 2901 l=4000 w=200 "VGND" "a_23300_2900#" 0 0 "xrt.P" 200 24400,644 "VGND" 200 24400,644
+device rsubckt ppolyf_u_1k 22500 1700 22501 1701 l=6400 w=200 "VGND" "a_22500_1700#" 0 0 "xrn2.P" 200 24400,644 "txn" 200 24400,644
+device rsubckt ppolyf_u_1k 21700 1700 21701 1701 l=6400 w=200 "VGND" "a_21700_1700#" 0 0 "xrp2.P" 200 24400,644 "txp" 200 24400,644
+device rsubckt ppolyf_u_1k 20900 2900 20901 2901 l=4000 w=200 "VGND" "a_20900_2900#" 0 0 "xrc2.P" 200 24400,644 "VGND" 200 24400,644
+device rsubckt ppolyf_u_1k 20100 2900 20101 2901 l=4000 w=200 "VGND" "a_20100_2900#" 0 0 "VDPWR" 200 24400,644 "xrc2.P" 200 24400,644
+device rsubckt ppolyf_u_1k 19300 4800 19301 4801 l=200 w=200 "VGND" "a_19300_4800#" 0 0 "txn" 200 24400,644 "xrc2.P" 200 24400,644
+device rsubckt ppolyf_u_1k 18500 4800 18501 4801 l=200 w=200 "VGND" "a_18500_4800#" 0 0 "txp" 200 24400,644 "xrc2.P" 200 24400,644
+device rsubckt ppolyf_u_1k 17700 1700 17701 1701 l=6400 w=200 "VGND" "a_17700_1700#" 0 0 "xrn.P" 200 24400,644 "txn" 200 24400,644
+device msubckt pfet_03v3 16900 3700 16901 3701 l=200 w=2400 "VDPWR" "xp2.G" 400 0 "xp2.D" 2400 211200,4976 "VDPWR" 2400 211200,4976
+device rsubckt ppolyf_u_1k 16100 1700 16101 1701 l=6400 w=200 "VGND" "a_16100_1700#" 0 0 "xrp.P" 200 24400,644 "txp" 200 24400,644
+device msubckt pfet_03v3 15300 3700 15301 3701 l=200 w=2400 "VDPWR" "xp2.G" 400 0 "xp2.G" 2400 211200,4976 "VDPWR" 2400 211200,4976
+device msubckt nfet_03v3 14500 2500 14501 2501 l=200 w=4800 "VGND" "rxp" 400 0 "xp2.D" 4800 422400,9776 "xrt.P" 4800 422400,9776
+device msubckt nfet_03v3 13700 2500 13701 2501 l=200 w=4800 "VGND" "rxn" 400 0 "xp2.G" 4800 422400,9776 "xrt.P" 4800 422400,9776
+device msubckt pfet_03v3 12972 2500 12973 2501 l=56 w=4800 "VDPWR" "xtn_xp.G" 112 0 "xrn.P" 4800 628800,9862 "xrn2.P" 4800 628800,9862
+device msubckt nfet_03v3 12172 3700 12173 3701 l=56 w=2400 "VGND" "boost" 112 0 "xrn.P" 2400 314400,5062 "xrn2.P" 2400 314400,5062
+device msubckt pfet_03v3 11372 2500 11373 2501 l=56 w=4800 "VDPWR" "xtn_xp.G" 112 0 "xrp.P" 4800 628800,9862 "xrp2.P" 4800 628800,9862
+device msubckt nfet_03v3 10572 3700 10573 3701 l=56 w=2400 "VGND" "boost" 112 0 "xrp.P" 2400 314400,5062 "xrp2.P" 2400 314400,5062
+device msubckt pfet_03v3 9772 3900 9773 3901 l=56 w=2000 "VDPWR" "xout_xp.G" 112 0 "dout" 2000 262000,4262 "VDPWR" 2000 262000,4262
+device msubckt nfet_03v3 8972 4500 8973 4501 l=56 w=800 "VGND" "xout_xp.G" 112 0 "dout" 800 104800,1862 "VGND" 800 104800,1862
+device msubckt pfet_03v3 8172 3900 8173 3901 l=56 w=2000 "VDPWR" "xbuf_xp.G" 112 0 "xout_xp.G" 2000 262000,4262 "VDPWR" 2000 262000,4262
+device msubckt nfet_03v3 7372 4500 7373 4501 l=56 w=800 "VGND" "xbuf_xp.G" 112 0 "xout_xp.G" 800 104800,1862 "VGND" 800 104800,1862
+device msubckt pfet_03v3 6572 3900 6573 3901 l=56 w=2000 "VDPWR" "xp2.D" 112 0 "xbuf_xp.G" 2000 262000,4262 "VDPWR" 2000 262000,4262
+device msubckt nfet_03v3 5772 4500 5773 4501 l=56 w=800 "VGND" "xp2.D" 112 0 "xbuf_xp.G" 800 104800,1862 "VGND" 800 104800,1862
+device msubckt pfet_03v3 4972 3900 4973 3901 l=56 w=2000 "VDPWR" "boost" 112 0 "xtn_xp.G" 2000 262000,4262 "VDPWR" 2000 262000,4262
+device msubckt nfet_03v3 4172 4500 4173 4501 l=56 w=800 "VGND" "boost" 112 0 "xtn_xp.G" 800 104800,1862 "VGND" 800 104800,1862
+device msubckt pfet_03v3 3372 3900 3373 3901 l=56 w=2000 "VDPWR" "xrn.P" 112 0 "xrp.P" 2000 262000,4262 "VDPWR" 2000 262000,4262
+device msubckt nfet_03v3 2572 4500 2573 4501 l=56 w=800 "VGND" "xrn.P" 112 0 "xrp.P" 800 104800,1862 "VGND" 800 104800,1862
+device msubckt pfet_03v3 1772 3900 1773 3901 l=56 w=2000 "VDPWR" "din" 112 0 "xrn.P" 2000 262000,4262 "VDPWR" 2000 262000,4262
+device msubckt nfet_03v3 972 4500 973 4501 l=56 w=800 "VGND" "din" 112 0 "xrn.P" 800 104800,1862 "VGND" 800 104800,1862

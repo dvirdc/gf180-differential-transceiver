@@ -1,0 +1,1097 @@
+{
+  "exact_pinned_STA_step_replay": true,
+  "inputs_unchanged_during_audit": true,
+  "hashed_input_count": 22,
+  "corner_count": 9,
+  "corners": {
+    "max_ff_n40C_3v60": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 311.999878,
+      "worst_ICG_setup_slack_ns": 614.306396,
+      "worst_ICG_hold_slack_ns": 2.41578,
+      "worst_data_slacks_ns": [
+        0.091588,
+        515.907898
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 617.613647,
+          "hold_slack_ns": 2.560754,
+          "pulse_slack_ns": 312.072205
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 617.194458,
+          "hold_slack_ns": 2.759648,
+          "pulse_slack_ns": 312.072205
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 614.306396,
+          "hold_slack_ns": 3.807976,
+          "pulse_slack_ns": 312.047119
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 614.783997,
+          "hold_slack_ns": 2.735295,
+          "pulse_slack_ns": 312.04718
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 615.666931,
+          "hold_slack_ns": 3.648385,
+          "pulse_slack_ns": 312.03299
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 616.87085,
+          "hold_slack_ns": 2.41578,
+          "pulse_slack_ns": 312.04715
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 616.412842,
+          "hold_slack_ns": 2.816921,
+          "pulse_slack_ns": 312.04715
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 616.896667,
+          "hold_slack_ns": 2.54775,
+          "pulse_slack_ns": 312.04718
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 616.907898,
+          "hold_slack_ns": 2.471068,
+          "pulse_slack_ns": 312.04715
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 617.393616,
+          "hold_slack_ns": 4.877507,
+          "pulse_slack_ns": 312.072205
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 617.488464,
+          "hold_slack_ns": 2.605359,
+          "pulse_slack_ns": 312.072235
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 617.759216,
+          "hold_slack_ns": 2.913597,
+          "pulse_slack_ns": 312.072205
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 618.034607,
+          "hold_slack_ns": 2.419419,
+          "pulse_slack_ns": 312.008148
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 617.245911,
+          "hold_slack_ns": 4.406379,
+          "pulse_slack_ns": 312.042297
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 617.594971,
+          "hold_slack_ns": 2.791873,
+          "pulse_slack_ns": 312.072174
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 312.042297
+        }
+      ]
+    },
+    "max_ss_125C_3v00": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 310.522827,
+      "worst_ICG_setup_slack_ns": 589.278076,
+      "worst_ICG_hold_slack_ns": 8.646998,
+      "worst_data_slacks_ns": [
+        1.061772,
+        494.75354
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 600.886597,
+          "hold_slack_ns": 9.179593,
+          "pulse_slack_ns": 311.048859
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 599.359192,
+          "hold_slack_ns": 9.993487,
+          "pulse_slack_ns": 311.048889
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 589.278076,
+          "hold_slack_ns": 12.779081,
+          "pulse_slack_ns": 310.962463
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 590.885742,
+          "hold_slack_ns": 9.440901,
+          "pulse_slack_ns": 310.962433
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 593.637268,
+          "hold_slack_ns": 12.547134,
+          "pulse_slack_ns": 310.904572
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 598.036926,
+          "hold_slack_ns": 8.646998,
+          "pulse_slack_ns": 310.962463
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 596.35675,
+          "hold_slack_ns": 9.827305,
+          "pulse_slack_ns": 310.962463
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 598.257019,
+          "hold_slack_ns": 8.968368,
+          "pulse_slack_ns": 310.962494
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 598.276978,
+          "hold_slack_ns": 8.76514,
+          "pulse_slack_ns": 310.962494
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 601.075745,
+          "hold_slack_ns": 15.889135,
+          "pulse_slack_ns": 311.04892
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 600.678162,
+          "hold_slack_ns": 9.316485,
+          "pulse_slack_ns": 311.048889
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 601.836731,
+          "hold_slack_ns": 10.498026,
+          "pulse_slack_ns": 311.048859
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 602.711304,
+          "hold_slack_ns": 9.095384,
+          "pulse_slack_ns": 310.820892
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 598.832581,
+          "hold_slack_ns": 14.954605,
+          "pulse_slack_ns": 310.928558
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 600.444641,
+          "hold_slack_ns": 9.818927,
+          "pulse_slack_ns": 311.04892
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 310.928589
+        }
+      ]
+    },
+    "max_tt_025C_3v30": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 311.591064,
+      "worst_ICG_setup_slack_ns": 606.759583,
+      "worst_ICG_hold_slack_ns": 4.289898,
+      "worst_data_slacks_ns": [
+        0.375686,
+        509.520264
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 612.59906,
+          "hold_slack_ns": 4.561679,
+          "pulse_slack_ns": 311.754761
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 611.862,
+          "hold_slack_ns": 4.93524,
+          "pulse_slack_ns": 311.754791
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 606.759583,
+          "hold_slack_ns": 6.534213,
+          "pulse_slack_ns": 311.710724
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 607.567383,
+          "hold_slack_ns": 4.762599,
+          "pulse_slack_ns": 311.710693
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 609.029358,
+          "hold_slack_ns": 6.335084,
+          "pulse_slack_ns": 311.686005
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 611.24292,
+          "hold_slack_ns": 4.289898,
+          "pulse_slack_ns": 311.710724
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 610.406433,
+          "hold_slack_ns": 4.941869,
+          "pulse_slack_ns": 311.710724
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 611.318665,
+          "hold_slack_ns": 4.488649,
+          "pulse_slack_ns": 311.710754
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 611.333496,
+          "hold_slack_ns": 4.375726,
+          "pulse_slack_ns": 311.710754
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 612.427795,
+          "hold_slack_ns": 8.243814,
+          "pulse_slack_ns": 311.754822
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 612.461975,
+          "hold_slack_ns": 4.632303,
+          "pulse_slack_ns": 311.754791
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 612.939453,
+          "hold_slack_ns": 5.190305,
+          "pulse_slack_ns": 311.754822
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 613.404907,
+          "hold_slack_ns": 4.400186,
+          "pulse_slack_ns": 311.63916
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 611.70105,
+          "hold_slack_ns": 7.602381,
+          "pulse_slack_ns": 311.701935
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 612.460449,
+          "hold_slack_ns": 4.914695,
+          "pulse_slack_ns": 311.754822
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 311.701935
+        }
+      ]
+    },
+    "min_ff_n40C_3v60": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 312.010071,
+      "worst_ICG_setup_slack_ns": 615.986328,
+      "worst_ICG_hold_slack_ns": 2.197774,
+      "worst_data_slacks_ns": [
+        0.105105,
+        516.788879
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 618.190613,
+          "hold_slack_ns": 2.375745,
+          "pulse_slack_ns": 312.063477
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 617.761658,
+          "hold_slack_ns": 2.581852,
+          "pulse_slack_ns": 312.063477
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 615.986328,
+          "hold_slack_ns": 3.280383,
+          "pulse_slack_ns": 312.042145
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 616.368408,
+          "hold_slack_ns": 2.411982,
+          "pulse_slack_ns": 312.042206
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 617.010193,
+          "hold_slack_ns": 3.230213,
+          "pulse_slack_ns": 312.030273
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 617.610596,
+          "hold_slack_ns": 2.197774,
+          "pulse_slack_ns": 312.042175
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 617.269043,
+          "hold_slack_ns": 2.540637,
+          "pulse_slack_ns": 312.042206
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 617.655518,
+          "hold_slack_ns": 2.336056,
+          "pulse_slack_ns": 312.042206
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 617.666748,
+          "hold_slack_ns": 2.259191,
+          "pulse_slack_ns": 312.042175
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 618.25647,
+          "hold_slack_ns": 4.3241,
+          "pulse_slack_ns": 312.063507
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 618.243469,
+          "hold_slack_ns": 2.43151,
+          "pulse_slack_ns": 312.063507
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 618.475403,
+          "hold_slack_ns": 2.698179,
+          "pulse_slack_ns": 312.063477
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 618.72522,
+          "hold_slack_ns": 2.329861,
+          "pulse_slack_ns": 312.014496
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 618.080261,
+          "hold_slack_ns": 3.921547,
+          "pulse_slack_ns": 312.039459
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 618.235779,
+          "hold_slack_ns": 2.52291,
+          "pulse_slack_ns": 312.063477
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 312.039612
+        }
+      ]
+    },
+    "min_ss_125C_3v00": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 310.569824,
+      "worst_ICG_setup_slack_ns": 594.87262,
+      "worst_ICG_hold_slack_ns": 7.961312,
+      "worst_data_slacks_ns": [
+        1.103551,
+        497.664093
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 602.70166,
+          "hold_slack_ns": 8.633398,
+          "pulse_slack_ns": 311.011292
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 601.131714,
+          "hold_slack_ns": 9.410496,
+          "pulse_slack_ns": 311.011292
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 594.87262,
+          "hold_slack_ns": 11.196865,
+          "pulse_slack_ns": 310.937805
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 596.141907,
+          "hold_slack_ns": 8.466887,
+          "pulse_slack_ns": 310.937805
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 598.102905,
+          "hold_slack_ns": 11.257338,
+          "pulse_slack_ns": 310.890137
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 600.324524,
+          "hold_slack_ns": 7.961312,
+          "pulse_slack_ns": 310.937866
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 599.059509,
+          "hold_slack_ns": 8.99706,
+          "pulse_slack_ns": 310.937805
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 600.601562,
+          "hold_slack_ns": 8.331369,
+          "pulse_slack_ns": 310.937805
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 600.623718,
+          "hold_slack_ns": 8.126376,
+          "pulse_slack_ns": 310.937836
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 603.719788,
+          "hold_slack_ns": 14.235817,
+          "pulse_slack_ns": 311.011322
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 602.938171,
+          "hold_slack_ns": 8.782338,
+          "pulse_slack_ns": 311.011322
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 603.924988,
+          "hold_slack_ns": 9.81399,
+          "pulse_slack_ns": 311.011322
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 604.863159,
+          "hold_slack_ns": 8.804318,
+          "pulse_slack_ns": 310.836823
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 601.668274,
+          "hold_slack_ns": 13.450883,
+          "pulse_slack_ns": 310.916077
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 602.509949,
+          "hold_slack_ns": 9.00312,
+          "pulse_slack_ns": 311.011322
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 310.916595
+        }
+      ]
+    },
+    "min_tt_025C_3v30": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 311.609344,
+      "worst_ICG_setup_slack_ns": 609.626404,
+      "worst_ICG_hold_slack_ns": 3.929845,
+      "worst_data_slacks_ns": [
+        0.398116,
+        511.028778
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 613.556396,
+          "hold_slack_ns": 4.259881,
+          "pulse_slack_ns": 311.7388
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 612.799316,
+          "hold_slack_ns": 4.624841,
+          "pulse_slack_ns": 311.7388
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 609.626404,
+          "hold_slack_ns": 5.67834,
+          "pulse_slack_ns": 311.701355
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 610.269226,
+          "hold_slack_ns": 4.239683,
+          "pulse_slack_ns": 311.701355
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 611.324341,
+          "hold_slack_ns": 5.645799,
+          "pulse_slack_ns": 311.680847
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 612.444153,
+          "hold_slack_ns": 3.929845,
+          "pulse_slack_ns": 311.701355
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 611.822571,
+          "hold_slack_ns": 4.49227,
+          "pulse_slack_ns": 311.701355
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 612.550537,
+          "hold_slack_ns": 4.145414,
+          "pulse_slack_ns": 311.701355
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 612.565613,
+          "hold_slack_ns": 4.031892,
+          "pulse_slack_ns": 311.701324
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 613.842041,
+          "hold_slack_ns": 7.344836,
+          "pulse_slack_ns": 311.738831
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 613.654602,
+          "hold_slack_ns": 4.347981,
+          "pulse_slack_ns": 311.738831
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 614.121155,
+          "hold_slack_ns": 4.831678,
+          "pulse_slack_ns": 311.738831
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 614.543823,
+          "hold_slack_ns": 4.255181,
+          "pulse_slack_ns": 311.65036
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 613.146057,
+          "hold_slack_ns": 6.803587,
+          "pulse_slack_ns": 311.696686
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 613.540588,
+          "hold_slack_ns": 4.477314,
+          "pulse_slack_ns": 311.738831
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 311.69696
+        }
+      ]
+    },
+    "nom_ff_n40C_3v60": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 312.005737,
+      "worst_ICG_setup_slack_ns": 615.22583,
+      "worst_ICG_hold_slack_ns": 2.296215,
+      "worst_data_slacks_ns": [
+        0.099146,
+        516.388794
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 617.931091,
+          "hold_slack_ns": 2.460524,
+          "pulse_slack_ns": 312.067444
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 617.506104,
+          "hold_slack_ns": 2.662432,
+          "pulse_slack_ns": 312.067444
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 615.22583,
+          "hold_slack_ns": 3.52093,
+          "pulse_slack_ns": 312.044434
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 615.652344,
+          "hold_slack_ns": 2.559558,
+          "pulse_slack_ns": 312.044373
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 616.402161,
+          "hold_slack_ns": 3.421819,
+          "pulse_slack_ns": 312.031464
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 617.275208,
+          "hold_slack_ns": 2.296215,
+          "pulse_slack_ns": 312.044434
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 616.879883,
+          "hold_slack_ns": 2.664824,
+          "pulse_slack_ns": 312.044434
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 617.311157,
+          "hold_slack_ns": 2.431853,
+          "pulse_slack_ns": 312.044373
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 617.322205,
+          "hold_slack_ns": 2.355078,
+          "pulse_slack_ns": 312.044373
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 617.866943,
+          "hold_slack_ns": 4.575795,
+          "pulse_slack_ns": 312.067413
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 617.912842,
+          "hold_slack_ns": 2.509791,
+          "pulse_slack_ns": 312.067413
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 618.154053,
+          "hold_slack_ns": 2.795341,
+          "pulse_slack_ns": 312.067413
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 618.415588,
+          "hold_slack_ns": 2.370384,
+          "pulse_slack_ns": 312.011475
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 617.702576,
+          "hold_slack_ns": 4.140846,
+          "pulse_slack_ns": 312.040863
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 617.944336,
+          "hold_slack_ns": 2.645496,
+          "pulse_slack_ns": 312.067413
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 312.040863
+        }
+      ]
+    },
+    "nom_ss_125C_3v00": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 310.548431,
+      "worst_ICG_setup_slack_ns": 592.342468,
+      "worst_ICG_hold_slack_ns": 8.270845,
+      "worst_data_slacks_ns": [
+        1.08653,
+        496.335663
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 601.875671,
+          "hold_slack_ns": 8.890474,
+          "pulse_slack_ns": 311.028442
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 600.327454,
+          "hold_slack_ns": 9.674365,
+          "pulse_slack_ns": 311.028412
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 592.342468,
+          "hold_slack_ns": 11.916734,
+          "pulse_slack_ns": 310.949005
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 593.759644,
+          "hold_slack_ns": 8.912839,
+          "pulse_slack_ns": 310.949005
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 596.07605,
+          "hold_slack_ns": 11.847973,
+          "pulse_slack_ns": 310.896667
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 599.289124,
+          "hold_slack_ns": 8.270845,
+          "pulse_slack_ns": 310.949005
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 597.833252,
+          "hold_slack_ns": 9.374187,
+          "pulse_slack_ns": 310.949005
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 599.539429,
+          "hold_slack_ns": 8.619477,
+          "pulse_slack_ns": 310.949005
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 599.559998,
+          "hold_slack_ns": 8.415005,
+          "pulse_slack_ns": 310.949005
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 602.530701,
+          "hold_slack_ns": 14.986594,
+          "pulse_slack_ns": 311.028442
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 601.915405,
+          "hold_slack_ns": 9.023352,
+          "pulse_slack_ns": 311.028412
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 603.031128,
+          "hold_slack_ns": 10.122555,
+          "pulse_slack_ns": 311.028442
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 603.903076,
+          "hold_slack_ns": 8.948286,
+          "pulse_slack_ns": 310.829376
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 600.384338,
+          "hold_slack_ns": 14.132786,
+          "pulse_slack_ns": 310.921753
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 601.571106,
+          "hold_slack_ns": 9.374917,
+          "pulse_slack_ns": 311.028412
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 310.922089
+        }
+      ]
+    },
+    "nom_tt_025C_3v30": {
+      "ICGs": 16,
+      "all_TE_explicit_zero": true,
+      "always_ICG_E_native_tied_high": true,
+      "clock_actual_is_propagated": true,
+      "clocked_FFs": 598,
+      "all_ICG_CLK_Q_edges_traced": true,
+      "dynamic_ICG_enable_checks": 15,
+      "constant_enabled_ICG_setup_hold_inapplicable": 1,
+      "all_ICG_pulse_checks_present": true,
+      "FF_pulse_check_count": 1196,
+      "FF_pulse_pin_count": 598,
+      "targeted_ICG_pulse_check_count": 16,
+      "worst_pulse_slack_ns": 311.601135,
+      "worst_ICG_setup_slack_ns": 608.328003,
+      "worst_ICG_hold_slack_ns": 4.092417,
+      "worst_data_slacks_ns": [
+        0.388276,
+        510.342773
+      ],
+      "clockgate_or_pulse_violations": 0,
+      "no_clock_warning": false,
+      "gate_results": [
+        {
+          "gate": "_3961_",
+          "setup_slack_ns": 613.123962,
+          "hold_slack_ns": 4.396437,
+          "pulse_slack_ns": 311.746094
+        },
+        {
+          "gate": "_3962_",
+          "setup_slack_ns": 612.374939,
+          "hold_slack_ns": 4.765433,
+          "pulse_slack_ns": 311.746063
+        },
+        {
+          "gate": "_3963_",
+          "setup_slack_ns": 608.328003,
+          "hold_slack_ns": 6.066793,
+          "pulse_slack_ns": 311.705627
+        },
+        {
+          "gate": "_3964_",
+          "setup_slack_ns": 609.045898,
+          "hold_slack_ns": 4.47835,
+          "pulse_slack_ns": 311.705597
+        },
+        {
+          "gate": "_3965_",
+          "setup_slack_ns": 610.282104,
+          "hold_slack_ns": 5.961094,
+          "pulse_slack_ns": 311.683228
+        },
+        {
+          "gate": "_3966_",
+          "setup_slack_ns": 611.898865,
+          "hold_slack_ns": 4.092417,
+          "pulse_slack_ns": 311.705627
+        },
+        {
+          "gate": "_3967_",
+          "setup_slack_ns": 611.17511,
+          "hold_slack_ns": 4.694853,
+          "pulse_slack_ns": 311.705597
+        },
+        {
+          "gate": "_3968_",
+          "setup_slack_ns": 611.990784,
+          "hold_slack_ns": 4.300608,
+          "pulse_slack_ns": 311.705597
+        },
+        {
+          "gate": "_3969_",
+          "setup_slack_ns": 612.005493,
+          "hold_slack_ns": 4.187199,
+          "pulse_slack_ns": 311.705597
+        },
+        {
+          "gate": "_3970_",
+          "setup_slack_ns": 613.204041,
+          "hold_slack_ns": 7.752897,
+          "pulse_slack_ns": 311.746094
+        },
+        {
+          "gate": "_3971_",
+          "setup_slack_ns": 613.114319,
+          "hold_slack_ns": 4.475672,
+          "pulse_slack_ns": 311.746063
+        },
+        {
+          "gate": "_3972_",
+          "setup_slack_ns": 613.592224,
+          "hold_slack_ns": 4.993422,
+          "pulse_slack_ns": 311.746094
+        },
+        {
+          "gate": "_3973_",
+          "setup_slack_ns": 614.03418,
+          "hold_slack_ns": 4.320698,
+          "pulse_slack_ns": 311.645538
+        },
+        {
+          "gate": "_3974_",
+          "setup_slack_ns": 612.489807,
+          "hold_slack_ns": 7.165615,
+          "pulse_slack_ns": 311.699219
+        },
+        {
+          "gate": "_3975_",
+          "setup_slack_ns": 613.048645,
+          "hold_slack_ns": 4.677058,
+          "pulse_slack_ns": 311.746063
+        },
+        {
+          "gate": "balanced_always_icg",
+          "setup_slack_ns": null,
+          "hold_slack_ns": null,
+          "pulse_slack_ns": 311.699371
+        }
+      ]
+    }
+  }
+}

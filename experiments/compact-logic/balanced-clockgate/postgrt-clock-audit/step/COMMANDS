@@ -1,0 +1,1 @@
+openroad -exit -threads 4 -no_splash -metrics /work/build/clockgate-sta-audit/compact_23b-postgrt-replay/step/or_metrics_out.json /work/build/clockgate-sta-audit/compact_23b-postgrt-replay/audit-wrapper.tcl

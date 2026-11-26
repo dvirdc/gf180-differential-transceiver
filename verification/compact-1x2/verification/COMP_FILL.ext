@@ -1,0 +1,59 @@
+timestamp 1624259500
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use COMP_fill_cell COMP_fill_cell_15 1 0 6900 0 1 9460
+use COMP_fill_cell COMP_fill_cell_14 1 0 8500 0 1 9780
+use COMP_fill_cell COMP_fill_cell_13 1 0 10100 0 1 10100
+use COMP_fill_cell COMP_fill_cell_12 1 0 11700 0 1 10420
+use COMP_fill_cell COMP_fill_cell_11[0:1:7680][0:0:0] 1 0 13300 0 1 10740
+use COMP_fill_cell COMP_fill_cell_10[0:1:7680][0:0:0] 1 0 7220 0 1 11060
+use COMP_fill_cell COMP_fill_cell_9[0:2:7680][0:0:0] 1 0 8820 0 1 11380
+use COMP_fill_cell COMP_fill_cell_8[0:2:7680][0:0:0] 1 0 10420 0 1 11700
+use COMP_fill_cell COMP_fill_cell_7[0:1:7680][0:0:0] 1 0 12020 0 1 12020
+use COMP_fill_cell COMP_fill_cell_6[0:2:7680][0:0:0] 1 0 5940 0 1 12340
+use COMP_fill_cell COMP_fill_cell_5[0:2:7680][0:0:0] 1 0 7540 0 1 12660
+use COMP_fill_cell COMP_fill_cell_4[0:2:7680][0:0:0] 1 0 9140 0 1 12980
+use COMP_fill_cell COMP_fill_cell_3[0:2:7680][0:0:0] 1 0 10740 0 1 13300
+use COMP_fill_cell COMP_fill_cell_2[0:1:7680][0:0:0] 1 0 12340 0 1 13620
+use COMP_fill_cell COMP_fill_cell_1[0:2:7680][0:0:0] 1 0 6260 0 1 13940
+use COMP_fill_cell COMP_fill_cell_0[0:2:7680][0:0:0] 1 0 7860 0 1 14260
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "COMP_fill_cell_0[2]/VSUBS" "COMP_fill_cell_0[1]/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "COMP_fill_cell_0[1]/VSUBS" "COMP_fill_cell_0[0]/VSUBS"
+merge "COMP_fill_cell_0[0]/VSUBS" "COMP_fill_cell_1[2]/VSUBS"
+merge "COMP_fill_cell_1[2]/VSUBS" "COMP_fill_cell_1[1]/VSUBS"
+merge "COMP_fill_cell_1[1]/VSUBS" "COMP_fill_cell_1[0]/VSUBS"
+merge "COMP_fill_cell_1[0]/VSUBS" "COMP_fill_cell_2[1]/VSUBS"
+merge "COMP_fill_cell_2[1]/VSUBS" "COMP_fill_cell_2[0]/VSUBS"
+merge "COMP_fill_cell_2[0]/VSUBS" "COMP_fill_cell_3[2]/VSUBS"
+merge "COMP_fill_cell_3[2]/VSUBS" "COMP_fill_cell_3[1]/VSUBS"
+merge "COMP_fill_cell_3[1]/VSUBS" "COMP_fill_cell_3[0]/VSUBS"
+merge "COMP_fill_cell_3[0]/VSUBS" "COMP_fill_cell_4[2]/VSUBS"
+merge "COMP_fill_cell_4[2]/VSUBS" "COMP_fill_cell_4[1]/VSUBS"
+merge "COMP_fill_cell_4[1]/VSUBS" "COMP_fill_cell_4[0]/VSUBS"
+merge "COMP_fill_cell_4[0]/VSUBS" "COMP_fill_cell_5[2]/VSUBS"
+merge "COMP_fill_cell_5[2]/VSUBS" "COMP_fill_cell_5[1]/VSUBS"
+merge "COMP_fill_cell_5[1]/VSUBS" "COMP_fill_cell_5[0]/VSUBS"
+merge "COMP_fill_cell_5[0]/VSUBS" "COMP_fill_cell_6[2]/VSUBS"
+merge "COMP_fill_cell_6[2]/VSUBS" "COMP_fill_cell_6[1]/VSUBS"
+merge "COMP_fill_cell_6[1]/VSUBS" "COMP_fill_cell_6[0]/VSUBS"
+merge "COMP_fill_cell_6[0]/VSUBS" "COMP_fill_cell_7[1]/VSUBS"
+merge "COMP_fill_cell_7[1]/VSUBS" "COMP_fill_cell_7[0]/VSUBS"
+merge "COMP_fill_cell_7[0]/VSUBS" "COMP_fill_cell_8[2]/VSUBS"
+merge "COMP_fill_cell_8[2]/VSUBS" "COMP_fill_cell_8[1]/VSUBS"
+merge "COMP_fill_cell_8[1]/VSUBS" "COMP_fill_cell_8[0]/VSUBS"
+merge "COMP_fill_cell_8[0]/VSUBS" "COMP_fill_cell_9[2]/VSUBS"
+merge "COMP_fill_cell_9[2]/VSUBS" "COMP_fill_cell_9[1]/VSUBS"
+merge "COMP_fill_cell_9[1]/VSUBS" "COMP_fill_cell_9[0]/VSUBS"
+merge "COMP_fill_cell_9[0]/VSUBS" "COMP_fill_cell_10[1]/VSUBS"
+merge "COMP_fill_cell_10[1]/VSUBS" "COMP_fill_cell_10[0]/VSUBS"
+merge "COMP_fill_cell_10[0]/VSUBS" "COMP_fill_cell_11[1]/VSUBS"
+merge "COMP_fill_cell_11[1]/VSUBS" "COMP_fill_cell_11[0]/VSUBS"
+merge "COMP_fill_cell_11[0]/VSUBS" "COMP_fill_cell_12/VSUBS"
+merge "COMP_fill_cell_12/VSUBS" "COMP_fill_cell_13/VSUBS"
+merge "COMP_fill_cell_13/VSUBS" "COMP_fill_cell_14/VSUBS"
+merge "COMP_fill_cell_14/VSUBS" "COMP_fill_cell_15/VSUBS"
+merge "COMP_fill_cell_15/VSUBS" "VSUBS"

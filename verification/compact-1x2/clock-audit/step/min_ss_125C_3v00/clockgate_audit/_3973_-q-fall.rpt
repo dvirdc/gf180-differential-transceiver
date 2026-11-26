@@ -1,0 +1,11 @@
+Tag group: 0
+      Delay        Time   Description
+-----------------------------------------------------------------
+ 312.500000  312.500000   clock clk (fall edge)
+   0.000000  312.500000   clock source latency
+   0.000000  312.500000 v clk (in)
+   0.800981  313.300995 v clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.041428  314.342407 v clkbuf_1_0__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.829392  316.171814 v delaybuf_3_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.159833  317.331635 v delaybuf_2_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.724242  318.055878 v _3973_/Q (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)

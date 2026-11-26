@@ -1,0 +1,16 @@
+{
+  "run": "compact_26",
+  "scope": "Synthesis-only isolated source, not selected and no physical result",
+  "baseline_current_synthesis_area_um2": 83639.3152,
+  "synthesis_area_um2": 84161.7728,
+  "area_delta_um2": 522.4576,
+  "whole_controller_equivalence_points_proved": 809,
+  "whole_controller_equivalence_points_unproven": 0,
+  "equivalence_limit": "Both gold and gate use identical async2sync normalization; sampled sequential equivalence, not asynchronous glitch behavior",
+  "mapped_regression_run": false,
+  "physical_run": false,
+  "source_sha256": "79db2443d4f5b1cc0cacf9fea91b75c79d0a16ea3565bf50d65d10cd0cd6548e",
+  "netlist_sha256": "467710186f0dedac9921b482d9ff3f70bbaa8218abd1bf8f4b2c3f36e34860c5",
+  "config_sha256": "b6e488efcf9ce8f2fe717105574e789ffb9fc1d4cb188749a3cec0a85fb58187",
+  "judgment": "Area increases; no clear synthesis-level fanout win; retain as candidate only if physical reroute otherwise justified."
+}

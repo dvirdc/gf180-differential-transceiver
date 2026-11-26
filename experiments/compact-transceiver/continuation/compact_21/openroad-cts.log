@@ -1,0 +1,680 @@
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib'…
+Reading timing models for corner max_tt_025C_3v30…
+Reading timing library for the 'max_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+Reading timing library for the 'max_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib'…
+Reading timing models for corner min_ff_n40C_3v60…
+Reading timing library for the 'min_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+Reading timing library for the 'min_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib'…
+Reading timing models for corner nom_ss_125C_3v00…
+Reading timing library for the 'nom_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00 already exists.
+Reading timing library for the 'nom_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib line 17, library gf180mcu_fd_io__ss_125C_2v97 already exists.
+Reading timing models for corner nom_tt_025C_3v30…
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30 already exists.
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib line 17, library gf180mcu_fd_io__tt_025C_3v30 already exists.
+Reading timing models for corner max_ff_n40C_3v60…
+Reading timing library for the 'max_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60 already exists.
+Reading timing library for the 'max_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib line 17, library gf180mcu_fd_io__ff_n40C_3v63 already exists.
+Reading timing models for corner min_ss_125C_3v00…
+Reading timing library for the 'min_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00 already exists.
+Reading timing library for the 'min_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib line 17, library gf180mcu_fd_io__ss_125C_2v97 already exists.
+Reading timing models for corner min_tt_025C_3v30…
+Reading timing library for the 'min_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30 already exists.
+Reading timing library for the 'min_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib line 17, library gf180mcu_fd_io__tt_025C_3v30 already exists.
+Reading timing models for corner nom_ff_n40C_3v60…
+Reading timing library for the 'nom_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60 already exists.
+Reading timing library for the 'nom_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib'…
+[WARNING STA-1140] /pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib line 17, library gf180mcu_fd_io__ff_n40C_3v63 already exists.
+Reading OpenROAD database at '/work/physical/runs/compact_21/34-openroad-detailedplacement/tt_um_dvirdc_gf180_diff8.odb'…
+Reading design constraints file at '/work/physical/signoff.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Configuring cts characterization…
++ configure_cts_characterization 
+[INFO] Performing clock tree synthesis…
+[INFO] Looking for the following net(s): clk
+[INFO] Running Clock Tree Synthesis…
++ clock_tree_synthesis -buf_list gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 -root_buf gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 -sink_clustering_enable -apply_ndr none
+[INFO CTS-0050] Root buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+[INFO CTS-0051] Sink buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+[INFO CTS-0049] Characterization buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0011]  Clock net "clk" for macros has 15 sinks.
+[INFO CTS-0011]  Clock net "clk_regs" for registers has 317 sinks.
+[INFO CTS-0010]  Clock net "_1977_" has 9 sinks.
+[INFO CTS-0010]  Clock net "_1976_" has 161 sinks.
+[INFO CTS-0010]  Clock net "_1975_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1974_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1973_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1972_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1971_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1970_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1969_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1968_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1967_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1966_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1965_" has 15 sinks.
+[INFO CTS-0010]  Clock net "_1964_" has 8 sinks.
+[INFO CTS-0010]  Clock net "_1963_" has 8 sinks.
+[INFO CTS-0008] TritonCTS found 17 clock nets.
+[INFO CTS-0097] Characterization used 1 buffer(s) types.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 15.
+[INFO CTS-0029]  Macro  sinks will be clustered in groups of up to 4 and with maximum cluster diameter of 250.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 4 and clustering diameter of 250.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 4.
+[INFO CTS-0024]  Normalized sink region: [(10.0904, 2.77844), (15.6747, 12.3108)].
+[INFO CTS-0025]     Width:  5.5843.
+[INFO CTS-0026]     Height: 9.5323.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 2
+    Sub-region size: 5.5843 X 4.7662
+[INFO CTS-0034]     Segment length (rounded): 2.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 4.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk_regs.
+[INFO CTS-0028]  Total number of sinks: 317.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0206] Best clustering solution was found from clustering size of 10 and clustering diameter of 50.
+[INFO CTS-0019]  Total number of sinks after clustering: 68.
+[INFO CTS-0024]  Normalized sink region: [(0.340051, 0.7), (17.3384, 15.9)].
+[INFO CTS-0025]     Width:  16.9983.
+[INFO CTS-0026]     Height: 15.2000.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 34
+    Sub-region size: 8.4992 X 15.2000
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 17
+    Sub-region size: 8.4992 X 7.6000
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 9
+    Sub-region size: 4.2496 X 7.6000
+[INFO CTS-0034]     Segment length (rounded): 2.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 68.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1977_.
+[INFO CTS-0028]  Total number of sinks: 9.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(645870, 58775), (682450, 192105)].
+[INFO CTS-0024]  Normalized sink region: [(16.4763, 1.49936), (17.4094, 4.90064)].
+[INFO CTS-0025]     Width:  0.9332.
+[INFO CTS-0026]     Height: 3.4013.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 5
+    Sub-region size: 0.9332 X 1.7006
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 9.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1976_.
+[INFO CTS-0028]  Total number of sinks: 161.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(15680, 215600), (592480, 638960)].
+[INFO CTS-0024]  Normalized sink region: [(0.4, 5.5), (15.1143, 16.3)].
+[INFO CTS-0025]     Width:  14.7143.
+[INFO CTS-0026]     Height: 10.8000.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 81
+    Sub-region size: 7.3571 X 10.8000
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 41
+    Sub-region size: 7.3571 X 5.4000
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 21
+    Sub-region size: 3.6786 X 5.4000
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 4
+    Direction: Vertical
+    Sinks per sub-region: 11
+    Sub-region size: 3.6786 X 2.7000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 161.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1975_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(611130, 341040), (638010, 435120)].
+[INFO CTS-0024]  Normalized sink region: [(15.5901, 8.7), (16.2758, 11.1)].
+[INFO CTS-0025]     Width:  0.6857.
+[INFO CTS-0026]     Height: 2.4000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 0.6857 X 1.2000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1974_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(597690, 215600), (638010, 325360)].
+[INFO CTS-0024]  Normalized sink region: [(15.2472, 5.5), (16.2758, 8.3)].
+[INFO CTS-0025]     Width:  1.0286.
+[INFO CTS-0026]     Height: 2.8000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 1.0286 X 1.4000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1973_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(585370, 223465), (598830, 309680)].
+[INFO CTS-0024]  Normalized sink region: [(14.9329, 5.70064), (15.2763, 7.9)].
+[INFO CTS-0025]     Width:  0.3434.
+[INFO CTS-0026]     Height: 2.1994.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 0.3434 X 1.0997
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1972_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(306490, 270480), (352410, 356720)].
+[INFO CTS-0024]  Normalized sink region: [(7.81862, 6.9), (8.99005, 9.1)].
+[INFO CTS-0025]     Width:  1.1714.
+[INFO CTS-0026]     Height: 2.2000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 1.1714 X 1.1000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1971_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(464410, 380240), (527910, 513520)].
+[INFO CTS-0024]  Normalized sink region: [(11.8472, 9.7), (13.4671, 13.1)].
+[INFO CTS-0025]     Width:  1.6199.
+[INFO CTS-0026]     Height: 3.4000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 1.6199 X 1.7000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1970_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(471130, 435120), (567110, 537040)].
+[INFO CTS-0024]  Normalized sink region: [(12.0186, 11.1), (14.4671, 13.7)].
+[INFO CTS-0025]     Width:  2.4485.
+[INFO CTS-0026]     Height: 2.6000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 2.4485 X 1.3000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1969_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(490170, 411600), (625350, 474320)].
+[INFO CTS-0024]  Normalized sink region: [(12.5043, 10.5), (15.9528, 12.1)].
+[INFO CTS-0025]     Width:  3.4485.
+[INFO CTS-0026]     Height: 1.6000.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 4
+    Sub-region size: 1.7242 X 1.6000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1968_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(468890, 325360), (546950, 403760)].
+[INFO CTS-0024]  Normalized sink region: [(11.9615, 8.3), (13.9528, 10.3)].
+[INFO CTS-0025]     Width:  1.9913.
+[INFO CTS-0026]     Height: 2.0000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 1.9913 X 1.0000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1967_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(349050, 599760), (402810, 631120)].
+[INFO CTS-0024]  Normalized sink region: [(8.90434, 15.3), (10.2758, 16.1)].
+[INFO CTS-0025]     Width:  1.3714.
+[INFO CTS-0026]     Height: 0.8000.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 4
+    Sub-region size: 0.6857 X 0.8000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1966_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(618970, 450800), (638010, 591920)].
+[INFO CTS-0024]  Normalized sink region: [(15.7901, 11.5), (16.2758, 15.1)].
+[INFO CTS-0025]     Width:  0.4857.
+[INFO CTS-0026]     Height: 3.6000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 0.4857 X 1.8000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1965_.
+[INFO CTS-0028]  Total number of sinks: 15.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(590970, 450800), (682470, 584080)].
+[INFO CTS-0024]  Normalized sink region: [(15.0758, 11.5), (17.4099, 14.9)].
+[INFO CTS-0025]     Width:  2.3342.
+[INFO CTS-0026]     Height: 3.4000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 8
+    Sub-region size: 2.3342 X 1.7000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 15.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1964_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(277370, 98000), (355770, 168560)].
+[INFO CTS-0024]  Normalized sink region: [(7.07577, 2.5), (9.07577, 4.3)].
+[INFO CTS-0025]     Width:  2.0000.
+[INFO CTS-0026]     Height: 1.8000.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 4
+    Sub-region size: 1.0000 X 1.8000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net _1963_.
+[INFO CTS-0028]  Total number of sinks: 8.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(277370, 19600), (349830, 98000)].
+[INFO CTS-0024]  Normalized sink region: [(7.07577, 0.5), (8.92423, 2.5)].
+[INFO CTS-0025]     Width:  1.8485.
+[INFO CTS-0026]     Height: 2.0000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 1.8485 X 1.0000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 8.
+[INFO CTS-0018]     Created 7 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 7 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:2, 3:1, 4:3..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 77 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 77 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:1, 3:2, 4:24, 5:33, 6:10, 8:2, 9:1, 10:2, 11:1..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:1, 5:1..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 17 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 17 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 5:1, 6:2, 7:2, 9:2, 10:3, 12:2, 13:1, 14:2, 17:1..
+[INFO CTS-0017]     Max level of the clock tree: 4.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 6:1, 9:1..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 3 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 3 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:2..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 15
+[INFO CTS-0100]  Leaf buffers 4
+[INFO CTS-0101]  Average sink wire length 451.30 um
+[INFO CTS-0102]  Path depth 3 - 3
+[INFO CTS-0207]  Dummy loads inserted 1
+[INFO CTS-0098] Clock net "clk_regs"
+[INFO CTS-0099]  Sinks 374
+[INFO CTS-0100]  Leaf buffers 68
+[INFO CTS-0101]  Average sink wire length 232.33 um
+[INFO CTS-0102]  Path depth 2 - 3
+[INFO CTS-0207]  Dummy loads inserted 57
+[INFO CTS-0098] Clock net "_1977_"
+[INFO CTS-0099]  Sinks 10
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 37.89 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 1
+[INFO CTS-0098] Clock net "_1976_"
+[INFO CTS-0099]  Sinks 176
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 161.06 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 15
+[INFO CTS-0098] Clock net "_1975_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 46.69 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1974_"
+[INFO CTS-0099]  Sinks 9
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 48.70 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 1
+[INFO CTS-0098] Clock net "_1973_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 29.77 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1972_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 48.71 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1971_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 52.66 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1970_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 36.83 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1969_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 55.77 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1968_"
+[INFO CTS-0099]  Sinks 9
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 50.33 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 1
+[INFO CTS-0098] Clock net "_1967_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 32.29 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1966_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 35.87 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1965_"
+[INFO CTS-0099]  Sinks 16
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 38.18 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 1
+[INFO CTS-0098] Clock net "_1964_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 50.15 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0098] Clock net "_1963_"
+[INFO CTS-0099]  Sinks 8
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 49.19 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 0
+[INFO CTS-0033] Balancing latency for clock clk
+[INFO CTS-0036]  inserted 3 delay buffers
+[INFO CTS-0037] Total number of delay buffers: 3
+[INFO] Repairing long wires on clock nets…
+[INFO RSZ-0058] Using max wire length 334316um.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+phy matched with phy
+[INFO ODB-0403] 896 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1    8125.00
+  Endcap cell                             162     711.24
+  Tap cell                                644    2827.42
+  Tie cell                                 30     263.42
+  Buffer                                    9     118.54
+  Clock buffer                            184    3231.33
+  Timing Repair Buffer                     38    2015.19
+  Inverter                                169    1497.13
+  Clock inverter                           40     790.27
+  Clock gate cell                          15     921.98
+  Sequential cell                         598   42988.60
+  Multi-Input combinational cell         1797   33090.44
+  Total                                  3687   96580.58
+Writing OpenROAD database to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.odb'…
+Writing netlist to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.nl.v'…
+Writing powered netlist to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.pnl.v'…
+Writing layout to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.def'…
+Writing timing constraints to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.sdc'…
+[INFO] Legalizing…
++ detailed_placement -max_displacement  500 500 
+Placement Analysis
+---------------------------------
+total displacement      14670.5 u
+average displacement        4.0 u
+max displacement          192.1 u
+original HPWL          121976.1 u
+legalized HPWL         140390.1 u
+delta HPWL                   15 %
+
+[INFO DPL-0020] Mirrored 1234 instances
+[INFO DPL-0021] HPWL before          140390.1 u
+[INFO DPL-0022] HPWL after           136377.5 u
+[INFO DPL-0023] HPWL delta               -2.9 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+phy matched with phy
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1    8125.00
+  Endcap cell                             162     711.24
+  Tap cell                                644    2827.42
+  Tie cell                                 30     263.42
+  Buffer                                    9     118.54
+  Clock buffer                            184    3231.33
+  Timing Repair Buffer                     38    2015.19
+  Inverter                                169    1497.13
+  Clock inverter                           40     790.27
+  Clock gate cell                          15     921.98
+  Sequential cell                         598   42988.60
+  Multi-Input combinational cell         1797   33090.44
+  Total                                  3687   96580.58
+Writing OpenROAD database to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.odb'…
+Writing netlist to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.nl.v'…
+Writing powered netlist to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.pnl.v'…
+Writing layout to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.def'…
+Writing timing constraints to '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.sdc'…
+%OL_CREATE_REPORT cts.rpt
+Total number of Clock Roots: 17.
+Total number of Buffers Inserted: 143.
+Total number of Clock Subnets: 143.
+Total number of Sinks: 613.
+Cells used:
+  gf180mcu_fd_sc_mcu7t5v0__clkbuf_2: 147
+Dummys used:
+  gf180mcu_fd_sc_mcu7t5v0__clkbuf_2: 37
+  gf180mcu_fd_sc_mcu7t5v0__clkinv_2: 18
+  gf180mcu_fd_sc_mcu7t5v0__clkinv_3: 2
+  gf180mcu_fd_sc_mcu7t5v0__clkinv_4: 2
+  gf180mcu_fd_sc_mcu7t5v0__clkinv_8: 4
+  gf180mcu_fd_sc_mcu7t5v0__inv_2: 4
+  gf180mcu_fd_sc_mcu7t5v0__inv_3: 2
+  gf180mcu_fd_sc_mcu7t5v0__inv_4: 5
+  gf180mcu_fd_sc_mcu7t5v0__inv_8: 3
+%OL_END_REPORT

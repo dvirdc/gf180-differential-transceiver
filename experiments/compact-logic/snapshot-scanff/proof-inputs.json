@@ -1,0 +1,9 @@
+{
+  "scope": "One-bit synchronous enable equivalence with actual native Liberty scan-flop model, flattened before equivalence. No physical timing proof.",
+  "native_liberty_sha256": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53",
+  "mapping_sha256": "f7e92149a3fd0c772f34052759ea65f5b0968637fc27264fadf4d20843d2736d",
+  "proof_verilog_sha256": "c88a17a8489e163ff3c725c38d4aec25177d7e7640339a031fccd03ac6b7e2ee",
+  "proof_script_sha256": "f66969f0d9b60dfee42604da1e5c33a1d866d62c8cc0c5f14bb838aff076abc9",
+  "proof_log_sha256": "d5d6afe27144e2afd4e39c04bda07768f793824f7542181dd24918b6e99693b7",
+  "result": "Equivalence successfully proven: 1/1 output equivalence point"
+}

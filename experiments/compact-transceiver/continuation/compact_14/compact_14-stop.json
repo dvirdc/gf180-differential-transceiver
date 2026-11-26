@@ -1,0 +1,8 @@
+{
+  "run": "compact_14",
+  "status": "STOPPED_UNCLOSED_TO_PRIORITIZE_BETTER_TRIAL",
+  "utc": "2026-11-26T00:46:50.417806+00:00",
+  "last_completed_iteration_violation_count": 3274,
+  "current_iteration": 16,
+  "reason": "compact_18 lower-left PHY converges faster; retain all raw evidence and release CPU for that trial. This trial did not finish the 64-iteration budget and has no clean routing or GDS."
+}

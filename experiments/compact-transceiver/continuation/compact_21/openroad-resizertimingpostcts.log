@@ -1,0 +1,89 @@
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib'…
+Reading timing models for corner max_tt_025C_3v30…
+Reading timing library for the 'max_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+Reading timing library for the 'max_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib'…
+Reading timing models for corner max_ff_n40C_3v60…
+Reading timing library for the 'max_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+Reading timing library for the 'max_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib'…
+Reading OpenROAD database at '/work/physical/runs/compact_21/35-openroad-cts/tt_um_dvirdc_gf180_diff8.odb'…
+Reading design constraints file at '/work/physical/signoff.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Net 'ua[0]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[1]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[2]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[3]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[4]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[5]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[6]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[7]' matched don't touch regular expression, setting as don't touch…
++ repair_timing -verbose -setup -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -max_buffer_percent 50.0
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
++ repair_timing -verbose -hold -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -hold_margin 0.1000000000000000055511151231257827021181583404541015625 -max_buffer_percent 50.0
+[INFO RSZ-0046] Found 173 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |  -1.368 | -137.116 | _4042_/D
+       10 |       0 |       9 |            0 |    +0.5% |  -1.205 | -125.416 | _4059_/D
+       20 |       0 |      19 |            0 |    +1.1% |  -1.127 | -113.777 | _4022_/D
+       30 |       0 |      29 |            0 |    +1.7% |  -1.081 | -102.758 | _4025_/D
+       40 |       0 |      39 |            0 |    +2.3% |  -1.050 | -92.133 | _4037_/D
+       50 |       0 |      49 |            0 |    +2.9% |  -1.010 | -81.805 | _4128_/D
+       60 |       0 |      59 |            0 |    +3.5% |  -0.976 | -71.838 | _4076_/D
+       70 |       0 |      69 |            0 |    +4.1% |  -0.951 | -62.204 | _4086_/D
+       80 |       0 |      79 |            0 |    +4.7% |  -0.926 | -52.799 | _4121_/D
+       90 |       0 |      89 |            0 |    +5.2% |  -0.875 | -43.722 | _4109_/D
+      100 |       0 |      99 |            0 |    +5.8% |  -0.803 | -35.222 | _4087_/D
+      110 |       0 |     109 |            0 |    +6.4% |  -0.754 | -27.423 | _4045_/D
+      120 |       0 |     119 |            0 |    +7.0% |  -0.707 | -20.046 | _4067_/D
+      130 |       0 |     129 |            0 |    +7.6% |  -0.635 | -13.353 | _4003_/D
+      140 |       0 |     139 |            0 |    +8.2% |  -0.505 |  -7.370 | _3997_/D
+      150 |       0 |     149 |            0 |    +8.8% |  -0.348 |  -3.332 | _4005_/D
+      160 |       0 |     159 |            0 |    +9.4% |  -0.224 |  -0.522 | _3996_/D
+      170 |       0 |     169 |            0 |   +10.0% |   0.019 |   0.000 | _4252_/D
+    final |       0 |     172 |            0 |   +10.1% |   0.118 |   0.000 | _4253_/D
+--------------------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 172 hold buffers.
++ detailed_placement -max_displacement  500 500 
+[INFO DPL-0034] Detailed placement failed on the following 37 instances:
+[INFO DPL-0035]  _3472_
+[INFO DPL-0035]  clkload10
+[INFO DPL-0035]  clkload10
+[INFO DPL-0035]  _2715_
+[INFO DPL-0035]  _2715_
+[INFO DPL-0035]  _2715_
+[INFO DPL-0035]  _2356_
+[INFO DPL-0035]  _2356_
+[INFO DPL-0035]  _2277_
+[INFO DPL-0035]  _2277_
+[INFO DPL-0035]  _2277_
+[INFO DPL-0035]  _2277_
+[INFO DPL-0035]  _3949_
+[INFO DPL-0035]  _2569_
+[INFO DPL-0035]  _2741_
+[INFO DPL-0035]  _2741_
+[INFO DPL-0035]  _2741_
+[INFO DPL-0035]  _2748_
+[INFO DPL-0035]  _2736_
+[INFO DPL-0035]  _2736_
+[INFO DPL-0035]  _2480_
+[INFO DPL-0035]  _2480_
+[INFO DPL-0035]  _3100_
+[INFO DPL-0035]  _3100_
+[INFO DPL-0035]  _3100_
+[INFO DPL-0035]  _2593_
+[INFO DPL-0035]  _2593_
+[INFO DPL-0035]  _2328_
+[INFO DPL-0035]  _2328_
+[INFO DPL-0035]  _3441_
+[INFO DPL-0035]  _2068_
+[INFO DPL-0035]  _2068_
+[INFO DPL-0035]  _2068_
+[INFO DPL-0035]  _3099_
+[INFO DPL-0035]  _3099_
+[INFO DPL-0035]  _2029_
+[INFO DPL-0035]  _2029_
+[ERROR DPL-0036] Detailed placement failed.
+Error: rsz_timing_postcts.tcl, 61 DPL-0036

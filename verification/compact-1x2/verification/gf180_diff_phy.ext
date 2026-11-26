@@ -1,0 +1,183 @@
+timestamp 1624259500
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use ppolyf_u_1k_w1_l20 xrt 1 0 23400 0 1 4900
+use ppolyf_u_1k_w1_l20 xrc2 1 0 21000 0 1 4900
+use ppolyf_u_1k_w1_l20 xrc1 1 0 20200 0 1 4900
+use ppolyf_u_1k_w1_l1 xrbn 1 0 19400 0 1 4900
+use ppolyf_u_1k_w1_l1 xrbp 1 0 18600 0 1 4900
+use ppolyf_u_1k_w1_l32 xrn2 1 0 22600 0 1 4900
+use ppolyf_u_1k_w1_l32 xrp2 1 0 21800 0 1 4900
+use ppolyf_u_1k_w1_l32 xrn 1 0 17800 0 1 4900
+use ppolyf_u_1k_w1_l32 xrp 1 0 16200 0 1 4900
+use pfet_03v3_w12_l1 xp2 1 0 17000 0 1 4900
+use pfet_03v3_w12_l1 xp1 1 0 15400 0 1 4900
+use nfet_03v3_w24_l1 xn2 1 0 14600 0 1 4900
+use nfet_03v3_w24_l1 xn1 1 0 13800 0 1 4900
+use pfet_03v3_w24_l0p28 xtn_xp 1 0 13000 0 1 4900
+use pfet_03v3_w24_l0p28 xtp_xp 1 0 11400 0 1 4900
+use nfet_03v3_w12_l0p28 xtp_xn 1 0 10600 0 1 4900
+use nfet_03v3_w12_l0p28 xtn_xn 1 0 12200 0 1 4900
+use pfet_03v3_w10_l0p28 xout_xp 1 0 9800 0 1 4900
+use pfet_03v3_w10_l0p28 xbuf_xp 1 0 8200 0 1 4900
+use pfet_03v3_w10_l0p28 xis_xp 1 0 6600 0 1 4900
+use pfet_03v3_w10_l0p28 xib_xp 1 0 5000 0 1 4900
+use pfet_03v3_w10_l0p28 xi1_xp 1 0 3400 0 1 4900
+use pfet_03v3_w10_l0p28 xi0_xp 1 0 1800 0 1 4900
+use nfet_03v3_w4_l0p28 xi0_xn 1 0 1000 0 1 4900
+use nfet_03v3_w4_l0p28 xout_xn 1 0 9000 0 1 4900
+use nfet_03v3_w4_l0p28 xbuf_xn 1 0 7400 0 1 4900
+use nfet_03v3_w4_l0p28 xis_xn 1 0 5800 0 1 4900
+use nfet_03v3_w4_l0p28 xib_xn 1 0 4200 0 1 4900
+use nfet_03v3_w4_l0p28 xi1_xn 1 0 2600 0 1 4900
+port "dout" 16 23800 10140 24200 10260 m3
+port "txn" 15 23800 11940 24200 12060 m3
+port "txp" 14 23800 12140 24200 12260 m3
+port "VGND" 18 23800 12540 24200 12660 m3
+port "din" 10 23800 9740 24200 9860 m3
+port "boost" 11 23800 9140 24200 9260 m3
+port "VDPWR" 17 23800 12340 24200 12460 m3
+port "rxp" 12 23800 11540 24200 11660 m3
+port "rxn" 13 23800 11340 24200 11460 m3
+node "dout" 49 0 23800 10140 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12800 640 444800 11440 5788800 96960 974400 16480 0 0
+node "txn" 51 0 23800 11940 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43200 1560 487840 12676 5788800 96960 974400 16480 0 0
+node "txp" 51 0 23800 12140 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43200 1560 503840 13076 5788800 96960 974400 16480 0 0
+node "VGND" 226 0 23800 12540 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 188800 9040 12002560 304384 5788800 96960 974400 16480 0 0
+node "m1_7252_4860#" 61 0 7252 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25600 1280 1174400 30000 5788800 96960 974400 16480 0 0
+node "m1_5652_4860#" 61 0 5652 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25600 1280 1174400 30000 5788800 96960 974400 16480 0 0
+node "m1_5760_5380#" 61 0 5760 5380 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25600 1280 1174400 30000 5788800 96960 974400 16480 0 0
+node "din" 53 0 23800 9740 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12800 640 665600 16960 5788800 96960 974400 16480 0 0
+node "m1_13608_4860#" 60 0 13608 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25600 1280 1108480 28352 5788800 96960 974400 16480 0 0
+node "boost" 59 0 23800 9140 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25600 1280 1059200 27120 5788800 96960 974400 16480 0 0
+node "m1_13912_4860#" 50 0 13912 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27200 1160 450080 11732 5788800 96960 974400 16480 0 0
+node "m1_18560_4674#" 59 0 18560 4674 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57600 2080 1051840 26936 5788800 96960 974400 16480 0 0
+node "VDPWR" 144 0 23800 12340 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 129600 6280 6488480 165252 5788800 96960 974400 16480 0 0
+node "rxp" 47 0 23800 11540 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 347840 8856 5788800 96960 974400 16480 0 0
+node "rxn" 47 0 23800 11340 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 331840 8456 5788800 96960 974400 16480 0 0
+node "m1_4052_4860#" 57 0 4052 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25600 1280 902400 23200 5788800 96960 974400 16480 0 0
+node "m1_12268_4860#" 62 0 12268 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27200 1160 1266080 32132 5788800 96960 974400 16480 0 0
+node "m1_10668_4860#" 61 0 10668 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27200 1160 1218080 30932 5788800 96960 974400 16480 0 0
+node "m1_852_4860#" 76 0 852 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52800 2440 2152480 54932 5788800 96960 974400 16480 0 0
+node "m1_2452_4860#" 63 0 2452 4860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 1800 1294880 33172 5788800 96960 974400 16480 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xrbn/B" "xout_xn/S" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xout_xn/S" "xbuf_xn/S"
+merge "xbuf_xn/S" "xis_xn/S"
+merge "xis_xn/S" "xib_xn/S"
+merge "xib_xn/S" "xi1_xn/S"
+merge "xi1_xn/S" "xi0_xn/S"
+merge "xi0_xn/S" "xrt/N"
+merge "xrt/N" "xrc2/N"
+merge "xrc2/N" "VGND"
+merge "VGND" "xrbp/B"
+merge "xrbp/B" "xout_xp/VSUBS"
+merge "xout_xp/VSUBS" "xout_xn/B"
+merge "xout_xn/B" "xbuf_xp/VSUBS"
+merge "xbuf_xp/VSUBS" "xbuf_xn/B"
+merge "xbuf_xn/B" "xis_xp/VSUBS"
+merge "xis_xp/VSUBS" "xis_xn/B"
+merge "xis_xn/B" "xib_xp/VSUBS"
+merge "xib_xp/VSUBS" "xib_xn/B"
+merge "xib_xn/B" "xi1_xp/VSUBS"
+merge "xi1_xp/VSUBS" "xi1_xn/B"
+merge "xi1_xn/B" "xi0_xp/VSUBS"
+merge "xi0_xp/VSUBS" "xi0_xn/B"
+merge "xi0_xn/B" "xrt/B"
+merge "xrt/B" "xrc2/B"
+merge "xrc2/B" "xrc1/B"
+merge "xrc1/B" "xp2/VSUBS"
+merge "xp2/VSUBS" "xp1/VSUBS"
+merge "xp1/VSUBS" "xn2/B"
+merge "xn2/B" "xn1/B"
+merge "xn1/B" "xtn_xp/VSUBS"
+merge "xtn_xp/VSUBS" "xtn_xn/B"
+merge "xtn_xn/B" "xtp_xp/VSUBS"
+merge "xtp_xp/VSUBS" "xtp_xn/B"
+merge "xtp_xn/B" "xrn2/B"
+merge "xrn2/B" "xrp2/B"
+merge "xrp2/B" "xrn/B"
+merge "xrn/B" "xrp/B"
+merge "xrp/B" "VSUBS"
+merge "xbuf_xp/G" "xbuf_xn/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xbuf_xn/G" "xis_xp/D"
+merge "xis_xp/D" "xis_xn/D"
+merge "xis_xn/D" "m1_5652_4860#"
+merge "xrc1/P" "xp2/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xp2/B" "xp1/B"
+merge "xp1/B" "xtn_xp/B"
+merge "xtn_xp/B" "xtp_xp/B"
+merge "xtp_xp/B" "xout_xp/B"
+merge "xout_xp/B" "xbuf_xp/B"
+merge "xbuf_xp/B" "xis_xp/B"
+merge "xis_xp/B" "xib_xp/B"
+merge "xib_xp/B" "xi1_xp/B"
+merge "xi1_xp/B" "xi0_xp/B"
+merge "xi0_xp/B" "xp2/S"
+merge "xp2/S" "xp1/S"
+merge "xp1/S" "xout_xp/S"
+merge "xout_xp/S" "xbuf_xp/S"
+merge "xbuf_xp/S" "xis_xp/S"
+merge "xis_xp/S" "xib_xp/S"
+merge "xib_xp/S" "xi1_xp/S"
+merge "xi1_xp/S" "xi0_xp/S"
+merge "xi0_xp/S" "VDPWR"
+merge "xp2/G" "xp1/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xp1/G" "xp1/D"
+merge "xp1/D" "xn1/D"
+merge "xn1/D" "m1_13608_4860#"
+merge "xtn_xp/G" "xtp_xp/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xtp_xp/G" "xib_xp/D"
+merge "xib_xp/D" "xib_xn/D"
+merge "xib_xn/D" "m1_4052_4860#"
+merge "xrp/P" "xtp_xp/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xtp_xp/D" "xtp_xn/D"
+merge "xtp_xn/D" "xi1_xp/D"
+merge "xi1_xp/D" "xi1_xn/D"
+merge "xi1_xn/D" "m1_2452_4860#"
+merge "xrn2/P" "xtn_xp/S" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xtn_xp/S" "xtn_xn/S"
+merge "xtn_xn/S" "m1_12268_4860#"
+merge "xrn/P" "xi1_xp/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xi1_xp/G" "xi1_xn/G"
+merge "xi1_xn/G" "xtn_xp/D"
+merge "xtn_xp/D" "xtn_xn/D"
+merge "xtn_xn/D" "xi0_xp/D"
+merge "xi0_xp/D" "xi0_xn/D"
+merge "xi0_xn/D" "m1_852_4860#"
+merge "xtn_xn/G" "xtp_xn/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xtp_xn/G" "xib_xp/G"
+merge "xib_xp/G" "xib_xn/G"
+merge "xib_xn/G" "boost"
+merge "xi0_xp/G" "xi0_xn/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xi0_xn/G" "din"
+merge "xrc2/P" "xrbn/N" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xrbn/N" "xrbp/N"
+merge "xrbp/N" "xrc1/N"
+merge "xrc1/N" "m1_18560_4674#"
+merge "xrbp/P" "xrp2/N" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xrp2/N" "xrp/N"
+merge "xrp/N" "txp"
+merge "xrt/P" "xn2/S" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xn2/S" "xn1/S"
+merge "xn1/S" "m1_13912_4860#"
+merge "xrbn/P" "xrn2/N" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xrn2/N" "xrn/N"
+merge "xrn/N" "txn"
+merge "xrp2/P" "xtp_xp/S" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xtp_xp/S" "xtp_xn/S"
+merge "xtp_xn/S" "m1_10668_4860#"
+merge "xout_xp/G" "xout_xn/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xout_xn/G" "xbuf_xp/D"
+merge "xbuf_xp/D" "xbuf_xn/D"
+merge "xbuf_xn/D" "m1_7252_4860#"
+merge "xout_xp/D" "xout_xn/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xout_xn/D" "dout"
+merge "xis_xp/G" "xis_xn/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xis_xn/G" "xp2/D"
+merge "xp2/D" "xn2/D"
+merge "xn2/D" "m1_5760_5380#"
+merge "xn1/G" "rxn" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xn2/G" "rxp" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

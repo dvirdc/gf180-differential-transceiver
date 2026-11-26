@@ -1,0 +1,51 @@
+{
+  "recorded_utc": "2026-11-26T01:45:47.463021+00:00",
+  "scope": "Delegated trials compact_12 through compact_22 only; newer concurrently active trials are outside this report.",
+  "initial_commit": "8c0c3fadec66a59de90ee8df2161907f94c4771e",
+  "tested_rtl_commit": "a734abc8e8a1f84fce21ff9c075023c97498478f",
+  "verified_1x2": false,
+  "compact_18": {
+    "global_routing_overflow": 0,
+    "detailed_routing": "deliberately stopped by concurrent continuation task, not complete",
+    "exit_code": 137,
+    "last_iteration_started": 44,
+    "last_completed_violation_count": 7979,
+    "minimum_completed_violation_count": 2655,
+    "configured_iterations": 64,
+    "budget_exhausted": false,
+    "log_sha256": "18e6c3a329c130c31b0dae1a161064f7f9cc86756009da2e33ee31cfea1d1e5b",
+    "receipt_qualification": "Stop receipt reason quotes iteration42; captured tail and raw log show stop during44. The final report uses the raw log."
+  },
+  "passed": {
+    "rtl_cases": 44,
+    "mapped_cases": 44,
+    "controller_equivalence_points": 809,
+    "analog_cases": 60,
+    "analog_bit_decisions": 7200,
+    "export_unfinished_route_refusal": true,
+    "export_2x2_compatibility": true
+  },
+  "not_verified": [
+    "clean detailed routing",
+    "final physical and antenna checks",
+    "final transistor/resistor LVS",
+    "nine extracted timing corners including ICG enable and pulse checks",
+    "routed digital regression",
+    "exact final GDS fill and all twelve official prechecks"
+  ],
+  "analog_scope": "Fresh regressions on the unchanged selected macro extraction, not whole-chip PEX.",
+  "gds_preview": "No completed compact GDS available from these trials.",
+  "active_continuation": {
+    "title": "Continue GF180 PHYs on Mac",
+    "thread_id": "6b03abc0-8e80-83ea-99d6-86e864451023",
+    "observed_active_runs": [
+      "compact_23b",
+      "compact_25",
+      "compact_28"
+    ],
+    "policy": "Do not restart or interrupt these concurrent runs. Continue there and reconcile receipts before committing."
+  },
+  "uncommitted_work": "Configs12-22, exporter fix, runner, rejected RTL alternatives, evidence/docs remain local; no bulk commit while another task actively changes this checkout.",
+  "verified_2x2_commit": "dc81136485ec0d8a0e100307a48a231a246e4c7f",
+  "prohibited_actions_performed": false
+}

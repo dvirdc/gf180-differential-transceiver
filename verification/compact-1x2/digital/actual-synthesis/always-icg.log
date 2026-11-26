@@ -1,0 +1,2 @@
+ALWAYS_ICG_PASS cycles=128 checked_edges=256 initialized_low_phase=1
+/work/build/compact-evidence/compact23b-mapped/always_icg_tb.sv:14: $finish called at 80020128 (1ps)

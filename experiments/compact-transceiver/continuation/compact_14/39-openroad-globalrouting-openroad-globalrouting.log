@@ -1,0 +1,82 @@
+Reading timing models for corner nom_tt_025C_3v30…
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib'…
+Reading OpenROAD database at '/work/physical/runs/compact_14/37-openroad-resizertimingpostcts/tt_um_dvirdc_gf180_diff8.odb'…
+Reading design constraints file at '/work/physical/signoff.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal4 and clock max routing layer to Metal4. 
++ global_route -congestion_iterations 200 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal4
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0003] Macros: 1
+[INFO GRT-0004] Blockages: 27
+[INFO GRT-0019] Found 168 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 79
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        18497         18497          0.00%
+Metal3     Horizontal      20794         20801          -0.03%
+Metal4     Vertical        18401         18401          0.00%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0102] Start extra iteration 1/200
+[INFO GRT-0102] Start extra iteration 2/200
+[INFO GRT-0102] Start extra iteration 3/200
+[INFO GRT-0102] Start extra iteration 4/200
+[INFO GRT-0102] Start extra iteration 5/200
+[INFO GRT-0102] Start extra iteration 6/200
+[INFO GRT-0102] Start extra iteration 7/200
+[INFO GRT-0102] Start extra iteration 8/200
+[INFO GRT-0197] Via related to pin nodes: 20634
+[INFO GRT-0198] Via related Steiner nodes: 577
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 27340
+[INFO GRT-0112] Final usage 3D: 110749
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           18497         12949           70.01%             0 /  0 /  0
+Metal3           20801         13730           66.01%             0 /  0 /  0
+Metal4           18401          2050           11.14%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            57699         28729           49.79%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 337159 um
+[INFO GRT-0014] Routed nets: 3008
+[INFO GRT-0303] Global routing runtime = 00:00:00
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+phy matched with phy
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1    8125.00
+  Endcap cell                             162     711.24
+  Tap cell                                644    2827.42
+  Tie cell                                 29     254.64
+  Buffer                                    9     118.54
+  Clock buffer                            210    3687.94
+  Timing Repair Buffer                     45    2840.59
+  Inverter                                156    1369.80
+  Clock inverter                           41     588.31
+  Clock gate cell                          14     860.52
+  Sequential cell                         598   42988.60
+  Multi-Input combinational cell         1993   38207.46
+  Total                                  3902  102580.07
+Writing OpenROAD database to '/work/physical/runs/compact_14/39-openroad-globalrouting/tt_um_dvirdc_gf180_diff8.odb'…
+Writing layout to '/work/physical/runs/compact_14/39-openroad-globalrouting/tt_um_dvirdc_gf180_diff8.def'…

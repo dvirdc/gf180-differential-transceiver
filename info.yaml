@@ -2,10 +2,10 @@
   "project": {
     "title": "GF180 differential byte transceiver and loopback tester",
     "author": "Dvir Cohen",
-    "description": "2x2 3.3 V differential 8N1 transceiver with autonomous self-test and full 32-bit counters; GF26e candidate",
+    "description": "1x2 3.3 V differential 8N1 transceiver with autonomous self-test and full 32-bit counters",
     "language": "Analog",
     "clock_hz": 1600000,
-    "tiles": "2x2",
+    "tiles": "1x2",
     "analog_pins": 4,
     "uses_vapwr": false,
     "top_module": "tt_um_dvirdc_gf180_diff8",

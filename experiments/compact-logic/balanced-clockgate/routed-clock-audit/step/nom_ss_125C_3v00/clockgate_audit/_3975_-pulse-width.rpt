@@ -1,0 +1,22 @@
+Pin: _3975_/CLK
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+ 312.500000  312.500000   clock clk (fall edge)
+   4.276671  316.776672   clock network delay (propagated)
+   0.000000  316.776672   _3975_/CLK
+             316.776672   open edge arrival time
+
+ 625.000000  625.000000   clock clk (rise edge)
+   3.984802  628.984802   clock network delay (propagated)
+   0.000000  628.984802   _3975_/CLK
+   0.407312  629.392090   clock reconvergence pessimism
+             629.392090   close edge arrival time
+-----------------------------------------------------------------
+               1.587000   required pulse width (low)
+             312.615417   actual pulse width
+-----------------------------------------------------------------
+             311.028412   slack (MET)
+
+

@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 2,
-    "flow": "Classic"
+    "flow": "GF180BalancedClockgateClassic"
   },
   "DESIGN_NAME": "tt_um_dvirdc_gf180_diff8",
   "VERILOG_FILES": [
@@ -86,11 +86,11 @@
   "DIE_AREA": [
     0,
     0,
-    711.2,
+    346.64,
     325.36
   ],
-  "FP_DEF_TEMPLATE": "dir::tt_analog_2x2.def",
-  "PL_TARGET_DENSITY_PCT": 60,
+  "FP_DEF_TEMPLATE": "dir::tt_analog_1x2.def",
+  "PL_TARGET_DENSITY_PCT": 90,
   "RT_MAX_LAYER": "Metal4",
   "PDN_MULTILAYER": false,
   "PDN_HORIZONTAL_LAYER": "Metal3",
@@ -119,8 +119,8 @@
       "instances": {
         "phy": {
           "location": [
-            180,
-            24
+            7.36,
+            7.92
           ],
           "orientation": "N"
         }
@@ -144,9 +144,19 @@
   ],
   "FP_MACRO_HORIZONTAL_HALO": 4,
   "FP_MACRO_VERTICAL_HALO": 4,
-  "GRT_ADJUSTMENT": 0.1,
+  "GRT_ADJUSTMENT": 0,
   "GRT_OVERFLOW_ITERS": 200,
   "RSZ_DONT_TOUCH_RX": "^ua\\[[0-7]\\]$",
   "SYNTH_ARITH_TREE": false,
-  "OPENROAD_THREADS": 8
+  "OPENROAD_THREADS": 4,
+  "SYNTH_CLOCKGATE_MIN_WIDTH": 8,
+  "CTS_ROOT_BUFFER": "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2",
+  "CTS_CLK_BUFFERS": [
+    "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2"
+  ],
+  "LEFT_MARGIN_MULT": 6,
+  "RIGHT_MARGIN_MULT": 6,
+  "PL_MAX_DISPLACEMENT_Y": 500,
+  "CTS_APPLY_NDR": "none",
+  "DRT_SAVE_DRC_REPORT_ITERS": 5
 }

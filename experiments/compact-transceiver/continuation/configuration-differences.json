@@ -1,0 +1,262 @@
+{
+  "compact_12": {
+    "GRT_OVERFLOW_ITERS": {
+      "compact_11": 200,
+      "trial": 1000
+    }
+  },
+  "compact_13": {},
+  "compact_14": {},
+  "compact_15": {
+    "GRT_ADJUSTMENT": {
+      "compact_11": 0,
+      "trial": 0.1
+    }
+  },
+  "compact_16": {
+    "SYNTH_ABC_AREA_USE_NF": {
+      "compact_11": null,
+      "trial": true
+    }
+  },
+  "compact_17": {
+    "VERILOG_FILES": {
+      "compact_11": [
+        "dir::../rtl/diff8_uart_tx.v",
+        "dir::../rtl/diff8_uart_rx.v",
+        "dir::../rtl/diff8_digital.v",
+        "dir::../rtl/tt_um_dvirdc_gf180_diff8.v"
+      ],
+      "trial": [
+        "dir::../rtl/diff8_uart_tx.v",
+        "dir::../rtl/diff8_uart_rx.v",
+        "dir::../experiments/compact-logic/grouped-snapshot-read/diff8_digital.v",
+        "dir::../rtl/tt_um_dvirdc_gf180_diff8.v"
+      ]
+    }
+  },
+  "compact_18": {
+    "MACROS": {
+      "compact_11": {
+        "gf180_diff_phy": {
+          "gds": [
+            "dir::../build/physical/phy/gf180_diff_phy.gds"
+          ],
+          "lef": [
+            "dir::../build/physical/phy/gf180_diff_phy.lef"
+          ],
+          "vh": [
+            "dir::../rtl/gf180_diff_phy_blackbox.v"
+          ],
+          "spice": [
+            "dir::phy_reference.spice"
+          ],
+          "instances": {
+            "phy": {
+              "location": [
+                214.28,
+                7.92
+              ],
+              "orientation": "FN"
+            }
+          }
+        }
+      },
+      "trial": {
+        "gf180_diff_phy": {
+          "gds": [
+            "dir::../build/physical/phy/gf180_diff_phy.gds"
+          ],
+          "lef": [
+            "dir::../build/physical/phy/gf180_diff_phy.lef"
+          ],
+          "vh": [
+            "dir::../rtl/gf180_diff_phy_blackbox.v"
+          ],
+          "spice": [
+            "dir::phy_reference.spice"
+          ],
+          "instances": {
+            "phy": {
+              "location": [
+                7.36,
+                7.92
+              ],
+              "orientation": "N"
+            }
+          }
+        }
+      }
+    },
+    "DRT_SAVE_DRC_REPORT_ITERS": {
+      "compact_11": null,
+      "trial": 5
+    }
+  },
+  "compact_19": {
+    "OPENROAD_THREADS": {
+      "compact_11": 8,
+      "trial": 4
+    },
+    "RT_MIN_LAYER": {
+      "compact_11": null,
+      "trial": "Metal3"
+    },
+    "DRT_SAVE_DRC_REPORT_ITERS": {
+      "compact_11": null,
+      "trial": 5
+    }
+  },
+  "compact_20": {
+    "OPENROAD_THREADS": {
+      "compact_11": 8,
+      "trial": 4
+    },
+    "RT_MIN_LAYER": {
+      "compact_11": null,
+      "trial": "Metal3"
+    },
+    "DRT_SAVE_DRC_REPORT_ITERS": {
+      "compact_11": null,
+      "trial": 5
+    }
+  },
+  "compact_21": {
+    "meta": {
+      "compact_11": {
+        "version": 2,
+        "flow": "GF180SelectiveClockgateV2Classic"
+      },
+      "trial": {
+        "version": 2,
+        "flow": "GF180ClockgateClassic"
+      }
+    },
+    "MACROS": {
+      "compact_11": {
+        "gf180_diff_phy": {
+          "gds": [
+            "dir::../build/physical/phy/gf180_diff_phy.gds"
+          ],
+          "lef": [
+            "dir::../build/physical/phy/gf180_diff_phy.lef"
+          ],
+          "vh": [
+            "dir::../rtl/gf180_diff_phy_blackbox.v"
+          ],
+          "spice": [
+            "dir::phy_reference.spice"
+          ],
+          "instances": {
+            "phy": {
+              "location": [
+                214.28,
+                7.92
+              ],
+              "orientation": "FN"
+            }
+          }
+        }
+      },
+      "trial": {
+        "gf180_diff_phy": {
+          "gds": [
+            "dir::../build/physical/phy/gf180_diff_phy.gds"
+          ],
+          "lef": [
+            "dir::../build/physical/phy/gf180_diff_phy.lef"
+          ],
+          "vh": [
+            "dir::../rtl/gf180_diff_phy_blackbox.v"
+          ],
+          "spice": [
+            "dir::phy_reference.spice"
+          ],
+          "instances": {
+            "phy": {
+              "location": [
+                7.36,
+                7.92
+              ],
+              "orientation": "N"
+            }
+          }
+        }
+      }
+    },
+    "OPENROAD_THREADS": {
+      "compact_11": 8,
+      "trial": 4
+    },
+    "DRT_SAVE_DRC_REPORT_ITERS": {
+      "compact_11": null,
+      "trial": 5
+    }
+  },
+  "compact_22": {
+    "MACROS": {
+      "compact_11": {
+        "gf180_diff_phy": {
+          "gds": [
+            "dir::../build/physical/phy/gf180_diff_phy.gds"
+          ],
+          "lef": [
+            "dir::../build/physical/phy/gf180_diff_phy.lef"
+          ],
+          "vh": [
+            "dir::../rtl/gf180_diff_phy_blackbox.v"
+          ],
+          "spice": [
+            "dir::phy_reference.spice"
+          ],
+          "instances": {
+            "phy": {
+              "location": [
+                214.28,
+                7.92
+              ],
+              "orientation": "FN"
+            }
+          }
+        }
+      },
+      "trial": {
+        "gf180_diff_phy": {
+          "gds": [
+            "dir::../build/physical/phy/gf180_diff_phy.gds"
+          ],
+          "lef": [
+            "dir::../build/physical/phy/gf180_diff_phy.lef"
+          ],
+          "vh": [
+            "dir::../rtl/gf180_diff_phy_blackbox.v"
+          ],
+          "spice": [
+            "dir::phy_reference.spice"
+          ],
+          "instances": {
+            "phy": {
+              "location": [
+                7.36,
+                7.92
+              ],
+              "orientation": "N"
+            }
+          }
+        }
+      }
+    },
+    "OPENROAD_THREADS": {
+      "compact_11": 8,
+      "trial": 4
+    },
+    "DRT_SAVE_DRC_REPORT_ITERS": {
+      "compact_11": null,
+      "trial": 5
+    },
+    "SYNTH_ABC_USE_MFS3": {
+      "compact_11": null,
+      "trial": true
+    }
+  }
+}

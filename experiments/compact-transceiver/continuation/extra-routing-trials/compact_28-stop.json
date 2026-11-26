@@ -1,0 +1,36 @@
+{
+  "trial": "compact_28",
+  "utc": "2026-11-26T01:44:19.933121+00:00",
+  "outcome": "deliberately_stopped_before_routing_budget_exhausted",
+  "reason": "After completediterations0..2:7233,5586,5351DRCviolations; prioritize smaller clock-balanced23b already~1200 at comparableearlystage. This is not final routefailure or signoff.",
+  "container_id": "a135fc9483cf",
+  "command": [
+    "python3",
+    "tools/gf180_selective_clockgate_v2_flow.py",
+    "--manual-pdk",
+    "--pdk-root",
+    "/pdk",
+    "--pdk",
+    "gf180mcuD",
+    "--scl",
+    "gf180mcu_fd_sc_mcu7t5v0",
+    "--run-tag",
+    "compact_28",
+    "--from",
+    "OpenROAD.DetailedRouting",
+    "physical/compact_28.json"
+  ],
+  "log_sha256_before": "bb8ec55719d766ac408d85205ea47a2724356767ea2a90bde97ff99563a849a4",
+  "tail_before": [
+    "    Completing 60% with 5241 violations.                                        ",
+    "    elapsed time = 00:00:31, memory = 573.77 (MB).                              ",
+    "    Completing 70% with 5241 violations.                                        ",
+    "    elapsed time = 00:00:48, memory = 552.79 (MB).                              ",
+    "    Completing 80% with 5153 violations.                                        ",
+    "    elapsed time = 00:00:56, memory = 558.18 (MB).                              ",
+    "    Completing 90% with 5153 violations.                                        ",
+    "    elapsed time = 00:00:58, memory = 564.73 (MB).                              "
+  ],
+  "stop_result": "a135fc9483cf\n",
+  "log_sha256_after": "bb8ec55719d766ac408d85205ea47a2724356767ea2a90bde97ff99563a849a4"
+}

@@ -1,0 +1,345 @@
+{
+  "utc": "2026-11-26T01:41:10.027221+00:00",
+  "scope": "Actual completed LibreLane synthesis netlist; unchanged 44-test external-pin bench, FUNCTIONAL zero-delay GF cells and behavioral PHY. No resynthesis. Not extracted timing or analog qualification.",
+  "source_sha256": "5c7a4656036b7c30ca5badb615a74ebcb889459cdab76033536a1aa6e16ebe0b",
+  "inputs_sha256": {
+    "/work/build/compact-evidence/compact23b-mapped/actual-synthesis.nl.v": "251903c41aa3a7218147985d22281871f588be17d59c3665a33f666e46278760",
+    "/work/sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+    "/work/sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8",
+    "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+    "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b"
+  },
+  "netlist_sha256": "251903c41aa3a7218147985d22281871f588be17d59c3665a33f666e46278760",
+  "netlist_json_sha256": "ae4e95d77d23af2870fb14495741b29e0d91f946fefcc8d303da09d2f756bc5e",
+  "clock_gates": [
+    {
+      "name": "$auto$clockgate.cc:374:execute$27227",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          523
+        ],
+        "Q": [
+          2607
+        ],
+        "TE": [
+          2608
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27229",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          2606
+        ],
+        "Q": [
+          2609
+        ],
+        "TE": [
+          2610
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27231",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          522
+        ],
+        "Q": [
+          2611
+        ],
+        "TE": [
+          2612
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27233",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          520
+        ],
+        "Q": [
+          2613
+        ],
+        "TE": [
+          2614
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27235",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          517
+        ],
+        "Q": [
+          2615
+        ],
+        "TE": [
+          2616
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27237",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          504
+        ],
+        "Q": [
+          2617
+        ],
+        "TE": [
+          2618
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27239",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          503
+        ],
+        "Q": [
+          2619
+        ],
+        "TE": [
+          2620
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27241",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          501
+        ],
+        "Q": [
+          2621
+        ],
+        "TE": [
+          2622
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27243",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          499
+        ],
+        "Q": [
+          2623
+        ],
+        "TE": [
+          2624
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27245",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          291
+        ],
+        "Q": [
+          2625
+        ],
+        "TE": [
+          2626
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27247",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          497
+        ],
+        "Q": [
+          2627
+        ],
+        "TE": [
+          2628
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27249",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          494
+        ],
+        "Q": [
+          2629
+        ],
+        "TE": [
+          2630
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27251",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          487
+        ],
+        "Q": [
+          2631
+        ],
+        "TE": [
+          2632
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27253",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          816
+        ],
+        "Q": [
+          2633
+        ],
+        "TE": [
+          2634
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "$auto$clockgate.cc:374:execute$27255",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          535
+        ],
+        "Q": [
+          2635
+        ],
+        "TE": [
+          2636
+        ]
+      },
+      "TE_tied_low": true
+    },
+    {
+      "name": "balanced_always_icg",
+      "type": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+      "connections": {
+        "CLK": [
+          2
+        ],
+        "E": [
+          2651
+        ],
+        "Q": [
+          2637
+        ],
+        "TE": [
+          2652
+        ]
+      },
+      "TE_tied_low": true
+    }
+  ],
+  "clock_gate_count": 16,
+  "expected_clock_gate_count": 16,
+  "all_present_ICGs_TE_tied_low": true,
+  "clock_gate_structural_expectation_passed": true,
+  "flip_flops": 598,
+  "flip_flops_clocked_directly_by_clk": 0,
+  "always_enabled_ICG_drives_exactly_317_FF": true,
+  "compile_command": [
+    "iverilog",
+    "-g2012",
+    "-DFUNCTIONAL",
+    "-s",
+    "tb",
+    "-o",
+    "/work/build/compact-evidence/compact23b-mapped/functional.vvp",
+    "/work/build/compact-evidence/compact23b-mapped/actual-synthesis.nl.v",
+    "/work/sim/phy_behavioral.v",
+    "/work/sim/tb.sv",
+    "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+    "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v"
+  ],
+  "compile_returncode": 0,
+  "simulation_returncode": 0,
+  "tests_passed": 44,
+  "netlist_unchanged_after_simulation": true
+}

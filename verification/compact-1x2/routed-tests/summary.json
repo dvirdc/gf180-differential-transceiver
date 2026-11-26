@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "tests": 44,
+  "all_modes_passed": true,
+  "scope": "External-pin regression of the actual routed GF180 powered digital netlist.\n\nUses the pinned, unmodified GF180 cell models in FUNCTIONAL (zero-delay) and\npartial nominal specify-path-delay modes (supported 1 ns placeholder arcs).\nIcarus does not support edge-sensitive ifnone paths; diagnostics are saved.\nThe analog PHY uses\nthe boundary model. Neither mode is SDF, STA or whole-chip transistor simulation.",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "modes": {
+    "functional": {
+      "passed": true,
+      "tests": 44,
+      "returncode": 0,
+      "specify_enabled": false,
+      "unsupported_ifnone_notices": 0
+    },
+    "nominal_specify": {
+      "passed": true,
+      "tests": 44,
+      "returncode": 0,
+      "specify_enabled": true,
+      "unsupported_ifnone_notices": 120
+    }
+  },
+  "inputs_sha256": {
+    "/Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver-compact/physical/runs/compact_23b/54-openroad-fillinsertion/tt_um_dvirdc_gf180_diff8.pnl.v": "09ee9857fb1da9d2ac0a5fc98efb3b17c330cf973098e3e8f91874e09d15d59d",
+    "/Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver-compact/sim/phy_behavioral.v": "a9232cfe5102f8a8f6aa5c87620f703f7bef6c0a3cc6b53a162005345305f828",
+    "/Users/dvirdc/Projects/gf180-phys/gf180-differential-transceiver-compact/sim/tb.sv": "d80a80ba81bd531ea92188585805a5090d1dd6b2a8a67e99a4a3b8eb555e9bd8",
+    "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+    "/Users/dvirdc/Projects/gf180-phys/toolchain/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b"
+  }
+}

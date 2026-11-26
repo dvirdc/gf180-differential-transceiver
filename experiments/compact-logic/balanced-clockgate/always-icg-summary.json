@@ -1,0 +1,47 @@
+{
+  "scope": "Native PDK functional model test after initial low clock phase plus post-GRT physical-netlist clock topology. This is not transistor proof or routed timing qualification.",
+  "native_gate_test_cycles": 128,
+  "native_gate_checked_edges": 256,
+  "initial_low_phase_required": true,
+  "physical_flip_flops": 598,
+  "physical_ICGs": 16,
+  "all_TE_native_tied_low": true,
+  "always_gate_E_native_tied_high": true,
+  "FFs_per_first_ICG": {
+    "_3975_": 9,
+    "_3974_": 161,
+    "balanced_always_icg": 317,
+    "_3973_": 8,
+    "_3972_": 8,
+    "_3971_": 8,
+    "_3970_": 8,
+    "_3969_": 8,
+    "_3968_": 8,
+    "_3967_": 8,
+    "_3966_": 8,
+    "_3965_": 8,
+    "_3964_": 8,
+    "_3963_": 15,
+    "_3962_": 8,
+    "_3961_": 8
+  },
+  "inputs_sha256": {
+    "/work/build/compact-evidence/compact23b-mapped/check_always_icg.py": "28d739a677328941ab869c453bf725a050b3311e7b251df5c766b9bb2794f7a9",
+    "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b",
+    "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+    "/work/build/compact-evidence/compact23b-mapped/always_icg_tb.sv": "27c6f2b0fe72d915a46d26e28fb959e9f3bfc4cc6cb2d62b4c025ce9a1632aa1",
+    "/work/physical/runs/compact_23b/44-openroad-resizertimingpostgrt/tt_um_dvirdc_gf180_diff8.nl.v": "c69e7623c9eea86fa934c941594978c4467d70a3a672784f0397dbb53e0535e9"
+  },
+  "native_model_test_command": [
+    "iverilog",
+    "-g2012",
+    "-DFUNCTIONAL",
+    "-s",
+    "tb",
+    "-o",
+    "/work/build/compact-evidence/compact23b-mapped/always_icg.vvp",
+    "/work/build/compact-evidence/compact23b-mapped/always_icg_tb.sv",
+    "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+    "/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v"
+  ]
+}

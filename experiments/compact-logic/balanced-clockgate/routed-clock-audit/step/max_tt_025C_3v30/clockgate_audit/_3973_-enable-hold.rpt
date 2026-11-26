@@ -1,0 +1,175 @@
+Startpoint: _4161_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _3973_ (rising clock gating-check end-point clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.479975    0.479975 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.593827    1.073802 ^ clkbuf_1_0__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.160868    2.234669 ^ delaybuf_3_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.545077    2.779747 ^ _3972_/Q (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+   0.371441    3.151188 ^ clkbuf_0__1974_/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.436036    3.587224 ^ clkbuf_1_0__f__1974_/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.000327    3.587551 ^ _4161_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+   1.278389    4.865941 v _4161_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+   0.485002    5.350943 ^ _2244_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor4_1)
+   0.791171    6.142114 ^ _2246_/Z (gf180mcu_fd_sc_mcu7t5v0__and4_1)
+   0.398065    6.540179 v _2250_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor4_1)
+   0.588690    7.128869 v _2251_/Z (gf180mcu_fd_sc_mcu7t5v0__and3_1)
+   0.000070    7.128939 v _3973_/E (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+               7.128939   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.530499    0.530499 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.656335    1.186833 ^ clkbuf_1_0__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.283064    2.469898 ^ delaybuf_3_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.595429    3.065327 ^ delaybuf_2_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.000446    3.065773 ^ _3973_/CLK (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+   0.250000    3.315773   clock uncertainty
+  -0.235228    3.080545   clock reconvergence pessimism
+  -0.351793    2.728752   library hold time
+               2.728752   data required time
+-----------------------------------------------------------------
+               2.728752   data required time
+              -7.128939   data arrival time
+-----------------------------------------------------------------
+               4.400186   slack (MET)
+
+
+Startpoint: _4157_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _3973_ (rising clock gating-check end-point clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.479975    0.479975 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.593827    1.073802 ^ clkbuf_1_0__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.160868    2.234669 ^ delaybuf_3_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.545077    2.779747 ^ _3972_/Q (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+   0.371441    3.151188 ^ clkbuf_0__1974_/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.473810    3.624998 ^ clkbuf_1_1__f__1974_/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.000661    3.625659 ^ _4157_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+   1.256722    4.882381 v _4157_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+   0.517935    5.400316 ^ _2245_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor4_1)
+   0.783304    6.183619 ^ _2246_/Z (gf180mcu_fd_sc_mcu7t5v0__and4_1)
+   0.398065    6.581684 v _2250_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor4_1)
+   0.588690    7.170374 v _2251_/Z (gf180mcu_fd_sc_mcu7t5v0__and3_1)
+   0.000070    7.170444 v _3973_/E (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+               7.170444   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.530499    0.530499 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.656335    1.186833 ^ clkbuf_1_0__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.283064    2.469898 ^ delaybuf_3_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.595429    3.065327 ^ delaybuf_2_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.000446    3.065773 ^ _3973_/CLK (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+   0.250000    3.315773   clock uncertainty
+  -0.235228    3.080545   clock reconvergence pessimism
+  -0.351793    2.728752   library hold time
+               2.728752   data required time
+-----------------------------------------------------------------
+               2.728752   data required time
+              -7.170444   data arrival time
+-----------------------------------------------------------------
+               4.441691   slack (MET)
+
+
+Startpoint: _4245_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _3973_ (rising clock gating-check end-point clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.479975    0.479975 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.593506    1.073481 ^ clkbuf_1_1__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.563190    1.636670 ^ delaybuf_1_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.875094    2.511765 ^ delaybuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.649028    3.160793 ^ _3963_/Q (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+   0.536485    3.697278 ^ clkbuf_0__1965_/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.606035    4.303312 ^ clkbuf_1_0__f__1965_/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.000854    4.304166 ^ _4245_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+   1.640259    5.944426 v _4245_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+   1.034079    6.978504 ^ _2250_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor4_1)
+   0.587553    7.566057 ^ _2251_/Z (gf180mcu_fd_sc_mcu7t5v0__and3_1)
+   0.000070    7.566127 ^ _3973_/E (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+               7.566127   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.530499    0.530499 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.656335    1.186833 ^ clkbuf_1_0__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.283064    2.469898 ^ delaybuf_3_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.595429    3.065327 ^ delaybuf_2_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.000446    3.065773 ^ _3973_/CLK (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+   0.250000    3.315773   clock uncertainty
+  -0.050524    3.265249   clock reconvergence pessimism
+  -0.254143    3.011106   library hold time
+               3.011106   data required time
+-----------------------------------------------------------------
+               3.011106   data required time
+              -7.566127   data arrival time
+-----------------------------------------------------------------
+               4.555021   slack (MET)
+
+
+Startpoint: _4162_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _3973_ (rising clock gating-check end-point clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.479975    0.479975 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.593827    1.073802 ^ clkbuf_1_0__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.160868    2.234669 ^ delaybuf_3_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.545077    2.779747 ^ _3972_/Q (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+   0.371441    3.151188 ^ clkbuf_0__1974_/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.436036    3.587224 ^ clkbuf_1_0__f__1974_/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.000433    3.587657 ^ _4162_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+   1.335572    4.923229 v _4162_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+   0.583475    5.506704 ^ _2244_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor4_1)
+   0.791171    6.297875 ^ _2246_/Z (gf180mcu_fd_sc_mcu7t5v0__and4_1)
+   0.398065    6.695940 v _2250_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor4_1)
+   0.588690    7.284629 v _2251_/Z (gf180mcu_fd_sc_mcu7t5v0__and3_1)
+   0.000070    7.284700 v _3973_/E (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+               7.284700   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock source latency
+   0.000000    0.000000 ^ clk (in)
+   0.530499    0.530499 ^ clkbuf_0_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.656335    1.186833 ^ clkbuf_1_0__f_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   1.283064    2.469898 ^ delaybuf_3_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.595429    3.065327 ^ delaybuf_2_clk/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_2)
+   0.000446    3.065773 ^ _3973_/CLK (gf180mcu_fd_sc_mcu7t5v0__icgtp_1)
+   0.250000    3.315773   clock uncertainty
+  -0.235228    3.080545   clock reconvergence pessimism
+  -0.351793    2.728752   library hold time
+               2.728752   data required time
+-----------------------------------------------------------------
+               2.728752   data required time
+              -7.284700   data arrival time
+-----------------------------------------------------------------
+               4.555947   slack (MET)
+
+

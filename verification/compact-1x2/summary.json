@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "status": "LOCAL_COMPACT_GATES_PASSED",
+  "target": "ttgf26e",
+  "pdk_revision": "1689ac3f2dc763876eaf967227c7dfe831b031ae",
+  "run": "physical/runs/compact_23b",
+  "frame": "1x2",
+  "die_um": [
+    346.64,
+    325.36
+  ],
+  "analog_pins": 4,
+  "gds_sha256": "65460b07a56c56c9b47dcba2cb517bc19fedfa4a7585231af3cafea6c5e813ea",
+  "rtl_tests": 44,
+  "actual_synthesis_functional_tests": 44,
+  "routed_tests_each_mode": 44,
+  "timing_corners": 9,
+  "clocked_FFs": 598,
+  "native_ICGs": 16,
+  "analog_loaded_cases": 60,
+  "analog_bit_decisions": 7200,
+  "official_precheck_tests": 12,
+  "publication": "Isolated local artifact/evidence bundle only. No root files, repository state or remote settings changed.",
+  "limitations": [
+    "Raw DCF.1a failures retained unchanged; final filled GDS separately passes all official checks and independent full transistor LVS.",
+    "Only additive layer22/4 Dummy COMP fill was allowed; all other mask geometry, labels and tile extent unchanged.",
+    "Analog macro is blackboxed in digital STA and separately qualified in SPICE; no analog timing/noise claim from STA.",
+    "Nominal specify regression is partial simulator-path sanity, not SDF; unsupported ifnone paths are disclosed.",
+    "Shuttle/package/board, full post-fill integration and silicon qualification remain.",
+    "Standalone Magic DRC0 and full29-device LVS; archived standalone KLayout DCF.1a remains disclosed. Final integrated fill/precheck independently required.",
+    "Macro-only extracted RC; no integrated digital coupling/noise, mismatch, switch RC, independent switch LVS or post-fill RC claim."
+  ],
+  "remaining": [
+    "Promote a reviewed 1x2 release with matching docs, canonical macro/rebuild instructions and source manifest.",
+    "Verify GitHub artifact/Docs/precheck workflows at the promoted exact commit.",
+    "Shuttle integration, post-fill electrical, board/package and silicon qualification."
+  ]
+}

@@ -1,0 +1,1587 @@
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib'…
+Reading timing models for corner max_tt_025C_3v30…
+Reading timing library for the 'max_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+Reading timing library for the 'max_tt_025C_3v30' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib'…
+Reading timing models for corner max_ff_n40C_3v60…
+Reading timing library for the 'max_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+Reading timing library for the 'max_ff_n40C_3v60' corner at '/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib'…
+Reading OpenROAD database at '/work/physical/runs/compact_20/39-openroad-globalrouting/tt_um_dvirdc_gf180_diff8.odb'…
+Reading design constraints file at '/work/physical/signoff.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Net 'ua[0]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[1]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[2]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[3]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[4]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[5]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[6]' matched don't touch regular expression, setting as don't touch…
+[INFO] Net 'ua[7]' matched don't touch regular expression, setting as don't touch…
+[INFO] Setting signal min routing layer to: Metal3 and clock min routing layer to Metal3. 
+[INFO] Setting signal max routing layer to: Metal4 and clock max routing layer to Metal4. 
++ global_route -congestion_iterations 200 -verbose
+[INFO GRT-0020] Min routing layer: Metal3
+[INFO GRT-0021] Max routing layer: Metal4
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0003] Macros: 1
+[INFO GRT-0004] Blockages: 26
+[INFO GRT-0019] Found 168 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 71
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical            0             0          0.00%
+Metal3     Horizontal      20794         20801          -0.03%
+Metal4     Vertical        18401         18401          0.00%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0102] Start extra iteration 1/200
+[INFO GRT-0102] Start extra iteration 2/200
+[INFO GRT-0102] Start extra iteration 3/200
+[INFO GRT-0102] Start extra iteration 4/200
+[INFO GRT-0102] Start extra iteration 5/200
+[INFO GRT-0102] Start extra iteration 6/200
+[INFO GRT-0102] Start extra iteration 7/200
+[INFO GRT-0102] Start extra iteration 8/200
+[INFO GRT-0102] Start extra iteration 9/200
+[INFO GRT-0102] Start extra iteration 10/200
+[INFO GRT-0102] Start extra iteration 11/200
+[INFO GRT-0102] Start extra iteration 12/200
+[INFO GRT-0102] Start extra iteration 13/200
+[INFO GRT-0102] Start extra iteration 14/200
+[INFO GRT-0102] Start extra iteration 15/200
+[INFO GRT-0102] Start extra iteration 16/200
+[INFO GRT-0102] Start extra iteration 17/200
+[INFO GRT-0102] Start extra iteration 18/200
+[INFO GRT-0102] Start extra iteration 19/200
+[INFO GRT-0102] Start extra iteration 20/200
+[INFO GRT-0102] Start extra iteration 21/200
+[INFO GRT-0102] Start extra iteration 22/200
+[INFO GRT-0102] Start extra iteration 23/200
+[INFO GRT-0102] Start extra iteration 24/200
+[INFO GRT-0102] Start extra iteration 25/200
+[INFO GRT-0102] Start extra iteration 26/200
+[INFO GRT-0102] Start extra iteration 27/200
+[INFO GRT-0102] Start extra iteration 28/200
+[INFO GRT-0102] Start extra iteration 29/200
+[INFO GRT-0102] Start extra iteration 30/200
+[INFO GRT-0102] Start extra iteration 31/200
+[INFO GRT-0102] Start extra iteration 32/200
+[INFO GRT-0102] Start extra iteration 33/200
+[INFO GRT-0102] Start extra iteration 34/200
+[INFO GRT-0102] Start extra iteration 35/200
+[INFO GRT-0102] Start extra iteration 36/200
+[INFO GRT-0102] Start extra iteration 37/200
+[INFO GRT-0102] Start extra iteration 38/200
+[INFO GRT-0197] Via related to pin nodes: 30678
+[INFO GRT-0198] Via related Steiner nodes: 797
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 43243
+[INFO GRT-0112] Final usage 3D: 156523
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2               0             0            0.00%             0 /  0 /  0
+Metal3           20801         13808           66.38%             0 /  0 /  0
+Metal4           18401         12986           70.57%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            39202         26794           68.35%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 322240 um
+[INFO GRT-0014] Routed nets: 3007
+[INFO GRT-0303] Global routing runtime = 00:00:04
++ repair_design -verbose -max_wire_length 0.0 -slew_margin 30.0 -cap_margin 30.0
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      3123
+       10 |     +0.0% |       0 |       0 |             0 |      3113
+       20 |     +0.0% |       0 |       0 |             0 |      3103
+       30 |     +0.0% |       0 |       0 |             0 |      3093
+       40 |     +0.0% |       0 |       0 |             0 |      3083
+       50 |     +0.0% |       0 |       0 |             0 |      3073
+       60 |     +0.0% |       0 |       0 |             0 |      3063
+       70 |     +0.0% |       0 |       0 |             0 |      3053
+       80 |     +0.0% |       0 |       0 |             0 |      3043
+       90 |     +0.0% |       0 |       0 |             0 |      3033
+      100 |     +0.0% |       0 |       0 |             0 |      3023
+      110 |     +0.0% |       0 |       0 |             0 |      3013
+      120 |     +0.0% |       0 |       0 |             0 |      3003
+      130 |     +0.0% |       0 |       0 |             0 |      2993
+      140 |     +0.0% |       0 |       0 |             0 |      2983
+      150 |     +0.0% |       0 |       0 |             0 |      2973
+      160 |     +0.0% |       0 |       0 |             0 |      2963
+      170 |     +0.0% |       0 |       0 |             0 |      2953
+      180 |     +0.0% |       0 |       0 |             0 |      2943
+      190 |     +0.0% |       0 |       0 |             0 |      2933
+      200 |     +0.0% |       0 |       0 |             0 |      2923
+      210 |     +0.0% |       0 |       0 |             0 |      2913
+      220 |     +0.0% |       0 |       0 |             0 |      2903
+      230 |     +0.0% |       0 |       0 |             0 |      2893
+      240 |     +0.0% |       0 |       0 |             0 |      2883
+      250 |     +0.0% |       0 |       0 |             0 |      2873
+      260 |     +0.0% |       0 |       0 |             0 |      2863
+      270 |     +0.0% |       0 |       0 |             0 |      2853
+      280 |     +0.0% |       0 |       0 |             0 |      2843
+      290 |     +0.0% |       0 |       0 |             0 |      2833
+      300 |     +0.0% |       0 |       0 |             0 |      2823
+      310 |     +0.0% |       0 |       0 |             0 |      2813
+      320 |     +0.0% |       0 |       0 |             0 |      2803
+      330 |     +0.0% |       0 |       0 |             0 |      2793
+      340 |     +0.0% |       0 |       0 |             0 |      2783
+      350 |     +0.0% |       0 |       0 |             0 |      2773
+      360 |     +0.0% |       0 |       0 |             0 |      2763
+      370 |     +0.0% |       0 |       0 |             0 |      2753
+      380 |     +0.0% |       0 |       0 |             0 |      2743
+      390 |     +0.0% |       0 |       0 |             0 |      2733
+      400 |     +0.0% |       0 |       0 |             0 |      2723
+      410 |     +0.0% |       0 |       0 |             0 |      2713
+      420 |     +0.0% |       0 |       0 |             0 |      2703
+      430 |     +0.0% |       0 |       0 |             0 |      2693
+      440 |     +0.0% |       0 |       0 |             0 |      2683
+      450 |     +0.0% |       0 |       0 |             0 |      2673
+      460 |     +0.0% |       0 |       0 |             0 |      2663
+      470 |     +0.0% |       0 |       0 |             0 |      2653
+      480 |     +0.0% |       0 |       0 |             0 |      2643
+      490 |     +0.0% |       0 |       0 |             0 |      2633
+      500 |     +0.0% |       0 |       0 |             0 |      2623
+      510 |     +0.0% |       0 |       0 |             0 |      2613
+      520 |     +0.0% |       0 |       0 |             0 |      2603
+      530 |     +0.0% |       0 |       0 |             0 |      2593
+      540 |     +0.0% |       0 |       0 |             0 |      2583
+      550 |     +0.0% |       0 |       0 |             0 |      2573
+      560 |     +0.0% |       0 |       0 |             0 |      2563
+      570 |     +0.0% |       0 |       0 |             0 |      2553
+      580 |     +0.0% |       0 |       0 |             0 |      2543
+      590 |     +0.0% |       0 |       0 |             0 |      2533
+      600 |     +0.0% |       0 |       0 |             0 |      2523
+      610 |     +0.0% |       0 |       0 |             0 |      2513
+      620 |     +0.0% |       0 |       0 |             0 |      2503
+      630 |     +0.0% |       0 |       0 |             0 |      2493
+      640 |     +0.0% |       0 |       0 |             0 |      2483
+      650 |     +0.0% |       0 |       0 |             0 |      2473
+      660 |     +0.0% |       0 |       0 |             0 |      2463
+      670 |     +0.0% |       0 |       0 |             0 |      2453
+      680 |     +0.0% |       0 |       0 |             0 |      2443
+      690 |     +0.0% |       0 |       0 |             0 |      2433
+      700 |     +0.0% |       0 |       0 |             0 |      2423
+      710 |     +0.0% |       0 |       0 |             0 |      2413
+      720 |     +0.0% |       0 |       0 |             0 |      2403
+      730 |     +0.0% |       0 |       0 |             0 |      2393
+      740 |     +0.0% |       0 |       0 |             0 |      2383
+      750 |     +0.0% |       0 |       0 |             0 |      2373
+      760 |     +0.0% |       0 |       0 |             0 |      2363
+      770 |     +0.0% |       0 |       0 |             0 |      2353
+      780 |     +0.0% |       0 |       0 |             0 |      2343
+      790 |     +0.0% |       0 |       0 |             0 |      2333
+      800 |     +0.0% |       0 |       0 |             0 |      2323
+      810 |     +0.0% |       0 |       0 |             0 |      2313
+      820 |     +0.0% |       0 |       0 |             0 |      2303
+      830 |     +0.0% |       0 |       0 |             0 |      2293
+      840 |     +0.0% |       0 |       0 |             0 |      2283
+      850 |     +0.0% |       0 |       0 |             0 |      2273
+      860 |     +0.0% |       0 |       0 |             0 |      2263
+      870 |     +0.0% |       0 |       0 |             0 |      2253
+      880 |     +0.0% |       0 |       0 |             0 |      2243
+      890 |     +0.0% |       0 |       0 |             0 |      2233
+      900 |     +0.0% |       0 |       0 |             0 |      2223
+      910 |     +0.0% |       0 |       0 |             0 |      2213
+      920 |     +0.0% |       0 |       0 |             0 |      2203
+      930 |     +0.0% |       0 |       0 |             0 |      2193
+      940 |     +0.0% |       0 |       0 |             0 |      2183
+      950 |     +0.0% |       0 |       0 |             0 |      2173
+      960 |     +0.0% |       0 |       0 |             0 |      2163
+      970 |     +0.0% |       0 |       0 |             0 |      2153
+      980 |     +0.0% |       0 |       0 |             0 |      2143
+      990 |     +0.0% |       0 |       0 |             0 |      2133
+     1000 |     +0.0% |       0 |       0 |             0 |      2123
+     1010 |     +0.0% |       0 |       0 |             0 |      2113
+     1020 |     +0.0% |       0 |       0 |             0 |      2103
+     1030 |     +0.0% |       0 |       0 |             0 |      2093
+     1040 |     +0.0% |       0 |       0 |             0 |      2083
+     1050 |     +0.0% |       0 |       0 |             0 |      2073
+     1060 |     +0.0% |       1 |       0 |             0 |      2063
+     1070 |     +0.0% |       1 |       0 |             0 |      2053
+     1080 |     +0.0% |       1 |       0 |             0 |      2043
+     1090 |     +0.0% |       1 |       0 |             0 |      2033
+     1100 |     +0.0% |       1 |       0 |             0 |      2023
+     1110 |     +0.0% |       1 |       0 |             0 |      2013
+     1120 |     +0.0% |       1 |       0 |             0 |      2003
+     1130 |     +0.0% |       1 |       0 |             0 |      1993
+     1140 |     +0.0% |       1 |       0 |             0 |      1983
+     1150 |     +0.0% |       1 |       0 |             0 |      1973
+     1160 |     +0.0% |       1 |       0 |             0 |      1963
+     1170 |     +0.0% |       1 |       0 |             0 |      1953
+     1180 |     +0.0% |       1 |       0 |             0 |      1943
+     1190 |     +0.0% |       1 |       0 |             0 |      1933
+     1200 |     +0.0% |       1 |       0 |             0 |      1923
+     1210 |     +0.0% |       1 |       0 |             0 |      1913
+     1220 |     +0.0% |       1 |       0 |             0 |      1903
+     1230 |     +0.0% |       1 |       0 |             0 |      1893
+     1240 |     +0.0% |       1 |       0 |             0 |      1883
+     1250 |     +0.0% |       1 |       0 |             0 |      1873
+     1260 |     +0.0% |       1 |       0 |             0 |      1863
+     1270 |     +0.0% |       1 |       0 |             0 |      1853
+     1280 |     +0.0% |       1 |       0 |             0 |      1843
+     1290 |     +0.0% |       1 |       0 |             0 |      1833
+     1300 |     +0.0% |       1 |       0 |             0 |      1823
+     1310 |     +0.0% |       1 |       0 |             0 |      1813
+     1320 |     +0.0% |       1 |       0 |             0 |      1803
+     1330 |     +0.0% |       1 |       0 |             0 |      1793
+     1340 |     +0.0% |       1 |       0 |             0 |      1783
+     1350 |     +0.0% |       1 |       0 |             0 |      1773
+     1360 |     +0.0% |       1 |       0 |             0 |      1763
+     1370 |     +0.0% |       1 |       0 |             0 |      1753
+     1380 |     +0.0% |       1 |       0 |             0 |      1743
+     1390 |     +0.0% |       1 |       0 |             0 |      1733
+     1400 |     +0.0% |       1 |       0 |             0 |      1723
+     1410 |     +0.0% |       1 |       0 |             0 |      1713
+     1420 |     +0.0% |       1 |       0 |             0 |      1703
+     1430 |     +0.0% |       1 |       0 |             0 |      1693
+     1440 |     +0.0% |       1 |       0 |             0 |      1683
+     1450 |     +0.0% |       1 |       0 |             0 |      1673
+     1460 |     +0.0% |       1 |       0 |             0 |      1663
+     1470 |     +0.0% |       1 |       0 |             0 |      1653
+     1480 |     +0.0% |       1 |       0 |             0 |      1643
+     1490 |     +0.0% |       1 |       0 |             0 |      1633
+     1500 |     +0.0% |       1 |       0 |             0 |      1623
+     1510 |     +0.0% |       1 |       0 |             0 |      1613
+     1520 |     +0.0% |       1 |       0 |             0 |      1603
+     1530 |     +0.0% |       1 |       0 |             0 |      1593
+     1540 |     +0.0% |       1 |       0 |             0 |      1583
+     1550 |     +0.0% |       1 |       0 |             0 |      1573
+     1560 |     +0.0% |       1 |       0 |             0 |      1563
+     1570 |     +0.0% |       1 |       0 |             0 |      1553
+     1580 |     +0.0% |       1 |       0 |             0 |      1543
+     1590 |     +0.0% |       1 |       0 |             0 |      1533
+     1600 |     +0.0% |       1 |       0 |             0 |      1523
+     1610 |     +0.0% |       1 |       0 |             0 |      1513
+     1620 |     +0.0% |       1 |       0 |             0 |      1503
+     1630 |     +0.0% |       1 |       0 |             0 |      1493
+     1640 |     +0.0% |       1 |       0 |             0 |      1483
+     1650 |     +0.0% |       1 |       0 |             0 |      1473
+     1660 |     +0.0% |       1 |       0 |             0 |      1463
+     1670 |     +0.1% |       1 |       1 |             1 |      1453
+     1680 |     +0.1% |       1 |       1 |             1 |      1443
+     1690 |     +0.1% |       1 |       1 |             1 |      1433
+     1700 |     +0.1% |       1 |       1 |             1 |      1423
+     1710 |     +0.1% |       1 |       1 |             1 |      1413
+     1720 |     +0.1% |       1 |       1 |             1 |      1403
+     1730 |     +0.1% |       1 |       1 |             1 |      1393
+     1740 |     +0.1% |       1 |       3 |             2 |      1383
+     1750 |     +0.1% |       1 |       3 |             2 |      1373
+     1760 |     +0.1% |       1 |       3 |             2 |      1363
+     1770 |     +0.1% |       1 |       3 |             2 |      1353
+     1780 |     +0.1% |       1 |       3 |             2 |      1343
+     1790 |     +0.1% |       1 |       3 |             2 |      1333
+     1800 |     +0.1% |       1 |       3 |             2 |      1323
+     1810 |     +0.1% |       1 |       3 |             2 |      1313
+     1820 |     +0.1% |       1 |       3 |             2 |      1303
+     1830 |     +0.1% |       1 |       3 |             2 |      1293
+     1840 |     +0.1% |       1 |       3 |             2 |      1283
+     1850 |     +0.1% |       1 |       4 |             3 |      1273
+     1860 |     +0.2% |       1 |       6 |             4 |      1263
+     1870 |     +0.2% |       1 |       6 |             4 |      1253
+     1880 |     +0.2% |       1 |       6 |             4 |      1243
+     1890 |     +0.2% |       1 |       6 |             4 |      1233
+     1900 |     +0.2% |       1 |       6 |             4 |      1223
+     1910 |     +0.2% |       1 |       6 |             4 |      1213
+     1920 |     +0.2% |       1 |       6 |             4 |      1203
+     1930 |     +0.2% |       1 |       6 |             4 |      1193
+     1940 |     +0.2% |       1 |       6 |             4 |      1183
+     1950 |     +0.2% |       1 |       6 |             4 |      1173
+     1960 |     +0.2% |       1 |       6 |             4 |      1163
+     1970 |     +0.2% |       1 |       6 |             4 |      1153
+     1980 |     +0.2% |       1 |       6 |             4 |      1143
+     1990 |     +0.2% |       1 |       6 |             4 |      1133
+     2000 |     +0.2% |       1 |       6 |             4 |      1123
+     2010 |     +0.2% |       1 |       6 |             4 |      1113
+     2020 |     +0.2% |       1 |       6 |             4 |      1103
+     2030 |     +0.2% |       1 |       6 |             4 |      1093
+     2040 |     +0.2% |       1 |       6 |             4 |      1083
+     2050 |     +0.2% |       1 |       6 |             4 |      1073
+     2060 |     +0.2% |       1 |       6 |             4 |      1063
+     2070 |     +0.2% |       1 |       6 |             4 |      1053
+     2080 |     +0.2% |       1 |       6 |             4 |      1043
+     2090 |     +0.2% |       1 |       6 |             4 |      1033
+     2100 |     +0.2% |       1 |       6 |             4 |      1023
+     2110 |     +0.2% |       1 |       7 |             5 |      1013
+     2120 |     +0.2% |       1 |       7 |             5 |      1003
+     2130 |     +0.2% |       1 |       7 |             5 |       993
+     2140 |     +0.2% |       1 |       7 |             5 |       983
+     2150 |     +0.2% |       1 |       7 |             5 |       973
+     2160 |     +0.2% |       1 |       7 |             5 |       963
+     2170 |     +0.2% |       1 |       7 |             5 |       953
+     2180 |     +0.2% |       1 |       7 |             5 |       943
+     2190 |     +0.2% |       1 |       7 |             5 |       933
+     2200 |     +0.2% |       1 |       7 |             5 |       923
+     2210 |     +0.2% |       1 |       7 |             5 |       913
+     2220 |     +0.2% |       1 |       7 |             5 |       903
+     2230 |     +0.2% |       1 |       7 |             5 |       893
+     2240 |     +0.2% |       1 |       7 |             5 |       883
+     2250 |     +0.2% |       1 |       7 |             5 |       873
+     2260 |     +0.2% |       1 |       7 |             5 |       863
+     2270 |     +0.2% |       1 |       7 |             5 |       853
+     2280 |     +0.2% |       1 |       7 |             5 |       843
+     2290 |     +0.2% |       1 |       7 |             5 |       833
+     2300 |     +0.2% |       1 |       7 |             5 |       823
+     2310 |     +0.2% |       1 |       7 |             5 |       813
+     2320 |     +0.2% |       1 |       7 |             5 |       803
+     2330 |     +0.2% |       1 |       7 |             5 |       793
+     2340 |     +0.2% |       1 |       7 |             5 |       783
+     2350 |     +0.2% |       1 |       7 |             5 |       773
+     2360 |     +0.2% |       1 |       7 |             5 |       763
+     2370 |     +0.2% |       1 |       7 |             5 |       753
+     2380 |     +0.2% |       1 |       7 |             5 |       743
+     2390 |     +0.2% |       1 |       7 |             5 |       733
+     2400 |     +0.2% |       1 |       7 |             5 |       723
+     2410 |     +0.2% |       1 |       7 |             5 |       713
+     2420 |     +0.2% |       1 |       7 |             5 |       703
+     2430 |     +0.2% |       1 |       7 |             5 |       693
+     2440 |     +0.2% |       1 |       7 |             5 |       683
+     2450 |     +0.2% |       1 |       7 |             5 |       673
+     2460 |     +0.2% |       1 |       7 |             5 |       663
+     2470 |     +0.2% |       1 |       7 |             5 |       653
+     2480 |     +0.2% |       1 |       7 |             5 |       643
+     2490 |     +0.2% |       1 |       7 |             5 |       633
+     2500 |     +0.2% |       1 |       7 |             5 |       623
+     2510 |     +0.2% |       1 |       7 |             5 |       613
+     2520 |     +0.2% |       1 |       7 |             5 |       603
+     2530 |     +0.2% |       1 |       7 |             5 |       593
+     2540 |     +0.2% |       1 |       7 |             5 |       583
+     2550 |     +0.2% |       1 |       7 |             5 |       573
+     2560 |     +0.2% |       1 |       7 |             5 |       563
+     2570 |     +0.2% |       1 |       7 |             5 |       553
+     2580 |     +0.2% |       1 |       7 |             5 |       543
+     2590 |     +0.2% |       1 |       7 |             5 |       533
+     2600 |     +0.2% |       1 |       7 |             5 |       523
+     2610 |     +0.2% |       1 |       7 |             5 |       513
+     2620 |     +0.2% |       1 |       7 |             5 |       503
+     2630 |     +0.2% |       1 |       7 |             5 |       493
+     2640 |     +0.2% |       1 |       7 |             5 |       483
+     2650 |     +0.2% |       1 |       7 |             5 |       473
+     2660 |     +0.2% |       1 |       7 |             5 |       463
+     2670 |     +0.2% |       1 |       7 |             5 |       453
+     2680 |     +0.2% |       1 |       7 |             5 |       443
+     2690 |     +0.2% |       1 |       7 |             5 |       433
+     2700 |     +0.2% |       1 |       7 |             5 |       423
+     2710 |     +0.2% |       1 |       7 |             5 |       413
+     2720 |     +0.2% |       1 |       7 |             5 |       403
+     2730 |     +0.2% |       1 |       7 |             5 |       393
+     2740 |     +0.2% |       1 |       7 |             5 |       383
+     2750 |     +0.2% |       1 |       7 |             5 |       373
+     2760 |     +0.2% |       1 |       7 |             5 |       363
+     2770 |     +0.2% |       1 |       7 |             5 |       353
+     2780 |     +0.2% |       1 |       7 |             5 |       343
+     2790 |     +0.2% |       1 |       7 |             5 |       333
+     2800 |     +0.2% |       1 |       7 |             5 |       323
+     2810 |     +0.2% |       1 |       7 |             5 |       313
+     2820 |     +0.2% |       1 |       7 |             5 |       303
+     2830 |     +0.2% |       1 |       7 |             5 |       293
+     2840 |     +0.2% |       1 |       7 |             5 |       283
+     2850 |     +0.2% |       1 |       7 |             5 |       273
+     2860 |     +0.2% |       1 |       7 |             5 |       263
+     2870 |     +0.2% |       1 |       7 |             5 |       253
+     2880 |     +0.2% |       1 |       7 |             5 |       243
+     2890 |     +0.2% |       1 |       7 |             5 |       233
+     2900 |     +0.2% |       1 |       7 |             5 |       223
+     2910 |     +0.2% |       1 |       7 |             5 |       213
+     2920 |     +0.2% |       1 |       7 |             5 |       203
+     2930 |     +0.2% |       1 |       7 |             5 |       193
+     2940 |     +0.2% |       1 |       7 |             5 |       183
+     2950 |     +0.2% |       1 |       7 |             5 |       173
+     2960 |     +0.2% |       1 |       7 |             5 |       163
+     2970 |     +0.2% |       1 |       7 |             5 |       153
+     2980 |     +0.2% |       1 |       7 |             5 |       143
+     2990 |     +0.2% |       1 |       7 |             5 |       133
+     3000 |     +0.2% |       1 |       7 |             5 |       123
+     3010 |     +0.2% |       1 |       7 |             5 |       113
+     3020 |     +0.2% |       1 |       7 |             5 |       103
+     3030 |     +0.2% |       1 |       7 |             5 |        93
+     3040 |     +0.2% |       1 |       7 |             5 |        83
+     3050 |     +0.2% |       1 |       7 |             5 |        73
+     3060 |     +0.2% |       1 |       7 |             5 |        63
+     3070 |     +0.2% |       1 |       7 |             5 |        53
+     3080 |     +0.2% |       1 |       7 |             5 |        43
+     3090 |     +0.2% |       1 |       7 |             5 |        33
+     3100 |     +0.2% |       1 |       7 |             5 |        23
+     3110 |     +0.2% |       1 |       7 |             5 |        13
+     3120 |     +0.2% |       1 |       7 |             5 |         3
+    final |     +0.2% |       1 |       7 |             5 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 1 slew violations.
+[INFO RSZ-0036] Found 5 capacitance violations.
+[INFO RSZ-0039] Resized 1 instances.
+[INFO RSZ-0038] Inserted 7 buffers in 5 nets.
++ detailed_placement -max_displacement  500 500 
+Placement Analysis
+---------------------------------
+total displacement      11895.0 u
+average displacement        3.0 u
+max displacement          331.5 u
+original HPWL          194370.5 u
+legalized HPWL         208003.3 u
+delta HPWL                    7 %
+
+[INFO DPL-0020] Mirrored 1251 instances
+[INFO DPL-0021] HPWL before          208003.3 u
+[INFO DPL-0022] HPWL after           204344.1 u
+[INFO DPL-0023] HPWL delta               -1.8 %
++ global_route -congestion_iterations 200 -verbose
+[INFO GRT-0020] Min routing layer: Metal3
+[INFO GRT-0021] Max routing layer: Metal4
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0003] Macros: 1
+[INFO GRT-0004] Blockages: 26
+[INFO GRT-0019] Found 168 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 71
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical            0             0          0.00%
+Metal3     Horizontal      20794         20801          -0.03%
+Metal4     Vertical        18401         18401          0.00%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0102] Start extra iteration 1/200
+[INFO GRT-0102] Start extra iteration 2/200
+[INFO GRT-0102] Start extra iteration 3/200
+[WARNING EST-0026] Missing route to pin _4656_/D in net _0000_.
+[WARNING EST-0026] Missing route to pin _2680_/ZN in net _0000_.
+[WARNING EST-0026] Missing route to pin _4656_/D in net _0000_.
+[WARNING EST-0026] Missing route to pin _2680_/ZN in net _0000_.
+[WARNING EST-0026] Missing route to pin _4656_/D in net _0000_.
+[WARNING EST-0026] Missing route to pin _2680_/ZN in net _0000_.
+[WARNING EST-0026] Missing route to pin _4657_/D in net _0001_.
+[WARNING EST-0026] Missing route to pin _2666_/ZN in net _0001_.
+[WARNING EST-0026] Missing route to pin _4657_/D in net _0001_.
+[WARNING EST-0026] Missing route to pin _2666_/ZN in net _0001_.
+[WARNING EST-0026] Missing route to pin _4657_/D in net _0001_.
+[WARNING EST-0026] Missing route to pin _2666_/ZN in net _0001_.
+[WARNING EST-0026] Missing route to pin _4658_/D in net _0002_.
+[WARNING EST-0026] Missing route to pin _2653_/ZN in net _0002_.
+[WARNING EST-0026] Missing route to pin _4658_/D in net _0002_.
+[WARNING EST-0026] Missing route to pin _2653_/ZN in net _0002_.
+[WARNING EST-0026] Missing route to pin _4658_/D in net _0002_.
+[WARNING EST-0026] Missing route to pin _2653_/ZN in net _0002_.
+[WARNING EST-0026] Missing route to pin _4659_/D in net _0003_.
+[WARNING EST-0026] Missing route to pin _2644_/ZN in net _0003_.
+[WARNING EST-0026] Missing route to pin _4659_/D in net _0003_.
+[WARNING EST-0026] Missing route to pin _2644_/ZN in net _0003_.
+[WARNING EST-0026] Missing route to pin _4659_/D in net _0003_.
+[WARNING EST-0026] Missing route to pin _2644_/ZN in net _0003_.
+[WARNING EST-0026] Missing route to pin _4336_/E in net _0004_.
+[WARNING EST-0026] Missing route to pin _4310_/A1 in net _0004_.
+[WARNING EST-0026] Missing route to pin _2478_/ZN in net _0004_.
+[WARNING EST-0026] Missing route to pin _4336_/E in net _0004_.
+[WARNING EST-0026] Missing route to pin _4310_/A1 in net _0004_.
+[WARNING EST-0026] Missing route to pin _2478_/ZN in net _0004_.
+[WARNING EST-0026] Missing route to pin _4336_/E in net _0004_.
+[WARNING EST-0026] Missing route to pin _4310_/A1 in net _0004_.
+[WARNING EST-0026] Missing route to pin _2478_/ZN in net _0004_.
+[WARNING EST-0026] Missing route to pin _4323_/E in net _0005_.
+[WARNING EST-0026] Missing route to pin _2471_/ZN in net _0005_.
+[WARNING EST-0026] Missing route to pin _4323_/E in net _0005_.
+[WARNING EST-0026] Missing route to pin _2471_/ZN in net _0005_.
+[WARNING EST-0026] Missing route to pin _4323_/E in net _0005_.
+[WARNING EST-0026] Missing route to pin _2471_/ZN in net _0005_.
+[WARNING EST-0026] Missing route to pin _4324_/E in net _0006_.
+[WARNING EST-0026] Missing route to pin _4322_/Z in net _0006_.
+[WARNING EST-0026] Missing route to pin _4324_/E in net _0006_.
+[WARNING EST-0026] Missing route to pin _4322_/Z in net _0006_.
+[WARNING EST-0026] Missing route to pin _4324_/E in net _0006_.
+[WARNING EST-0026] Missing route to pin _4322_/Z in net _0006_.
+[WARNING EST-0026] Missing route to pin _4325_/E in net _0007_.
+[WARNING EST-0026] Missing route to pin _3998_/A2 in net _0007_.
+[WARNING EST-0026] Missing route to pin _2470_/ZN in net _0007_.
+[WARNING EST-0026] Missing route to pin _4325_/E in net _0007_.
+[WARNING EST-0026] Missing route to pin _3998_/A2 in net _0007_.
+[WARNING EST-0026] Missing route to pin _2470_/ZN in net _0007_.
+[WARNING EST-0026] Missing route to pin _4325_/E in net _0007_.
+[WARNING EST-0026] Missing route to pin _3998_/A2 in net _0007_.
+[WARNING EST-0026] Missing route to pin _2470_/ZN in net _0007_.
+[WARNING EST-0026] Missing route to pin _4326_/E in net _0008_.
+[WARNING EST-0026] Missing route to pin _2468_/ZN in net _0008_.
+[WARNING EST-0026] Missing route to pin _4326_/E in net _0008_.
+[WARNING EST-0026] Missing route to pin _2468_/ZN in net _0008_.
+[WARNING EST-0026] Missing route to pin _4326_/E in net _0008_.
+[WARNING EST-0026] Missing route to pin _2468_/ZN in net _0008_.
+[WARNING EST-0026] Missing route to pin _4327_/E in net _0009_.
+[WARNING EST-0026] Missing route to pin _2465_/ZN in net _0009_.
+[WARNING EST-0026] Missing route to pin _4327_/E in net _0009_.
+[WARNING EST-0026] Missing route to pin _2465_/ZN in net _0009_.
+[WARNING EST-0026] Missing route to pin _4327_/E in net _0009_.
+[WARNING EST-0026] Missing route to pin _2465_/ZN in net _0009_.
+[WARNING EST-0026] Missing route to pin _4328_/E in net _0010_.
+[WARNING EST-0026] Missing route to pin _2457_/ZN in net _0010_.
+[WARNING EST-0026] Missing route to pin _4328_/E in net _0010_.
+[WARNING EST-0026] Missing route to pin _2457_/ZN in net _0010_.
+[WARNING EST-0026] Missing route to pin _4328_/E in net _0010_.
+[WARNING EST-0026] Missing route to pin _2457_/ZN in net _0010_.
+[WARNING EST-0026] Missing route to pin _4329_/E in net _0011_.
+[WARNING EST-0026] Missing route to pin _2456_/ZN in net _0011_.
+[WARNING EST-0026] Missing route to pin _4329_/E in net _0011_.
+[WARNING EST-0026] Missing route to pin _2456_/ZN in net _0011_.
+[WARNING EST-0026] Missing route to pin _4329_/E in net _0011_.
+[WARNING EST-0026] Missing route to pin _2456_/ZN in net _0011_.
+[WARNING EST-0026] Missing route to pin _4330_/E in net _0012_.
+[WARNING EST-0026] Missing route to pin _2454_/ZN in net _0012_.
+[WARNING EST-0026] Missing route to pin _4330_/E in net _0012_.
+[WARNING EST-0026] Missing route to pin _2454_/ZN in net _0012_.
+[WARNING EST-0026] Missing route to pin _4330_/E in net _0012_.
+[WARNING EST-0026] Missing route to pin _2454_/ZN in net _0012_.
+[WARNING EST-0026] Missing route to pin _4331_/E in net _0013_.
+[WARNING EST-0026] Missing route to pin _2452_/ZN in net _0013_.
+[WARNING EST-0026] Missing route to pin _4331_/E in net _0013_.
+[WARNING EST-0026] Missing route to pin _2452_/ZN in net _0013_.
+[WARNING EST-0026] Missing route to pin _4331_/E in net _0013_.
+[WARNING EST-0026] Missing route to pin _2452_/ZN in net _0013_.
+[WARNING EST-0026] Missing route to pin _4333_/E in net _0014_.
+[WARNING EST-0026] Missing route to pin _2450_/ZN in net _0014_.
+[WARNING EST-0026] Missing route to pin _4333_/E in net _0014_.
+[WARNING EST-0026] Missing route to pin _2450_/ZN in net _0014_.
+[WARNING EST-0026] Missing route to pin _4333_/E in net _0014_.
+[WARNING EST-0026] Missing route to pin _2450_/ZN in net _0014_.
+[WARNING EST-0026] Missing route to pin _4334_/E in net _0015_.
+[WARNING EST-0026] Missing route to pin _2447_/ZN in net _0015_.
+[WARNING EST-0026] Missing route to pin _4334_/E in net _0015_.
+[WARNING EST-0026] Missing route to pin _2447_/ZN in net _0015_.
+[WARNING EST-0026] Missing route to pin _4334_/E in net _0015_.
+[WARNING EST-0026] Missing route to pin _2447_/ZN in net _0015_.
+[WARNING EST-0026] Missing route to pin _4335_/E in net _0016_.
+[WARNING EST-0026] Missing route to pin _2438_/Z in net _0016_.
+[WARNING EST-0026] Missing route to pin _4335_/E in net _0016_.
+[WARNING EST-0026] Missing route to pin _2438_/Z in net _0016_.
+[WARNING EST-0026] Missing route to pin _4335_/E in net _0016_.
+[WARNING EST-0026] Missing route to pin _2438_/Z in net _0016_.
+[WARNING EST-0026] Missing route to pin _4716_/D in net _0017_.
+[WARNING EST-0026] Missing route to pin _3489_/ZN in net _0017_.
+[WARNING EST-0026] Missing route to pin _4716_/D in net _0017_.
+[WARNING EST-0026] Missing route to pin _3489_/ZN in net _0017_.
+[WARNING EST-0026] Missing route to pin _4716_/D in net _0017_.
+[WARNING EST-0026] Missing route to pin _3489_/ZN in net _0017_.
+[WARNING EST-0026] Missing route to pin _4717_/D in net _0018_.
+[WARNING EST-0026] Missing route to pin _3491_/ZN in net _0018_.
+[WARNING EST-0026] Missing route to pin _4717_/D in net _0018_.
+[WARNING EST-0026] Missing route to pin _3491_/ZN in net _0018_.
+[WARNING EST-0026] Missing route to pin _4717_/D in net _0018_.
+[WARNING EST-0026] Missing route to pin _3491_/ZN in net _0018_.
+[WARNING EST-0026] Missing route to pin _4718_/D in net _0019_.
+[WARNING EST-0026] Missing route to pin _3493_/ZN in net _0019_.
+[WARNING EST-0026] Missing route to pin _4718_/D in net _0019_.
+[WARNING EST-0026] Missing route to pin _3493_/ZN in net _0019_.
+[WARNING EST-0026] Missing route to pin _4718_/D in net _0019_.
+[WARNING EST-0026] Missing route to pin _3493_/ZN in net _0019_.
+[WARNING EST-0026] Missing route to pin _4720_/D in net _0021_.
+[WARNING EST-0026] Missing route to pin _3497_/ZN in net _0021_.
+[WARNING EST-0026] Missing route to pin _4720_/D in net _0021_.
+[WARNING EST-0026] Missing route to pin _3497_/ZN in net _0021_.
+[WARNING EST-0026] Missing route to pin _4720_/D in net _0021_.
+[WARNING EST-0026] Missing route to pin _3497_/ZN in net _0021_.
+[WARNING EST-0026] Missing route to pin _4721_/D in net _0022_.
+[WARNING EST-0026] Missing route to pin _3499_/ZN in net _0022_.
+[WARNING EST-0026] Missing route to pin _4721_/D in net _0022_.
+[WARNING EST-0026] Missing route to pin _3499_/ZN in net _0022_.
+[WARNING EST-0026] Missing route to pin _4721_/D in net _0022_.
+[WARNING EST-0026] Missing route to pin _3499_/ZN in net _0022_.
+[WARNING EST-0026] Missing route to pin _4722_/D in net _0023_.
+[WARNING EST-0026] Missing route to pin _3501_/ZN in net _0023_.
+[WARNING EST-0026] Missing route to pin _4722_/D in net _0023_.
+[WARNING EST-0026] Missing route to pin _3501_/ZN in net _0023_.
+[WARNING EST-0026] Missing route to pin _4722_/D in net _0023_.
+[WARNING EST-0026] Missing route to pin _3501_/ZN in net _0023_.
+[WARNING EST-0026] Missing route to pin _4723_/D in net _0024_.
+[WARNING EST-0026] Missing route to pin _3503_/ZN in net _0024_.
+[WARNING EST-0026] Missing route to pin _4723_/D in net _0024_.
+[WARNING EST-0026] Missing route to pin _3503_/ZN in net _0024_.
+[WARNING EST-0026] Missing route to pin _4723_/D in net _0024_.
+[WARNING EST-0026] Missing route to pin _3503_/ZN in net _0024_.
+[WARNING EST-0026] Missing route to pin _4744_/D in net _0025_.
+[WARNING EST-0026] Missing route to pin _3473_/ZN in net _0025_.
+[WARNING EST-0026] Missing route to pin _4744_/D in net _0025_.
+[WARNING EST-0026] Missing route to pin _3473_/ZN in net _0025_.
+[WARNING EST-0026] Missing route to pin _4744_/D in net _0025_.
+[WARNING EST-0026] Missing route to pin _3473_/ZN in net _0025_.
+[WARNING EST-0026] Missing route to pin _4745_/D in net _0026_.
+[WARNING EST-0026] Missing route to pin _3475_/ZN in net _0026_.
+[WARNING EST-0026] Missing route to pin _4745_/D in net _0026_.
+[WARNING EST-0026] Missing route to pin _3475_/ZN in net _0026_.
+[WARNING EST-0026] Missing route to pin _4745_/D in net _0026_.
+[WARNING EST-0026] Missing route to pin _3475_/ZN in net _0026_.
+[WARNING EST-0026] Missing route to pin _4746_/D in net _0027_.
+[WARNING EST-0026] Missing route to pin _3477_/ZN in net _0027_.
+[WARNING EST-0026] Missing route to pin _4746_/D in net _0027_.
+[WARNING EST-0026] Missing route to pin _3477_/ZN in net _0027_.
+[WARNING EST-0026] Missing route to pin _4746_/D in net _0027_.
+[WARNING EST-0026] Missing route to pin _3477_/ZN in net _0027_.
+[WARNING EST-0026] Missing route to pin _4747_/D in net _0028_.
+[WARNING EST-0026] Missing route to pin _3479_/ZN in net _0028_.
+[WARNING EST-0026] Missing route to pin _4747_/D in net _0028_.
+[WARNING EST-0026] Missing route to pin _3479_/ZN in net _0028_.
+[WARNING EST-0026] Missing route to pin _4747_/D in net _0028_.
+[WARNING EST-0026] Missing route to pin _3479_/ZN in net _0028_.
+[WARNING EST-0026] Missing route to pin _4748_/D in net _0029_.
+[WARNING EST-0026] Missing route to pin _3481_/ZN in net _0029_.
+[WARNING EST-0026] Missing route to pin _4748_/D in net _0029_.
+[WARNING EST-0026] Missing route to pin _3481_/ZN in net _0029_.
+[WARNING EST-0026] Missing route to pin _4748_/D in net _0029_.
+[WARNING EST-0026] Missing route to pin _3481_/ZN in net _0029_.
+[WARNING EST-0026] Missing route to pin _4749_/D in net _0030_.
+[WARNING EST-0026] Missing route to pin _3483_/ZN in net _0030_.
+[WARNING EST-0026] Missing route to pin _4749_/D in net _0030_.
+[WARNING EST-0026] Missing route to pin _3483_/ZN in net _0030_.
+[WARNING EST-0026] Missing route to pin _4749_/D in net _0030_.
+[WARNING EST-0026] Missing route to pin _3483_/ZN in net _0030_.
+[WARNING EST-0026] Missing route to pin _4750_/D in net _0031_.
+[WARNING EST-0026] Missing route to pin _3485_/ZN in net _0031_.
+[WARNING EST-0026] Missing route to pin _4750_/D in net _0031_.
+[WARNING EST-0026] Missing route to pin _3485_/ZN in net _0031_.
+[WARNING EST-0026] Missing route to pin _4750_/D in net _0031_.
+[WARNING EST-0026] Missing route to pin _3485_/ZN in net _0031_.
+[WARNING EST-0026] Missing route to pin _4751_/D in net _0032_.
+[WARNING EST-0026] Missing route to pin _3487_/ZN in net _0032_.
+[WARNING EST-0026] Missing route to pin _4751_/D in net _0032_.
+[WARNING EST-0026] Missing route to pin _3487_/ZN in net _0032_.
+[WARNING EST-0026] Missing route to pin _4751_/D in net _0032_.
+[WARNING EST-0026] Missing route to pin _3487_/ZN in net _0032_.
+[WARNING EST-0026] Missing route to pin _4675_/D in net _0033_.
+[WARNING EST-0026] Missing route to pin _3999_/ZN in net _0033_.
+[WARNING EST-0026] Missing route to pin _4675_/D in net _0033_.
+[WARNING EST-0026] Missing route to pin _3999_/ZN in net _0033_.
+[WARNING EST-0026] Missing route to pin _4675_/D in net _0033_.
+[WARNING EST-0026] Missing route to pin _3999_/ZN in net _0033_.
+[WARNING EST-0026] Missing route to pin _4752_/D in net _0034_.
+[WARNING EST-0026] Missing route to pin _3998_/Z in net _0034_.
+[WARNING EST-0026] Missing route to pin _4752_/D in net _0034_.
+[WARNING EST-0026] Missing route to pin _3998_/Z in net _0034_.
+[WARNING EST-0026] Missing route to pin _4752_/D in net _0034_.
+[WARNING EST-0026] Missing route to pin _3998_/Z in net _0034_.
+[WARNING EST-0026] Missing route to pin _4898_/D in net _0035_.
+[WARNING EST-0026] Missing route to pin _2988_/ZN in net _0035_.
+[WARNING EST-0026] Missing route to pin _4898_/D in net _0035_.
+[WARNING EST-0026] Missing route to pin _2988_/ZN in net _0035_.
+[WARNING EST-0026] Missing route to pin _4898_/D in net _0035_.
+[WARNING EST-0026] Missing route to pin _2988_/ZN in net _0035_.
+[WARNING EST-0026] Missing route to pin _4908_/D in net _0036_.
+[WARNING EST-0026] Missing route to pin _3020_/ZN in net _0036_.
+[WARNING EST-0026] Missing route to pin _4908_/D in net _0036_.
+[WARNING EST-0026] Missing route to pin _3020_/ZN in net _0036_.
+[WARNING EST-0026] Missing route to pin _4908_/D in net _0036_.
+[WARNING EST-0026] Missing route to pin _3020_/ZN in net _0036_.
+[WARNING EST-0026] Missing route to pin _4909_/D in net _0037_.
+[WARNING EST-0026] Missing route to pin _3023_/ZN in net _0037_.
+[WARNING EST-0026] Missing route to pin _4909_/D in net _0037_.
+[WARNING EST-0026] Missing route to pin _3023_/ZN in net _0037_.
+[WARNING EST-0026] Missing route to pin _4909_/D in net _0037_.
+[WARNING EST-0026] Missing route to pin _3023_/ZN in net _0037_.
+[WARNING EST-0026] Missing route to pin _4910_/D in net _0038_.
+[WARNING EST-0026] Missing route to pin _3026_/ZN in net _0038_.
+[WARNING EST-0026] Missing route to pin _4910_/D in net _0038_.
+[WARNING EST-0026] Missing route to pin _3026_/ZN in net _0038_.
+[WARNING EST-0026] Missing route to pin _4910_/D in net _0038_.
+[WARNING EST-0026] Missing route to pin _3026_/ZN in net _0038_.
+[WARNING EST-0026] Missing route to pin _4911_/D in net _0039_.
+[WARNING EST-0026] Missing route to pin _3031_/ZN in net _0039_.
+[WARNING EST-0026] Missing route to pin _4911_/D in net _0039_.
+[WARNING EST-0026] Missing route to pin _3031_/ZN in net _0039_.
+[WARNING EST-0026] Missing route to pin _4911_/D in net _0039_.
+[WARNING EST-0026] Missing route to pin _3031_/ZN in net _0039_.
+[WARNING EST-0026] Missing route to pin _4913_/D in net _0041_.
+[WARNING EST-0026] Missing route to pin _3037_/ZN in net _0041_.
+[WARNING EST-0026] Missing route to pin _4913_/D in net _0041_.
+[WARNING EST-0026] Missing route to pin _3037_/ZN in net _0041_.
+[WARNING EST-0026] Missing route to pin _4913_/D in net _0041_.
+[WARNING EST-0026] Missing route to pin _3037_/ZN in net _0041_.
+[WARNING EST-0026] Missing route to pin _4914_/D in net _0042_.
+[WARNING EST-0026] Missing route to pin _3040_/ZN in net _0042_.
+[WARNING EST-0026] Missing route to pin _4914_/D in net _0042_.
+[WARNING EST-0026] Missing route to pin _3040_/ZN in net _0042_.
+[WARNING EST-0026] Missing route to pin _4914_/D in net _0042_.
+[WARNING EST-0026] Missing route to pin _3040_/ZN in net _0042_.
+[WARNING EST-0026] Missing route to pin _4915_/D in net _0043_.
+[WARNING EST-0026] Missing route to pin _3043_/ZN in net _0043_.
+[WARNING EST-0026] Missing route to pin _4915_/D in net _0043_.
+[WARNING EST-0026] Missing route to pin _3043_/ZN in net _0043_.
+[WARNING EST-0026] Missing route to pin _4915_/D in net _0043_.
+[WARNING EST-0026] Missing route to pin _3043_/ZN in net _0043_.
+[WARNING EST-0026] Missing route to pin _4916_/D in net _0044_.
+[WARNING EST-0026] Missing route to pin _3047_/ZN in net _0044_.
+[WARNING EST-0026] Missing route to pin _4916_/D in net _0044_.
+[WARNING EST-0026] Missing route to pin _3047_/ZN in net _0044_.
+[WARNING EST-0026] Missing route to pin _4916_/D in net _0044_.
+[WARNING EST-0026] Missing route to pin _3047_/ZN in net _0044_.
+[WARNING EST-0026] Missing route to pin _4917_/D in net _0045_.
+[WARNING EST-0026] Missing route to pin _3050_/ZN in net _0045_.
+[WARNING EST-0026] Missing route to pin _4917_/D in net _0045_.
+[WARNING EST-0026] Missing route to pin _3050_/ZN in net _0045_.
+[WARNING EST-0026] Missing route to pin _4917_/D in net _0045_.
+[WARNING EST-0026] Missing route to pin _3050_/ZN in net _0045_.
+[WARNING EST-0026] Missing route to pin _4899_/D in net _0046_.
+[WARNING EST-0026] Missing route to pin _2991_/ZN in net _0046_.
+[WARNING EST-0026] Missing route to pin _4899_/D in net _0046_.
+[WARNING EST-0026] Missing route to pin _2991_/ZN in net _0046_.
+[WARNING EST-0026] Missing route to pin _4899_/D in net _0046_.
+[WARNING EST-0026] Missing route to pin _2991_/ZN in net _0046_.
+[WARNING EST-0026] Missing route to pin _4918_/D in net _0047_.
+[WARNING EST-0026] Missing route to pin _3051_/ZN in net _0047_.
+[WARNING EST-0026] Missing route to pin _4918_/D in net _0047_.
+[WARNING EST-0026] Missing route to pin _3051_/ZN in net _0047_.
+[WARNING EST-0026] Missing route to pin _4918_/D in net _0047_.
+[WARNING EST-0026] Missing route to pin _3051_/ZN in net _0047_.
+[WARNING EST-0026] Missing route to pin _4919_/D in net _0048_.
+[WARNING EST-0026] Missing route to pin _3052_/ZN in net _0048_.
+[WARNING EST-0026] Missing route to pin _4919_/D in net _0048_.
+[WARNING EST-0026] Missing route to pin _3052_/ZN in net _0048_.
+[WARNING EST-0026] Missing route to pin _4919_/D in net _0048_.
+[WARNING EST-0026] Missing route to pin _3052_/ZN in net _0048_.
+[WARNING EST-0026] Missing route to pin _4920_/D in net _0049_.
+[WARNING EST-0026] Missing route to pin _3053_/ZN in net _0049_.
+[WARNING EST-0026] Missing route to pin _4920_/D in net _0049_.
+[WARNING EST-0026] Missing route to pin _3053_/ZN in net _0049_.
+[WARNING EST-0026] Missing route to pin _4920_/D in net _0049_.
+[WARNING EST-0026] Missing route to pin _3053_/ZN in net _0049_.
+[WARNING EST-0026] Missing route to pin _4921_/D in net _0050_.
+[WARNING EST-0026] Missing route to pin _3057_/ZN in net _0050_.
+[WARNING EST-0026] Missing route to pin _4921_/D in net _0050_.
+[WARNING EST-0026] Missing route to pin _3057_/ZN in net _0050_.
+[WARNING EST-0026] Missing route to pin _4921_/D in net _0050_.
+[WARNING EST-0026] Missing route to pin _3057_/ZN in net _0050_.
+[WARNING EST-0026] Missing route to pin _4922_/D in net _0051_.
+[WARNING EST-0026] Missing route to pin _3060_/ZN in net _0051_.
+[WARNING EST-0026] Missing route to pin _4922_/D in net _0051_.
+[WARNING EST-0026] Missing route to pin _3060_/ZN in net _0051_.
+[WARNING EST-0026] Missing route to pin _4922_/D in net _0051_.
+[WARNING EST-0026] Missing route to pin _3060_/ZN in net _0051_.
+[WARNING EST-0026] Missing route to pin _4923_/D in net _0052_.
+[WARNING EST-0026] Missing route to pin _3062_/ZN in net _0052_.
+[WARNING EST-0026] Missing route to pin _4923_/D in net _0052_.
+[WARNING EST-0026] Missing route to pin _3062_/ZN in net _0052_.
+[WARNING EST-0026] Missing route to pin _4923_/D in net _0052_.
+[WARNING EST-0026] Missing route to pin _3062_/ZN in net _0052_.
+[WARNING EST-0026] Missing route to pin _4924_/D in net _0053_.
+[WARNING EST-0026] Missing route to pin _3063_/ZN in net _0053_.
+[WARNING EST-0026] Missing route to pin _4924_/D in net _0053_.
+[WARNING EST-0026] Missing route to pin _3063_/ZN in net _0053_.
+[WARNING EST-0026] Missing route to pin _4924_/D in net _0053_.
+[WARNING EST-0026] Missing route to pin _3063_/ZN in net _0053_.
+[WARNING EST-0026] Missing route to pin _4926_/D in net _0055_.
+[WARNING EST-0026] Missing route to pin _3068_/ZN in net _0055_.
+[WARNING EST-0026] Missing route to pin _4926_/D in net _0055_.
+[WARNING EST-0026] Missing route to pin _3068_/ZN in net _0055_.
+[WARNING EST-0026] Missing route to pin _4926_/D in net _0055_.
+[WARNING EST-0026] Missing route to pin _3068_/ZN in net _0055_.
+[WARNING EST-0026] Missing route to pin _4928_/D in net _0058_.
+[WARNING EST-0026] Missing route to pin _3073_/ZN in net _0058_.
+[WARNING EST-0026] Missing route to pin _4928_/D in net _0058_.
+[WARNING EST-0026] Missing route to pin _3073_/ZN in net _0058_.
+[WARNING EST-0026] Missing route to pin _4928_/D in net _0058_.
+[WARNING EST-0026] Missing route to pin _3073_/ZN in net _0058_.
+[WARNING EST-0026] Missing route to pin _4929_/D in net _0059_.
+[WARNING EST-0026] Missing route to pin _3075_/ZN in net _0059_.
+[WARNING EST-0026] Missing route to pin _4929_/D in net _0059_.
+[WARNING EST-0026] Missing route to pin _3075_/ZN in net _0059_.
+[WARNING EST-0026] Missing route to pin _4929_/D in net _0059_.
+[WARNING EST-0026] Missing route to pin _3075_/ZN in net _0059_.
+[WARNING EST-0026] Missing route to pin _4901_/D in net _0060_.
+[WARNING EST-0026] Missing route to pin _2997_/ZN in net _0060_.
+[WARNING EST-0026] Missing route to pin _4901_/D in net _0060_.
+[WARNING EST-0026] Missing route to pin _2997_/ZN in net _0060_.
+[WARNING EST-0026] Missing route to pin _4901_/D in net _0060_.
+[WARNING EST-0026] Missing route to pin _2997_/ZN in net _0060_.
+[WARNING EST-0026] Missing route to pin _4902_/D in net _0061_.
+[WARNING EST-0026] Missing route to pin _3001_/ZN in net _0061_.
+[WARNING EST-0026] Missing route to pin _4902_/D in net _0061_.
+[WARNING EST-0026] Missing route to pin _3001_/ZN in net _0061_.
+[WARNING EST-0026] Missing route to pin _4902_/D in net _0061_.
+[WARNING EST-0026] Missing route to pin _3001_/ZN in net _0061_.
+[WARNING EST-0026] Missing route to pin _4903_/D in net _0062_.
+[WARNING EST-0026] Missing route to pin _3004_/ZN in net _0062_.
+[WARNING EST-0026] Missing route to pin _4903_/D in net _0062_.
+[WARNING EST-0026] Missing route to pin _3004_/ZN in net _0062_.
+[WARNING EST-0026] Missing route to pin _4903_/D in net _0062_.
+[WARNING EST-0026] Missing route to pin _3004_/ZN in net _0062_.
+[WARNING EST-0026] Missing route to pin _4904_/D in net _0063_.
+[WARNING EST-0026] Missing route to pin _3007_/ZN in net _0063_.
+[WARNING EST-0026] Missing route to pin _4904_/D in net _0063_.
+[WARNING EST-0026] Missing route to pin _3007_/ZN in net _0063_.
+[WARNING EST-0026] Missing route to pin _4904_/D in net _0063_.
+[WARNING EST-0026] Missing route to pin _3007_/ZN in net _0063_.
+[WARNING EST-0026] Missing route to pin _4905_/D in net _0064_.
+[WARNING EST-0026] Missing route to pin _3011_/ZN in net _0064_.
+[WARNING EST-0026] Missing route to pin _4905_/D in net _0064_.
+[WARNING EST-0026] Missing route to pin _3011_/ZN in net _0064_.
+[WARNING EST-0026] Missing route to pin _4905_/D in net _0064_.
+[WARNING EST-0026] Missing route to pin _3011_/ZN in net _0064_.
+[WARNING EST-0026] Missing route to pin _4906_/D in net _0065_.
+[WARNING EST-0026] Missing route to pin _3014_/ZN in net _0065_.
+[WARNING EST-0026] Missing route to pin _4906_/D in net _0065_.
+[WARNING EST-0026] Missing route to pin _3014_/ZN in net _0065_.
+[WARNING EST-0026] Missing route to pin _4906_/D in net _0065_.
+[WARNING EST-0026] Missing route to pin _3014_/ZN in net _0065_.
+[WARNING EST-0026] Missing route to pin _4907_/D in net _0066_.
+[WARNING EST-0026] Missing route to pin _3017_/ZN in net _0066_.
+[WARNING EST-0026] Missing route to pin _4907_/D in net _0066_.
+[WARNING EST-0026] Missing route to pin _3017_/ZN in net _0066_.
+[WARNING EST-0026] Missing route to pin _4907_/D in net _0066_.
+[WARNING EST-0026] Missing route to pin _3017_/ZN in net _0066_.
+[WARNING EST-0026] Missing route to pin _4933_/D in net _0067_.
+[WARNING EST-0026] Missing route to pin _2723_/ZN in net _0067_.
+[WARNING EST-0026] Missing route to pin _4933_/D in net _0067_.
+[WARNING EST-0026] Missing route to pin _2723_/ZN in net _0067_.
+[WARNING EST-0026] Missing route to pin _4933_/D in net _0067_.
+[WARNING EST-0026] Missing route to pin _2723_/ZN in net _0067_.
+[WARNING EST-0026] Missing route to pin _4834_/D in net _0068_.
+[WARNING EST-0026] Missing route to pin _3176_/ZN in net _0068_.
+[WARNING EST-0026] Missing route to pin _4834_/D in net _0068_.
+[WARNING EST-0026] Missing route to pin _3176_/ZN in net _0068_.
+[WARNING EST-0026] Missing route to pin _4834_/D in net _0068_.
+[WARNING EST-0026] Missing route to pin _3176_/ZN in net _0068_.
+[WARNING EST-0026] Missing route to pin _4844_/D in net _0069_.
+[WARNING EST-0026] Missing route to pin _3207_/ZN in net _0069_.
+[WARNING EST-0026] Missing route to pin _4844_/D in net _0069_.
+[WARNING EST-0026] Missing route to pin _3207_/ZN in net _0069_.
+[WARNING EST-0026] Missing route to pin _4844_/D in net _0069_.
+[WARNING EST-0026] Missing route to pin _3207_/ZN in net _0069_.
+[WARNING EST-0026] Missing route to pin _4845_/D in net _0070_.
+[WARNING EST-0026] Missing route to pin _3211_/ZN in net _0070_.
+[WARNING EST-0026] Missing route to pin _4845_/D in net _0070_.
+[WARNING EST-0026] Missing route to pin _3211_/ZN in net _0070_.
+[WARNING EST-0026] Missing route to pin _4845_/D in net _0070_.
+[WARNING EST-0026] Missing route to pin _3211_/ZN in net _0070_.
+[WARNING EST-0026] Missing route to pin _4847_/D in net _0072_.
+[WARNING EST-0026] Missing route to pin _3217_/ZN in net _0072_.
+[WARNING EST-0026] Missing route to pin _4847_/D in net _0072_.
+[WARNING EST-0026] Missing route to pin _3217_/ZN in net _0072_.
+[WARNING EST-0026] Missing route to pin _4847_/D in net _0072_.
+[WARNING EST-0026] Missing route to pin _3217_/ZN in net _0072_.
+[WARNING EST-0026] Missing route to pin _4848_/D in net _0073_.
+[WARNING EST-0026] Missing route to pin _3219_/ZN in net _0073_.
+[WARNING EST-0026] Missing route to pin _4848_/D in net _0073_.
+[WARNING EST-0026] Missing route to pin _3219_/ZN in net _0073_.
+[WARNING EST-0026] Missing route to pin _4848_/D in net _0073_.
+[WARNING EST-0026] Missing route to pin _3219_/ZN in net _0073_.
+[WARNING EST-0026] Missing route to pin _4849_/D in net _0074_.
+[WARNING EST-0026] Missing route to pin _3223_/ZN in net _0074_.
+[WARNING EST-0026] Missing route to pin _4849_/D in net _0074_.
+[WARNING EST-0026] Missing route to pin _3223_/ZN in net _0074_.
+[WARNING EST-0026] Missing route to pin _4849_/D in net _0074_.
+[WARNING EST-0026] Missing route to pin _3223_/ZN in net _0074_.
+[WARNING EST-0026] Missing route to pin _4850_/D in net _0075_.
+[WARNING EST-0026] Missing route to pin _3227_/ZN in net _0075_.
+[WARNING EST-0026] Missing route to pin _4850_/D in net _0075_.
+[WARNING EST-0026] Missing route to pin _3227_/ZN in net _0075_.
+[WARNING EST-0026] Missing route to pin _4850_/D in net _0075_.
+[WARNING EST-0026] Missing route to pin _3227_/ZN in net _0075_.
+[WARNING EST-0026] Missing route to pin _4851_/D in net _0076_.
+[WARNING EST-0026] Missing route to pin _3231_/ZN in net _0076_.
+[WARNING EST-0026] Missing route to pin _4851_/D in net _0076_.
+[WARNING EST-0026] Missing route to pin _3231_/ZN in net _0076_.
+[WARNING EST-0026] Missing route to pin _4851_/D in net _0076_.
+[WARNING EST-0026] Missing route to pin _3231_/ZN in net _0076_.
+[WARNING EST-0026] Missing route to pin _4852_/D in net _0077_.
+[WARNING EST-0026] Missing route to pin _3233_/ZN in net _0077_.
+[WARNING EST-0026] Missing route to pin _4852_/D in net _0077_.
+[WARNING EST-0026] Missing route to pin _3233_/ZN in net _0077_.
+[WARNING EST-0026] Missing route to pin _4852_/D in net _0077_.
+[WARNING EST-0026] Missing route to pin _3233_/ZN in net _0077_.
+[WARNING EST-0026] Missing route to pin _4835_/D in net _0079_.
+[WARNING EST-0026] Missing route to pin _3178_/ZN in net _0079_.
+[WARNING EST-0026] Missing route to pin _4835_/D in net _0079_.
+[WARNING EST-0026] Missing route to pin _3178_/ZN in net _0079_.
+[WARNING EST-0026] Missing route to pin _4835_/D in net _0079_.
+[WARNING EST-0026] Missing route to pin _3178_/ZN in net _0079_.
+[WARNING EST-0026] Missing route to pin _4854_/D in net _0080_.
+[WARNING EST-0026] Missing route to pin _3243_/ZN in net _0080_.
+[WARNING EST-0026] Missing route to pin _4854_/D in net _0080_.
+[WARNING EST-0026] Missing route to pin _3243_/ZN in net _0080_.
+[WARNING EST-0026] Missing route to pin _4854_/D in net _0080_.
+[WARNING EST-0026] Missing route to pin _3243_/ZN in net _0080_.
+[WARNING EST-0026] Missing route to pin _4855_/D in net _0081_.
+[WARNING EST-0026] Missing route to pin _3248_/ZN in net _0081_.
+[WARNING EST-0026] Missing route to pin _4855_/D in net _0081_.
+[WARNING EST-0026] Missing route to pin _3248_/ZN in net _0081_.
+[WARNING EST-0026] Missing route to pin _4855_/D in net _0081_.
+[WARNING EST-0026] Missing route to pin _3248_/ZN in net _0081_.
+[WARNING EST-0026] Missing route to pin _4856_/D in net _0082_.
+[WARNING EST-0026] Missing route to pin _3250_/ZN in net _0082_.
+[WARNING EST-0026] Missing route to pin _4856_/D in net _0082_.
+[WARNING EST-0026] Missing route to pin _3250_/ZN in net _0082_.
+[WARNING EST-0026] Missing route to pin _4856_/D in net _0082_.
+[WARNING EST-0026] Missing route to pin _3250_/ZN in net _0082_.
+[WARNING EST-0026] Missing route to pin _4857_/D in net _0083_.
+[WARNING EST-0026] Missing route to pin _3253_/ZN in net _0083_.
+[WARNING EST-0026] Missing route to pin _4857_/D in net _0083_.
+[WARNING EST-0026] Missing route to pin _3253_/ZN in net _0083_.
+[WARNING EST-0026] Missing route to pin _4857_/D in net _0083_.
+[WARNING EST-0026] Missing route to pin _3253_/ZN in net _0083_.
+[WARNING EST-0026] Missing route to pin _4858_/D in net _0084_.
+[WARNING EST-0026] Missing route to pin _3257_/ZN in net _0084_.
+[WARNING EST-0026] Missing route to pin _4858_/D in net _0084_.
+[WARNING EST-0026] Missing route to pin _3257_/ZN in net _0084_.
+[WARNING EST-0026] Missing route to pin _4858_/D in net _0084_.
+[WARNING EST-0026] Missing route to pin _3257_/ZN in net _0084_.
+[WARNING EST-0026] Missing route to pin _4859_/D in net _0085_.
+[WARNING EST-0026] Missing route to pin _3261_/ZN in net _0085_.
+[WARNING EST-0026] Missing route to pin _4859_/D in net _0085_.
+[WARNING EST-0026] Missing route to pin _3261_/ZN in net _0085_.
+[WARNING EST-0026] Missing route to pin _4859_/D in net _0085_.
+[WARNING EST-0026] Missing route to pin _3261_/ZN in net _0085_.
+[WARNING EST-0026] Missing route to pin _4860_/D in net _0086_.
+[WARNING EST-0026] Missing route to pin _3265_/ZN in net _0086_.
+[WARNING EST-0026] Missing route to pin _4860_/D in net _0086_.
+[WARNING EST-0026] Missing route to pin _3265_/ZN in net _0086_.
+[WARNING EST-0026] Missing route to pin _4860_/D in net _0086_.
+[WARNING EST-0026] Missing route to pin _3265_/ZN in net _0086_.
+[WARNING EST-0026] Missing route to pin _4861_/D in net _0087_.
+[WARNING EST-0026] Missing route to pin _3268_/ZN in net _0087_.
+[WARNING EST-0026] Missing route to pin _4861_/D in net _0087_.
+[WARNING EST-0026] Missing route to pin _3268_/ZN in net _0087_.
+[WARNING EST-0026] Missing route to pin _4861_/D in net _0087_.
+[WARNING EST-0026] Missing route to pin _3268_/ZN in net _0087_.
+[WARNING EST-0026] Missing route to pin _4862_/D in net _0088_.
+[WARNING EST-0026] Missing route to pin _3272_/ZN in net _0088_.
+[WARNING EST-0026] Missing route to pin _4862_/D in net _0088_.
+[WARNING EST-0026] Missing route to pin _3272_/ZN in net _0088_.
+[WARNING EST-0026] Missing route to pin _4862_/D in net _0088_.
+[WARNING EST-0026] Missing route to pin _3272_/ZN in net _0088_.
+[WARNING EST-0026] Missing route to pin _4863_/D in net _0089_.
+[WARNING EST-0026] Missing route to pin _3276_/ZN in net _0089_.
+[WARNING EST-0026] Missing route to pin _4863_/D in net _0089_.
+[WARNING EST-0026] Missing route to pin _3276_/ZN in net _0089_.
+[WARNING EST-0026] Missing route to pin _4863_/D in net _0089_.
+[WARNING EST-0026] Missing route to pin _3276_/ZN in net _0089_.
+[WARNING EST-0026] Missing route to pin _4836_/D in net _0090_.
+[WARNING EST-0026] Missing route to pin _3180_/ZN in net _0090_.
+[WARNING EST-0026] Missing route to pin _4836_/D in net _0090_.
+[WARNING EST-0026] Missing route to pin _3180_/ZN in net _0090_.
+[WARNING EST-0026] Missing route to pin _4836_/D in net _0090_.
+[WARNING EST-0026] Missing route to pin _3180_/ZN in net _0090_.
+[WARNING EST-0026] Missing route to pin _4864_/D in net _0091_.
+[WARNING EST-0026] Missing route to pin _3281_/ZN in net _0091_.
+[WARNING EST-0026] Missing route to pin _4864_/D in net _0091_.
+[WARNING EST-0026] Missing route to pin _3281_/ZN in net _0091_.
+[WARNING EST-0026] Missing route to pin _4864_/D in net _0091_.
+[WARNING EST-0026] Missing route to pin _3281_/ZN in net _0091_.
+[WARNING EST-0026] Missing route to pin _4865_/D in net _0092_.
+[WARNING EST-0026] Missing route to pin _3286_/ZN in net _0092_.
+[WARNING EST-0026] Missing route to pin _4865_/D in net _0092_.
+[WARNING EST-0026] Missing route to pin _3286_/ZN in net _0092_.
+[WARNING EST-0026] Missing route to pin _4865_/D in net _0092_.
+[WARNING EST-0026] Missing route to pin _3286_/ZN in net _0092_.
+[WARNING EST-0026] Missing route to pin _4837_/D in net _0093_.
+[WARNING EST-0026] Missing route to pin _3183_/ZN in net _0093_.
+[WARNING EST-0026] Missing route to pin _4837_/D in net _0093_.
+[WARNING EST-0026] Missing route to pin _3183_/ZN in net _0093_.
+[WARNING EST-0026] Missing route to pin _4837_/D in net _0093_.
+[WARNING EST-0026] Missing route to pin _3183_/ZN in net _0093_.
+[WARNING EST-0026] Missing route to pin _4838_/D in net _0094_.
+[WARNING EST-0026] Missing route to pin _3189_/ZN in net _0094_.
+[WARNING EST-0026] Missing route to pin _4838_/D in net _0094_.
+[WARNING EST-0026] Missing route to pin _3189_/ZN in net _0094_.
+[WARNING EST-0026] Missing route to pin _4838_/D in net _0094_.
+[WARNING EST-0026] Missing route to pin _3189_/ZN in net _0094_.
+[WARNING EST-0026] Missing route to pin _4839_/D in net _0095_.
+[WARNING EST-0026] Missing route to pin _3192_/ZN in net _0095_.
+[WARNING EST-0026] Missing route to pin _4839_/D in net _0095_.
+[WARNING EST-0026] Missing route to pin _3192_/ZN in net _0095_.
+[WARNING EST-0026] Missing route to pin _4839_/D in net _0095_.
+[WARNING EST-0026] Missing route to pin _3192_/ZN in net _0095_.
+[WARNING EST-0026] Missing route to pin _4840_/D in net _0096_.
+[WARNING EST-0026] Missing route to pin _3194_/ZN in net _0096_.
+[WARNING EST-0026] Missing route to pin _4840_/D in net _0096_.
+[WARNING EST-0026] Missing route to pin _3194_/ZN in net _0096_.
+[WARNING EST-0026] Missing route to pin _4840_/D in net _0096_.
+[WARNING EST-0026] Missing route to pin _3194_/ZN in net _0096_.
+[WARNING EST-0026] Missing route to pin _4841_/D in net _0097_.
+[WARNING EST-0026] Missing route to pin _3198_/ZN in net _0097_.
+[WARNING EST-0026] Missing route to pin _4841_/D in net _0097_.
+[WARNING EST-0026] Missing route to pin _3198_/ZN in net _0097_.
+[WARNING EST-0026] Missing route to pin _4841_/D in net _0097_.
+[WARNING EST-0026] Missing route to pin _3198_/ZN in net _0097_.
+[WARNING EST-0026] Missing route to pin _4842_/D in net _0098_.
+[WARNING EST-0026] Missing route to pin _3200_/ZN in net _0098_.
+[WARNING EST-0026] Missing route to pin _4842_/D in net _0098_.
+[WARNING EST-0026] Missing route to pin _3200_/ZN in net _0098_.
+[WARNING EST-0026] Missing route to pin _4842_/D in net _0098_.
+[WARNING EST-0026] Missing route to pin _3200_/ZN in net _0098_.
+[WARNING EST-0026] Missing route to pin _4843_/D in net _0099_.
+[WARNING EST-0026] Missing route to pin _3205_/ZN in net _0099_.
+[WARNING EST-0026] Missing route to pin _4843_/D in net _0099_.
+[WARNING EST-0026] Missing route to pin _3205_/ZN in net _0099_.
+[WARNING EST-0026] Missing route to pin _4843_/D in net _0099_.
+[WARNING EST-0026] Missing route to pin _3205_/ZN in net _0099_.
+[WARNING EST-0026] Missing route to pin _4866_/D in net _0100_.
+[WARNING EST-0026] Missing route to pin _3079_/ZN in net _0100_.
+[WARNING EST-0026] Missing route to pin _4866_/D in net _0100_.
+[WARNING EST-0026] Missing route to pin _3079_/ZN in net _0100_.
+[WARNING EST-0026] Missing route to pin _4866_/D in net _0100_.
+[WARNING EST-0026] Missing route to pin _3079_/ZN in net _0100_.
+[WARNING EST-0026] Missing route to pin _4876_/D in net _0101_.
+[WARNING EST-0026] Missing route to pin _3105_/ZN in net _0101_.
+[WARNING EST-0026] Missing route to pin _4876_/D in net _0101_.
+[WARNING EST-0026] Missing route to pin _3105_/ZN in net _0101_.
+[WARNING EST-0026] Missing route to pin _4876_/D in net _0101_.
+[WARNING EST-0026] Missing route to pin _3105_/ZN in net _0101_.
+[WARNING EST-0026] Missing route to pin _4877_/D in net _0102_.
+[WARNING EST-0026] Missing route to pin _3109_/ZN in net _0102_.
+[WARNING EST-0026] Missing route to pin _4877_/D in net _0102_.
+[WARNING EST-0026] Missing route to pin _3109_/ZN in net _0102_.
+[WARNING EST-0026] Missing route to pin _4877_/D in net _0102_.
+[WARNING EST-0026] Missing route to pin _3109_/ZN in net _0102_.
+[WARNING EST-0026] Missing route to pin _4878_/D in net _0103_.
+[WARNING EST-0026] Missing route to pin _3112_/ZN in net _0103_.
+[WARNING EST-0026] Missing route to pin _4878_/D in net _0103_.
+[WARNING EST-0026] Missing route to pin _3112_/ZN in net _0103_.
+[WARNING EST-0026] Missing route to pin _4878_/D in net _0103_.
+[WARNING EST-0026] Missing route to pin _3112_/ZN in net _0103_.
+[WARNING EST-0026] Missing route to pin _4879_/D in net _0104_.
+[WARNING EST-0026] Missing route to pin _3114_/ZN in net _0104_.
+[WARNING EST-0026] Missing route to pin _4879_/D in net _0104_.
+[WARNING EST-0026] Missing route to pin _3114_/ZN in net _0104_.
+[WARNING EST-0026] Missing route to pin _4879_/D in net _0104_.
+[WARNING EST-0026] Missing route to pin _3114_/ZN in net _0104_.
+[WARNING EST-0026] Missing route to pin _4880_/D in net _0105_.
+[WARNING EST-0026] Missing route to pin _3116_/ZN in net _0105_.
+[WARNING EST-0026] Missing route to pin _4880_/D in net _0105_.
+[WARNING EST-0026] Missing route to pin _3116_/ZN in net _0105_.
+[WARNING EST-0026] Missing route to pin _4880_/D in net _0105_.
+[WARNING EST-0026] Missing route to pin _3116_/ZN in net _0105_.
+[WARNING EST-0026] Missing route to pin _4881_/D in net _0106_.
+[WARNING EST-0026] Missing route to pin _3120_/ZN in net _0106_.
+[WARNING EST-0026] Missing route to pin _4881_/D in net _0106_.
+[WARNING EST-0026] Missing route to pin _3120_/ZN in net _0106_.
+[WARNING EST-0026] Missing route to pin _4881_/D in net _0106_.
+[WARNING EST-0026] Missing route to pin _3120_/ZN in net _0106_.
+[WARNING EST-0026] Missing route to pin _4882_/D in net _0107_.
+[WARNING EST-0026] Missing route to pin _3123_/ZN in net _0107_.
+[WARNING EST-0026] Missing route to pin _4882_/D in net _0107_.
+[WARNING EST-0026] Missing route to pin _3123_/ZN in net _0107_.
+[WARNING EST-0026] Missing route to pin _4882_/D in net _0107_.
+[WARNING EST-0026] Missing route to pin _3123_/ZN in net _0107_.
+[WARNING EST-0026] Missing route to pin _4883_/D in net _0108_.
+[WARNING EST-0026] Missing route to pin _3126_/ZN in net _0108_.
+[WARNING EST-0026] Missing route to pin _4883_/D in net _0108_.
+[WARNING EST-0026] Missing route to pin _3126_/ZN in net _0108_.
+[WARNING EST-0026] Missing route to pin _4883_/D in net _0108_.
+[WARNING EST-0026] Missing route to pin _3126_/ZN in net _0108_.
+[WARNING EST-0026] Missing route to pin _4884_/D in net _0109_.
+[WARNING EST-0026] Missing route to pin _3128_/ZN in net _0109_.
+[WARNING EST-0026] Missing route to pin _4884_/D in net _0109_.
+[WARNING EST-0026] Missing route to pin _3128_/ZN in net _0109_.
+[WARNING EST-0026] Missing route to pin _4884_/D in net _0109_.
+[WARNING EST-0026] Missing route to pin _3128_/ZN in net _0109_.
+[WARNING EST-0026] Missing route to pin _4885_/D in net _0110_.
+[WARNING EST-0026] Missing route to pin _3133_/ZN in net _0110_.
+[WARNING EST-0026] Missing route to pin _4885_/D in net _0110_.
+[WARNING EST-0026] Missing route to pin _3133_/ZN in net _0110_.
+[WARNING EST-0026] Missing route to pin _4885_/D in net _0110_.
+[WARNING EST-0026] Missing route to pin _3133_/ZN in net _0110_.
+[WARNING EST-0026] Missing route to pin _4867_/D in net _0111_.
+[WARNING EST-0026] Missing route to pin _3082_/ZN in net _0111_.
+[WARNING EST-0026] Missing route to pin _4867_/D in net _0111_.
+[WARNING EST-0026] Missing route to pin _3082_/ZN in net _0111_.
+[WARNING EST-0026] Missing route to pin _4867_/D in net _0111_.
+[WARNING EST-0026] Missing route to pin _3082_/ZN in net _0111_.
+[WARNING EST-0026] Missing route to pin _4886_/D in net _0112_.
+[WARNING EST-0026] Missing route to pin _3135_/ZN in net _0112_.
+[WARNING EST-0026] Missing route to pin _4886_/D in net _0112_.
+[WARNING EST-0026] Missing route to pin _3135_/ZN in net _0112_.
+[WARNING EST-0026] Missing route to pin _4886_/D in net _0112_.
+[WARNING EST-0026] Missing route to pin _3135_/ZN in net _0112_.
+[WARNING EST-0026] Missing route to pin _4888_/D in net _0114_.
+[WARNING EST-0026] Missing route to pin _3141_/ZN in net _0114_.
+[WARNING EST-0026] Missing route to pin _4888_/D in net _0114_.
+[WARNING EST-0026] Missing route to pin _3141_/ZN in net _0114_.
+[WARNING EST-0026] Missing route to pin _4888_/D in net _0114_.
+[WARNING EST-0026] Missing route to pin _3141_/ZN in net _0114_.
+[WARNING EST-0026] Missing route to pin _4889_/D in net _0115_.
+[WARNING EST-0026] Missing route to pin _3145_/ZN in net _0115_.
+[WARNING EST-0026] Missing route to pin _4889_/D in net _0115_.
+[WARNING EST-0026] Missing route to pin _3145_/ZN in net _0115_.
+[WARNING EST-0026] Missing route to pin _4889_/D in net _0115_.
+[WARNING EST-0026] Missing route to pin _3145_/ZN in net _0115_.
+[WARNING EST-0026] Missing route to pin _4890_/D in net _0116_.
+[WARNING EST-0026] Missing route to pin _3148_/ZN in net _0116_.
+[WARNING EST-0026] Missing route to pin _4890_/D in net _0116_.
+[WARNING EST-0026] Missing route to pin _3148_/ZN in net _0116_.
+[WARNING EST-0026] Missing route to pin _4890_/D in net _0116_.
+[WARNING EST-0026] Missing route to pin _3148_/ZN in net _0116_.
+[WARNING EST-0026] Missing route to pin _4891_/D in net _0117_.
+[WARNING EST-0026] Missing route to pin _3150_/ZN in net _0117_.
+[WARNING EST-0026] Missing route to pin _4891_/D in net _0117_.
+[WARNING EST-0026] Missing route to pin _3150_/ZN in net _0117_.
+[WARNING EST-0026] Missing route to pin _4891_/D in net _0117_.
+[WARNING EST-0026] Missing route to pin _3150_/ZN in net _0117_.
+[WARNING EST-0026] Missing route to pin _4892_/D in net _0118_.
+[WARNING EST-0026] Missing route to pin _3152_/ZN in net _0118_.
+[WARNING EST-0026] Missing route to pin _4892_/D in net _0118_.
+[WARNING EST-0026] Missing route to pin _3152_/ZN in net _0118_.
+[WARNING EST-0026] Missing route to pin _4892_/D in net _0118_.
+[WARNING EST-0026] Missing route to pin _3152_/ZN in net _0118_.
+[WARNING EST-0026] Missing route to pin _4893_/D in net _0119_.
+[WARNING EST-0026] Missing route to pin _3156_/ZN in net _0119_.
+[WARNING EST-0026] Missing route to pin _4893_/D in net _0119_.
+[WARNING EST-0026] Missing route to pin _3156_/ZN in net _0119_.
+[WARNING EST-0026] Missing route to pin _4893_/D in net _0119_.
+[WARNING EST-0026] Missing route to pin _3156_/ZN in net _0119_.
+[WARNING EST-0026] Missing route to pin _4894_/D in net _0120_.
+[WARNING EST-0026] Missing route to pin _3160_/ZN in net _0120_.
+[WARNING EST-0026] Missing route to pin _4894_/D in net _0120_.
+[WARNING EST-0026] Missing route to pin _3160_/ZN in net _0120_.
+[WARNING EST-0026] Missing route to pin _4894_/D in net _0120_.
+[WARNING EST-0026] Missing route to pin _3160_/ZN in net _0120_.
+[WARNING EST-0026] Missing route to pin _4868_/D in net _0122_.
+[WARNING EST-0026] Missing route to pin _3085_/ZN in net _0122_.
+[WARNING EST-0026] Missing route to pin _4868_/D in net _0122_.
+[WARNING EST-0026] Missing route to pin _3085_/ZN in net _0122_.
+[WARNING EST-0026] Missing route to pin _4868_/D in net _0122_.
+[WARNING EST-0026] Missing route to pin _3085_/ZN in net _0122_.
+[WARNING EST-0026] Missing route to pin _4896_/D in net _0123_.
+[WARNING EST-0026] Missing route to pin _3169_/ZN in net _0123_.
+[WARNING EST-0026] Missing route to pin _4896_/D in net _0123_.
+[WARNING EST-0026] Missing route to pin _3169_/ZN in net _0123_.
+[WARNING EST-0026] Missing route to pin _4896_/D in net _0123_.
+[WARNING EST-0026] Missing route to pin _3169_/ZN in net _0123_.
+[WARNING EST-0026] Missing route to pin _4897_/D in net _0124_.
+[WARNING EST-0026] Missing route to pin _3171_/ZN in net _0124_.
+[WARNING EST-0026] Missing route to pin _4897_/D in net _0124_.
+[WARNING EST-0026] Missing route to pin _3171_/ZN in net _0124_.
+[WARNING EST-0026] Missing route to pin _4897_/D in net _0124_.
+[WARNING EST-0026] Missing route to pin _3171_/ZN in net _0124_.
+[WARNING EST-0026] Missing route to pin _4870_/D in net _0126_.
+[WARNING EST-0026] Missing route to pin _3090_/ZN in net _0126_.
+[WARNING EST-0026] Missing route to pin _4870_/D in net _0126_.
+[WARNING EST-0026] Missing route to pin _3090_/ZN in net _0126_.
+[WARNING EST-0026] Missing route to pin _4870_/D in net _0126_.
+[WARNING EST-0026] Missing route to pin _3090_/ZN in net _0126_.
+[WARNING EST-0026] Missing route to pin _4874_/D in net _0130_.
+[WARNING EST-0026] Missing route to pin _3100_/ZN in net _0130_.
+[WARNING EST-0026] Missing route to pin _4874_/D in net _0130_.
+[WARNING EST-0026] Missing route to pin _3100_/ZN in net _0130_.
+[WARNING EST-0026] Missing route to pin _4874_/D in net _0130_.
+[WARNING EST-0026] Missing route to pin _3100_/ZN in net _0130_.
+[WARNING EST-0026] Missing route to pin _4875_/D in net _0131_.
+[WARNING EST-0026] Missing route to pin _3103_/ZN in net _0131_.
+[WARNING EST-0026] Missing route to pin _4875_/D in net _0131_.
+[WARNING EST-0026] Missing route to pin _3103_/ZN in net _0131_.
+[WARNING EST-0026] Missing route to pin _4875_/D in net _0131_.
+[WARNING EST-0026] Missing route to pin _3103_/ZN in net _0131_.
+[WARNING EST-0026] Missing route to pin _4802_/D in net _0133_.
+[WARNING EST-0026] Missing route to pin _3292_/ZN in net _0133_.
+[WARNING EST-0026] Missing route to pin _4802_/D in net _0133_.
+[WARNING EST-0026] Missing route to pin _3292_/ZN in net _0133_.
+[WARNING EST-0026] Missing route to pin _4802_/D in net _0133_.
+[WARNING EST-0026] Missing route to pin _3292_/ZN in net _0133_.
+[WARNING EST-0026] Missing route to pin _4812_/D in net _0134_.
+[WARNING EST-0026] Missing route to pin _3321_/ZN in net _0134_.
+[WARNING EST-0026] Missing route to pin _4812_/D in net _0134_.
+[WARNING EST-0026] Missing route to pin _3321_/ZN in net _0134_.
+[WARNING EST-0026] Missing route to pin _4812_/D in net _0134_.
+[WARNING EST-0026] Missing route to pin _3321_/ZN in net _0134_.
+[WARNING EST-0026] Missing route to pin _4813_/D in net _0135_.
+[WARNING EST-0026] Missing route to pin _3324_/ZN in net _0135_.
+[WARNING EST-0026] Missing route to pin _4813_/D in net _0135_.
+[WARNING EST-0026] Missing route to pin _3324_/ZN in net _0135_.
+[WARNING EST-0026] Missing route to pin _4813_/D in net _0135_.
+[WARNING EST-0026] Missing route to pin _3324_/ZN in net _0135_.
+[WARNING EST-0026] Missing route to pin _4814_/D in net _0136_.
+[WARNING EST-0026] Missing route to pin _3326_/ZN in net _0136_.
+[WARNING EST-0026] Missing route to pin _4814_/D in net _0136_.
+[WARNING EST-0026] Missing route to pin _3326_/ZN in net _0136_.
+[WARNING EST-0026] Missing route to pin _4814_/D in net _0136_.
+[WARNING EST-0026] Missing route to pin _3326_/ZN in net _0136_.
+[WARNING EST-0026] Missing route to pin _4815_/D in net _0137_.
+[WARNING EST-0026] Missing route to pin _3329_/ZN in net _0137_.
+[WARNING EST-0026] Missing route to pin _4815_/D in net _0137_.
+[WARNING EST-0026] Missing route to pin _3329_/ZN in net _0137_.
+[WARNING EST-0026] Missing route to pin _4815_/D in net _0137_.
+[WARNING EST-0026] Missing route to pin _3329_/ZN in net _0137_.
+[WARNING EST-0026] Missing route to pin _4816_/D in net _0138_.
+[WARNING EST-0026] Missing route to pin _3331_/ZN in net _0138_.
+[WARNING EST-0026] Missing route to pin _4816_/D in net _0138_.
+[WARNING EST-0026] Missing route to pin _3331_/ZN in net _0138_.
+[WARNING EST-0026] Missing route to pin _4816_/D in net _0138_.
+[WARNING EST-0026] Missing route to pin _3331_/ZN in net _0138_.
+[WARNING EST-0026] Missing route to pin _4817_/D in net _0139_.
+[WARNING EST-0026] Missing route to pin _3336_/ZN in net _0139_.
+[WARNING EST-0026] Missing route to pin _4817_/D in net _0139_.
+[WARNING EST-0026] Missing route to pin _3336_/ZN in net _0139_.
+[WARNING EST-0026] Missing route to pin _4817_/D in net _0139_.
+[WARNING EST-0026] Missing route to pin _3336_/ZN in net _0139_.
+[WARNING EST-0026] Missing route to pin _4818_/D in net _0140_.
+[WARNING EST-0026] Missing route to pin _3339_/ZN in net _0140_.
+[WARNING EST-0026] Missing route to pin _4818_/D in net _0140_.
+[WARNING EST-0026] Missing route to pin _3339_/ZN in net _0140_.
+[WARNING EST-0026] Missing route to pin _4818_/D in net _0140_.
+[WARNING EST-0026] Missing route to pin _3339_/ZN in net _0140_.
+[WARNING EST-0026] Missing route to pin _4819_/D in net _0141_.
+[WARNING EST-0026] Missing route to pin _3342_/ZN in net _0141_.
+[WARNING EST-0026] Missing route to pin _4819_/D in net _0141_.
+[WARNING EST-0026] Missing route to pin _3342_/ZN in net _0141_.
+[WARNING EST-0026] Missing route to pin _4819_/D in net _0141_.
+[WARNING EST-0026] Missing route to pin _3342_/ZN in net _0141_.
+[WARNING EST-0026] Missing route to pin _4820_/D in net _0142_.
+[WARNING EST-0026] Missing route to pin _3344_/ZN in net _0142_.
+[WARNING EST-0026] Missing route to pin _4820_/D in net _0142_.
+[WARNING EST-0026] Missing route to pin _3344_/ZN in net _0142_.
+[WARNING EST-0026] Missing route to pin _4820_/D in net _0142_.
+[WARNING EST-0026] Missing route to pin _3344_/ZN in net _0142_.
+[WARNING EST-0026] Missing route to pin _4821_/D in net _0143_.
+[WARNING EST-0026] Missing route to pin _3346_/ZN in net _0143_.
+[WARNING EST-0026] Missing route to pin _4821_/D in net _0143_.
+[WARNING EST-0026] Missing route to pin _3346_/ZN in net _0143_.
+[WARNING EST-0026] Missing route to pin _4821_/D in net _0143_.
+[WARNING EST-0026] Missing route to pin _3346_/ZN in net _0143_.
+[WARNING EST-0026] Missing route to pin _4803_/D in net _0144_.
+[WARNING EST-0026] Missing route to pin _3294_/ZN in net _0144_.
+[WARNING EST-0026] Missing route to pin _4803_/D in net _0144_.
+[WARNING EST-0026] Missing route to pin _3294_/ZN in net _0144_.
+[WARNING EST-0026] Missing route to pin _4803_/D in net _0144_.
+[WARNING EST-0026] Missing route to pin _3294_/ZN in net _0144_.
+[WARNING EST-0026] Missing route to pin _4822_/D in net _0145_.
+[WARNING EST-0026] Missing route to pin _3348_/ZN in net _0145_.
+[WARNING EST-0026] Missing route to pin _4822_/D in net _0145_.
+[WARNING EST-0026] Missing route to pin _3348_/ZN in net _0145_.
+[WARNING EST-0026] Missing route to pin _4822_/D in net _0145_.
+[WARNING EST-0026] Missing route to pin _3348_/ZN in net _0145_.
+[WARNING EST-0026] Missing route to pin _4823_/D in net _0146_.
+[WARNING EST-0026] Missing route to pin _3350_/ZN in net _0146_.
+[WARNING EST-0026] Missing route to pin _4823_/D in net _0146_.
+[WARNING EST-0026] Missing route to pin _3350_/ZN in net _0146_.
+[WARNING EST-0026] Missing route to pin _4823_/D in net _0146_.
+[WARNING EST-0026] Missing route to pin _3350_/ZN in net _0146_.
+[WARNING EST-0026] Missing route to pin _4824_/D in net _0147_.
+[WARNING EST-0026] Missing route to pin _3352_/ZN in net _0147_.
+[WARNING EST-0026] Missing route to pin _4824_/D in net _0147_.
+[WARNING EST-0026] Missing route to pin _3352_/ZN in net _0147_.
+[WARNING EST-0026] Missing route to pin _4824_/D in net _0147_.
+[WARNING EST-0026] Missing route to pin _3352_/ZN in net _0147_.
+[WARNING EST-0026] Missing route to pin _4825_/D in net _0148_.
+[WARNING EST-0026] Missing route to pin _3355_/ZN in net _0148_.
+[WARNING EST-0026] Missing route to pin _4825_/D in net _0148_.
+[WARNING EST-0026] Missing route to pin _3355_/ZN in net _0148_.
+[WARNING EST-0026] Missing route to pin _4825_/D in net _0148_.
+[WARNING EST-0026] Missing route to pin _3355_/ZN in net _0148_.
+[WARNING EST-0026] Missing route to pin _4826_/D in net _0149_.
+[WARNING EST-0026] Missing route to pin _3357_/ZN in net _0149_.
+[WARNING EST-0026] Missing route to pin _4826_/D in net _0149_.
+[WARNING EST-0026] Missing route to pin _3357_/ZN in net _0149_.
+[WARNING EST-0026] Missing route to pin _4826_/D in net _0149_.
+[WARNING EST-0026] Missing route to pin _3357_/ZN in net _0149_.
+[WARNING EST-0026] Missing route to pin _4827_/D in net _0150_.
+[WARNING EST-0026] Missing route to pin _3359_/ZN in net _0150_.
+[WARNING EST-0026] Missing route to pin _4827_/D in net _0150_.
+[WARNING EST-0026] Missing route to pin _3359_/ZN in net _0150_.
+[WARNING EST-0026] Missing route to pin _4827_/D in net _0150_.
+[WARNING EST-0026] Missing route to pin _3359_/ZN in net _0150_.
+[WARNING EST-0026] Missing route to pin _4828_/D in net _0151_.
+[WARNING EST-0026] Missing route to pin _3361_/ZN in net _0151_.
+[WARNING EST-0026] Missing route to pin _4828_/D in net _0151_.
+[WARNING EST-0026] Missing route to pin _3361_/ZN in net _0151_.
+[WARNING EST-0026] Missing route to pin _4828_/D in net _0151_.
+[WARNING EST-0026] Missing route to pin _3361_/ZN in net _0151_.
+[WARNING EST-0026] Missing route to pin _4829_/D in net _0152_.
+[WARNING EST-0026] Missing route to pin _3363_/ZN in net _0152_.
+[WARNING EST-0026] Missing route to pin _4829_/D in net _0152_.
+[WARNING EST-0026] Missing route to pin _3363_/ZN in net _0152_.
+[WARNING EST-0026] Missing route to pin _4829_/D in net _0152_.
+[WARNING EST-0026] Missing route to pin _3363_/ZN in net _0152_.
+[WARNING EST-0026] Missing route to pin _4830_/D in net _0153_.
+[WARNING EST-0026] Missing route to pin _3365_/ZN in net _0153_.
+[WARNING EST-0026] Missing route to pin _4830_/D in net _0153_.
+[WARNING EST-0026] Missing route to pin _3365_/ZN in net _0153_.
+[WARNING EST-0026] Missing route to pin _4830_/D in net _0153_.
+[WARNING EST-0026] Missing route to pin _3365_/ZN in net _0153_.
+[WARNING EST-0026] Missing route to pin _4804_/D in net _0155_.
+[WARNING EST-0026] Missing route to pin _3297_/ZN in net _0155_.
+[WARNING EST-0026] Missing route to pin _4804_/D in net _0155_.
+[WARNING EST-0026] Missing route to pin _3297_/ZN in net _0155_.
+[WARNING EST-0026] Missing route to pin _4804_/D in net _0155_.
+[WARNING EST-0026] Missing route to pin _3297_/ZN in net _0155_.
+[WARNING EST-0026] Missing route to pin _4832_/D in net _0156_.
+[WARNING EST-0026] Missing route to pin _3371_/ZN in net _0156_.
+[WARNING EST-0026] Missing route to pin _4832_/D in net _0156_.
+[WARNING EST-0026] Missing route to pin _3371_/ZN in net _0156_.
+[WARNING EST-0026] Missing route to pin _4832_/D in net _0156_.
+[WARNING EST-0026] Missing route to pin _3371_/ZN in net _0156_.
+[WARNING EST-0026] Missing route to pin _4833_/D in net _0157_.
+[WARNING EST-0026] Missing route to pin _3372_/ZN in net _0157_.
+[WARNING EST-0026] Missing route to pin _4833_/D in net _0157_.
+[WARNING EST-0026] Missing route to pin _3372_/ZN in net _0157_.
+[WARNING EST-0026] Missing route to pin _4833_/D in net _0157_.
+[WARNING EST-0026] Missing route to pin _3372_/ZN in net _0157_.
+[WARNING EST-0026] Missing route to pin _4805_/D in net _0158_.
+[WARNING EST-0026] Missing route to pin _3300_/ZN in net _0158_.
+[WARNING EST-0026] Missing route to pin _4805_/D in net _0158_.
+[WARNING EST-0026] Missing route to pin _3300_/ZN in net _0158_.
+[WARNING EST-0026] Missing route to pin _4805_/D in net _0158_.
+[WARNING EST-0026] Missing route to pin _3300_/ZN in net _0158_.
+[WARNING EST-0026] Missing route to pin _4806_/D in net _0159_.
+[WARNING EST-0026] Missing route to pin _3303_/ZN in net _0159_.
+[WARNING EST-0026] Missing route to pin _4806_/D in net _0159_.
+[WARNING EST-0026] Missing route to pin _3303_/ZN in net _0159_.
+[WARNING EST-0026] Missing route to pin _4806_/D in net _0159_.
+[WARNING EST-0026] Missing route to pin _3303_/ZN in net _0159_.
+[WARNING EST-0026] Missing route to pin _4807_/D in net _0160_.
+[WARNING EST-0026] Missing route to pin _3306_/ZN in net _0160_.
+[WARNING EST-0026] Missing route to pin _4807_/D in net _0160_.
+[WARNING EST-0026] Missing route to pin _3306_/ZN in net _0160_.
+[WARNING EST-0026] Missing route to pin _4807_/D in net _0160_.
+[WARNING EST-0026] Missing route to pin _3306_/ZN in net _0160_.
+[WARNING EST-0026] Missing route to pin _4808_/D in net _0161_.
+[WARNING EST-0026] Missing route to pin _3310_/ZN in net _0161_.
+[WARNING EST-0026] Missing route to pin _4808_/D in net _0161_.
+[WARNING EST-0026] Missing route to pin _3310_/ZN in net _0161_.
+[WARNING EST-0026] Missing route to pin _4808_/D in net _0161_.
+[WARNING EST-0026] Missing route to pin _3310_/ZN in net _0161_.
+[WARNING EST-0026] Missing route to pin _4809_/D in net _0162_.
+[WARNING EST-0026] Missing route to pin _3312_/Z in net _0162_.
+[WARNING EST-0026] Missing route to pin _4809_/D in net _0162_.
+[WARNING EST-0026] Missing route to pin _3312_/Z in net _0162_.
+[WARNING EST-0026] Missing route to pin _4809_/D in net _0162_.
+[WARNING EST-0026] Missing route to pin _3312_/Z in net _0162_.
+[WARNING EST-0026] Missing route to pin _4810_/D in net _0163_.
+[WARNING EST-0026] Missing route to pin _3316_/ZN in net _0163_.
+[WARNING EST-0026] Missing route to pin _4810_/D in net _0163_.
+[WARNING EST-0026] Missing route to pin _3316_/ZN in net _0163_.
+[WARNING EST-0026] Missing route to pin _4810_/D in net _0163_.
+[WARNING EST-0026] Missing route to pin _3316_/ZN in net _0163_.
+[WARNING EST-0026] Missing route to pin _4811_/D in net _0164_.
+[WARNING EST-0026] Missing route to pin _3318_/ZN in net _0164_.
+[WARNING EST-0026] Missing route to pin _4811_/D in net _0164_.
+[WARNING EST-0026] Missing route to pin _3318_/ZN in net _0164_.
+[WARNING EST-0026] Missing route to pin _4811_/D in net _0164_.
+[WARNING EST-0026] Missing route to pin _3318_/ZN in net _0164_.
+[WARNING EST-0026] Missing route to pin _4698_/D in net _0165_.
+[WARNING EST-0026] Missing route to pin _3555_/ZN in net _0165_.
+[WARNING EST-0026] Missing route to pin _4698_/D in net _0165_.
+[WARNING EST-0026] Missing route to pin _3555_/ZN in net _0165_.
+[WARNING EST-0026] Missing route to pin _4698_/D in net _0165_.
+[WARNING EST-0026] Missing route to pin _3555_/ZN in net _0165_.
+[WARNING EST-0026] Missing route to pin _4700_/D in net _0167_.
+[WARNING EST-0026] Missing route to pin _3565_/ZN in net _0167_.
+[WARNING EST-0026] Missing route to pin _4700_/D in net _0167_.
+[WARNING EST-0026] Missing route to pin _3565_/ZN in net _0167_.
+[WARNING EST-0026] Missing route to pin _4700_/D in net _0167_.
+[WARNING EST-0026] Missing route to pin _3565_/ZN in net _0167_.
+[WARNING EST-0026] Missing route to pin _4701_/D in net _0168_.
+[WARNING EST-0026] Missing route to pin _3568_/ZN in net _0168_.
+[WARNING EST-0026] Missing route to pin _4701_/D in net _0168_.
+[WARNING EST-0026] Missing route to pin _3568_/ZN in net _0168_.
+[WARNING EST-0026] Missing route to pin _4701_/D in net _0168_.
+[WARNING EST-0026] Missing route to pin _3568_/ZN in net _0168_.
+[WARNING EST-0026] Missing route to pin _4702_/D in net _0169_.
+[WARNING EST-0026] Missing route to pin _3572_/ZN in net _0169_.
+[WARNING EST-0026] Missing route to pin _4702_/D in net _0169_.
+[WARNING EST-0026] Missing route to pin _3572_/ZN in net _0169_.
+[WARNING EST-0026] Missing route to pin _4702_/D in net _0169_.
+[WARNING EST-0026] Missing route to pin _3572_/ZN in net _0169_.
+[WARNING EST-0026] Missing route to pin _4703_/D in net _0170_.
+[WARNING EST-0026] Missing route to pin _3574_/ZN in net _0170_.
+[WARNING EST-0026] Missing route to pin _4703_/D in net _0170_.
+[WARNING EST-0026] Missing route to pin _3574_/ZN in net _0170_.
+[WARNING EST-0026] Missing route to pin _4703_/D in net _0170_.
+[WARNING EST-0026] Missing route to pin _3574_/ZN in net _0170_.
+[WARNING EST-0026] Missing route to pin _4931_/D in net _0171_.
+[WARNING EST-0026] Missing route to pin _2983_/ZN in net _0171_.
+[WARNING EST-0026] Missing route to pin _4931_/D in net _0171_.
+[WARNING EST-0026] Missing route to pin _2983_/ZN in net _0171_.
+[WARNING EST-0026] Missing route to pin _4931_/D in net _0171_.
+[WARNING EST-0026] Missing route to pin _2983_/ZN in net _0171_.
+[WARNING EST-0026] Missing route to pin _4754_/D in net _0172_.
+[WARNING EST-0026] Missing route to pin _3378_/ZN in net _0172_.
+[WARNING EST-0026] Missing route to pin _4754_/D in net _0172_.
+[WARNING EST-0026] Missing route to pin _3378_/ZN in net _0172_.
+[WARNING EST-0026] Missing route to pin _4754_/D in net _0172_.
+[WARNING EST-0026] Missing route to pin _3378_/ZN in net _0172_.
+[WARNING EST-0026] Missing route to pin _4768_/D in net _0177_.
+[WARNING EST-0026] Missing route to pin _3422_/ZN in net _0177_.
+[WARNING EST-0026] Missing route to pin _4768_/D in net _0177_.
+[WARNING EST-0026] Missing route to pin _3422_/ZN in net _0177_.
+[WARNING EST-0026] Missing route to pin _4768_/D in net _0177_.
+[WARNING EST-0026] Missing route to pin _3422_/ZN in net _0177_.
+[WARNING EST-0026] Missing route to pin _4769_/D in net _0178_.
+[WARNING EST-0026] Missing route to pin _3427_/ZN in net _0178_.
+[WARNING EST-0026] Missing route to pin _4769_/D in net _0178_.
+[WARNING EST-0026] Missing route to pin _3427_/ZN in net _0178_.
+[WARNING EST-0026] Missing route to pin _4769_/D in net _0178_.
+[WARNING EST-0026] Missing route to pin _3427_/ZN in net _0178_.
+[WARNING EST-0026] Missing route to pin _4770_/D in net _0179_.
+[WARNING EST-0026] Missing route to pin _3430_/ZN in net _0179_.
+[WARNING EST-0026] Missing route to pin _4770_/D in net _0179_.
+[WARNING EST-0026] Missing route to pin _3430_/ZN in net _0179_.
+[WARNING EST-0026] Missing route to pin _4770_/D in net _0179_.
+[WARNING EST-0026] Missing route to pin _3430_/ZN in net _0179_.
+[WARNING EST-0026] Missing route to pin _4771_/D in net _0180_.
+[WARNING EST-0026] Missing route to pin _3432_/ZN in net _0180_.
+[WARNING EST-0026] Missing route to pin _4771_/D in net _0180_.
+[WARNING EST-0026] Missing route to pin _3432_/ZN in net _0180_.
+[WARNING EST-0026] Missing route to pin _4771_/D in net _0180_.
+[WARNING EST-0026] Missing route to pin _3432_/ZN in net _0180_.
+[WARNING EST-0026] Missing route to pin _4773_/D in net _0182_.
+[WARNING EST-0026] Missing route to pin _3437_/ZN in net _0182_.
+[WARNING EST-0026] Missing route to pin _4773_/D in net _0182_.
+[WARNING EST-0026] Missing route to pin _3437_/ZN in net _0182_.
+[WARNING EST-0026] Missing route to pin _4773_/D in net _0182_.
+[WARNING EST-0026] Missing route to pin _3437_/ZN in net _0182_.
+[WARNING EST-0026] Missing route to pin _4755_/D in net _0183_.
+[WARNING EST-0026] Missing route to pin _3381_/ZN in net _0183_.
+[WARNING EST-0026] Missing route to pin _4755_/D in net _0183_.
+[WARNING EST-0026] Missing route to pin _3381_/ZN in net _0183_.
+[WARNING EST-0026] Missing route to pin _4755_/D in net _0183_.
+[WARNING EST-0026] Missing route to pin _3381_/ZN in net _0183_.
+[WARNING EST-0026] Missing route to pin _4774_/D in net _0184_.
+[WARNING EST-0026] Missing route to pin _3439_/ZN in net _0184_.
+[WARNING EST-0026] Missing route to pin _4774_/D in net _0184_.
+[WARNING EST-0026] Missing route to pin _3439_/ZN in net _0184_.
+[WARNING EST-0026] Missing route to pin _4774_/D in net _0184_.
+[WARNING EST-0026] Missing route to pin _3439_/ZN in net _0184_.
+[WARNING EST-0026] Missing route to pin _4775_/D in net _0185_.
+[WARNING EST-0026] Missing route to pin _3442_/ZN in net _0185_.
+[WARNING EST-0026] Missing route to pin _4775_/D in net _0185_.
+[WARNING EST-0026] Missing route to pin _3442_/ZN in net _0185_.
+[WARNING EST-0026] Missing route to pin _4775_/D in net _0185_.
+[WARNING EST-0026] Missing route to pin _3442_/ZN in net _0185_.
+[WARNING EST-0026] Missing route to pin _4776_/D in net _0186_.
+[WARNING EST-0026] Missing route to pin _3445_/ZN in net _0186_.
+[WARNING EST-0026] Missing route to pin _4776_/D in net _0186_.
+[WARNING EST-0026] Missing route to pin _3445_/ZN in net _0186_.
+[WARNING EST-0026] message limit (1000) reached. This message will no longer print.
+[INFO GRT-0102] Start extra iteration 4/200
+[INFO GRT-0102] Start extra iteration 5/200
+[INFO GRT-0102] Start extra iteration 6/200
+[INFO GRT-0102] Start extra iteration 7/200
+[INFO GRT-0102] Start extra iteration 8/200
+[INFO GRT-0102] Start extra iteration 9/200
+[INFO GRT-0102] Start extra iteration 10/200
+[INFO GRT-0102] Start extra iteration 11/200
+[INFO GRT-0102] Start extra iteration 12/200
+[INFO GRT-0102] Start extra iteration 13/200
+[INFO GRT-0102] Start extra iteration 14/200
+[INFO GRT-0102] Start extra iteration 15/200
+[INFO GRT-0102] Start extra iteration 16/200
+[INFO GRT-0102] Start extra iteration 17/200
+[INFO GRT-0102] Start extra iteration 18/200
+[INFO GRT-0102] Start extra iteration 19/200
+[INFO GRT-0102] Start extra iteration 20/200
+[INFO GRT-0102] Start extra iteration 21/200
+[INFO GRT-0102] Start extra iteration 22/200
+[INFO GRT-0102] Start extra iteration 23/200
+[INFO GRT-0102] Start extra iteration 24/200
+[INFO GRT-0102] Start extra iteration 25/200
+[INFO GRT-0102] Start extra iteration 26/200
+[INFO GRT-0102] Start extra iteration 27/200
+[INFO GRT-0102] Start extra iteration 28/200
+[INFO GRT-0102] Start extra iteration 29/200
+[INFO GRT-0102] Start extra iteration 30/200
+[INFO GRT-0102] Start extra iteration 31/200
+[INFO GRT-0102] Start extra iteration 32/200
+[INFO GRT-0102] Start extra iteration 33/200
+[INFO GRT-0102] Start extra iteration 34/200
+[INFO GRT-0102] Start extra iteration 35/200
+[INFO GRT-0102] Start extra iteration 36/200
+[INFO GRT-0102] Start extra iteration 37/200
+[INFO GRT-0102] Start extra iteration 38/200
+[INFO GRT-0102] Start extra iteration 39/200
+[INFO GRT-0102] Start extra iteration 40/200
+[INFO GRT-0102] Start extra iteration 41/200
+[INFO GRT-0102] Start extra iteration 42/200
+[INFO GRT-0102] Start extra iteration 43/200
+[INFO GRT-0102] Start extra iteration 44/200
+[INFO GRT-0102] Start extra iteration 45/200
+[INFO GRT-0102] Start extra iteration 46/200
+[INFO GRT-0102] Start extra iteration 47/200
+[INFO GRT-0102] Start extra iteration 48/200
+[INFO GRT-0102] Start extra iteration 49/200
+[INFO GRT-0102] Start extra iteration 50/200
+[INFO GRT-0102] Start extra iteration 51/200
+[INFO GRT-0102] Start extra iteration 52/200
+[INFO GRT-0102] Start extra iteration 53/200
+[INFO GRT-0102] Start extra iteration 54/200
+[INFO GRT-0102] Start extra iteration 55/200
+[INFO GRT-0102] Start extra iteration 56/200
+[INFO GRT-0102] Start extra iteration 57/200
+[INFO GRT-0102] Start extra iteration 58/200
+[INFO GRT-0102] Start extra iteration 59/200
+[INFO GRT-0102] Start extra iteration 60/200
+[INFO GRT-0102] Start extra iteration 61/200
+[INFO GRT-0102] Start extra iteration 62/200
+[INFO GRT-0102] Start extra iteration 63/200
+[INFO GRT-0102] Start extra iteration 64/200
+[INFO GRT-0102] Start extra iteration 65/200
+[INFO GRT-0102] Start extra iteration 66/200
+[INFO GRT-0102] Start extra iteration 67/200
+[INFO GRT-0102] Start extra iteration 68/200
+[INFO GRT-0102] Start extra iteration 69/200
+[INFO GRT-0102] Start extra iteration 70/200
+[INFO GRT-0102] Start extra iteration 71/200
+[INFO GRT-0102] Start extra iteration 72/200
+[INFO GRT-0102] Start extra iteration 73/200
+[INFO GRT-0102] Start extra iteration 74/200
+[INFO GRT-0102] Start extra iteration 75/200
+[INFO GRT-0102] Start extra iteration 76/200
+[INFO GRT-0197] Via related to pin nodes: 30789
+[INFO GRT-0198] Via related Steiner nodes: 799
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 43810
+[INFO GRT-0112] Final usage 3D: 159850
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2               0             0            0.00%             0 /  0 /  0
+Metal3           20801         14623           70.30%             0 /  0 /  0
+Metal4           18401         13797           74.98%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            39202         28420           72.50%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 340006 um
+[INFO GRT-0014] Routed nets: 3014
+[INFO GRT-0303] Global routing runtime = 00:00:06
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+phy matched with phy
+[INFO ODB-0403] 28 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1    8125.00
+  Endcap cell                             162     711.24
+  Tap cell                                644    2827.42
+  Tie cell                                 29     254.64
+  Buffer                                    9     118.54
+  Clock buffer                            218    3828.43
+  Timing Repair Buffer                     51    2950.35
+  Inverter                                156    1369.80
+  Clock inverter                           32     509.29
+  Clock gate cell                          14     860.52
+  Sequential cell                         598   42988.60
+  Multi-Input combinational cell         1993   38249.16
+  Total                                  3907  102793.00
+Writing OpenROAD database to '/work/physical/runs/compact_20/41-openroad-repairdesignpostgrt/tt_um_dvirdc_gf180_diff8.odb'…
+Writing netlist to '/work/physical/runs/compact_20/41-openroad-repairdesignpostgrt/tt_um_dvirdc_gf180_diff8.nl.v'…
+Writing powered netlist to '/work/physical/runs/compact_20/41-openroad-repairdesignpostgrt/tt_um_dvirdc_gf180_diff8.pnl.v'…
+Writing layout to '/work/physical/runs/compact_20/41-openroad-repairdesignpostgrt/tt_um_dvirdc_gf180_diff8.def'…
+Writing timing constraints to '/work/physical/runs/compact_20/41-openroad-repairdesignpostgrt/tt_um_dvirdc_gf180_diff8.sdc'…

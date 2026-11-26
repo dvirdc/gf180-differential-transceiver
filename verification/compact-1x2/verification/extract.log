@@ -1,0 +1,302 @@
+
+Magic 8.3 revision 706 - Compiled on Tue Nov 24 19:10:32 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "extract.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "COMP_fill_cell".
+Reading "nfet_03v3_w4_l0p28".
+Moving label "D" from ndiff to ndiffc in cell nfet_03v3_w4_l0p28.
+Moving label "S" from ndiff to ndiffc in cell nfet_03v3_w4_l0p28.
+Moving label "B" from ndiff to psubdiffcont in cell nfet_03v3_w4_l0p28.
+Reading "pfet_03v3_w10_l0p28".
+Moving label "D" from ndiff to pdiffc in cell pfet_03v3_w10_l0p28.
+Moving label "S" from ndiff to pdiffc in cell pfet_03v3_w10_l0p28.
+Moving label "B" from ndiff to nsubdiffcont in cell pfet_03v3_w10_l0p28.
+Reading "nfet_03v3_w12_l0p28".
+Moving label "D" from ndiff to ndiffc in cell nfet_03v3_w12_l0p28.
+Moving label "S" from ndiff to ndiffc in cell nfet_03v3_w12_l0p28.
+Moving label "B" from ndiff to psubdiffcont in cell nfet_03v3_w12_l0p28.
+Reading "pfet_03v3_w24_l0p28".
+Moving label "D" from ndiff to pdiffc in cell pfet_03v3_w24_l0p28.
+Moving label "S" from ndiff to pdiffc in cell pfet_03v3_w24_l0p28.
+Moving label "B" from ndiff to nsubdiffcont in cell pfet_03v3_w24_l0p28.
+Reading "nfet_03v3_w24_l1".
+Moving label "D" from ndiff to ndiffc in cell nfet_03v3_w24_l1.
+Moving label "S" from ndiff to ndiffc in cell nfet_03v3_w24_l1.
+Moving label "B" from ndiff to psubdiffcont in cell nfet_03v3_w24_l1.
+Reading "pfet_03v3_w12_l1".
+Moving label "D" from ndiff to pdiffc in cell pfet_03v3_w12_l1.
+Moving label "S" from ndiff to pdiffc in cell pfet_03v3_w12_l1.
+Moving label "B" from ndiff to nsubdiffcont in cell pfet_03v3_w12_l1.
+Reading "ppolyf_u_1k_w1_l32".
+Moving label "B" from ndiff to psubdiffcont in cell ppolyf_u_1k_w1_l32.
+Reading "ppolyf_u_1k_w1_l1".
+Moving label "B" from ndiff to psubdiffcont in cell ppolyf_u_1k_w1_l1.
+Reading "ppolyf_u_1k_w1_l20".
+Moving label "B" from ndiff to psubdiffcont in cell ppolyf_u_1k_w1_l20.
+Reading "METAL5_FILL".
+Reading "METAL4_FILL".
+Reading "METAL3_FILL".
+Reading "METAL2_FILL".
+Reading "METAL1_FILL".
+Reading "POLY2_FILL".
+Reading "COMP_FILL".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi222_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtp_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tiel".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tieh".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyc_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4".
+Reading "gf180_diff_phy".
+Reading "VIA_via3_4_4000_1200_1_4_1040_1040".
+Reading "VIA_via2_3_4000_1200_1_4_1040_1040".
+Reading "VIA_via1_2_4000_1200_1_4_1040_1040".
+Reading "VIA_Via1_HV".
+Reading "VIA_Via2_VH".
+Reading "VIA_Via3_HV".
+Reading "VIA_Via1_VV".
+Reading "tt_um_dvirdc_gf180_diff8".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+Extracting ppolyf_u_1k_w1_l20 into ppolyf_u_1k_w1_l20.ext:
+Processing ppolyf_u_1k_w1_l20
+Extracting ppolyf_u_1k_w1_l1 into ppolyf_u_1k_w1_l1.ext:
+Processing ppolyf_u_1k_w1_l1
+Extracting ppolyf_u_1k_w1_l32 into ppolyf_u_1k_w1_l32.ext:
+Processing ppolyf_u_1k_w1_l32
+Extracting pfet_03v3_w12_l1 into pfet_03v3_w12_l1.ext:
+Processing pfet_03v3_w12_l1
+Extracting nfet_03v3_w24_l1 into nfet_03v3_w24_l1.ext:
+Processing nfet_03v3_w24_l1
+Extracting pfet_03v3_w24_l0p28 into pfet_03v3_w24_l0p28.ext:
+Processing pfet_03v3_w24_l0p28
+Extracting nfet_03v3_w12_l0p28 into nfet_03v3_w12_l0p28.ext:
+Processing nfet_03v3_w12_l0p28
+Extracting pfet_03v3_w10_l0p28 into pfet_03v3_w10_l0p28.ext:
+Processing pfet_03v3_w10_l0p28
+Extracting nfet_03v3_w4_l0p28 into nfet_03v3_w4_l0p28.ext:
+Processing nfet_03v3_w4_l0p28
+Extracting gf180_diff_phy into gf180_diff_phy.ext:
+Processing gf180_diff_phy
+Extracting COMP_fill_cell into COMP_fill_cell.ext:
+Processing COMP_fill_cell
+Extracting COMP_FILL into COMP_FILL.ext:
+Processing COMP_FILL
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_16 into gf180mcu_fd_sc_mcu7t5v0__fillcap_16.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Extracting gf180mcu_fd_sc_mcu7t5v0__endcap into gf180mcu_fd_sc_mcu7t5v0__endcap.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__endcap
+Extracting gf180mcu_fd_sc_mcu7t5v0__fill_2 into gf180mcu_fd_sc_mcu7t5v0__fill_2.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__fill_2
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand2_1 into gf180mcu_fd_sc_mcu7t5v0__nand2_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nand2_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__filltie into gf180mcu_fd_sc_mcu7t5v0__filltie.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__filltie
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkinv_1 into gf180mcu_fd_sc_mcu7t5v0__clkinv_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__fill_1 into gf180mcu_fd_sc_mcu7t5v0__fill_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__fill_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi21_1 into gf180mcu_fd_sc_mcu7t5v0__aoi21_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_4 into gf180mcu_fd_sc_mcu7t5v0__fillcap_4.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Extracting VIA_Via3_HV into VIA_Via3_HV.ext:
+Processing VIA_Via3_HV
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor2_1 into gf180mcu_fd_sc_mcu7t5v0__nor2_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nor2_1
+Extracting VIA_Via1_VV into VIA_Via1_VV.ext:
+Processing VIA_Via1_VV
+Extracting VIA_via1_2_4000_1200_1_4_1040_1040 into VIA_via1_2_4000_1200_1_4_1040_1040.ext:
+Processing VIA_via1_2_4000_1200_1_4_1040_1040
+Extracting VIA_via2_3_4000_1200_1_4_1040_1040 into VIA_via2_3_4000_1200_1_4_1040_1040.ext:
+Processing VIA_via2_3_4000_1200_1_4_1040_1040
+Extracting VIA_via3_4_4000_1200_1_4_1040_1040 into VIA_via3_4_4000_1200_1_4_1040_1040.ext:
+Processing VIA_via3_4_4000_1200_1_4_1040_1040
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai21_1 into gf180mcu_fd_sc_mcu7t5v0__oai21_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__oai21_1
+Extracting VIA_Via2_VH into VIA_Via2_VH.ext:
+Processing VIA_Via2_VH
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor3_1 into gf180mcu_fd_sc_mcu7t5v0__nor3_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nor3_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__inv_2 into gf180mcu_fd_sc_mcu7t5v0__inv_2.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__inv_2
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_8 into gf180mcu_fd_sc_mcu7t5v0__fillcap_8.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 into gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai32_1 into gf180mcu_fd_sc_mcu7t5v0__oai32_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__oai32_1
+Extracting VIA_Via1_HV into VIA_Via1_HV.ext:
+Processing VIA_Via1_HV
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand4_1 into gf180mcu_fd_sc_mcu7t5v0__nand4_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nand4_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai22_1 into gf180mcu_fd_sc_mcu7t5v0__oai22_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__oai22_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__or4_1 into gf180mcu_fd_sc_mcu7t5v0__or4_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__or4_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__xnor2_1 into gf180mcu_fd_sc_mcu7t5v0__xnor2_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 into gf180mcu_fd_sc_mcu7t5v0__dffsnq_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi211_1 into gf180mcu_fd_sc_mcu7t5v0__aoi211_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__and3_1 into gf180mcu_fd_sc_mcu7t5v0__and3_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__and3_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi22_1 into gf180mcu_fd_sc_mcu7t5v0__aoi22_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand3_1 into gf180mcu_fd_sc_mcu7t5v0__nand3_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nand3_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__or2_1 into gf180mcu_fd_sc_mcu7t5v0__or2_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__or2_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai31_1 into gf180mcu_fd_sc_mcu7t5v0__oai31_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__oai31_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__and4_1 into gf180mcu_fd_sc_mcu7t5v0__and4_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__and4_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__xor2_1 into gf180mcu_fd_sc_mcu7t5v0__xor2_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__xor2_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi221_1 into gf180mcu_fd_sc_mcu7t5v0__aoi221_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__mux2_2 into gf180mcu_fd_sc_mcu7t5v0__mux2_2.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__mux2_2
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkinv_2 into gf180mcu_fd_sc_mcu7t5v0__clkinv_2.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+Extracting gf180mcu_fd_sc_mcu7t5v0__tiel into gf180mcu_fd_sc_mcu7t5v0__tiel.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__tiel
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_1 into gf180mcu_fd_sc_mcu7t5v0__oai211_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__oai211_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor4_1 into gf180mcu_fd_sc_mcu7t5v0__nor4_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nor4_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__icgtp_1 into gf180mcu_fd_sc_mcu7t5v0__icgtp_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__icgtp_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__and2_1 into gf180mcu_fd_sc_mcu7t5v0__and2_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__and2_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__xor3_1 into gf180mcu_fd_sc_mcu7t5v0__xor3_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__xor3_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_12 into gf180mcu_fd_sc_mcu7t5v0__buf_12.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__buf_12
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai221_1 into gf180mcu_fd_sc_mcu7t5v0__oai221_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__oai221_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_2 into gf180mcu_fd_sc_mcu7t5v0__buf_2.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__buf_2
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_8 into gf180mcu_fd_sc_mcu7t5v0__buf_8.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__buf_8
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor3_2 into gf180mcu_fd_sc_mcu7t5v0__nor3_2.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nor3_2
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor2_2 into gf180mcu_fd_sc_mcu7t5v0__nor2_2.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nor2_2
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffq_1 into gf180mcu_fd_sc_mcu7t5v0__dffq_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__dffq_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi222_1 into gf180mcu_fd_sc_mcu7t5v0__aoi222_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_1 into gf180mcu_fd_sc_mcu7t5v0__buf_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__buf_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand2_4 into gf180mcu_fd_sc_mcu7t5v0__nand2_4.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nand2_4
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkinv_3 into gf180mcu_fd_sc_mcu7t5v0__clkinv_3.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__clkinv_3
+Extracting gf180mcu_fd_sc_mcu7t5v0__and2_4 into gf180mcu_fd_sc_mcu7t5v0__and2_4.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__and2_4
+Extracting gf180mcu_fd_sc_mcu7t5v0__dlyc_1 into gf180mcu_fd_sc_mcu7t5v0__dlyc_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__dlyc_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__or3_1 into gf180mcu_fd_sc_mcu7t5v0__or3_1.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__or3_1
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_4 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_4.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__clkbuf_4
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand3_4 into gf180mcu_fd_sc_mcu7t5v0__nand3_4.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__nand3_4
+Extracting gf180mcu_fd_sc_mcu7t5v0__and3_4 into gf180mcu_fd_sc_mcu7t5v0__and3_4.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__and3_4
+Extracting gf180mcu_fd_sc_mcu7t5v0__inv_4 into gf180mcu_fd_sc_mcu7t5v0__inv_4.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__inv_4
+Extracting gf180mcu_fd_sc_mcu7t5v0__inv_3 into gf180mcu_fd_sc_mcu7t5v0__inv_3.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__inv_3
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_32 into gf180mcu_fd_sc_mcu7t5v0__fillcap_32.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkinv_8 into gf180mcu_fd_sc_mcu7t5v0__clkinv_8.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__clkinv_8
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkinv_4 into gf180mcu_fd_sc_mcu7t5v0__clkinv_4.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__clkinv_4
+Extracting gf180mcu_fd_sc_mcu7t5v0__tieh into gf180mcu_fd_sc_mcu7t5v0__tieh.ext:
+Processing gf180mcu_fd_sc_mcu7t5v0__tieh
+Extracting tt_um_dvirdc_gf180_diff8 into tt_um_dvirdc_gf180_diff8.ext:
+Processing tt_um_dvirdc_gf180_diff8
+exttospice finished.

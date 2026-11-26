@@ -50,17 +50,17 @@
     "clock_transition": 0.15
   },
   "frame": {
-    "tiles": "2x2",
-    "width_um": 711.2,
+    "tiles": "1x2",
+    "width_um": 346.64,
     "height_um": 325.36,
     "def_units_per_um": 2000,
     "signal_pins_in_template": 51,
     "analog_pins_requested": 4,
     "analog_pins_max_user": 6,
-    "path": "physical/tt_analog_2x2.def",
-    "sha256": "fd309cb25df7de3a4cef0b57f9858274663291ce6d449fd48ef1b57d129ed3ba",
-    "git_blob": "eecf8cf7c4a3ebf1ff512df3b122f4d2ef7f6413",
-    "source_path": "tech/gf180mcuD/def/analog/tt_analog_2x2.def"
+    "path": "physical/tt_analog_1x2.def",
+    "sha256": "482a4daa330ae746487a5b43fd40bec12284885fd3039410308f6aa87e03756e",
+    "git_blob": "d087d89636d20c5e096155217cfd463710cdbbf2",
+    "source_path": "tech/gf180mcuD/def/analog/tt_analog_1x2.def"
   },
   "project_top_metal_layer": "Metal4",
   "power_grid_guidance": {
@@ -89,7 +89,7 @@
     "shuttle_build": "https://github.com/TinyTapeout/tinytapeout-gf-26e/blob/1c5f849a3b6b6c9b71a867ad6ebda867863dd97a/.github/workflows/gds.yaml",
     "shuttle_submodules": "https://github.com/TinyTapeout/tinytapeout-gf-26e/tree/1c5f849a3b6b6c9b71a867ad6ebda867863dd97a",
     "tt_technology": "https://github.com/TinyTapeout/tt-support-tools/blob/0922544e6c7f6126047c3fba720b0437fa32a1b8/tech.py",
-    "analog_frame": "https://github.com/TinyTapeout/tt-support-tools/blob/0922544e6c7f6126047c3fba720b0437fa32a1b8/tech/gf180mcuD/def/analog/tt_analog_2x2.def",
+    "analog_frame": "https://github.com/TinyTapeout/tt-support-tools/blob/0922544e6c7f6126047c3fba720b0437fa32a1b8/tech/gf180mcuD/def/analog/tt_analog_1x2.def",
     "power_stripe_example": "https://github.com/TinyTapeout/tt-support-tools/blob/0922544e6c7f6126047c3fba720b0437fa32a1b8/tech/gf180mcuD/def/analog/magic_init_project.tcl",
     "mux_supply_config": "https://github.com/TinyTapeout/tt-multiplexer/blob/aab1e278ef8e10eaa78b30369438c86107d02a8b/cfg/gf180mcuD.yaml",
     "mux_toolchain_lock": "https://github.com/TinyTapeout/tt-multiplexer/blob/aab1e278ef8e10eaa78b30369438c86107d02a8b/flake.lock",
@@ -118,7 +118,7 @@
   "ciel_common_component_implicit": true,
   "design": {
     "top_module": "tt_um_dvirdc_gf180_diff8",
-    "tiles": "2x2",
+    "tiles": "1x2",
     "clock_hz": 1600000,
     "default_line_rate_bps": 100000,
     "serial_format": "8N1",
@@ -137,7 +137,17 @@
     "normal_receive_buffer_bytes": 1,
     "flow_control": false,
     "loopback": "External TX+ to RX+ and TX- to RX- on the same project through shuttle analog access switches",
-    "physical_signoff_status": "IN_PROGRESS"
+    "physical_signoff_status": "LOCAL_COMPACT_23B_FILLED_GDS_CHECKS_PASS_REMOTE_CI_PENDING",
+    "implementation_run": "compact_23b",
+    "flip_flops": 598,
+    "native_clock_gates": 16,
+    "always_enabled_clock_balance_gates": 1,
+    "synthesis_cell_area_um2": 78851.584,
+    "digital_placement_utilization": 0.897005,
+    "compact_phy_um": [
+      125,
+      65
+    ]
   },
   "reproduction": {
     "local_setup": "tools/README.md",
@@ -146,6 +156,11 @@
     "docs_workflow": ".github/workflows/docs.yaml",
     "root_layout_source": "Committed custom GDS/LEF/powered-netlist views bound by PROVENANCE.json",
     "github_runs_full_place_route": false,
-    "github_pages": false
+    "github_pages": false,
+    "implementation_flow": "GF180BalancedClockgateClassic",
+    "implementation_driver": "tools/gf180_balanced_clockgate_flow.py",
+    "implementation_config": "physical/compact_23b.json",
+    "compact_macro_package": "experiments/compact-phy",
+    "historical_2x2_commit": "dc81136485ec0d8a0e100307a48a231a246e4c7f"
   }
 }

@@ -1,0 +1,50 @@
+{
+  "scope": "Nine extracted min/nom/max RC corners before additive Dummy COMP fill; no post-fill RC/SDF claim.",
+  "corners": [
+    {
+      "corner": "max_ff_n40C_3v60",
+      "setup_slack_ns": 515.907871470365,
+      "hold_slack_ns": 0.09158762896212241
+    },
+    {
+      "corner": "max_ss_125C_3v00",
+      "setup_slack_ns": 494.75353569961095,
+      "hold_slack_ns": 1.061772033681059
+    },
+    {
+      "corner": "max_tt_025C_3v30",
+      "setup_slack_ns": 509.52026262548435,
+      "hold_slack_ns": 0.3756857153927653
+    },
+    {
+      "corner": "min_ff_n40C_3v60",
+      "setup_slack_ns": 516.7888876442055,
+      "hold_slack_ns": 0.10510481671383079
+    },
+    {
+      "corner": "min_ss_125C_3v00",
+      "setup_slack_ns": 497.664089357857,
+      "hold_slack_ns": 1.1035510595469247
+    },
+    {
+      "corner": "min_tt_025C_3v30",
+      "setup_slack_ns": 511.0287733178761,
+      "hold_slack_ns": 0.39811621792746005
+    },
+    {
+      "corner": "nom_ff_n40C_3v60",
+      "setup_slack_ns": 516.3887668075281,
+      "hold_slack_ns": 0.09914558343831417
+    },
+    {
+      "corner": "nom_ss_125C_3v00",
+      "setup_slack_ns": 496.3356586215093,
+      "hold_slack_ns": 1.0865300078304032
+    },
+    {
+      "corner": "nom_tt_025C_3v30",
+      "setup_slack_ns": 510.34278691966284,
+      "hold_slack_ns": 0.3882760889373045
+    }
+  ]
+}

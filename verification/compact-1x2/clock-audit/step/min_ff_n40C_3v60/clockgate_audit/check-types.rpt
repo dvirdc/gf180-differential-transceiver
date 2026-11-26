@@ -1,0 +1,30 @@
+No paths found.
+Pin: _4171_/CLK
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   2.308186    2.308186   clock network delay (propagated)
+   0.000000    2.308186   _4171_/CLK
+               2.308186   open edge arrival time
+
+ 312.500000  312.500000   clock clk (fall edge)
+   2.048580  314.548584   clock network delay (propagated)
+   0.000000  314.548584   _4171_/CLK
+   0.215692  314.764282   clock reconvergence pessimism
+             314.764282   close edge arrival time
+-----------------------------------------------------------------
+               0.446000   required pulse width (high)
+             312.456085   actual pulse width
+-----------------------------------------------------------------
+             312.010101   slack (MET)
+
+
+Pin: _4146_/CLK
+             625.000000   period
+              -1.012000   min period
+-----------------------------------------------------------------
+             623.988037   slack (MET)
+
+

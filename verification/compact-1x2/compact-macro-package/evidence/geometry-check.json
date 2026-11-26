@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "gds_sha256": "8d7696a723315a539f7b4901cae311f87cca9b35516c7dda7cf917dba3faca2b",
+  "lef_sha256": "334a0c0fe722d1ff21fc40b0cbc3aa7c6436c3a4579e08634cf80b372ebfd3fb",
+  "canonical_gds_sha256": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
+  "unchanged_primitive_cells": [
+    "nfet_03v3_w12_l0p28",
+    "nfet_03v3_w24_l1",
+    "nfet_03v3_w4_l0p28",
+    "pfet_03v3_w10_l0p28",
+    "pfet_03v3_w12_l1",
+    "pfet_03v3_w24_l0p28",
+    "ppolyf_u_1k_w1_l1",
+    "ppolyf_u_1k_w1_l20",
+    "ppolyf_u_1k_w1_l32"
+  ],
+  "macro_um": [
+    125.0,
+    65.0
+  ],
+  "pin_windows_checked": 9,
+  "m4_obstruction_covers_all_m4": true,
+  "scope": "Exact primitive-cell layer XOR versus canonical PHY; all M3 LEF pin windows and M4 obstruction contained in actual trial GDS."
+}

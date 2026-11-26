@@ -1,0 +1,146 @@
+[
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3961_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_3_clk",
+    "E": "_0005_",
+    "TE": "net53",
+    "Q": "_1963_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3962_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_3_clk",
+    "E": "_0006_",
+    "TE": "net52",
+    "Q": "_1964_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3963_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_0_clk",
+    "E": "_0007_",
+    "TE": "net51",
+    "Q": "_1965_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3964_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_0_clk",
+    "E": "_0008_",
+    "TE": "net50",
+    "Q": "_1966_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3965_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_1_clk",
+    "E": "_0009_",
+    "TE": "net49",
+    "Q": "_1967_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3966_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_0_clk",
+    "E": "_0010_",
+    "TE": "net48",
+    "Q": "_1968_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3967_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_0_clk",
+    "E": "_0011_",
+    "TE": "net47",
+    "Q": "_1969_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3968_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_0_clk",
+    "E": "_0012_",
+    "TE": "net46",
+    "Q": "_1970_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3969_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_0_clk",
+    "E": "_0013_",
+    "TE": "net45",
+    "Q": "_1971_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3970_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_3_clk",
+    "E": "_0253_",
+    "TE": "net44",
+    "Q": "_1972_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3971_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_3_clk",
+    "E": "_0014_",
+    "TE": "net43",
+    "Q": "_1973_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3972_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_3_clk",
+    "E": "_0015_",
+    "TE": "net42",
+    "Q": "_1974_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3973_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_2_clk",
+    "E": "_0016_",
+    "TE": "net41",
+    "Q": "_1975_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3974_",
+    "TE_explicit_zero": true,
+    "CLK": "clknet_1_1__leaf_clk",
+    "E": "_0254_",
+    "TE": "net",
+    "Q": "_1976_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "_3975_",
+    "TE_explicit_zero": true,
+    "CLK": "delaynet_3_clk",
+    "E": "_0004_",
+    "TE": "net55",
+    "Q": "_1977_"
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__icgtp_1",
+    "instance": "balanced_always_icg",
+    "TE_explicit_zero": true,
+    "CLK": "clknet_1_0__leaf_clk",
+    "E": "net70",
+    "TE": "net54",
+    "Q": "balanced_always_clk"
+  }
+]

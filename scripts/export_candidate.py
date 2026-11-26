@@ -15,9 +15,17 @@ root=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(root/'build/tt-tools/precheck'))
 from pin_check import parse_def
 run=Path(sys.argv[1]); out=Path(sys.argv[2]); name='tt_um_dvirdc_gf180_diff8'
-gds=next(run.glob('*-klayout-streamout/*.klayout.gds'))
-lef=next(run.glob('*-magic-writelef/*.lef'))
-nl=next(run.glob('*-openroad-fillinsertion/*.pnl.v'))
+def required_view(pattern, description):
+    paths=list(run.glob(pattern))
+    if len(paths)!=1:
+        raise SystemExit(f'Export refused: expected one completed {description}; found {len(paths)}. No candidate was written.')
+    return paths[0]
+route_state=required_view('*-openroad-detailedrouting/state_out.json','detailed-routing result')
+if json.loads(route_state.read_text())['metrics'].get('route__drc_errors')!=0:
+    raise SystemExit('Export refused: detailed routing is not DRC-clean. No candidate was written.')
+gds=required_view('*-klayout-streamout/*.klayout.gds','streamout GDS')
+lef=required_view('*-magic-writelef/*.lef','LEF')
+nl=required_view('*-openroad-fillinsertion/*.pnl.v','filled powered netlist')
 for d in ['gds','lef','src']: (out/d).mkdir(parents=True,exist_ok=True)
 lib=gdstk.read_gds(gds);top=lib[name];path_count=0
 for cell in lib.cells:
@@ -35,7 +43,14 @@ for info in a.layer_infos():
     if not (ra^rb).is_empty():
         raise AssertionError(f'Unexpected geometry change on {info}')
     checks.append(str(info))
-raw=lef.read_text(); template=parse_def(str(root/'physical/tt_analog_2x2.def'))
+# Select the exact official frame used by this run, never an inherited release frame.
+resolved=json.loads((run/'resolved.json').read_text())
+frame_path=Path(resolved['FP_DEF_TEMPLATE'].replace('/work/',str(root)+'/'))
+assert frame_path.resolve().is_relative_to(root.resolve())
+assert frame_path.name in {'tt_analog_1x2.def','tt_analog_2x2.def'}
+frame=frame_path.stem.removeprefix('tt_analog_')
+raw=lef.read_text(); template=parse_def(str(frame_path))
+assert [round(float(v),3) for v in resolved['DIE_AREA'][2:]]==[round(template.die_width/1000,3),round(template.die_height/1000,3)]
 pins={k:[tuple(v)] for k,v in template.pins.items()}
 for namep in ['VDPWR','VGND']:
     m=re.search(r'\bPIN '+namep+r'\s.*?\bEND '+namep+r'\b',raw,re.S);assert m
@@ -66,7 +81,11 @@ for pin,rects in pins.items():
 (out/'lef'/f'{name}.lef').write_text(raw)
 # Actual routed powered netlist, with the analog module's declared interface.
 (out/'gds'/f'{name}.v').write_text(nl.read_text()+'\n'+(root/'rtl/gf180_diff_phy_blackbox.v').read_text())
-shutil.copy(root/'info.yaml',out/'info.yaml')
+metadata=json.loads((root/'info.yaml').read_text())
+if metadata['project']['tiles'] != frame:
+    metadata['project']['tiles']=frame
+    metadata['project']['description']=f'{frame} 3.3 V differential 8N1 transceiver with autonomous self-test and full 32-bit counters'
+(out/'info.yaml').write_text(json.dumps(metadata,indent=2)+'\n')
 shutil.copy(root/'src/project.v',out/'src/project.v')
-report={'run':str(run),'paths_converted':path_count,'conductive_geometry_unchanged':True,'changed_layers':changed,'target':'ttgf26e','pdk_revision':'1689ac3f2dc763876eaf967227c7dfe831b031ae','source_gds_sha256':hashlib.sha256(gds.read_bytes()).hexdigest(),'xor_layers':checks,'pin_rectangles_checked':sum(map(len,pins.values())),'gds_sha256':hashlib.sha256(new_gds.read_bytes()).hexdigest()}
+report={'run':str(run),'frame':frame,'frame_sha256':hashlib.sha256(frame_path.read_bytes()).hexdigest(),'paths_converted':path_count,'conductive_geometry_unchanged':True,'changed_layers':changed,'target':'ttgf26e','pdk_revision':'1689ac3f2dc763876eaf967227c7dfe831b031ae','source_gds_sha256':hashlib.sha256(gds.read_bytes()).hexdigest(),'xor_layers':checks,'pin_rectangles_checked':sum(map(len,pins.values())),'gds_sha256':hashlib.sha256(new_gds.read_bytes()).hexdigest()}
 (out/'export.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
