@@ -13,6 +13,7 @@ module diff8_digital(input wire clk, rst_n, ena,
  reg [31:0] target_count;
  reg running, done, fail, command_error, overflow, rx_ready;
  reg [31:0] checked_bytes, error_bytes, error_bits;
+ wire [31:0] checked_bytes_increment=checked_bytes+32'd1;
  // Every checked byte contributes eight payload bits; derive the saturated total.
  wire [31:0] checked_bits=(|checked_bytes[31:29])?32'hffffffff:{checked_bytes[28:0],3'b000};
  reg [31:0] framing_errors, overruns;
@@ -138,7 +139,7 @@ module diff8_digital(input wire clk, rst_n, ena,
       tx_sequence<=lfsr_next(tx_sequence);sent_bytes<=sent_bytes+3'd1;wait_ticks<=0;bist_state<=2;
      end
      2:if(rx_valid)begin
-      checked_bytes<=inc32(checked_bytes);
+      checked_bytes<=(&checked_bytes)?checked_bytes:checked_bytes_increment;
       if(&checked_bytes || checked_bits>32'hfffffff7)overflow<=1;
       rx_sequence<=lfsr_next(rx_sequence);
       if(differences!=0)begin
@@ -146,7 +147,7 @@ module diff8_digital(input wire clk, rst_n, ena,
        if(&error_bytes || error_bits>32'hffffffff-{28'b0,differences})overflow<=1;
        bad_expected<=expected;bad_actual<=rx_data;fail<=1;
       end
-      if(checked_bytes==target_count-1'b1)begin running<=0;done<=1;bist_state<=0;end
+      if(checked_bytes_increment==target_count)begin running<=0;done<=1;bist_state<=0;end
       else begin gap_ticks<=0;bist_state<=3;end
      end else if(tick16)begin
       if(wait_ticks==511)begin timeout_seen<=1'b1;fail<=1;done<=1;running<=0;bist_state<=0;end

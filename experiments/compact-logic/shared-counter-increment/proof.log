@@ -1,0 +1,219 @@
+
+-- Running command `read_verilog -formal -sv experiments/compact-logic/shared-counter-increment/properties.sv; prep -top increment_equivalence; chformal -lower; sat -verify -prove-asserts -show-outputs' --
+
+1. Executing Verilog-2005 frontend: experiments/compact-logic/shared-counter-increment/properties.sv
+Parsing formal SystemVerilog input from `experiments/compact-logic/shared-counter-increment/properties.sv' to AST representation.
+Generating RTLIL representation for module `\increment_equivalence'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \increment_equivalence
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \increment_equivalence
+Removed 0 unused modules.
+Module increment_equivalence directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 2 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\increment_equivalence.$proc$experiments/compact-logic/shared-counter-increment/properties.sv:7$10'.
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `increment_equivalence.$proc$experiments/compact-logic/shared-counter-increment/properties.sv:7$10'.
+Cleaned up 0 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module increment_equivalence.
+
+2.3. Executing FUTURE pass.
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module increment_equivalence.
+
+2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \increment_equivalence..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~1 debug messages>
+
+2.6. Executing CHECK pass (checking for obvious problems).
+Checking module increment_equivalence...
+Found and reported 0 problems.
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module increment_equivalence.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\increment_equivalence'.
+Computing hashes of 13 cells of `\increment_equivalence'.
+Finding duplicate cells in `\increment_equivalence'.
+Computing hashes of 12 cells of `\increment_equivalence'.
+Finding duplicate cells in `\increment_equivalence'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \increment_equivalence..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \increment_equivalence.
+Performed a total of 0 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\increment_equivalence'.
+Computing hashes of 12 cells of `\increment_equivalence'.
+Finding duplicate cells in `\increment_equivalence'.
+Removed a total of 0 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \increment_equivalence..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module increment_equivalence.
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \increment_equivalence..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \increment_equivalence.
+Performed a total of 0 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\increment_equivalence'.
+Computing hashes of 12 cells of `\increment_equivalence'.
+Finding duplicate cells in `\increment_equivalence'.
+Removed a total of 0 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \increment_equivalence..
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module increment_equivalence.
+
+2.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port B of cell increment_equivalence.$add$experiments/compact-logic/shared-counter-increment/properties.sv:2$1 ($add).
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \increment_equivalence..
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module increment_equivalence.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\increment_equivalence'.
+Computing hashes of 12 cells of `\increment_equivalence'.
+Finding duplicate cells in `\increment_equivalence'.
+Computing hashes of 11 cells of `\increment_equivalence'.
+Finding duplicate cells in `\increment_equivalence'.
+Computing hashes of 10 cells of `\increment_equivalence'.
+Finding duplicate cells in `\increment_equivalence'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \increment_equivalence..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Executing SORT pass.
+
+2.13. Printing statistics.
+
+=== increment_equivalence ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       11 wires
+      197 wire bits
+        7 public wires
+      162 public wire bits
+        2 ports
+       64 port bits
+       10 cells
+        1   $add
+        2   $check
+        4   $eq
+        1   $mux
+        1   $reduce_and
+        1   $sub
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module increment_equivalence...
+Found and reported 0 problems.
+
+3. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Imported 14 cells to SAT database.
+Import proof for assert: $eq$experiments/compact-logic/shared-counter-increment/properties.sv:7$14_Y when 1'1.
+Import proof for assert: $eq$experiments/compact-logic/shared-counter-increment/properties.sv:7$12_Y when 1'1.
+
+Solving problem with 1120 variables and 3046 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: e350e20d3d, time: 0.04s, user: 0.02s, system: 0.02s, MEM: 28.18 MB peak
+Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)
+Time spent: 38% 1x sat (0 sec), 13% 2x read_verilog (0 sec), ...
