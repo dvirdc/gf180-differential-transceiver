@@ -1,0 +1,43 @@
+* NGSPICE file created from tt_asw_5v0.ext - technology: gf180mcuD
+
+.subckt tt_asw_5v0 VGND VDPWR VAPWR ctrl mod bus
+X0 a_651_4578# a_229_4923# VGND VGND nfet_05v0 ad=0.235p pd=1.94u as=0.4469p ps=2.35u w=0.5u l=0.6u
+X1 mod a_230_324# bus VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X2 bus a_651_4578# mod VGND nfet_05v0 ad=8.06p pd=31.52u as=8.06p ps=31.52u w=31u l=0.6u
+X3 a_225_5386# ctrl VDPWR VDPWR pfet_03v3 ad=0.94p pd=4.94u as=1.46p ps=3.46u w=2u l=0.28u
+X4 mod a_230_324# bus VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X5 bus a_230_324# mod VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X6 mod a_651_4578# bus VGND nfet_05v0 ad=8.06p pd=31.52u as=8.06p ps=31.52u w=31u l=0.6u
+X7 a_230_324# a_229_3933# VAPWR VAPWR pfet_05v0 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.5u
+X8 bus a_651_4578# mod VGND nfet_05v0 ad=13.64p pd=62.88u as=8.06p ps=31.52u w=31u l=0.6u
+X9 bus a_230_324# mod VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X10 a_225_5386# ctrl VGND VGND nfet_03v3 ad=0.4183p pd=2.72u as=0.6497p ps=2.35u w=0.89u l=0.28u
+X11 a_651_4578# a_229_4923# VAPWR VAPWR pfet_05v0 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=0.5u
+X12 bus a_651_4578# mod VGND nfet_05v0 ad=8.06p pd=31.52u as=8.06p ps=31.52u w=31u l=0.6u
+X13 bus a_230_324# mod VAPWR pfet_05v0 ad=16.28p pd=74.88u as=9.62p ps=37.52u w=37u l=0.5u
+X14 mod a_230_324# bus VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X15 bus a_230_324# mod VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X16 bus a_230_324# mod VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X17 mod a_230_324# bus VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X18 VAPWR a_229_3933# a_229_4923# VAPWR pfet_05v0 ad=0.13p pd=1.02u as=0.235p ps=1.94u w=0.5u l=0.5u
+X19 VGND a_225_5386# a_229_3933# VGND nfet_05v0 ad=0.4469p pd=2.35u as=0.235p ps=1.94u w=0.5u l=0.6u
+X20 VDPWR a_225_5386# a_269_5292# VDPWR pfet_03v3 ad=1.46p pd=3.46u as=0.94p ps=4.94u w=2u l=0.28u
+X21 bus a_230_324# mod VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X22 VAPWR a_229_4923# a_229_3933# VAPWR pfet_05v0 ad=0.13p pd=1.02u as=0.235p ps=1.94u w=0.5u l=0.5u
+X23 mod a_230_324# bus VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X24 bus a_230_324# mod VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X25 mod a_230_324# bus VAPWR pfet_05v0 ad=9.62p pd=37.52u as=16.28p ps=74.88u w=37u l=0.5u
+X26 VGND a_225_5386# a_269_5292# VGND nfet_03v3 ad=0.6497p pd=2.35u as=0.4183p ps=2.72u w=0.89u l=0.28u
+X27 a_230_324# a_229_3933# VGND VGND nfet_05v0 ad=0.235p pd=1.94u as=0.4469p ps=2.35u w=0.5u l=0.6u
+X28 VAPWR a_229_3933# a_230_324# VAPWR pfet_05v0 ad=0.6825p pd=3.455u as=0.13p ps=1.02u w=0.5u l=0.5u
+X29 mod a_651_4578# bus VGND nfet_05v0 ad=8.06p pd=31.52u as=8.06p ps=31.52u w=31u l=0.6u
+X30 bus a_230_324# mod VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X31 VGND a_269_5292# a_229_4923# VGND nfet_05v0 ad=0.4469p pd=2.35u as=0.235p ps=1.94u w=0.5u l=0.6u
+X32 mod a_230_324# bus VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X33 VAPWR a_229_4923# a_651_4578# VAPWR pfet_05v0 ad=0.6825p pd=3.455u as=0.13p ps=1.02u w=0.5u l=0.5u
+X34 mod a_651_4578# bus VGND nfet_05v0 ad=8.06p pd=31.52u as=8.06p ps=31.52u w=31u l=0.6u
+X35 mod a_230_324# VGND VGND nfet_05v0 ad=8.06p pd=31.52u as=13.64p ps=62.88u w=31u l=0.6u
+X36 mod a_230_324# bus VAPWR pfet_05v0 ad=9.62p pd=37.52u as=9.62p ps=37.52u w=37u l=0.5u
+X37 bus a_651_4578# mod VGND nfet_05v0 ad=8.06p pd=31.52u as=8.06p ps=31.52u w=31u l=0.6u
+.ends
+
