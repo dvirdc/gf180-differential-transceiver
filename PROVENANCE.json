@@ -24,8 +24,8 @@
     ".github/workflows/gds.yaml": "6c2b2c8628d690e20b12787c4b2a0dcb8282b4fee69d908272e70aa7a8b04379",
     ".github/workflows/rtl.yaml": "15926159cb59737556ab0203a5de6b23508e758489f10bf2e8bbe16f5e799eb9",
     "COMPACT_EXPERIMENT.md": "55599f5114c271b9867edca0c1b9b8bbfead5bedd18cbd8d7fd3740edd2c0e7e",
-    "PORT_STATUS.md": "41c271008224960a8e12b7d6163068b3d8a395f53a5ad4cba93a20a2e1fdec10",
-    "README.md": "bb4a8f5edc50f4a5a483c2244e83479630606235f2c4aa1a9d35b3ecd1e85d45",
+    "PORT_STATUS.md": "92c6cdf29b375898bf227888f7b7c03ba4971fa9d50c7858a6985caec372cd28",
+    "README.md": "3e295a87d93d60d3755c45193de1f3e9bef056c1a37102d00b3ae3a6a88a7620",
     "REGISTERS.md": "b870be1a8668a2406dcdca0918002e77064180851cb9fad78bdcf07979985dc5",
     "analog/FILL.md": "5be8cb5f5ba5a89c655ab34013066e8fd9eba115e2ce41f65521f76bdfb15c43",
     "analog/README.md": "56831992415aa5fa9f4afc359d93dd640009729e8ec7935acf28c0ff4211580a",
@@ -49,9 +49,9 @@
     "analog/phy.spice": "3f5c55faf5f96fdf4d1d55147c8c2fb2a11c9065dde02600e3bcb42a693cfbcb",
     "analog/provenance.json": "3f5af0cc5f8d2a5766f09019ac8c1faf3caefd75b98734391dfc0eed8c0f1581",
     "docs/TARGET.md": "30a659221e8c30964a8aeb37ed8a2dc2133b584f9e74308ccae917d1394887c4",
-    "docs/VERIFICATION.md": "2b4c53d57e5355c56d1d62ad647525cbe475abd3301704d0c78b2317d8d9c92a",
+    "docs/VERIFICATION.md": "7f8a3d3ef6fd340e52ff812874eabc901a3e89fd67894ebf22730019606bc798",
     "docs/gds-1x2.png": "fbabe645b9b92d14c7308cf27efd9fb0fcdf108ced061e290c63e00a67c11509",
-    "docs/info.md": "0563561ac77d9dae7d3c49c0b75d4762936e4c582a5daa496e27c77c6ad46d7d",
+    "docs/info.md": "3bf16ef763ea4236413a8a8760f9945164ad2e20103361e464b9ce16eba9ed16",
     "experiments/compact-phy/.gitignore": "309ef3d2c15a0c40b562f59bfc054db87342c55d6c926cc639112c5d8c12303f",
     "experiments/compact-phy/README.md": "929b8e0220d93b554526191700ecaa933d5b8bd05606dd8a24ebde57e5f17b22",
     "experiments/compact-phy/baseline/gf180_diff_phy.gds": "ec3d29d66aec0f79641bb7bba0a459fed5e0d2211a4c3e8095b3576412e16861",
@@ -344,7 +344,7 @@
     "tools/synthesize_selective_clockgate_v2.py": "45c8fde8d279e551f8fc3bfb5646638b64fc5341b13917b076e6d36007f25aaa",
     "tools/synthesize_snapshot_scanff.py": "b6e344b102651618f0ef7034974d3b00951d5764d00ddabdc3c439eefac5efec",
     "tools/synthesize_te_fixed.py": "16a77a05905452d69f664c0c3d126b629684a5290767108ac7c754318efe45e8",
-    "tools/target.json": "e1c3e526188fc8047489555d688afcd5dbde05d40e63f83c5f29ff1f88309c4d"
+    "tools/target.json": "d1286ec77421f6237af53bfa13e54c4eaa97ffe113b98a33d1c143a4be95fc45"
   },
   "verification_sha256": {
     "verification/compact-1x2/summary.json": "58978e1633961e8972150667c41ba7b122ddc6b5a615741fae29b6124c12d992",

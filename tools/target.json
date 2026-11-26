@@ -137,7 +137,7 @@
     "normal_receive_buffer_bytes": 1,
     "flow_control": false,
     "loopback": "External TX+ to RX+ and TX- to RX- on the same project through shuttle analog access switches",
-    "physical_signoff_status": "LOCAL_COMPACT_23B_FILLED_GDS_CHECKS_PASS_REMOTE_CI_PENDING",
+    "physical_signoff_status": "LOCAL_COMPACT_23B_FILLED_GDS_CHECKS_PASS",
     "implementation_run": "compact_23b",
     "flip_flops": 598,
     "native_clock_gates": 16,

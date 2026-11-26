@@ -2,7 +2,7 @@
 
 A complete GF180 differential byte transceiver and autonomous loopback tester in one Tiny Tapeout GF26e **1×2 analog frame: 346.64 × 325.36 µm**, with four analog pins. It retains the native 3.3 V PHY, 8N1 serial TX/RX, SPI registers, five test patterns, the complete 32-bit counter/target interface, coherent snapshots and independent receive checking. Default line rate is 100 kbit/s from a 1.6 MHz clock.
 
-**The selected local 1×2 candidate is `compact_23b`.** Detailed routing has zero violations; all nine extracted timing corners pass, including explicit clock-gate enable/pulse audits. The final filled GDS passes full transistor/resistor LVS and all 12 official prechecks. Actual mapped and routed digital regressions pass all 44 cases. Digital placement utilization is **89.7005%**, using 89,526.8 µm² of non-filler standard cells plus an 8,125 µm² analog macro. Exact-commit remote Actions results remain pending. See [verification scope and evidence](docs/VERIFICATION.md) and [official target sources](docs/TARGET.md).
+**The selected local 1×2 candidate is `compact_23b`.** Detailed routing has zero violations; all nine extracted timing corners pass, including explicit clock-gate enable/pulse audits. The final filled GDS passes full transistor/resistor LVS and all 12 official prechecks. Actual mapped and routed digital regressions pass all 44 cases. Digital placement utilization is **89.7005%**, using 89,526.8 µm² of non-filler standard cells plus an 8,125 µm² analog macro. Inspect the GitHub Actions results for the exact commit being used. See [verification scope and evidence](docs/VERIFICATION.md) and [official target sources](docs/TARGET.md).
 
 ![Selected 1×2 GF180 transceiver GDS](docs/gds-1x2.png)
 

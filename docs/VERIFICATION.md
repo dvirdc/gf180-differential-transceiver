@@ -1,6 +1,6 @@
 # Selected 1×2 verification — compact_23b
 
-The selected local GF26e candidate is **346.64 × 325.36 µm**, with a **125 × 65 µm** native PHY and four analog pins. Its final filled GDS SHA-256 is `65460b07a56c56c9b47dcba2cb517bc19fedfa4a7585231af3cafea6c5e813ea`. The exact source, metadata and artifact hashes are bound by release provenance. Remote checks must be inspected on the delivered exact commit; they remain pending at this documentation checkpoint.
+The selected local GF26e candidate is **346.64 × 325.36 µm**, with a **125 × 65 µm** native PHY and four analog pins. Its final filled GDS SHA-256 is `65460b07a56c56c9b47dcba2cb517bc19fedfa4a7585231af3cafea6c5e813ea`. The exact source, metadata and artifact hashes are bound by release provenance. Inspect remote checks on the delivered exact commit in GitHub Actions.
 
 ## Selected local results
 
@@ -45,6 +45,6 @@ The selected release archive is `verification/compact-1x2/`:
 
 ## Remaining scope
 
-Exact-commit remote RTL, GDS/precheck and Docs results remain pending. No GitHub Pages, public publication, slot reservation, purchase or shuttle submission is performed by this work.
+GitHub Actions records RTL, GDS/precheck and Docs results for each tested commit. No GitHub Pages, public publication, slot reservation, purchase or shuttle submission is performed by this work.
 
 The analog matrix is a bounded loaded macro-RC simulation, not a full Cartesian PVT sweep, full-chip transient, mismatch/noise study or package model. Digital extraction precedes additive dummy-COMP fill; post-fill coupling/RC and final shuttle integration are not qualified here. Carrier switch-supply voltage, connector mapping, controller firmware, package/board loading and fabricated silicon require separate validation. Digital loopback readout does not measure analog swing, common-mode tolerance, noise immunity or an eye diagram.
